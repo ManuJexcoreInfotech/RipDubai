@@ -28,9 +28,14 @@
 
     <ion-label class="dateLbl">{{dateSelected}}</ion-label>
 
-    <button (click)="SelecetTimeClick()" class="dateBtn">
-      <ion-icon class="" name="md-time"></ion-icon> Select Time
-    </button>
+    <ion-item class="selectItem">
+      <ion-label class="selectLbl">Select Time</ion-label>
+      <ion-select [(ngModel)]="IONSelectValue"  name="md-time" multiple="false" (ionChange)="IONSelectEvent()">
+        <ion-option [value]="items" *ngFor="let items of SingleActivity">{{items.duration}} HR {{items.type}}</ion-option>
+      </ion-select>
+    </ion-item>
+    <!--<button (click)="SelecetTimeClick()" class="dateBtn">
+    </button>-->
     <ion-label class="dateLbl">{{timeSelected}}</ion-label>
 
     <ion-item class="selectItem">
