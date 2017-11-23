@@ -27,6 +27,7 @@ export class BookingPage {
   Texes = 0;
   TotlePayment = 0;
   SingleActivity = [];
+  TimeSlotArry = [];
   IONSelectValue:any;
   
 
