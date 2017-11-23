@@ -22,16 +22,16 @@
 <ion-content class="bookingCSS">
   <div class="mainContainer">
 
-    <button (click)="SelecetDateClick()" class="dateBtn">
+    <button (click)="SelecetDateClick()" class="dateBtn"> 
       <ion-icon class="" name="md-calendar"></ion-icon> Select Date
     </button>
 
     <ion-label class="dateLbl">{{dateSelected}}</ion-label>
 
     <ion-item class="selectItem">
-      <ion-label class="selectLbl">Select Time</ion-label>
-      <ion-select [(ngModel)]="IONSelectValue"  name="md-time" multiple="false" (ionChange)="IONSelectEvent()">
-        <ion-option [value]="items" *ngFor="let items of SingleActivity">{{items.duration}} HR {{items.type}}</ion-option>
+      <ion-label class="selectLbl">Select Time</ion-label> 
+      <ion-select [(ngModel)]="SelecetTime"  name="md-time" multiple="false" (ionChange)="SelecetTimeClick()">
+        <ion-option [value]="items" *ngFor="let items of TimeSlotArry">{{items}}</ion-option>
       </ion-select>
     </ion-item>
     <!--<button (click)="SelecetTimeClick()" class="dateBtn">
