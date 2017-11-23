@@ -1,0 +1,73 @@
+
+<ion-header class="BookingHeader">
+  <ion-navbar hideBackButton="true">
+
+    <ion-buttons (click)="BackButtonClick()" left>
+        <button class="headerBackButton" ion-button>
+            <ion-icon class="backButtonIcon" name="ios-arrow-back"></ion-icon> Back
+          </button>
+      </ion-buttons>
+
+    <ion-title class="pHead" >{{ActivityArry.name}}</ion-title>
+
+    <ion-buttons style="width: 50px;" end>
+      <button ion-button >
+      </button>
+    </ion-buttons>
+
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content class="bookingCSS">
+  <div class="mainContainer">
+
+    <button (click)="SelecetDateClick()" class="dateBtn">
+      <ion-icon class="" name="md-calendar"></ion-icon> Select Date
+    </button>
+
+    <ion-label class="dateLbl">{{dateSelected}}</ion-label>
+
+    <button (click)="SelecetTimeClick()" class="dateBtn">
+      <ion-icon class="" name="md-time"></ion-icon> Select Time
+    </button>
+    <ion-label class="dateLbl">{{timeSelected}}</ion-label>
+
+    <ion-item class="selectItem">
+      <ion-label class="selectLbl">{{ActivityArry.name}}</ion-label>
+      <ion-select [(ngModel)]="IONSelectValue" multiple="false" (ionChange)="IONSelectEvent()">
+        <ion-option [value]="items" *ngFor="let items of SingleActivity">{{items.duration}} HR {{items.type}}</ion-option>
+      </ion-select>
+    </ion-item>
+      
+    <ion-label class="LblOne">Your are Booking</ion-label>
+    <ion-label class="LblTwo">{{ActivityArry.name}} Experience</ion-label>
+    <ion-label class="LblThree">{{DisplayDate}} {{DisplayTime}}</ion-label>
+
+    <div class="subtotalContainer">
+      <ion-label class="subTotalLbl">Subtotal</ion-label>
+      <ion-label class="subTotalPriceLbl">AED {{TotlePayment}}</ion-label>
+      <div class="lineDrow"></div>
+    </div>
+
+    <div class="subtotalContainer" style="margin-top:12px;">
+      <ion-label class="subTotalLbl">Taxes</ion-label>
+      <ion-label class="subTotalPriceLbl">AED {{Texes}}</ion-label>
+      <div class="lineDrow"></div>
+    </div>
+
+    <div class="checkBoxContainer">
+      <img (click)="SelectCheckBoxClick()" class="checkboxImage" src="{{checkboxSRC}}">
+      <ion-label class="checkBoxLbl">I have read and agrred to the cancellation and Saftey policy below.</ion-label>
+    </div>
+
+  </div>
+
+  <div class="bookNowContainer">
+      <button (click)="BookingClick()" class="bookNowBtn">BOOK NOW</button>
+    <ion-label class="totalLbl">Total</ion-label>
+    <ion-label class="totalPriceLbl">AED 595.01</ion-label>
+  </div>
+
+	
+</ion-content>

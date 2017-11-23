@@ -1,0 +1,63 @@
+<!-- <ion-menu [content]="content" type="overlay" > -->
+<ion-menu class="sideMenuHeader" [content]="content" type="overlay" >
+  <ion-header>
+    <ion-toolbar>
+      <button ion-button menuToggle>
+        <ion-icon ios="ios-list" md="md-list"></ion-icon>
+      </button>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content class="sidebarBg" scroll="false">
+    
+      <button text-wrap class="sidebarBg"  menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)">
+        {{p.title}}
+      </button>
+    
+    <p padding-left no-margin class="followBtn">FOLLOW US</p>
+    <ion-grid style="padding-left: 12px;">
+      <ion-row>
+        <ion-col col-6>
+          <div text-center  class="social-box-bg ">
+            <a href="https://www.facebook.com/RiP.DuBai">
+            <img style="height: 27px;margin-top: 10px;" src="assets/imgs/facebook.png">
+          </a>
+            <i class="fa fa-facebook"></i>
+          </div>   
+        </ion-col>
+        <ion-col col-6>
+          <div text-center class="social-box-bg ">
+            <a href="https://twitter.com/Rip_DUBAI">
+            <ion-icon class="social-icon" ios="logo-twitter" md="logo-twitter"></ion-icon></a>
+          </div>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col col-6>
+          <div text-center class="social-box-bg ">
+            <a href="https://www.youtube.com/channel/UCy54dNm8FXa5O-yD5wQb1zw?view_as=subscriber">
+            <ion-icon class="social-icon" ios="logo-youtube" md="logo-youtube"></ion-icon></a>
+          </div>
+        </ion-col>
+        <ion-col col-6>
+          <div text-center class="social-box-bg ">
+            <a href="https://www.instagram.com/rip.dubai/">
+            <ion-icon class="social-icon" ios="logo-instagram" md="logo-instagram"></ion-icon>
+            </a>
+          </div>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col col-6>
+          <div text-center class="social-box-bg ">
+          <a href="https://www.linkedin.com/in/rip-rest-in-peace-94603a14a/">
+           <img style="height: 27px;margin-top: 10px;" src="assets/imgs/linkedin.png">
+          </a>
+          </div>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-content>
+</ion-menu>
+
+<ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>

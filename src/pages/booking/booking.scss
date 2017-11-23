@@ -1,0 +1,164 @@
+
+.BookingHeader{
+    .pHead {
+		color: #009cde;
+		font-size:20px;
+		margin-top:0px;
+    }
+    .toolbar-title {
+        text-align: center;
+        color: #009cde;
+        font-size: 20px;
+        margin-top: 0px;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+}
+
+.bookingCSS{
+    
+    .mainContainer{
+        background-color: #03A6E2;
+        background-color: #03A6E2;
+        margin: 20px;
+        height: 480px;
+        width: calc(100% - 40px);
+        .dateBtn{
+            width: calc(100% - 30px);
+            background-color: #FBD503;
+            font-size: 18px;
+            height: 40px;
+            border-radius: 0;
+            margin-top: 15px;
+            font-weight: bold;
+            color: white;
+            margin-left: 15px;
+            
+        }
+        .dateLbl{
+            height: 40px;
+            margin: 0;
+            width: calc(100% - 30px);
+            margin-left: 15px;
+            font-size: 18px;
+            text-align: center;
+            padding-top: 8px;
+            color: white;
+            background-color: rgba(0, 0, 0, 0.29);
+            
+        }
+        .selectItem{
+            margin-top: 12px;
+            width: calc(100% - 30px);
+            margin-left: 15px;
+            height: 40px;
+            .selectLbl{
+                color: #03a6e2;
+                font-size: 16px;
+                font-weight: bold;
+            }
+        }
+        .LblOne{
+            font-size: 20px;
+            color: white;
+            font-weight: bold;
+            margin-left: 15px;
+            margin-top: 20px;
+        }
+        .LblTwo{
+            font-size: 14px;
+            color: white;
+            font-weight: bold;
+            margin-left: 15px;
+            margin-top: 0;
+            margin-bottom: 4px;
+        }
+        .LblThree{
+            font-size: 14px;
+            color: rgba(255, 255, 255, 0.3607843137254902);
+            font-weight: bold;
+            margin-left: 15px;
+            margin-top: 0;
+        }
+        .subtotalContainer{
+            width: calc(100% - 30px);
+            margin-left: 15px;
+            position: relative;
+            margin-top: 20px;
+            .subTotalLbl{
+                margin: 0;
+                color: white;
+                font-size: 16px;
+                width: 100px;
+            }
+            .subTotalPriceLbl{
+                margin: 0;
+                color: white;
+                font-size: 16px;
+                float: right;
+                margin-top: -18px;
+            }
+            .lineDrow{
+                height: 2px;
+                width: calc(100% - 170px);
+                background-color: white;
+                position: absolute;
+                top: 10px;
+                left: 75px;
+                right: 66px;
+            }
+        }
+        .checkBoxContainer{
+            width: calc(100% - 30px);
+            margin-left: 15px;
+            position: relative;
+            margin-top: 25px;
+            .checkboxImage{
+                height: 15px;
+                width: 15px;
+            }
+            .checkBoxLbl{
+                position: absolute;
+                top: -1px;
+                margin: 0;
+                margin-left: 30px;
+                color: white;
+                font-size: 12px;
+                white-space: normal;
+            }
+        }
+
+    }
+    .bookNowContainer{
+        background-color: #03A6E2;
+        margin: 20px;
+        height: 50px;
+        width: calc(100% - 40px);
+        border-radius: 3px;
+        .bookNowBtn{
+            height: 50px;
+            background-color: #fbd505;
+            border-radius: 0;
+            width: 120px;
+            font-size: 18px;
+            color: white;
+            float: left;
+        }
+        .totalLbl{
+            float: left;
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+            margin-left: 8px;
+            padding-top: 1px;
+        }
+        .totalPriceLbl{
+            float: right;
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+            margin-left: 8px;
+        }
+
+    }
+}

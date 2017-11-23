@@ -1,0 +1,52 @@
+
+.followBtn {
+	font-size: 12px !important;
+    padding-left: 16px !important;
+}
+.sidebarBg {
+	background-color:  #050505 !important;
+	color: white !important;
+	font-family: sans-serif;
+}  
+
+.item-inner {
+	border-bottom: none !important;
+}
+.item-block:last-child {
+	border-bottom: none !important;
+}
+.item-inner {
+	background-image: none !important;
+}
+.item-ios {
+	font-size: 14px !important;
+}
+.social-icon {
+	padding-top: 12px;
+	font-size:25px !important;
+	color: #050505 !important;
+}
+.social-box-bg {
+	height: 50px;
+	width: 50px;
+	background-color: #009cde !important;
+}
+.menu.menu-left{
+	width: calc(100% - 70px) !important;
+}
+
+
+
+.toolbar-title {
+    text-align: center;
+}
+
+.headerBackButton{
+	font-size: 18px;
+    font-weight: 300;
+	text-transform: none;
+	.backButtonIcon{
+		font-size: 26px;
+		padding-right: 5px;
+	}
+}
