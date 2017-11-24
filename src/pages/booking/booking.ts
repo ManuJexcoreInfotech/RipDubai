@@ -187,7 +187,7 @@ export class BookingPage {
     }else if(!this.TotlePayment){
       this.constant.Alert('Message', 'Please select Package.', 'Ok');
     }else if(this.checkboxSRC == 'assets/imgs/checkboxFalse.jpeg'){
-      this.constant.Alert('Message', 'Please select Privacy policy Checkbox.', 'Ok');
+      this.constant.Alert('Message', 'Please select cancellation and safety policy checkbox.', 'Ok');
     }else{
       console.log('All Done');
       this.BookingAPI();
@@ -228,7 +228,7 @@ export class BookingPage {
           this.TotlePayment = 0;
           this.SingleActivity = [];
           this.IONSelectValue = '';
-          this.constant.Alert('Success', 'Your Booking Success.','Ok');
+          this.constant.Alert('Success', ' Booking done successfully.','Ok');
         }else{
           this.constant.Alert('Error', 'Something is wrong Please try again later.','Ok');
         }

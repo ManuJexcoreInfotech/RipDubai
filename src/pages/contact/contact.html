@@ -28,21 +28,25 @@
 	<ion-list margin-top>
 
 	  <ion-item  class="customTextbox" margin-bottom>
-	    <ion-input  type="text" placeholder="Name"></ion-input>
+	    <ion-input [(ngModel)]="name" type="text" placeholder="Name" ></ion-input>
 	  </ion-item>
+		<ion-label class="LblOne" *ngIf="nameError" style="color:#ed1b24;margin:-15px 3px 4px 4px">{{nameErrorTxt}}</ion-label>
 
 	  <ion-item class="customTextbox" margin-bottom>
-	    <ion-input   type="email" placeholder="Email"></ion-input>
+	    <ion-input   [(ngModel)]="email"  type="email" placeholder="Email"></ion-input>
+		
 	  </ion-item>
+	  <ion-label class="LblOne" *ngIf="emailError" style="color:#ed1b24;margin:-15px 3px 4px 4px">{{emailErrorTxt}}</ion-label>
 	  <ion-item class="customTextbox" margin-bottom>
-	    <ion-input  type="number" placeholder="Phone"></ion-input>
+	    <ion-input  [(ngModel)]="contact"  type="number" placeholder="Phone"></ion-input>
 	  </ion-item>
+		<ion-label class="LblOne" *ngIf="contactError" style="color:#ed1b24;margin:-15px 3px 4px 4px">{{contactErrorTxt}}</ion-label>
 	  <ion-item class="customTextbox" margin-bottom>
-	    <ion-textarea  rows="10"  placeholder="Note"></ion-textarea >
+	    <ion-textarea [(ngModel)]="message"  rows="10"  placeholder="Note"></ion-textarea >
 	  </ion-item>
 
 		<div text-right>
-			<button class="sendBtn" text-right ion-button>SEND</button>
+			<button (click)="SendMail()" class="sendBtn" text-right ion-button>SEND</button>
 		</div>
 	</ion-list>
 
