@@ -50,7 +50,7 @@ export class BookingPage {
   }
  
   SelecetTimeClick(){
-    this.SelecetTime();
+    //this.SelecetTime = SelecetTime;
   }
 
   SelecetDate(){
