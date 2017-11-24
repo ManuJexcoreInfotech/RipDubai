@@ -51,7 +51,7 @@ export class BookingPage {
  
   SelecetTimeClick(){
     //this.SelecetTime = SelecetTime;
-	this.checkTime = this.datePipe.transform(this.timeSelected, 'h:mm a');
+	this.checkTime = this.timeSelected;
   }
 
   SelecetDate(){

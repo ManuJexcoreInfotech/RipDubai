@@ -1372,7 +1372,7 @@ var BookingPage = (function () {
     };
     BookingPage.prototype.SelecetTimeClick = function () {
         //this.SelecetTime = SelecetTime;
-        this.checkTime = this.datePipe.transform(this.timeSelected, 'h:mm a');
+        this.checkTime = this.timeSelected;
     };
     BookingPage.prototype.SelecetDate = function () {
         var _this = this;
