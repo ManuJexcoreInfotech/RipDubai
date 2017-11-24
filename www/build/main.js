@@ -1358,6 +1358,7 @@ var BookingPage = (function () {
         this.DisplayDate = '';
         this.DisplayTime = '';
         this.Texes = 0;
+        this.FinalTotal = 0;
         this.TotlePayment = 0;
         this.SingleActivity = [];
         this.TimeSlotArry = [];
@@ -1386,20 +1387,20 @@ var BookingPage = (function () {
             _this.dateSelected = _this.datePipe.transform(date, 'MMMM d, yyyy');
             _this.checkDate = _this.datePipe.transform(date, 'yyyy-MM-dd');
             //Wednesday, October 18th 2017 @ 10am
-            var URL = "http://pr.veba.co/~shubantech/ripdubai/getBookingTime.php";
-            _this.http.post(URL, { date: _this.checkDate }).subscribe(function (data) {
-                _this.constant.LoadingHide();
-                console.log(data.json());
-                var JsonData = data.json();
-                _this.TimeSlotArry = JsonData.timeslots;
-            }, function (error) {
-                console.log('WebserviceHandler=>' + error);
-            });
             _this.DisplayDate = _this.datePipe.transform(date, 'EEEE, MMMM d y @');
             console.log(_this.DisplayDate);
             _this.CheckTimeStatic(date);
         }, function (err) {
             console.log('Error occurred while getting date: ', err);
+        });
+        var URL = "http://pr.veba.co/~shubantech/ripdubai/getBookingTime.php";
+        this.http.post(URL, { date: this.checkDate }).subscribe(function (data) {
+            _this.constant.LoadingHide();
+            console.log(data.json());
+            var JsonData = data.json();
+            _this.TimeSlotArry = JsonData.timeslots;
+        }, function (error) {
+            console.log('WebserviceHandler=>' + error);
         });
     };
     BookingPage.prototype.SelecetTime = function () {
@@ -1477,6 +1478,7 @@ var BookingPage = (function () {
         this.Texes = (TaxesSub * 20) / 100;
         console.log(TaxesSub);
         console.log(this.Texes);
+        this.FinalTotal = this.TotlePayment + this.Texes;
     };
     BookingPage.prototype.BookingClick = function () {
         //this.BookingAPI();
@@ -1554,7 +1556,7 @@ var BookingPage = (function () {
 BookingPage = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* IonicPage */])(),
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'page-booking',template:/*ion-inline-start:"C:\xampp\htdocs\ionic\RipDubai_1\src\pages\booking\booking.html"*/'\n<ion-header class="BookingHeader">\n  <ion-navbar hideBackButton="true">\n\n    <ion-buttons (click)="BackButtonClick()" left>\n        <button class="headerBackButton" ion-button>\n            <ion-icon class="backButtonIcon" name="ios-arrow-back"></ion-icon> Back\n          </button>\n      </ion-buttons>\n\n    <ion-title class="pHead" >{{ActivityArry.name}}</ion-title>\n\n    <ion-buttons style="width: 50px;" end>\n      <button ion-button >\n      </button>\n    </ion-buttons>\n\n  </ion-navbar>\n</ion-header>\n\n\n<ion-content class="bookingCSS">\n  <div class="mainContainer">\n\n    <button (click)="SelecetDateClick()" class="dateBtn"> \n      <ion-icon class="" name="md-calendar"></ion-icon> Select Date\n    </button>\n\n    <ion-label class="dateLbl">{{dateSelected}}</ion-label>\n\n    <ion-item class="selectItem">\n      <ion-label class="selectLbl">Select Time</ion-label> \n      <ion-select [(ngModel)]="SelecetTime"  name="md-time" multiple="false" (ionChange)="SelecetTimeClick()">\n        <ion-option [value]="items" *ngFor="let items of TimeSlotArry">{{items}}</ion-option>\n      </ion-select>\n    </ion-item>\n    <!--<button (click)="SelecetTimeClick()" class="dateBtn">\n    </button>-->\n    <ion-label class="dateLbl">{{timeSelected}}</ion-label>\n\n    <ion-item class="selectItem">\n      <ion-label class="selectLbl">{{ActivityArry.name}}</ion-label>\n      <ion-select [(ngModel)]="SelecetTime" multiple="false" (ionChange)="IONSelectEvent()">\n        <ion-option [value]="items" *ngFor="let items of TimeSlotArry">{{items}}</ion-option>\n      </ion-select>\n    </ion-item>\n      \n    <ion-label class="LblOne">Your are Booking</ion-label>\n    <ion-label class="LblTwo">{{ActivityArry.name}} Experience</ion-label>\n    <ion-label class="LblThree">{{DisplayDate}} {{DisplayTime}}</ion-label>\n\n    <div class="subtotalContainer">\n      <ion-label class="subTotalLbl">Subtotal</ion-label>\n      <ion-label class="subTotalPriceLbl">AED {{TotlePayment}}</ion-label>\n      <div class="lineDrow"></div>\n    </div>\n\n    <div class="subtotalContainer" style="margin-top:12px;">\n      <ion-label class="subTotalLbl">Taxes</ion-label>\n      <ion-label class="subTotalPriceLbl">AED {{Texes}}</ion-label>\n      <div class="lineDrow"></div>\n    </div>\n\n    <div class="checkBoxContainer">\n      <img (click)="SelectCheckBoxClick()" class="checkboxImage" src="{{checkboxSRC}}">\n      <ion-label class="checkBoxLbl">I have read and agrred to the cancellation and Saftey policy below.</ion-label>\n    </div>\n\n  </div>\n\n  <div class="bookNowContainer">\n      <button (click)="BookingClick()" class="bookNowBtn">BOOK NOW</button>\n    <ion-label class="totalLbl">Total</ion-label>\n    <ion-label class="totalPriceLbl">AED 595.01</ion-label>\n  </div>\n\n	\n</ion-content>\n'/*ion-inline-end:"C:\xampp\htdocs\ionic\RipDubai_1\src\pages\booking\booking.html"*/,
+        selector: 'page-booking',template:/*ion-inline-start:"C:\xampp\htdocs\ionic\RipDubai_1\src\pages\booking\booking.html"*/'\n<ion-header class="BookingHeader">\n  <ion-navbar hideBackButton="true">\n\n    <ion-buttons (click)="BackButtonClick()" left>\n        <button class="headerBackButton" ion-button>\n            <ion-icon class="backButtonIcon" name="ios-arrow-back"></ion-icon> Back\n          </button>\n      </ion-buttons>\n\n    <ion-title class="pHead" >{{ActivityArry.name}}</ion-title>\n\n    <ion-buttons style="width: 50px;" end>\n      <button ion-button >\n      </button>\n    </ion-buttons>\n\n  </ion-navbar>\n</ion-header>\n\n\n<ion-content class="bookingCSS">\n  <div class="mainContainer">\n\n    <button (click)="SelecetDateClick()" class="dateBtn"> \n      <ion-icon class="" name="md-calendar"></ion-icon> Select Date\n    </button>\n\n    <ion-label class="dateLbl">{{dateSelected}}</ion-label>\n\n    <ion-item class="selectItem">\n      <ion-label class="selectLbl">Select Time</ion-label> \n      <ion-select [(ngModel)]="SelecetTime"  name="md-time" multiple="false" (ionChange)="SelecetTimeClick()">\n        <ion-option [value]="items" *ngFor="let items of TimeSlotArry">{{items}}</ion-option>\n      </ion-select>\n    </ion-item>\n    <!--<button (click)="SelecetTimeClick()" class="dateBtn">\n    </button>-->\n    <ion-label class="dateLbl">{{timeSelected}}</ion-label>\n\n    <ion-item class="selectItem">\n      <ion-label class="selectLbl">{{ActivityArry.name}}</ion-label>\n      <ion-select [(ngModel)]="IONSelectValue" multiple="false" (ionChange)="IONSelectEvent()">\n        <ion-option [value]="items" *ngFor="let items of SingleActivity">{{items.duration}} HR {{items.type}}</ion-option>\n      </ion-select>\n    </ion-item>\n      \n    <ion-label class="LblOne">Your are Booking</ion-label>\n    <ion-label class="LblTwo">{{ActivityArry.name}} Experience</ion-label>\n    <ion-label class="LblThree">{{DisplayDate}} {{DisplayTime}}</ion-label>\n\n    <div class="subtotalContainer">\n      <ion-label class="subTotalLbl">Subtotal</ion-label>\n      <ion-label class="subTotalPriceLbl">AED {{TotlePayment}}</ion-label>\n      <div class="lineDrow"></div>\n    </div>\n\n    <div class="subtotalContainer" style="margin-top:12px;">\n      <ion-label class="subTotalLbl">Taxes</ion-label>\n      <ion-label class="subTotalPriceLbl">AED {{Texes}}</ion-label>\n      <div class="lineDrow"></div>\n    </div>\n\n    <div class="checkBoxContainer">\n      <img (click)="SelectCheckBoxClick()" class="checkboxImage" src="{{checkboxSRC}}">\n      <ion-label class="checkBoxLbl">I have read and agrred to the cancellation and Saftey policy below.</ion-label>\n    </div>\n\n  </div>\n \n  <div class="bookNowContainer">\n      <button (click)="BookingClick()" class="bookNowBtn">BOOK NOW</button>\n    <ion-label class="totalLbl">Total</ion-label>\n    <ion-label class="totalPriceLbl">AED {{(TotlePayment-0)+(Texes-0) |number}}</ion-label>\n  </div>\n\n	\n</ion-content>\n'/*ion-inline-end:"C:\xampp\htdocs\ionic\RipDubai_1\src\pages\booking\booking.html"*/,
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavParams */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_date_picker__["a" /* DatePicker */],
         __WEBPACK_IMPORTED_MODULE_3__angular_common__["c" /* DatePipe */], __WEBPACK_IMPORTED_MODULE_4__webService_constant__["a" /* Constant */], __WEBPACK_IMPORTED_MODULE_5__webService_webservice__["a" /* WebService */], __WEBPACK_IMPORTED_MODULE_6__angular_http__["b" /* Http */]])

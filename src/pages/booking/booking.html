@@ -40,8 +40,8 @@
 
     <ion-item class="selectItem">
       <ion-label class="selectLbl">{{ActivityArry.name}}</ion-label>
-      <ion-select [(ngModel)]="SelecetTime" multiple="false" (ionChange)="IONSelectEvent()">
-        <ion-option [value]="items" *ngFor="let items of TimeSlotArry">{{items}}</ion-option>
+      <ion-select [(ngModel)]="IONSelectValue" multiple="false" (ionChange)="IONSelectEvent()">
+        <ion-option [value]="items" *ngFor="let items of SingleActivity">{{items.duration}} HR {{items.type}}</ion-option>
       </ion-select>
     </ion-item>
       
@@ -67,11 +67,11 @@
     </div>
 
   </div>
-
+ 
   <div class="bookNowContainer">
       <button (click)="BookingClick()" class="bookNowBtn">BOOK NOW</button>
     <ion-label class="totalLbl">Total</ion-label>
-    <ion-label class="totalPriceLbl">AED 595.01</ion-label>
+    <ion-label class="totalPriceLbl">AED {{(TotlePayment-0)+(Texes-0) |number}}</ion-label>
   </div>
 
 	
