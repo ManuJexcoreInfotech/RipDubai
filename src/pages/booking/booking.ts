@@ -117,8 +117,8 @@ export class BookingPage {
     
     this.constant.LoadingPresent();
     
-    var URL = 'https://silverwingtechnologies.com/clients/ripdubai/checkBookingDate.php?b_date='+this.checkDate+'&time='+this.checkTime;
-    //var URL = 'https://silverwingtechnologies.com/clients/ripdubai/checkBookingDate.php?b_date=2017-11-30'+'&time=12:00 AM';
+    var URL = 'http://pr.veba.co/~shubantech/ripdubai/checkBookingDate.php?b_date='+this.checkDate+'&time='+this.checkTime;
+    //var URL = 'http://pr.veba.co/~shubantech/ripdubai/checkBookingDate.php?b_date=2017-11-30'+'&time=12:00 AM';
     console.log(URL); 
 
     this.http.get(URL).subscribe(data => {
@@ -145,7 +145,7 @@ export class BookingPage {
    
   this.constant.LoadingPresent();
     
-    var URL = 'https://silverwingtechnologies.com/clients/ripdubai/activityContoller.php?activity_id=' + this.ActivityArry.activity_id;
+    var URL = 'http://pr.veba.co/~shubantech/ripdubai/activityContoller.php?activity_id=' + this.ActivityArry.activity_id;
     //var URL = 'http://192.168.1.27/ripdubai/abc.php?activity_id=1';
     
     this.http.get(URL).subscribe(data => {
@@ -204,7 +204,7 @@ export class BookingPage {
      var CustomURL = 'user_id=0&date='+date+'&b_date='+this.checkDate+'&time='+this.checkTime+'&activity_id='+activity_id+
      '&person=1&price='+Price+'&total='+total_price+'&package='+Package+'&duration='+Duration;
     
-     var URL = 'https://silverwingtechnologies.com/clients/ripdubai/bookingController.php?'+ CustomURL;
+     var URL = 'http://pr.veba.co/~shubantech/ripdubai/bookingController.php?'+ CustomURL;
       console.log(URL);
 
       this.http.get(URL).subscribe(data => {
