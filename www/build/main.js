@@ -360,7 +360,7 @@ __decorate([
 ActivitiesPage = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* IonicPage */])(),
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'page-activities',template:/*ion-inline-start:"C:\xampp\htdocs\ionic\RipDubai_1\src\pages\activities\activities.html"*/'\n<ion-header>\n  <ion-navbar>\n  \n    <button class="headerBackButton" ion-button menuToggle>\n      <ion-icon class="backButtonIcon" name="ios-arrow-back"></ion-icon> Back\n    </button>\n\n    <ion-title><img src="https://www.silverwingtechnologies.com/clients/img/logo.png" height="40"></ion-title>\n\n    <ion-buttons style="width: 50px;" end>\n      <button ion-button >\n      </button>\n    </ion-buttons>\n\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n	<p class="pHead" text-center>OUR <strong>ACTIVITIES</strong></p>\n  \n  <ion-slides text-start class="sliderMain" zoom="true" loop="false" slidesPerView="1" effect="coverflow" speed="200">\n    <ion-slide class="sliderMainSlide"  *ngFor="let item of ActivityArry; let i = index">\n      \n          \n        <div class="slideMainContainer">\n            <ion-label class="headerLbl">RIP DUBAI<span class="headerSubLbl"> EXCLUSIVE</span></ion-label>\n            <img class="imageSlider" src="{{item.image1}}">\n            <ion-label class="headerLblTwo">{{item.name}}<span class="headerSubLblTwo"></span></ion-label>\n            \n              <ion-label class="sliderDics"  padding text-left>\n                  <span [innerHTML]="item.description"></span>  \n              </ion-label>\n          </div>\n      \n      </ion-slide>\n  \n</ion-slides>\n\n  <button class="bookbtn" (click)="BookNowClick(i)" margin-top ion-button color="yellow" full>BOOK NOW</button>\n\n  <!-- <button ion-button secondary menuToggle>Toggle Menu</button> -->\n</ion-content>\n'/*ion-inline-end:"C:\xampp\htdocs\ionic\RipDubai_1\src\pages\activities\activities.html"*/,
+        selector: 'page-activities',template:/*ion-inline-start:"C:\xampp\htdocs\ionic\RipDubai_1\src\pages\activities\activities.html"*/'\n<ion-header>\n  <ion-navbar>\n  \n    <button class="headerBackButton" ion-button menuToggle>\n      <ion-icon class="backButtonIcon" name="ios-arrow-back"></ion-icon> Back\n    </button>\n\n    <ion-title><img src="https://www.silverwingtechnologies.com/clients/img/logo.png" height="40"></ion-title>\n\n    <ion-buttons style="width: 50px;" end>\n      <button ion-button >\n      </button>\n    </ion-buttons>\n\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n	<p class="pHead" text-center>OUR <strong>ACTIVITIES</strong></p>\n  \n  <ion-slides text-start class="sliderMain" zoom="true" loop="false" slidesPerView="1" effect="coverflow" speed="200">\n    <ion-slide class="sliderMainSlide"  *ngFor="let item of ActivityArry; let i = index">\n      \n          \n        <div class="slideMainContainer">\n            <ion-label class="headerLbl">RIP DUBAI<span class="headerSubLbl"> EXCLUSIVE</span></ion-label>\n            <img class="imageSlider" src="{{item.image1}}">\n            <ion-label class="headerLblTwo">{{item.name.toUpperCase()}}<span class="headerSubLblTwo"></span></ion-label>\n            \n              <ion-label class="sliderDics"  padding text-left>\n                  <span [innerHTML]="item.description"></span>  \n              </ion-label>\n          </div>\n      \n      </ion-slide>\n  \n</ion-slides>\n\n  <button class="bookbtn" (click)="BookNowClick(i)" margin-top ion-button color="yellow" full>BOOK NOW</button>\n\n  <!-- <button ion-button secondary menuToggle>Toggle Menu</button> -->\n</ion-content>\n'/*ion-inline-end:"C:\xampp\htdocs\ionic\RipDubai_1\src\pages\activities\activities.html"*/,
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavParams */], __WEBPACK_IMPORTED_MODULE_2__webService_constant__["a" /* Constant */], __WEBPACK_IMPORTED_MODULE_3__webService_webservice__["a" /* WebService */], __WEBPACK_IMPORTED_MODULE_4__angular_http__["b" /* Http */]])
 ], ActivitiesPage);
@@ -1391,18 +1391,18 @@ var BookingPage = (function () {
             _this.DisplayDate = _this.datePipe.transform(date, 'EEEE, MMMM d y @');
             console.log(_this.DisplayDate);
             _this.CheckTimeStatic(date);
-            var CustomURL = 'date=' + _this.checkDate;
-            var URL = "http://pr.veba.co/~shubantech/ripdubai/getBookingTime.php?" + CustomURL;
-            _this.http.get(URL).subscribe(function (data) {
-                _this.constant.LoadingHide();
-                console.log(data.json());
-                var JsonData = data.json();
-                _this.TimeSlotArry = JsonData.timeslots;
-            }, function (error) {
-                console.log('WebserviceHandler=>' + error);
-            });
         }, function (err) {
             console.log('Error occurred while getting date: ', err);
+        });
+        var CustomURL = 'date=' + this.checkDate;
+        var URL = "http://pr.veba.co/~shubantech/ripdubai/getBookingTime.php?" + CustomURL;
+        this.http.get(URL).subscribe(function (data) {
+            _this.constant.LoadingHide();
+            console.log(data.json());
+            var JsonData = data.json();
+            _this.TimeSlotArry = JsonData.timeslots;
+        }, function (error) {
+            console.log('WebserviceHandler=>' + error);
         });
     };
     BookingPage.prototype.SelecetTime = function () {

@@ -72,20 +72,19 @@ export class BookingPage {
       this.DisplayDate = this.datePipe.transform(date, 'EEEE, MMMM d y @');
       console.log(this.DisplayDate);
       this.CheckTimeStatic(date);
-		var CustomURL = 'date='+this.checkDate;
-		var URL = "http://pr.veba.co/~shubantech/ripdubai/getBookingTime.php?"+CustomURL;
-		this.http.get(URL).subscribe(data => {
-			this.constant.LoadingHide();
-			console.log(data.json());
-			var JsonData = data.json();
-			this.TimeSlotArry = JsonData.timeslots;
-		  }, error => {
-			   console.log('WebserviceHandler=>'+error);
-		});
-	  
     },err => {
       console.log('Error occurred while getting date: ', err)
     });
+	var CustomURL = 'date='+this.checkDate;
+	var URL = "http://pr.veba.co/~shubantech/ripdubai/getBookingTime.php?"+CustomURL;
+	this.http.get(URL).subscribe(data => {
+		this.constant.LoadingHide();
+		console.log(data.json());
+		var JsonData = data.json();
+		this.TimeSlotArry = JsonData.timeslots;
+	  }, error => {
+		   console.log('WebserviceHandler=>'+error);
+	});
 	
   }
 
