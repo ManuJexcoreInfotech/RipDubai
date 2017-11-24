@@ -79,7 +79,7 @@
         <splash height="960" src="resources/ios/splash/Default@2x~iphone.png" width="640" />
         <splash height="480" src="resources/ios/splash/Default~iphone.png" width="320" />
     </platform>
-	 <splash src="resources/android/splash/drawable-land-xhdpi-screen.png" />
+	 <splash src="resources/android/splash/drawable-port-hdpi-screen.png" />
     <engine name="android" spec="^6.2.3" />
     <engine name="ios" spec="^4.4.0" />
     <plugin name="cordova-plugin-console" spec="1.0.5" source="npm" />
