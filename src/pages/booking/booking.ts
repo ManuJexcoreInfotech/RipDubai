@@ -55,6 +55,7 @@ export class BookingPage {
   }
 
   SelecetDate(){
+	
     this.datePicker.show({
       date: new Date(),
       mode: 'date',
@@ -64,24 +65,27 @@ export class BookingPage {
       androidTheme: this.datePicker.ANDROID_THEMES.THEME_DEVICE_DEFAULT_LIGHT
     }).then(date =>{ 
       console.log('Got date: ', date);
+	
       this.dateSelected = this.datePipe.transform(date, 'MMMM d, yyyy');
       this.checkDate = this.datePipe.transform(date, 'yyyy-MM-dd');
       //Wednesday, October 18th 2017 @ 10am
       this.DisplayDate = this.datePipe.transform(date, 'EEEE, MMMM d y @');
       console.log(this.DisplayDate);
       this.CheckTimeStatic(date);
+		var URL = "http://pr.veba.co/~shubantech/ripdubai/getBookingTime.php";
+		this.http.post(URL,{date:this.checkDate}).subscribe(data => {
+			this.constant.LoadingHide();
+			console.log(data.json());
+			var JsonData = data.json();
+			this.TimeSlotArry = JsonData.timeslots;
+		  }, error => {
+			   console.log('WebserviceHandler=>'+error);
+		});
+	  
     },err => {
       console.log('Error occurred while getting date: ', err)
     });
-	var URL = "http://pr.veba.co/~shubantech/ripdubai/getBookingTime.php";
-	this.http.post(URL,{date:this.checkDate}).subscribe(data => {
-		this.constant.LoadingHide();
-		console.log(data.json());
-		var JsonData = data.json();
-		this.TimeSlotArry = JsonData.timeslots;
-	  }, error => {
-		   console.log('WebserviceHandler=>'+error);
-	});
+	
   }
 
   SelecetTime(){
