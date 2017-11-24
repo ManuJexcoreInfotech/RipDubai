@@ -28,7 +28,7 @@ export class ActivitiesPage {
     
      var dic = {};
      this.constant.LoadingPresent();
-     var URL = 'http://pr.veba.co/~shubantech/ripdubai/activitiesContoller.php';
+     var URL = 'https://silverwingtechnologies.com/clients/ripdubai/activitiesContoller.php';
       
      this.http.post(URL,{}).subscribe(data => {
        this.constant.LoadingHide();

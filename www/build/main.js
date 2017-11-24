@@ -336,7 +336,7 @@ var ActivitiesPage = (function () {
         var _this = this;
         var dic = {};
         this.constant.LoadingPresent();
-        var URL = 'http://pr.veba.co/~shubantech/ripdubai/activitiesContoller.php';
+        var URL = 'https://silverwingtechnologies.com/clients/ripdubai/activitiesContoller.php';
         this.http.post(URL, {}).subscribe(function (data) {
             _this.constant.LoadingHide();
             console.log(data.json());
@@ -765,7 +765,7 @@ var HomePage = (function () {
         var _this = this;
         var dic = {};
         this.constant.LoadingPresent();
-        var URL = 'http://pr.veba.co/~shubantech/ripdubai/activitiesContoller.php';
+        var URL = 'https://silverwingtechnologies.com/clients/ripdubai/activitiesContoller.php';
         this.http.post(URL, {}).subscribe(function (data) {
             _this.constant.LoadingHide();
             console.log(data.json());
@@ -1155,7 +1155,7 @@ var Constant = (function () {
         this.http = http;
         this.popoverCtrl = popoverCtrl;
         //-------------------------Base URL----------------------//
-        this.BASE_URL = 'http://pr.veba.co/~shubantech/ripdubai/';
+        this.BASE_URL = 'https://silverwingtechnologies.com/clients/ripdubai/';
         this.iOS = 151;
         this.Android = 152;
         this.USER_ID = '54';
@@ -1391,7 +1391,7 @@ var BookingPage = (function () {
             _this.DisplayDate = _this.datePipe.transform(date, 'EEEE, MMMM d y @');
             console.log(_this.DisplayDate);
             _this.CheckTimeStatic(date);
-            var URL = "http://pr.veba.co/~shubantech/ripdubai/getBookingTime.php";
+            var URL = "https://silverwingtechnologies.com/clients/ripdubai/getBookingTime.php";
             _this.http.post(URL, { date: _this.checkDate }).subscribe(function (data) {
                 _this.constant.LoadingHide();
                 console.log(data.json());
@@ -1437,8 +1437,8 @@ var BookingPage = (function () {
     BookingPage.prototype.CheckDateTimeIsBooked = function () {
         var _this = this;
         this.constant.LoadingPresent();
-        var URL = 'http://pr.veba.co/~shubantech/ripdubai/checkBookingDate.php?b_date=' + this.checkDate + '&time=' + this.checkTime;
-        //var URL = 'http://pr.veba.co/~shubantech/ripdubai/checkBookingDate.php?b_date=2017-11-30'+'&time=12:00 AM';
+        var URL = 'https://silverwingtechnologies.com/clients/ripdubai/checkBookingDate.php?b_date=' + this.checkDate + '&time=' + this.checkTime;
+        //var URL = 'https://silverwingtechnologies.com/clients/ripdubai/checkBookingDate.php?b_date=2017-11-30'+'&time=12:00 AM';
         console.log(URL);
         this.http.get(URL).subscribe(function (data) {
             _this.constant.LoadingHide();
@@ -1461,7 +1461,7 @@ var BookingPage = (function () {
     BookingPage.prototype.GetActivityDetails = function () {
         var _this = this;
         this.constant.LoadingPresent();
-        var URL = 'http://pr.veba.co/~shubantech/ripdubai/activityContoller.php?activity_id=' + this.ActivityArry.activity_id;
+        var URL = 'https://silverwingtechnologies.com/clients/ripdubai/activityContoller.php?activity_id=' + this.ActivityArry.activity_id;
         //var URL = 'http://192.168.1.27/ripdubai/abc.php?activity_id=1';
         this.http.get(URL).subscribe(function (data) {
             _this.constant.LoadingHide();
@@ -1514,7 +1514,7 @@ var BookingPage = (function () {
         var Package = this.IONSelectValue.package;
         var CustomURL = 'user_id=0&date=' + date + '&b_date=' + this.checkDate + '&time=' + this.checkTime + '&activity_id=' + activity_id +
             '&person=1&price=' + Price + '&total=' + total_price + '&package=' + Package + '&duration=' + Duration;
-        var URL = 'http://pr.veba.co/~shubantech/ripdubai/bookingController.php?' + CustomURL;
+        var URL = 'https://silverwingtechnologies.com/clients/ripdubai/bookingController.php?' + CustomURL;
         console.log(URL);
         this.http.get(URL).subscribe(function (data) {
             _this.constant.LoadingHide();
@@ -1559,10 +1559,10 @@ BookingPage = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
         selector: 'page-booking',template:/*ion-inline-start:"C:\xampp\htdocs\ionic\RipDubai_1\src\pages\booking\booking.html"*/'\n<ion-header class="BookingHeader">\n  <ion-navbar hideBackButton="true">\n\n    <ion-buttons (click)="BackButtonClick()" left>\n        <button class="headerBackButton" ion-button>\n            <ion-icon class="backButtonIcon" name="ios-arrow-back"></ion-icon> Back\n          </button>\n      </ion-buttons>\n\n    <ion-title class="pHead" >{{ActivityArry.name}}</ion-title>\n\n    <ion-buttons style="width: 50px;" end>\n      <button ion-button >\n      </button>\n    </ion-buttons>\n\n  </ion-navbar>\n</ion-header>\n\n\n<ion-content class="bookingCSS">\n  <div class="mainContainer">\n\n    <button (click)="SelecetDateClick()" class="dateBtn"> \n      <ion-icon class="" name="md-calendar"></ion-icon> Select Date\n    </button>\n\n    <ion-label class="dateLbl">{{dateSelected}}</ion-label>\n\n    <ion-item class="selectItem">\n      <ion-label class="selectLbl">Select Time</ion-label> \n      <ion-select [(ngModel)]="timeSelected"  name="md-time" multiple="false" (ionChange)="SelecetTimeClick()">\n        <ion-option [value]="items" *ngFor="let items of TimeSlotArry">{{items}}</ion-option>\n      </ion-select>\n    </ion-item>\n    <!--<button (click)="SelecetTimeClick()" class="dateBtn">\n    </button>-->\n    <ion-label class="dateLbl">{{timeSelected}}</ion-label>\n\n    <ion-item class="selectItem">\n      <ion-label class="selectLbl">{{ActivityArry.name}}</ion-label>\n      <ion-select [(ngModel)]="IONSelectValue" multiple="false" (ionChange)="IONSelectEvent()">\n        <ion-option [value]="items" *ngFor="let items of SingleActivity">{{items.duration}} HR {{items.type}}</ion-option>\n      </ion-select>\n    </ion-item>\n      \n    <ion-label class="LblOne">Your are Booking</ion-label>\n    <ion-label class="LblTwo">{{ActivityArry.name}} Experience</ion-label>\n    <ion-label class="LblThree">{{DisplayDate}} {{timeSelected}}</ion-label>\n\n    <div class="subtotalContainer">\n      <ion-label class="subTotalLbl">Subtotal</ion-label>\n      <ion-label class="subTotalPriceLbl">AED {{TotlePayment}}</ion-label>\n      <div class="lineDrow"></div>\n    </div>\n\n    <div class="subtotalContainer" style="margin-top:12px;">\n      <ion-label class="subTotalLbl">Taxes</ion-label>\n      <ion-label class="subTotalPriceLbl">AED {{Texes}}</ion-label>\n      <div class="lineDrow"></div>\n    </div>\n\n    <div class="checkBoxContainer">\n      <img (click)="SelectCheckBoxClick()" class="checkboxImage" src="{{checkboxSRC}}">\n      <ion-label class="checkBoxLbl">I have read and agrred to the cancellation and Saftey policy below.</ion-label>\n    </div>\n\n  </div>\n \n  <div class="bookNowContainer">\n      <button (click)="BookingClick()" class="bookNowBtn">BOOK NOW</button>\n    <ion-label class="totalLbl">Total</ion-label>\n    <ion-label class="totalPriceLbl">AED {{(TotlePayment-0)+(Texes-0) |number}}</ion-label>\n  </div>\n\n	\n</ion-content>\n'/*ion-inline-end:"C:\xampp\htdocs\ionic\RipDubai_1\src\pages\booking\booking.html"*/,
     }),
-    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* NavController */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavParams */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavParams */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_2__ionic_native_date_picker__["a" /* DatePicker */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__ionic_native_date_picker__["a" /* DatePicker */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_3__angular_common__["c" /* DatePipe */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__angular_common__["c" /* DatePipe */]) === "function" && _d || Object, typeof (_e = typeof __WEBPACK_IMPORTED_MODULE_4__webService_constant__["a" /* Constant */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_4__webService_constant__["a" /* Constant */]) === "function" && _e || Object, typeof (_f = typeof __WEBPACK_IMPORTED_MODULE_5__webService_webservice__["a" /* WebService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_5__webService_webservice__["a" /* WebService */]) === "function" && _f || Object, typeof (_g = typeof __WEBPACK_IMPORTED_MODULE_6__angular_http__["b" /* Http */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_6__angular_http__["b" /* Http */]) === "function" && _g || Object])
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavParams */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_date_picker__["a" /* DatePicker */],
+        __WEBPACK_IMPORTED_MODULE_3__angular_common__["c" /* DatePipe */], __WEBPACK_IMPORTED_MODULE_4__webService_constant__["a" /* Constant */], __WEBPACK_IMPORTED_MODULE_5__webService_webservice__["a" /* WebService */], __WEBPACK_IMPORTED_MODULE_6__angular_http__["b" /* Http */]])
 ], BookingPage);
 
-var _a, _b, _c, _d, _e, _f, _g;
 //# sourceMappingURL=booking.js.map
 
 /***/ })
