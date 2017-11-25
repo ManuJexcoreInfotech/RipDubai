@@ -30075,7 +30075,7 @@ ion-navbar.toolbar {
 }
 
 .item-ios {
-  font-size: 14px !important;
+  font-size: 13px !important;
 }
 
 .social-icon {
@@ -30553,8 +30553,8 @@ page-contact .sendBtn {
   font-size: 20px;
   height: 40px;
   /*font-weight: bold;*/
-  width: 93%;
-  margin-left: 3.6%;
+  width: 88%;
+  margin-left: 25px;
 }
 
 page-location #map {
