@@ -99,7 +99,7 @@ BookingPageModule = __decorate([
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Handler; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__(33);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__(28);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__ = __webpack_require__(157);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -299,9 +299,9 @@ ActivitiesPageModule = __decorate([
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ActivitiesPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(6);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__webService_constant__ = __webpack_require__(32);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__webService_webservice__ = __webpack_require__(47);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_http__ = __webpack_require__(33);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__webService_constant__ = __webpack_require__(33);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__webService_webservice__ = __webpack_require__(42);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_http__ = __webpack_require__(28);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__booking_booking__ = __webpack_require__(79);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -601,9 +601,9 @@ ContactPageModule = __decorate([
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ContactPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(6);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__webService_constant__ = __webpack_require__(32);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__webService_webservice__ = __webpack_require__(47);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_http__ = __webpack_require__(33);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__webService_constant__ = __webpack_require__(33);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__webService_webservice__ = __webpack_require__(42);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_http__ = __webpack_require__(28);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -708,10 +708,9 @@ ContactPage = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
         selector: 'page-contact',template:/*ion-inline-start:"C:\xampp\htdocs\ionic\RipDubai_1\src\pages\contact\contact.html"*/'<!--\n  Generated template for the ContactPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n		\n		<button class="headerBackButton" ion-button menuToggle>\n				<ion-icon class="backButtonIcon" name="ios-arrow-back"></ion-icon> Back\n		</button>\n		\n    <ion-title class=\'pHead\'>CONTACT <strong>US</strong></ion-title>\n\n    <ion-buttons style="width: 40px;" end>\n      <button ion-button >\n      </button>\n		</ion-buttons>\n		\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n	<ion-list margin-top>\n\n	  <ion-item  class="customTextbox" margin-bottom>\n	    <ion-input [(ngModel)]="name" type="text" placeholder="Name" ></ion-input>\n	  </ion-item>\n		<ion-label class="LblOne" *ngIf="nameError" style="color:#ed1b24;margin:-15px 3px 4px 4px">{{nameErrorTxt}}</ion-label>\n\n	  <ion-item class="customTextbox" margin-bottom>\n	    <ion-input   [(ngModel)]="email"  type="email" placeholder="Email"></ion-input>\n		\n	  </ion-item>\n	  <ion-label class="LblOne" *ngIf="emailError" style="color:#ed1b24;margin:-15px 3px 4px 4px">{{emailErrorTxt}}</ion-label>\n	  <ion-item class="customTextbox" margin-bottom>\n	    <ion-input  [(ngModel)]="contact"  type="number" placeholder="Phone"></ion-input>\n	  </ion-item>\n		<ion-label class="LblOne" *ngIf="contactError" style="color:#ed1b24;margin:-15px 3px 4px 4px">{{contactErrorTxt}}</ion-label>\n	  <ion-item class="customTextbox" margin-bottom>\n	    <ion-textarea [(ngModel)]="message"  rows="10"  placeholder="Note"></ion-textarea >\n	  </ion-item>\n\n		<div text-right>\n			<button (click)="SendMail()" class="sendBtn" text-right ion-button>SEND</button>\n		</div>\n	</ion-list>\n\n</ion-content>\n'/*ion-inline-end:"C:\xampp\htdocs\ionic\RipDubai_1\src\pages\contact\contact.html"*/,
     }),
-    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* NavController */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavParams */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavParams */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_2__webService_constant__["a" /* Constant */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__webService_constant__["a" /* Constant */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_3__webService_webservice__["a" /* WebService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__webService_webservice__["a" /* WebService */]) === "function" && _d || Object, typeof (_e = typeof __WEBPACK_IMPORTED_MODULE_4__angular_http__["b" /* Http */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_4__angular_http__["b" /* Http */]) === "function" && _e || Object])
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavParams */], __WEBPACK_IMPORTED_MODULE_2__webService_constant__["a" /* Constant */], __WEBPACK_IMPORTED_MODULE_3__webService_webservice__["a" /* WebService */], __WEBPACK_IMPORTED_MODULE_4__angular_http__["b" /* Http */]])
 ], ContactPage);
 
-var _a, _b, _c, _d, _e;
 //# sourceMappingURL=contact.js.map
 
 /***/ }),
@@ -808,9 +807,9 @@ CancellationPage = __decorate([
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(6);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__booking_booking__ = __webpack_require__(79);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__webService_constant__ = __webpack_require__(32);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__webService_webservice__ = __webpack_require__(47);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__angular_http__ = __webpack_require__(33);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__webService_constant__ = __webpack_require__(33);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__webService_webservice__ = __webpack_require__(42);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__angular_http__ = __webpack_require__(28);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -864,7 +863,7 @@ __decorate([
 ], HomePage.prototype, "slides", void 0);
 HomePage = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'page-home',template:/*ion-inline-start:"C:\xampp\htdocs\ionic\RipDubai_1\src\pages\home\home.html"*/'\n<ion-header >\n  <ion-navbar>\n    <button ion-button menuToggle><ion-icon ios="ios-list" md="md-list"></ion-icon></button>\n    <ion-title><img src="https://www.silverwingtechnologies.com/clients/img/logo.png" height="40"></ion-title>\n    <ion-buttons style="width: 50px;" end><button ion-button ></button> </ion-buttons>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding class="homePageCSS">\n    \n    <!-- <ion-slides text-start class="sliderMain" zoom="true" loop="false" slidesPerView="1" effect="coverflow" speed="200">\n        <ion-slide class="sliderMainSlide"  *ngFor="let item of ActivityArry">\n          <div class="slideMainContainer">\n            <ion-label class="headerLbl">RIP DUBAI<span class="headerSubLbl"> EXCLUSIVE</span></ion-label>\n            <img class="imageSlider" src="https://www.silverwingtechnologies.com/clients/img/activity1.jpg">\n            <ion-label class="headerLblTwo">BBQ DONUT<span class="headerSubLblTwo">BOAT</span></ion-label>\n            <p class="sliderDics"  padding text-left>A Jet ski is a small machine like a motorcycle that is powered by a jet engine and can travel on the surface of water. RIP Jet Ski is self-propelled vehicle for 1 to 3 persons, which skims across water on a flat keel, and is steered by means of handlebars.\n                RIP Jet Ski is the most extreme form water riding, where the rider surfs waves, using them as a jump ramp for aerial maneuvers.</p>\n          </div>\n        </ion-slide>\n    </ion-slides> -->\n\n    <ion-slides text-start class="sliderMain" zoom="true" loop="false" slidesPerView="1" effect="coverflow" speed="200">\n        <ion-slide class="sliderMainSlide"  *ngFor="let item of ActivityArry">\n          \n              \n            <div class="slideMainContainer">\n                <ion-label class="headerLbl">RIP DUBAI<span class="headerSubLbl"> EXCLUSIVE</span></ion-label>\n                <img class="imageSlider" src="{{item.image1}}">\n                <ion-label class="headerLblTwo">{{item.name}}<span class="headerSubLblTwo"></span></ion-label>\n                \n                  <ion-label class="sliderDics"  padding text-left>\n                      <span [innerHTML]="item.description"></span>  \n                  </ion-label>\n            \n              </div>\n          \n          </ion-slide>\n      \n  </ion-slides>\n\n    \n  <button class="bookbtn" (click)="booking()" margin-top ion-button color="yellow" full>BOOK NOW</button>\n  \n</ion-content>\n'/*ion-inline-end:"C:\xampp\htdocs\ionic\RipDubai_1\src\pages\home\home.html"*/
+        selector: 'page-home',template:/*ion-inline-start:"C:\xampp\htdocs\ionic\RipDubai_1\src\pages\home\home.html"*/'\n<ion-header >\n  <ion-navbar>\n    <button ion-button menuToggle><ion-icon ios="ios-list" md="md-list"></ion-icon></button>\n    <ion-title><img src="https://www.silverwingtechnologies.com/clients/img/logo.png" height="40"></ion-title>\n    <ion-buttons style="width: 50px;" end><button ion-button ></button> </ion-buttons>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding class="homePageCSS">\n    \n    <!-- <ion-slides text-start class="sliderMain" zoom="true" loop="false" slidesPerView="1" effect="coverflow" speed="200">\n        <ion-slide class="sliderMainSlide"  *ngFor="let item of ActivityArry">\n          <div class="slideMainContainer">\n            <ion-label class="headerLbl">RIP DUBAI<span class="headerSubLbl"> EXCLUSIVE</span></ion-label>\n            <img class="imageSlider" src="https://www.silverwingtechnologies.com/clients/img/activity1.jpg">\n            <ion-label class="headerLblTwo">BBQ DONUT<span class="headerSubLblTwo">BOAT</span></ion-label>\n            <p class="sliderDics"  padding text-left>A Jet ski is a small machine like a motorcycle that is powered by a jet engine and can travel on the surface of water. RIP Jet Ski is self-propelled vehicle for 1 to 3 persons, which skims across water on a flat keel, and is steered by means of handlebars.\n                RIP Jet Ski is the most extreme form water riding, where the rider surfs waves, using them as a jump ramp for aerial maneuvers.</p>\n          </div>\n        </ion-slide>\n    </ion-slides> -->\n\n    <ion-slides text-start class="sliderMain" zoom="true" loop="false" slidesPerView="1" effect="coverflow" speed="200">\n		\n        <ion-slide class="sliderMainSlide"  *ngFor="let item of ActivityArry">\n          \n              \n            <div class="slideMainContainer">\n                <ion-label class="headerLbl">RIP DUBAI<span class="headerSubLbl"> EXCLUSIVE</span></ion-label>\n                <img class="imageSlider" src="{{item.image1}}">\n                <ion-label class="headerLblTwo">{{item.name}}<span class="headerSubLblTwo"></span></ion-label>\n                \n                  <ion-label class="sliderDics"  padding text-left>\n                      <span [innerHTML]="item.description"></span>  \n                  </ion-label>\n            \n              </div>\n          \n          </ion-slide>\n      \n  </ion-slides>\n\n    \n  <button class="bookbtn" (click)="booking()" margin-top ion-button color="yellow" full>BOOK NOW</button>\n  \n</ion-content>\n'/*ion-inline-end:"C:\xampp\htdocs\ionic\RipDubai_1\src\pages\home\home.html"*/
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* NavController */], __WEBPACK_IMPORTED_MODULE_3__webService_constant__["a" /* Constant */], __WEBPACK_IMPORTED_MODULE_4__webService_webservice__["a" /* WebService */], __WEBPACK_IMPORTED_MODULE_5__angular_http__["b" /* Http */]])
 ], HomePage);
@@ -907,12 +906,12 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__pages_cancellation_cancellation_module__ = __webpack_require__(169);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__pages_booking_booking_module__ = __webpack_require__(154);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__pages_list_list_module__ = __webpack_require__(282);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__angular_http__ = __webpack_require__(33);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__webService_constant__ = __webpack_require__(32);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__angular_http__ = __webpack_require__(28);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__webService_constant__ = __webpack_require__(33);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__webService_handler__ = __webpack_require__(158);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__webService_webservice__ = __webpack_require__(47);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__webService_webservice__ = __webpack_require__(42);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__ionic_native_date_picker__ = __webpack_require__(155);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__angular_common__ = __webpack_require__(30);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__angular_common__ = __webpack_require__(31);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1200,14 +1199,14 @@ var ListPage_1;
 
 /***/ }),
 
-/***/ 32:
+/***/ 33:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Constant; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(6);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_http__ = __webpack_require__(33);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_http__ = __webpack_require__(28);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1314,7 +1313,7 @@ Constant = __decorate([
 
 /***/ }),
 
-/***/ 47:
+/***/ 42:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1323,7 +1322,7 @@ Constant = __decorate([
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_add_operator_map__ = __webpack_require__(157);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_add_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_rxjs_add_operator_map__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__handler__ = __webpack_require__(158);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__constant__ = __webpack_require__(32);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__constant__ = __webpack_require__(33);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1396,10 +1395,10 @@ WebService = __decorate([
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(6);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_date_picker__ = __webpack_require__(155);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_common__ = __webpack_require__(30);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__webService_constant__ = __webpack_require__(32);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__webService_webservice__ = __webpack_require__(47);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__angular_http__ = __webpack_require__(33);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_common__ = __webpack_require__(31);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__webService_constant__ = __webpack_require__(33);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__webService_webservice__ = __webpack_require__(42);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__angular_http__ = __webpack_require__(28);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);

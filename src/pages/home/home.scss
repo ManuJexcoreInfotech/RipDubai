@@ -58,10 +58,12 @@
       color: white;
       font-weight: bold;
       margin-top: -3px;
+	  text-transform:uppercase;
       .headerSubLblTwo{
         font-weight: 100;
       }
     }
+	
     .sliderDics{
       font-family: Dubai;
       color: white;
@@ -72,6 +74,7 @@
       padding-bottom: 12px;
       height: 134px;
     }
+	.sliderDics ul li { list-style:none;}
   }
   
   .bookbtn {
@@ -80,6 +83,8 @@
     font-size: 20px;
     height: 40px;
     /*font-weight: bold;*/
+	width: 93%;
+    margin-left: 3.6%;
   }
   
 }
