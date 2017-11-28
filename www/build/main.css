@@ -30547,6 +30547,24 @@ page-contact .sendBtn {
   list-style: none;
 }
 
+.homePageCSS .ion-ios-arrow-back {
+  position: absolute;
+  left: 3vw;
+  top: 35vh;
+  font-size: 2.3em;
+  z-index: 1;
+  color: #5f5f5f;
+}
+
+.homePageCSS .ion-ios-arrow-forward {
+  position: absolute;
+  color: #5f5f5f;
+  right: 3vw;
+  top: 35vh;
+  font-size: 2.3em;
+  z-index: 1;
+}
+
 .homePageCSS .bookbtn {
   color: white;
   font-size: 18px;

@@ -43,5 +43,11 @@ export class HomePage {
     console.log(this.ActivityArry[ActiveIndex]);
     this.navCtrl.push(BookingPage,{ActivityArry:this.ActivityArry[ActiveIndex]});
   }
+  slideNext(){
+	  this.slides.slideNext(100);
+  }
+  slidePrev(){
+	  this.slides.slidePrev(100);
+  }
   
 }
