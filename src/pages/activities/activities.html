@@ -1,43 +1,45 @@
 
 <ion-header>
-  <ion-navbar>
-  
-    <button class="headerBackButton" ion-button menuToggle>
-      <ion-icon class="backButtonIcon" name="ios-arrow-back"></ion-icon> Back
-    </button>
+    <ion-navbar>
 
-    <ion-title><img src="https://www.silverwingtechnologies.com/clients/img/logo.png" height="40"></ion-title>
+        <button class="headerBackButton" ion-button menuToggle>
+            <ion-icon class="backButtonIcon" name="ios-arrow-back"></ion-icon> Back
+        </button>
 
-    <ion-buttons style="width: 50px;" end>
-      <button ion-button >
-      </button>
-    </ion-buttons>
+        <ion-title><img src="https://www.silverwingtechnologies.com/clients/img/logo.png" height="40"></ion-title>
 
-  </ion-navbar>
+        <ion-buttons style="width: 50px;" end>
+            <button ion-button >
+            </button>
+        </ion-buttons>
+
+    </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-	<p class="pHead" text-center>OUR <strong>ACTIVITIES</strong></p>
-  
-  <ion-slides text-start class="sliderMain" zoom="true" loop="false" slidesPerView="1" effect="coverflow" speed="200">
-    <ion-slide class="sliderMainSlide"  *ngFor="let item of ActivityArry; let i = index">
-      
-          
-        <div class="slideMainContainer">
-            <ion-label class="headerLbl">RIP DUBAI<span class="headerSubLbl"> EXCLUSIVE</span></ion-label>
-            <img class="imageSlider" src="{{item.image1}}">
-            <ion-label class="headerLblTwo">{{item.name.toUpperCase()}}<span class="headerSubLblTwo"></span></ion-label>
-            
-              <ion-label class="sliderDics"  padding text-left>
-                  <span [innerHTML]="item.description"></span>  
-              </ion-label>
-          </div>
-      
-      </ion-slide>
-  
-</ion-slides>
+    <p class="pHead" text-center>OUR <strong>ACTIVITIES</strong></p>
 
-  <button class="bookbtn" (click)="BookNowClick(i)" margin-top ion-button color="yellow" full>BOOK NOW</button>
+    <ion-slides text-start class="sliderMain" zoom="true" loop="false" slidesPerView="1" effect="coverflow" speed="200">
+        <ion-slide class="sliderMainSlide"  *ngFor="let item of ActivityArry; let i = index">
 
-  <!-- <button ion-button secondary menuToggle>Toggle Menu</button> -->
+
+                   <div class="slideMainContainer">
+                <ion-label class="headerLbl">RIP DUBAI<span class="headerSubLbl"> EXCLUSIVE</span></ion-label>
+                <img class="imageSlider" src="{{item.image1}}">
+                <ion-label class="headerLblTwo">{{item.name.toUpperCase()}}<span class="headerSubLblTwo"></span></ion-label>
+
+                <ion-label class="sliderDics"  padding text-left>
+                    <span [innerHTML]="item.description"></span>  
+                </ion-label>
+            </div>
+
+        </ion-slide>
+
+    </ion-slides>
+    <ion-icon class="backButtonIcon" name="ios-arrow-back" (click)="slidePrev()"></ion-icon> 
+    <ion-icon class="backButtonIcon" name="ios-arrow-forward" (click)="slideNext()"></ion-icon> 
+
+    <button class="bookbtn" (click)="BookNowClick(i)" margin-top ion-button color="yellow" full>BOOK NOW</button>
+
+    <!-- <button ion-button secondary menuToggle>Toggle Menu</button> -->
 </ion-content>

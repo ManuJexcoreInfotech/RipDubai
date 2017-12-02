@@ -11,6 +11,7 @@ import { LocationPage } from '../pages/location/location';
 import { ContactPage } from '../pages/contact/contact';
 import { CancellationPage } from '../pages/cancellation/cancellation';
 import { BookingPage } from '../pages/booking/booking';
+import { RegisterPage } from '../pages/register/register';
 
 @Component({
   templateUrl: 'app.html'
@@ -34,7 +35,8 @@ export class MyApp {
       { title: 'GIFT VOUCHERS', component: GiftPage },
       { title: 'LOCATION', component: LocationPage },
       { title: 'CONTACT US', component: ContactPage },
-      { title: 'CANCELLATION & SAFETY', component: CancellationPage }
+      { title: 'CANCELLATION & SAFETY', component: CancellationPage },
+      { title: 'REGISTER', component: RegisterPage }
     ];
 
   }

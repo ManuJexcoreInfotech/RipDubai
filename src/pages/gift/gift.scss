@@ -1,3 +1,43 @@
 page-gift {
-
-}
+	.toolbar-title {
+		color: #009cde;
+		font-family: Dubai;
+		font-size:20px;
+		font-weight: 300;
+	}
+	.pHead {
+		color: #009cde;
+		font-size:20px;
+		margin-top:0px;
+		margin-bottom: 12px;
+	}
+	.swiper-container-3d .swiper-slide-shadow-right {
+		background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0)), to(transparent));
+		background-image: linear-gradient(to right, rgba(0, 0, 0, 0), transparent);
+	}
+	.swiper-container-3d .swiper-slide-shadow-left {
+		  background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0)), to(transparent));
+		  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), transparent);
+	}
+	.gift-col{
+		height:230px;
+		width:150px;
+		background-image:url('http://focusdxb.com/ripdubai/v1/images/gift-bg.jpg');
+		background-repeat:no-repeat;
+		background-size: 100%;
+		margin:1vh auto;
+	}
+	.primary-label{
+		font-size:9vw;
+		color:#009fdf ;
+	}
+	.price-label{ 
+		font-size:9vw;
+		color:#777777;
+	}
+	.buyBtn{
+		padding:2vh;
+		float:right; 
+	
+	}
+} 

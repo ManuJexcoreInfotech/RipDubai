@@ -6,16 +6,32 @@
 -->
 <ion-header>
 
-  <ion-navbar>
-  	<button ion-button menuToggle>
-        <ion-icon class="backButtonIcon" name="ios-arrow-back"></ion-icon>Back
-    </button>
-    <ion-title>GIFT </ion-title>
-  </ion-navbar>
+    <ion-navbar>
+        <button ion-button menuToggle>
+            <ion-icon class="backButtonIcon" name="ios-arrow-back"></ion-icon>Back
+        </button>
+        <ion-title>GIFT </ion-title>
+    </ion-navbar>
 
 </ion-header>
-
-
 <ion-content padding>
+
+    <ion-grid>
+        <ion-row *ngFor="let item of VouchersArry; let i = index" >
+            <ion-col col-1></ion-col>
+            <ion-col col-10 class="gift-col">
+                <ion-col col-4></ion-col>
+                <ion-col col-8 text-right>
+                    <ion-label class="primary-label"  text-right>{{item.name.toUpperCase()}}<span class="headerSubLblTwo"></span></ion-label>
+                    <ion-label class="price-label"   text-right>
+                        {{item.price}} AMD
+                    </ion-label>
+                    <button  (click)="BuyNow(item.voucher_id)" ion-button class="buyBtn">Buy NOW</button>
+                </ion-col>
+            </ion-col>
+            <ion-col col-1></ion-col>
+
+        </ion-row>
+    </ion-grid>
 
 </ion-content>

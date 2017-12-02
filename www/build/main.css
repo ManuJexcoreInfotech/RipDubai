@@ -30254,6 +30254,24 @@ page-activities .sliderMain .sliderDics {
   height: 134px;
 }
 
+page-activities .ion-ios-arrow-back {
+  position: absolute;
+  left: 3vw;
+  top: 35vh;
+  font-size: 2.3em;
+  z-index: 1;
+  color: #039cde;
+}
+
+page-activities .ion-ios-arrow-forward {
+  position: absolute;
+  color: #039cde;
+  right: 3vw;
+  top: 35vh;
+  font-size: 2.3em;
+  z-index: 1;
+}
+
 page-activities .bookbtn {
   color: white;
   font-size: 18px;
@@ -30463,6 +30481,54 @@ page-contact .sendBtn {
   font-size: 16px;
 }
 
+page-gift .toolbar-title {
+  color: #009cde;
+  font-family: Dubai;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+page-gift .pHead {
+  color: #009cde;
+  font-size: 20px;
+  margin-top: 0px;
+  margin-bottom: 12px;
+}
+
+page-gift .swiper-container-3d .swiper-slide-shadow-right {
+  background-image: -webkit-gradient(linear, left top, right top, from(transparent), to(transparent));
+  background-image: linear-gradient(to right, transparent, transparent);
+}
+
+page-gift .swiper-container-3d .swiper-slide-shadow-left {
+  background-image: -webkit-gradient(linear, left top, right top, from(transparent), to(transparent));
+  background-image: linear-gradient(to right, transparent, transparent);
+}
+
+page-gift .gift-col {
+  height: 230px;
+  width: 150px;
+  background-image: url("http://focusdxb.com/ripdubai/v1/images/gift-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  margin: 1vh auto;
+}
+
+page-gift .primary-label {
+  font-size: 9vw;
+  color: #009fdf;
+}
+
+page-gift .price-label {
+  font-size: 9vw;
+  color: #777777;
+}
+
+page-gift .buyBtn {
+  padding: 2vh;
+  float: right;
+}
+
 .homePageCSS .swiper-container-3d .swiper-slide-shadow-right {
   background-image: -webkit-gradient(linear, left top, right top, from(transparent), to(transparent));
   background-image: linear-gradient(to right, transparent, transparent);
@@ -30553,12 +30619,12 @@ page-contact .sendBtn {
   top: 35vh;
   font-size: 2.3em;
   z-index: 1;
-  color: #5f5f5f;
+  color: #039cde;
 }
 
 .homePageCSS .ion-ios-arrow-forward {
   position: absolute;
-  color: #5f5f5f;
+  color: #039cde;
   right: 3vw;
   top: 35vh;
   font-size: 2.3em;
@@ -30584,4 +30650,28 @@ page-location .toolbar-title {
   font-family: Dubai;
   font-size: 20px;
   font-weight: 300;
+}
+
+page-register .toolbar-title {
+  color: #009cde;
+  font-family: Dubai;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+page-register .customTextbox {
+  background-color: #dcdcdc;
+}
+
+page-register .item-md .item-input .input-has-focus .item-inner {
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+}
+
+page-register .sendBtn {
+  background-color: #009BDD;
+  height: 40px;
+  width: 150px;
+  color: white;
+  font-size: 16px;
 }

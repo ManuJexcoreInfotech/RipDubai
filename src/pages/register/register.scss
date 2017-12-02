@@ -1,0 +1,23 @@
+page-register {
+	.toolbar-title {
+   	 color: #009cde;
+   	 font-family: Dubai;
+   	 font-size:20px;
+   	 font-weight: 300;
+  	}
+	.customTextbox {
+		background-color: #dcdcdc;
+	}
+	.item-md .item-input .input-has-focus .item-inner {
+    box-shadow: none !important;
+	}
+
+	.sendBtn{
+		background-color: #009BDD;
+		height: 40px;
+		width: 150px;
+		color: white;
+		font-size: 16px;
+	}
+
+}

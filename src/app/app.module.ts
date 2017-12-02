@@ -15,6 +15,7 @@ import { ContactPageModule } from '../pages/contact/contact.module';
 import { CancellationPageModule } from '../pages/cancellation/cancellation.module';
 import { BookingPageModule } from '../pages/booking/booking.module';
 import { ListPageModule } from '../pages/list/list.module';
+import { RegisterPageModule } from '../pages/register/register.module';
 
 // Web Service
 import { HttpModule } from '@angular/http';
@@ -41,7 +42,8 @@ import { DatePipe } from '@angular/common';
     BookingPageModule,
     ContactPageModule,
     LocationPageModule,
-    ListPageModule
+    ListPageModule,
+	RegisterPageModule
     
   ],
 
