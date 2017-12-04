@@ -30298,11 +30298,43 @@ page-activities .sliderDics ul li {
   text-transform: uppercase;
 }
 
+.bookingCSS .pull-right {
+  float: right;
+}
+
+.bookingCSS .width-40 {
+  width: 40vw !important;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.bookingCSS .width-20 {
+  width: 23vw !important;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-top: 12px;
+  margin-right: 12px;
+  background: #fff !important;
+  color: #03a6e2;
+}
+
+.bookingCSS .width-60 {
+  width: 60vw !important;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
 .bookingCSS .mainContainer {
   background-color: #03A6E2;
   background-color: #03A6E2;
   margin: 20px;
-  height: 480px;
+  height: 640px;
   width: calc(100% - 40px);
 }
 

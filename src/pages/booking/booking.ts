@@ -19,6 +19,7 @@ export class BookingPage {
   dateSelected = '';
   timeSelected = '';
   checkboxSRC = 'assets/imgs/checkboxFalse.jpeg';
+  checkboxSRC1 = 'assets/imgs/checkboxFalse.jpeg';
   checkDate = '';
   checkTime = '';
   ActivityArry:any = {};
@@ -27,9 +28,11 @@ export class BookingPage {
   Texes = 0;
   FinalTotal = 0;
   TotlePayment = 0;
+  PersonArry = ["0","1","2","3","4","5","6","7","8","9"];
   SingleActivity = [];
   TimeSlotArry = [];
   IONSelectValue:any;
+  Person = 0;
   
 
   constructor(public navCtrl: NavController, public navParams: NavParams, private datePicker: DatePicker,
@@ -167,7 +170,12 @@ export class BookingPage {
 
   IONSelectEvent(){
     console.log(this.IONSelectValue);
-    this.TotlePayment = this.IONSelectValue.price;
+    if(this.Person==0){
+        this.TotlePayment = this.IONSelectValue.price;
+    }else{
+        this.TotlePayment = this.IONSelectValue.ph_price * this.Person;
+    }
+
     var TaxesSub = this.TotlePayment;
     this.Texes = (TaxesSub*20)/100;
     console.log(TaxesSub);
@@ -175,6 +183,7 @@ export class BookingPage {
 	this.FinalTotal = this.TotlePayment+this.Texes;
 	
   }
+  
   
   BookingClick(){
     //this.BookingAPI();
@@ -188,6 +197,8 @@ export class BookingPage {
       this.constant.Alert('Message', 'Please select Package.', 'Ok');
     }else if(this.checkboxSRC == 'assets/imgs/checkboxFalse.jpeg'){
       this.constant.Alert('Message', 'Please select cancellation and safety policy checkbox.', 'Ok');
+    }else if(this.checkboxSRC1 == 'assets/imgs/checkboxFalse.jpeg'){
+      this.constant.Alert('Message', 'Please select check-in conditions checkbox.', 'Ok');
     }else{
       console.log('All Done');
       this.BookingAPI();
@@ -249,6 +260,13 @@ export class BookingPage {
       this.checkboxSRC = 'assets/imgs/checkboxTrue.png'
     }else{
       this.checkboxSRC = 'assets/imgs/checkboxFalse.jpeg'
+    }
+  }
+  CheckBoxClick1(){
+    if (this.checkboxSRC1 == 'assets/imgs/checkboxFalse.jpeg') {
+      this.checkboxSRC1 = 'assets/imgs/checkboxTrue.png'
+    }else{
+      this.checkboxSRC1 = 'assets/imgs/checkboxFalse.jpeg'
     }
   }
 

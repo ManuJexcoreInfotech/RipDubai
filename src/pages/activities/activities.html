@@ -36,7 +36,7 @@
         </ion-slide>
 
     </ion-slides>
-    <ion-icon class="backButtonIcon" name="ios-arrow-back" (click)="slidePrev()"></ion-icon> 
+    <ion-icon class="backButtonIcon" name="ios-arrow-back" *ngIf="counter > 0" (click)="slidePrev()"></ion-icon> 
     <ion-icon class="backButtonIcon" name="ios-arrow-forward" (click)="slideNext()"></ion-icon> 
 
     <button class="bookbtn" (click)="BookNowClick(i)" margin-top ion-button color="yellow" full>BOOK NOW</button>

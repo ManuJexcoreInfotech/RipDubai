@@ -16,12 +16,31 @@
 }
 
 .bookingCSS{
-    
+    .pull-right{
+        float: right;
+        
+    }
+    .width-40{
+        width:40vw!important;
+        display:inline-flex;
+    }
+    .width-20{
+        width:23vw!important;
+        display:inline-flex;
+        margin-top: 12px; 
+        margin-right: 12px; 
+        background: #fff!important;
+        color:#03a6e2;
+    }
+    .width-60{ 
+        width:60vw!important;
+        display:inline-flex;
+    }
     .mainContainer{
         background-color: #03A6E2;
         background-color: #03A6E2;
         margin: 20px;
-        height: 480px;
+        height: 640px;
         width: calc(100% - 40px);
         .dateBtn{
             width: calc(100% - 30px);

@@ -330,6 +330,7 @@ var ActivitiesPage = (function () {
         this.service = service;
         this.http = http;
         this.ActivityArry = [];
+        this.counter = 0;
         this.GetAllActivity();
     }
     ActivitiesPage.prototype.ionViewDidLoad = function () {
@@ -356,25 +357,26 @@ var ActivitiesPage = (function () {
     };
     ActivitiesPage.prototype.slideNext = function () {
         this.slides.slideNext(100);
+        this.counter = this.slides.getActiveIndex();
     };
     ActivitiesPage.prototype.slidePrev = function () {
         this.slides.slidePrev(100);
+        this.counter = this.slides.getActiveIndex();
     };
     return ActivitiesPage;
 }());
 __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_13" /* ViewChild */])(__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["n" /* Slides */]),
-    __metadata("design:type", typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["n" /* Slides */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["n" /* Slides */]) === "function" && _a || Object)
+    __metadata("design:type", __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["n" /* Slides */])
 ], ActivitiesPage.prototype, "slides", void 0);
 ActivitiesPage = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* IonicPage */])(),
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'page-activities',template:/*ion-inline-start:"C:\xampp\htdocs\ionic\RipDubai_1\src\pages\activities\activities.html"*/'\n<ion-header>\n    <ion-navbar>\n\n        <button class="headerBackButton" ion-button menuToggle>\n            <ion-icon class="backButtonIcon" name="ios-arrow-back"></ion-icon> Back\n        </button>\n\n        <ion-title><img src="https://www.silverwingtechnologies.com/clients/img/logo.png" height="40"></ion-title>\n\n        <ion-buttons style="width: 50px;" end>\n            <button ion-button >\n            </button>\n        </ion-buttons>\n\n    </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n    <p class="pHead" text-center>OUR <strong>ACTIVITIES</strong></p>\n\n    <ion-slides text-start class="sliderMain" zoom="true" loop="false" slidesPerView="1" effect="coverflow" speed="200">\n        <ion-slide class="sliderMainSlide"  *ngFor="let item of ActivityArry; let i = index">\n\n\n                   <div class="slideMainContainer">\n                <ion-label class="headerLbl">RIP DUBAI<span class="headerSubLbl"> EXCLUSIVE</span></ion-label>\n                <img class="imageSlider" src="{{item.image1}}">\n                <ion-label class="headerLblTwo">{{item.name.toUpperCase()}}<span class="headerSubLblTwo"></span></ion-label>\n\n                <ion-label class="sliderDics"  padding text-left>\n                    <span [innerHTML]="item.description"></span>  \n                </ion-label>\n            </div>\n\n        </ion-slide>\n\n    </ion-slides>\n    <ion-icon class="backButtonIcon" name="ios-arrow-back" (click)="slidePrev()"></ion-icon> \n    <ion-icon class="backButtonIcon" name="ios-arrow-forward" (click)="slideNext()"></ion-icon> \n\n    <button class="bookbtn" (click)="BookNowClick(i)" margin-top ion-button color="yellow" full>BOOK NOW</button>\n\n    <!-- <button ion-button secondary menuToggle>Toggle Menu</button> -->\n</ion-content>\n'/*ion-inline-end:"C:\xampp\htdocs\ionic\RipDubai_1\src\pages\activities\activities.html"*/,
+        selector: 'page-activities',template:/*ion-inline-start:"C:\xampp\htdocs\ionic\RipDubai_1\src\pages\activities\activities.html"*/'\n<ion-header>\n    <ion-navbar>\n\n        <button class="headerBackButton" ion-button menuToggle>\n            <ion-icon class="backButtonIcon" name="ios-arrow-back"></ion-icon> Back\n        </button>\n\n        <ion-title><img src="https://www.silverwingtechnologies.com/clients/img/logo.png" height="40"></ion-title>\n\n        <ion-buttons style="width: 50px;" end>\n            <button ion-button >\n            </button>\n        </ion-buttons>\n\n    </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n    <p class="pHead" text-center>OUR <strong>ACTIVITIES</strong></p>\n\n    <ion-slides text-start class="sliderMain" zoom="true" loop="false" slidesPerView="1" effect="coverflow" speed="200">\n        <ion-slide class="sliderMainSlide"  *ngFor="let item of ActivityArry; let i = index">\n\n\n                   <div class="slideMainContainer">\n                <ion-label class="headerLbl">RIP DUBAI<span class="headerSubLbl"> EXCLUSIVE</span></ion-label>\n                <img class="imageSlider" src="{{item.image1}}">\n                <ion-label class="headerLblTwo">{{item.name.toUpperCase()}}<span class="headerSubLblTwo"></span></ion-label>\n\n                <ion-label class="sliderDics"  padding text-left>\n                    <span [innerHTML]="item.description"></span>  \n                </ion-label>\n            </div>\n\n        </ion-slide>\n\n    </ion-slides>\n    <ion-icon class="backButtonIcon" name="ios-arrow-back" *ngIf="counter > 0" (click)="slidePrev()"></ion-icon> \n    <ion-icon class="backButtonIcon" name="ios-arrow-forward" (click)="slideNext()"></ion-icon> \n\n    <button class="bookbtn" (click)="BookNowClick(i)" margin-top ion-button color="yellow" full>BOOK NOW</button>\n\n    <!-- <button ion-button secondary menuToggle>Toggle Menu</button> -->\n</ion-content>\n'/*ion-inline-end:"C:\xampp\htdocs\ionic\RipDubai_1\src\pages\activities\activities.html"*/,
     }),
-    __metadata("design:paramtypes", [typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* NavController */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavParams */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavParams */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_2__webService_constant__["a" /* Constant */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__webService_constant__["a" /* Constant */]) === "function" && _d || Object, typeof (_e = typeof __WEBPACK_IMPORTED_MODULE_3__webService_webservice__["a" /* WebService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__webService_webservice__["a" /* WebService */]) === "function" && _e || Object, typeof (_f = typeof __WEBPACK_IMPORTED_MODULE_4__angular_http__["b" /* Http */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_4__angular_http__["b" /* Http */]) === "function" && _f || Object])
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavParams */], __WEBPACK_IMPORTED_MODULE_2__webService_constant__["a" /* Constant */], __WEBPACK_IMPORTED_MODULE_3__webService_webservice__["a" /* WebService */], __WEBPACK_IMPORTED_MODULE_4__angular_http__["b" /* Http */]])
 ], ActivitiesPage);
 
-var _a, _b, _c, _d, _e, _f;
 //# sourceMappingURL=activities.js.map
 
 /***/ }),
@@ -487,17 +489,16 @@ var GiftPage = (function () {
 }());
 __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_13" /* ViewChild */])(__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["n" /* Slides */]),
-    __metadata("design:type", typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["n" /* Slides */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["n" /* Slides */]) === "function" && _a || Object)
+    __metadata("design:type", __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["n" /* Slides */])
 ], GiftPage.prototype, "slides", void 0);
 GiftPage = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* IonicPage */])(),
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
         selector: 'page-gift',template:/*ion-inline-start:"C:\xampp\htdocs\ionic\RipDubai_1\src\pages\gift\gift.html"*/'<!--\n  Generated template for the GiftPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n    <ion-navbar>\n        <button ion-button menuToggle>\n            <ion-icon class="backButtonIcon" name="ios-arrow-back"></ion-icon>Back\n        </button>\n        <ion-title>GIFT </ion-title>\n    </ion-navbar>\n\n</ion-header>\n<ion-content padding>\n\n    <ion-grid>\n        <ion-row *ngFor="let item of VouchersArry; let i = index" >\n            <ion-col col-1></ion-col>\n            <ion-col col-10 class="gift-col">\n                <ion-col col-4></ion-col>\n                <ion-col col-8 text-right>\n                    <ion-label class="primary-label"  text-right>{{item.name.toUpperCase()}}<span class="headerSubLblTwo"></span></ion-label>\n                    <ion-label class="price-label"   text-right>\n                        {{item.price}} AMD\n                    </ion-label>\n                    <button  (click)="BuyNow(item.voucher_id)" ion-button class="buyBtn">Buy NOW</button>\n                </ion-col>\n            </ion-col>\n            <ion-col col-1></ion-col>\n\n        </ion-row>\n    </ion-grid>\n\n</ion-content>\n'/*ion-inline-end:"C:\xampp\htdocs\ionic\RipDubai_1\src\pages\gift\gift.html"*/,
     }),
-    __metadata("design:paramtypes", [typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* NavController */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavParams */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavParams */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_2__webService_constant__["a" /* Constant */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__webService_constant__["a" /* Constant */]) === "function" && _d || Object, typeof (_e = typeof __WEBPACK_IMPORTED_MODULE_3__webService_webservice__["a" /* WebService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__webService_webservice__["a" /* WebService */]) === "function" && _e || Object, typeof (_f = typeof __WEBPACK_IMPORTED_MODULE_4__angular_http__["b" /* Http */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_4__angular_http__["b" /* Http */]) === "function" && _f || Object])
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavParams */], __WEBPACK_IMPORTED_MODULE_2__webService_constant__["a" /* Constant */], __WEBPACK_IMPORTED_MODULE_3__webService_webservice__["a" /* WebService */], __WEBPACK_IMPORTED_MODULE_4__angular_http__["b" /* Http */]])
 ], GiftPage);
 
-var _a, _b, _c, _d, _e, _f;
 //# sourceMappingURL=gift.js.map
 
 /***/ }),
@@ -1056,6 +1057,7 @@ var HomePage = (function () {
         this.http = http;
         // ActivityArry = [1,2,3,4,5,6,7,6,];
         this.ActivityArry = [];
+        this.counter = 0;
         this.GetAllActivity();
     }
     HomePage.prototype.GetAllActivity = function () {
@@ -1079,9 +1081,11 @@ var HomePage = (function () {
     };
     HomePage.prototype.slideNext = function () {
         this.slides.slideNext(100);
+        this.counter = this.slides.getActiveIndex();
     };
     HomePage.prototype.slidePrev = function () {
         this.slides.slidePrev(100);
+        this.counter = this.slides.getActiveIndex();
     };
     return HomePage;
 }());
@@ -1091,7 +1095,7 @@ __decorate([
 ], HomePage.prototype, "slides", void 0);
 HomePage = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'page-home',template:/*ion-inline-start:"C:\xampp\htdocs\ionic\RipDubai_1\src\pages\home\home.html"*/'\n<ion-header >\n    <ion-navbar>\n        <button ion-button menuToggle><ion-icon ios="ios-list" md="md-list"></ion-icon></button>\n        <ion-title><img src="https://www.silverwingtechnologies.com/clients/img/logo.png" height="40"></ion-title>\n        <ion-buttons style="width: 50px;" end><button ion-button ></button> </ion-buttons>\n    </ion-navbar>\n</ion-header>\n\n<ion-content padding class="homePageCSS">\n\n    <!-- <ion-slides text-start class="sliderMain" zoom="true" loop="false" slidesPerView="1" effect="coverflow" speed="200">\n        <ion-slide class="sliderMainSlide"  *ngFor="let item of ActivityArry">\n          <div class="slideMainContainer">\n            <ion-label class="headerLbl">RIP DUBAI<span class="headerSubLbl"> EXCLUSIVE</span></ion-label>\n            <img class="imageSlider" src="https://www.silverwingtechnologies.com/clients/img/activity1.jpg">\n            <ion-label class="headerLblTwo">BBQ DONUT<span class="headerSubLblTwo">BOAT</span></ion-label>\n            <p class="sliderDics"  padding text-left>A Jet ski is a small machine like a motorcycle that is powered by a jet engine and can travel on the surface of water. RIP Jet Ski is self-propelled vehicle for 1 to 3 persons, which skims across water on a flat keel, and is steered by means of handlebars.\n                RIP Jet Ski is the most extreme form water riding, where the rider surfs waves, using them as a jump ramp for aerial maneuvers.</p>\n          </div>\n        </ion-slide>\n    </ion-slides> -->\n\n    <ion-slides text-start class="sliderMain" zoom="true" loop="false" slidesPerView="1" effect="coverflow" speed="200">\n\n        <ion-slide class="sliderMainSlide"  *ngFor="let item of ActivityArry">\n\n\n                   <div class="slideMainContainer">\n                <ion-label class="headerLbl">RIP DUBAI<span class="headerSubLbl"> EXCLUSIVE</span></ion-label>\n                <img class="imageSlider" src="{{item.image1}}">\n                <ion-label class="headerLblTwo">{{item.name}}<span class="headerSubLblTwo"></span></ion-label>\n\n                <ion-label class="sliderDics"  padding text-left>\n                    <span [innerHTML]="item.description"></span>  \n                </ion-label>\n\n            </div>\n\n        </ion-slide>\n\n\n\n    </ion-slides>\n    <ion-icon class="backButtonIcon" name="ios-arrow-back" (click)="slidePrev()"></ion-icon> \n    <ion-icon class="backButtonIcon" name="ios-arrow-forward" (click)="slideNext()"></ion-icon> \n\n\n    <button class="bookbtn" (click)="booking()" margin-top ion-button color="yellow" full>BOOK NOW</button>\n\n</ion-content>\n'/*ion-inline-end:"C:\xampp\htdocs\ionic\RipDubai_1\src\pages\home\home.html"*/
+        selector: 'page-home',template:/*ion-inline-start:"C:\xampp\htdocs\ionic\RipDubai_1\src\pages\home\home.html"*/'\n<ion-header >\n    <ion-navbar>\n        <button ion-button menuToggle><ion-icon ios="ios-list" md="md-list"></ion-icon></button>\n        <ion-title><img src="https://www.silverwingtechnologies.com/clients/img/logo.png" height="40"></ion-title>\n        <ion-buttons style="width: 50px;" end><button ion-button ></button> </ion-buttons>\n    </ion-navbar>\n</ion-header>\n\n<ion-content padding class="homePageCSS">\n\n    <!-- <ion-slides text-start class="sliderMain" zoom="true" loop="false" slidesPerView="1" effect="coverflow" speed="200">\n        <ion-slide class="sliderMainSlide"  *ngFor="let item of ActivityArry">\n          <div class="slideMainContainer">\n            <ion-label class="headerLbl">RIP DUBAI<span class="headerSubLbl"> EXCLUSIVE</span></ion-label>\n            <img class="imageSlider" src="https://www.silverwingtechnologies.com/clients/img/activity1.jpg">\n            <ion-label class="headerLblTwo">BBQ DONUT<span class="headerSubLblTwo">BOAT</span></ion-label>\n            <p class="sliderDics"  padding text-left>A Jet ski is a small machine like a motorcycle that is powered by a jet engine and can travel on the surface of water. RIP Jet Ski is self-propelled vehicle for 1 to 3 persons, which skims across water on a flat keel, and is steered by means of handlebars.\n                RIP Jet Ski is the most extreme form water riding, where the rider surfs waves, using them as a jump ramp for aerial maneuvers.</p>\n          </div>\n        </ion-slide>\n    </ion-slides> -->\n\n    <ion-slides text-start class="sliderMain" zoom="true" loop="false" slidesPerView="1" effect="coverflow" speed="200">\n\n        <ion-slide class="sliderMainSlide"  *ngFor="let item of ActivityArry">\n\n\n                   <div class="slideMainContainer">\n                <ion-label class="headerLbl">RIP DUBAI<span class="headerSubLbl"> EXCLUSIVE</span></ion-label>\n                <img class="imageSlider" src="{{item.image1}}">\n                <ion-label class="headerLblTwo">{{item.name}}<span class="headerSubLblTwo"></span></ion-label>\n\n                <ion-label class="sliderDics"  padding text-left>\n                    <span [innerHTML]="item.description"></span>  \n                </ion-label>\n\n            </div>\n\n        </ion-slide>\n\n\n\n    </ion-slides>\n    <ion-icon class="backButtonIcon" name="ios-arrow-back" *ngIf="counter > 0" (click)="slidePrev()"></ion-icon> \n    <ion-icon class="backButtonIcon" name="ios-arrow-forward" (click)="slideNext()"></ion-icon> \n\n\n    <button class="bookbtn" (click)="booking()" margin-top ion-button color="yellow" full>BOOK NOW</button>\n\n</ion-content>\n'/*ion-inline-end:"C:\xampp\htdocs\ionic\RipDubai_1\src\pages\home\home.html"*/
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* NavController */], __WEBPACK_IMPORTED_MODULE_3__webService_constant__["a" /* Constant */], __WEBPACK_IMPORTED_MODULE_4__webService_webservice__["a" /* WebService */], __WEBPACK_IMPORTED_MODULE_5__angular_http__["b" /* Http */]])
 ], HomePage);
@@ -1662,6 +1666,7 @@ var BookingPage = (function () {
         this.dateSelected = '';
         this.timeSelected = '';
         this.checkboxSRC = 'assets/imgs/checkboxFalse.jpeg';
+        this.checkboxSRC1 = 'assets/imgs/checkboxFalse.jpeg';
         this.checkDate = '';
         this.checkTime = '';
         this.ActivityArry = {};
@@ -1670,8 +1675,10 @@ var BookingPage = (function () {
         this.Texes = 0;
         this.FinalTotal = 0;
         this.TotlePayment = 0;
+        this.PersonArry = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
         this.SingleActivity = [];
         this.TimeSlotArry = [];
+        this.Person = 0;
         this.ActivityArry = navParams.get('ActivityArry');
         console.log(this.ActivityArry);
         //this.CheckDateTimeIsBooked();
@@ -1785,7 +1792,12 @@ var BookingPage = (function () {
     };
     BookingPage.prototype.IONSelectEvent = function () {
         console.log(this.IONSelectValue);
-        this.TotlePayment = this.IONSelectValue.price;
+        if (this.Person == 0) {
+            this.TotlePayment = this.IONSelectValue.price;
+        }
+        else {
+            this.TotlePayment = this.IONSelectValue.ph_price * this.Person;
+        }
         var TaxesSub = this.TotlePayment;
         this.Texes = (TaxesSub * 20) / 100;
         console.log(TaxesSub);
@@ -1807,6 +1819,9 @@ var BookingPage = (function () {
         }
         else if (this.checkboxSRC == 'assets/imgs/checkboxFalse.jpeg') {
             this.constant.Alert('Message', 'Please select cancellation and safety policy checkbox.', 'Ok');
+        }
+        else if (this.checkboxSRC1 == 'assets/imgs/checkboxFalse.jpeg') {
+            this.constant.Alert('Message', 'Please select check-in conditions checkbox.', 'Ok');
         }
         else {
             console.log('All Done');
@@ -1863,12 +1878,20 @@ var BookingPage = (function () {
             this.checkboxSRC = 'assets/imgs/checkboxFalse.jpeg';
         }
     };
+    BookingPage.prototype.CheckBoxClick1 = function () {
+        if (this.checkboxSRC1 == 'assets/imgs/checkboxFalse.jpeg') {
+            this.checkboxSRC1 = 'assets/imgs/checkboxTrue.png';
+        }
+        else {
+            this.checkboxSRC1 = 'assets/imgs/checkboxFalse.jpeg';
+        }
+    };
     return BookingPage;
 }());
 BookingPage = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* IonicPage */])(),
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'page-booking',template:/*ion-inline-start:"C:\xampp\htdocs\ionic\RipDubai_1\src\pages\booking\booking.html"*/'\n<ion-header class="BookingHeader">\n  <ion-navbar hideBackButton="true">\n\n    <ion-buttons (click)="BackButtonClick()" left>\n        <button class="headerBackButton" ion-button>\n            <ion-icon class="backButtonIcon" name="ios-arrow-back"></ion-icon> Back\n          </button>\n      </ion-buttons>\n\n    <ion-title class="pHead" >{{ActivityArry.name}}</ion-title>\n\n    <ion-buttons style="width: 50px;" end>\n      <button ion-button >\n      </button>\n    </ion-buttons>\n\n  </ion-navbar>\n</ion-header>\n\n\n<ion-content class="bookingCSS">\n  <div class="mainContainer">\n\n    <button (click)="SelecetDateClick()" class="dateBtn"> \n      <ion-icon class="" name="md-calendar"></ion-icon> Select Date\n    </button>\n\n    <ion-label class="dateLbl">{{dateSelected}}</ion-label>\n\n    <ion-item class="selectItem">\n      <ion-label class="selectLbl">Select Time</ion-label> \n      <ion-select [(ngModel)]="timeSelected"  name="md-time" multiple="false" (ionChange)="SelecetTimeClick()">\n        <ion-option [value]="items" *ngFor="let items of TimeSlotArry">{{items}}</ion-option>\n      </ion-select>\n    </ion-item>\n    <!--<button (click)="SelecetTimeClick()" class="dateBtn">\n    </button>-->\n    <ion-label class="dateLbl">{{timeSelected}}</ion-label>\n\n    <ion-item class="selectItem">\n      <ion-label class="selectLbl">{{ActivityArry.name}}</ion-label>\n      <ion-select [(ngModel)]="IONSelectValue" multiple="false" (ionChange)="IONSelectEvent()">\n        <ion-option [value]="items" *ngFor="let items of SingleActivity">{{items.duration}} HR {{items.type}}</ion-option>\n      </ion-select>\n    </ion-item>\n      \n    <ion-label class="LblOne">Your are Booking</ion-label>\n    <ion-label class="LblTwo">{{ActivityArry.name}} Experience</ion-label>\n    <ion-label class="LblThree">{{DisplayDate}} {{timeSelected}}</ion-label>\n\n    <div class="subtotalContainer">\n      <ion-label class="subTotalLbl">Subtotal</ion-label>\n      <ion-label class="subTotalPriceLbl">AED {{TotlePayment}}</ion-label>\n      <div class="lineDrow"></div>\n    </div>\n\n    <div class="subtotalContainer" style="margin-top:12px;">\n      <ion-label class="subTotalLbl">Taxes</ion-label>\n      <ion-label class="subTotalPriceLbl">AED {{Texes}}</ion-label>\n      <div class="lineDrow"></div>\n    </div>\n\n    <div class="checkBoxContainer">\n      <img (click)="SelectCheckBoxClick()" class="checkboxImage" src="{{checkboxSRC}}">\n      <ion-label class="checkBoxLbl">I have read and agreed to the cancellation and Saftey policy below.</ion-label>\n    </div>\n\n  </div>\n \n  <div class="bookNowContainer">\n      <button (click)="BookingClick()" class="bookNowBtn">BOOK NOW</button>\n    <ion-label class="totalLbl">Total</ion-label>\n    <ion-label class="totalPriceLbl">AED {{(TotlePayment-0)+(Texes-0) |number}}</ion-label>\n  </div>\n\n	\n</ion-content>\n'/*ion-inline-end:"C:\xampp\htdocs\ionic\RipDubai_1\src\pages\booking\booking.html"*/,
+        selector: 'page-booking',template:/*ion-inline-start:"C:\xampp\htdocs\ionic\RipDubai_1\src\pages\booking\booking.html"*/'\n<ion-header class="BookingHeader">\n    <ion-navbar hideBackButton="true">\n\n        <ion-buttons (click)="BackButtonClick()" left>\n            <button class="headerBackButton" ion-button>\n                <ion-icon class="backButtonIcon" name="ios-arrow-back"></ion-icon> Back\n            </button>\n        </ion-buttons>\n\n        <ion-title class="pHead" >{{ActivityArry.name}}</ion-title>\n\n        <ion-buttons style="width: 50px;" end>\n            <button ion-button >\n            </button>\n        </ion-buttons>\n\n    </ion-navbar>\n</ion-header>\n\n\n<ion-content class="bookingCSS">\n    <div class="mainContainer">\n\n        <button (click)="SelecetDateClick()" class="dateBtn"> \n            <ion-icon class="" name="md-calendar"></ion-icon> Select Date\n        </button>\n\n        <ion-label class="dateLbl">{{dateSelected}}</ion-label>\n\n        <ion-item class="selectItem">\n            <ion-label class="selectLbl">Select Time</ion-label> \n            <ion-select [(ngModel)]="timeSelected"  name="md-time" multiple="false" (ionChange)="SelecetTimeClick()">\n                <ion-option [value]="items" *ngFor="let items of TimeSlotArry">{{items}}</ion-option>\n            </ion-select>\n        </ion-item>\n        <!--<button (click)="SelecetTimeClick()" class="dateBtn">\n        </button>-->\n        <ion-label class="dateLbl">{{timeSelected}}</ion-label>\n\n        <ion-item class="selectItem">\n            <ion-label class="selectLbl">{{ActivityArry.name}}</ion-label>\n            <ion-select [(ngModel)]="IONSelectValue" multiple="false" (ionChange)="IONSelectEvent()">\n                <ion-option [value]="items" *ngFor="let items of SingleActivity">{{items.duration}} HR {{items.type}}</ion-option>\n            </ion-select>\n        </ion-item>\n        <ion-item class="selectItem width-60" *ngIf="IONSelectValue">\n            <ion-label class="selectLbl">Number Of Person</ion-label>\n            <ion-select class="" [(ngModel)]="Person" multiple="false" (ionChange)="IONSelectEvent()">\n                <ion-option [value]="items" *ngFor="let items of PersonArry">{{items}}</ion-option>\n            </ion-select>\n            \n        </ion-item>\n        \n        <button *ngIf="IONSelectValue" class="width-20 pull-right button button-ios">{{IONSelectValue.ph_price}} AMD</button>\n        <ion-label class="LblOne">Your are Booking</ion-label>\n        <ion-label class="LblTwo">{{ActivityArry.name}} Experience</ion-label>\n        <ion-label class="LblThree">{{DisplayDate}} {{timeSelected}}</ion-label>\n\n        <div class="subtotalContainer">\n            <ion-label class="subTotalLbl">Subtotal</ion-label>\n            <ion-label class="subTotalPriceLbl">AED {{TotlePayment}}</ion-label>\n            <div class="lineDrow"></div>\n        </div>\n\n        <div class="subtotalContainer" style="margin-top:12px;">\n            <ion-label class="subTotalLbl">Taxes</ion-label>\n            <ion-label class="subTotalPriceLbl">AED {{Texes}}</ion-label>\n            <div class="lineDrow"></div>\n        </div>\n\n        <div class="checkBoxContainer">\n            <img (click)="SelectCheckBoxClick()" class="checkboxImage" src="{{checkboxSRC}}">\n            <ion-label class="checkBoxLbl">I have read and agreed to the cancellation and Saftey policy below.</ion-label>\n        </div>\n        <div class="checkBoxContainer">\n            <img (click)="CheckBoxClick1()" class="checkboxImage" src="{{checkboxSRC1}}">\n            <ion-label class="checkBoxLbl">Check in conditions. At the moment you make the check in at the dock, you must provide a valid ID and the credit card you\'re using to make the payment. The cardholder must be present at the dock. If you don\'t provide this documentation, you and the other passengers won\'t be able to take the ride and "no show policies" will apply. I have read and understand this conidition.</ion-label>\n        </div>\n\n    </div>\n\n    <div class="bookNowContainer">\n        <button (click)="BookingClick()" class="bookNowBtn">BOOK NOW</button>\n        <ion-label class="totalLbl">Total</ion-label>\n        <ion-label class="totalPriceLbl">AED {{(TotlePayment-0)+(Texes-0) |number}}</ion-label>\n    </div>\n\n\n</ion-content>\n'/*ion-inline-end:"C:\xampp\htdocs\ionic\RipDubai_1\src\pages\booking\booking.html"*/,
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavParams */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_date_picker__["a" /* DatePicker */],
         __WEBPACK_IMPORTED_MODULE_3__angular_common__["c" /* DatePipe */], __WEBPACK_IMPORTED_MODULE_4__webService_constant__["a" /* Constant */], __WEBPACK_IMPORTED_MODULE_5__webService_webservice__["a" /* WebService */], __WEBPACK_IMPORTED_MODULE_6__angular_http__["b" /* Http */]])

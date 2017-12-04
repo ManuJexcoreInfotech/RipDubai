@@ -15,7 +15,8 @@ import { Slides } from 'ionic-angular';
 export class ActivitiesPage {
   @ViewChild(Slides) slides: Slides;
 
-  ActivityArry = [];
+    ActivityArry = [];
+    counter=0;
   constructor(public navCtrl: NavController, public navParams: NavParams,public constant:Constant, public service:WebService, public http: Http) {
     this.GetAllActivity();
   }
@@ -41,17 +42,19 @@ export class ActivitiesPage {
      
    }
 
-  BookNowClick() {
+    BookNowClick() {
     
-    var ActiveIndex = this.slides.getActiveIndex();
-    console.log(this.ActivityArry[ActiveIndex]);
-    this.navCtrl.push(BookingPage,{ActivityArry:this.ActivityArry[ActiveIndex]});
-  }
+        var ActiveIndex = this.slides.getActiveIndex();
+        console.log(this.ActivityArry[ActiveIndex]);
+        this.navCtrl.push(BookingPage,{ActivityArry:this.ActivityArry[ActiveIndex]});
+    }
     slideNext(){
-        this.slides.slideNext(100);
+	this.slides.slideNext(100);
+        this.counter = this.slides.getActiveIndex();
     }
     slidePrev(){
 	this.slides.slidePrev(100);
+        this.counter = this.slides.getActiveIndex();
     }
 
 }

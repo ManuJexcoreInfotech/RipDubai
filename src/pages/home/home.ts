@@ -15,7 +15,8 @@ export class HomePage {
   @ViewChild(Slides) slides: Slides;
   
  // ActivityArry = [1,2,3,4,5,6,7,6,];
-	ActivityArry = []; 
+    ActivityArry = []; 
+    counter = 0;
    
   constructor(public navCtrl: NavController, public constant:Constant, public service:WebService, public http: Http) {
     this.GetAllActivity();
@@ -43,11 +44,13 @@ export class HomePage {
     console.log(this.ActivityArry[ActiveIndex]);
     this.navCtrl.push(BookingPage,{ActivityArry:this.ActivityArry[ActiveIndex]});
   }
-  slideNext(){
-	  this.slides.slideNext(100);
-  }
-  slidePrev(){
-	  this.slides.slidePrev(100);
-  }
+   slideNext(){
+	this.slides.slideNext(100);
+        this.counter = this.slides.getActiveIndex();
+    }
+    slidePrev(){
+	this.slides.slidePrev(100);
+        this.counter = this.slides.getActiveIndex();
+    }
   
 }
