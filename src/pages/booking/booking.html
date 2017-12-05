@@ -44,15 +44,13 @@
                 <ion-option [value]="items" *ngFor="let items of SingleActivity">{{items.duration}} HR {{items.type}}</ion-option>
             </ion-select>
         </ion-item>
-        <ion-item class="selectItem width-60" *ngIf="IONSelectValue">
+        <ion-item class="selectItem" *ngIf="IONSelectValue">
             <ion-label class="selectLbl">Number Of Person</ion-label>
             <ion-select class="" [(ngModel)]="Person" multiple="false" (ionChange)="IONSelectEvent()">
                 <ion-option [value]="items" *ngFor="let items of PersonArry">{{items}}</ion-option>
             </ion-select>
             
         </ion-item>
-        
-        <button *ngIf="IONSelectValue" class="width-20 pull-right button button-ios">{{IONSelectValue.ph_price}} AMD</button>
         <ion-label class="LblOne">Your are Booking</ion-label>
         <ion-label class="LblTwo">{{ActivityArry.name}} Experience</ion-label>
         <ion-label class="LblThree">{{DisplayDate}} {{timeSelected}}</ion-label>

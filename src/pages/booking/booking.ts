@@ -28,11 +28,11 @@ export class BookingPage {
   Texes = 0;
   FinalTotal = 0;
   TotlePayment = 0;
-  PersonArry = ["0","1","2","3","4","5","6","7","8","9"];
+  PersonArry = ["1","2","3","4","5","6","7","8","9"];
   SingleActivity = [];
   TimeSlotArry = [];
   IONSelectValue:any;
-  Person = 0;
+  Person = 1;
   
 
   constructor(public navCtrl: NavController, public navParams: NavParams, private datePicker: DatePicker,

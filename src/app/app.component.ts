@@ -29,14 +29,15 @@ export class MyApp {
     // used for an example of ngFor and navigation
     this.pages = [
       { title: 'HOME', component: HomePage },
+      { title: 'REGISTER', component: RegisterPage },
       // { title: 'List', component: ListPage },
       { title: 'ACTIVITIES', component: ActivitiesPage },
       { title: 'ABOUT US', component: AboutPage },
       { title: 'GIFT VOUCHERS', component: GiftPage },
       { title: 'LOCATION', component: LocationPage },
       { title: 'CONTACT US', component: ContactPage },
-      { title: 'CANCELLATION & SAFETY', component: CancellationPage },
-      { title: 'REGISTER', component: RegisterPage }
+      { title: 'CANCELLATION & SAFETY', component: CancellationPage }
+     
     ];
 
   }

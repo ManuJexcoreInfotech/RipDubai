@@ -23,7 +23,7 @@ export class HomePage {
   }
   
   GetAllActivity(){
-   
+
     var dic = {};
     this.constant.LoadingPresent();
     var URL = 'http://pr.veba.co/~shubantech/ripdubai/activitiesContoller.php';

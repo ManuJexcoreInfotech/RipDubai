@@ -20,7 +20,7 @@ page-gift {
 		  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), transparent);
 	}
 	.gift-col{
-		height:230px;
+		height:140px;
 		width:150px;
 		background-image:url('http://focusdxb.com/ripdubai/v1/images/gift-bg.jpg');
 		background-repeat:no-repeat;
@@ -28,16 +28,17 @@ page-gift {
 		margin:1vh auto;
 	}
 	.primary-label{
-		font-size:9vw;
+		font-size:4vw;
 		color:#009fdf ;
 	}
 	.price-label{ 
-		font-size:9vw;
+		font-size:4vw;
 		color:#777777;
 	}
 	.buyBtn{
-		padding:2vh;
+		padding:1.5vh;
 		float:right; 
-	
+                height: 2.8em;
+                font-size: 1.3rem;
 	}
 } 
