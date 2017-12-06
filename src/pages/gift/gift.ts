@@ -50,8 +50,12 @@ export class GiftPage {
     
     }
     BuyNow(id){
-        var url="https://www.google.com/";
-        var ref=window.open(url,'_blank','location=yes');
+        //var url="https://www.google.com/";
+        //var ref=window.open(url,'_blank','location=yes');
+		var ref = window.open('http://apache.org', '_blank', 'hidden=yes');
+        ref.addEventListener('loadstop', function(event) {
+             alert('background window loaded'); 
+        });
        
     }
 }
