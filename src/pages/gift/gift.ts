@@ -3,6 +3,8 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { Constant } from '../../webService/constant';
 import { WebService } from '../../webService/webservice';
 import { Http ,RequestOptions, Headers} from '@angular/http';
+import {InAppBrowser, InAppBrowserOptions} from '@ionic-native/in-app-browser';
+
 
 import { Slides } from 'ionic-angular';
 /**
@@ -18,12 +20,34 @@ import { Slides } from 'ionic-angular';
   templateUrl: 'gift.html',
 })
 export class GiftPage {
+options : InAppBrowserOptions = {
+    location : 'yes',//Or 'no' 
+    hidden : 'no', //Or  'yes'
+    clearcache : 'yes',
+    clearsessioncache : 'yes',
+    zoom : 'yes',//Android only ,shows browser zoom controls 
+    hardwareback : 'yes',
+    mediaPlaybackRequiresUserAction : 'no',
+    shouldPauseOnSuspend : 'no', //Android only 
+    closebuttoncaption : 'Close', //iOS only
+    disallowoverscroll : 'no', //iOS only 
+    toolbar : 'yes', //iOS only 
+    enableViewportScale : 'no', //iOS only 
+    allowInlineMediaPlayback : 'no',//iOS only 
+    presentationstyle : 'pagesheet',//iOS only 
+    fullscreen : 'yes',//Windows only    
+};
 @ViewChild(Slides) slides: Slides;
 
   VouchersArry = [];
-  constructor(public navCtrl: NavController, public navParams: NavParams,public constant:Constant, public service:WebService, public http: Http) {
-    this.GetAllVouchers();
+  constructor(public navCtrl: NavController, public navParams: NavParams,public constant:Constant, public http:Http, public service:WebService, public iab: InAppBrowser) {
+            this.iab.create("https://www.techiediaries.com",'_blank');
+	this.GetAllVouchers();
   }
+  openUrl() {
+
+        
+}   
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad GiftPage');
@@ -52,10 +76,6 @@ export class GiftPage {
     BuyNow(id){
         //var url="https://www.google.com/";
         //var ref=window.open(url,'_blank','location=yes');
-		var ref = window.open('http://apache.org', '_blank', 'hidden=yes');
-        ref.addEventListener('loadstop', function(event) {
-             alert('background window loaded'); 
-        });
        
     }
 }

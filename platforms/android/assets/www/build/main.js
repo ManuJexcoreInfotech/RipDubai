@@ -1,1 +1,1930 @@
-webpackJsonp([7],{110:function(l,n,t){"use strict";t.d(n,"a",function(){return _});var e=t(0),u=t(33),o=t(143),i=(t.n(o),this&&this.__decorate||function(l,n,t,e){var u,o=arguments.length,i=o<3?n:null===e?e=Object.getOwnPropertyDescriptor(n,t):e;if("object"==typeof Reflect&&"function"==typeof Reflect.decorate)i=Reflect.decorate(l,n,t,e);else for(var a=l.length-1;a>=0;a--)(u=l[a])&&(i=(o<3?u(i):o>3?u(n,t,i):u(n,t))||i);return o>3&&i&&Object.defineProperty(n,t,i),i}),a=this&&this.__metadata||function(l,n){if("object"==typeof Reflect&&"function"==typeof Reflect.metadata)return Reflect.metadata(l,n)},_=function(){function l(l){this.http=l}return l.prototype.Post=function(l,n){var t=localStorage.getItem("Token"),e=new u.d({Authorization:t}),o=new u.g({headers:e});return this.http.post(l,n,o).map(function(l){return l.json()},function(l){return console.log("WebserviceHandler=>"+l),l})},l.prototype.PostWithoutToken=function(l,n){return console.log(l),this.http.post(l,n).map(function(l){return l.json()},function(l){return console.log("WebserviceHandler=>"+l),l})},l.prototype.Get=function(l){var n=localStorage.getItem("Token"),t=new u.d({Authorization:n}),e=new u.g({headers:t});return this.http.get(l,e).map(function(l){return l},function(l){return console.log("WebserviceHandler=>"+l),l})},l.prototype.GetWithoutToken=function(l){return this.http.get(l).map(function(l){return l},function(l){return console.log("WebserviceHandler=>"+l),l})},l}();_=i([Object(e.q)(),a("design:paramtypes",["function"==typeof(s=void 0!==u.e&&u.e)&&s||Object])],_);var s},113:function(l,n,t){"use strict";t.d(n,"a",function(){return e});t(0),t(9),t(82);var e=function(){return function(){}}()},114:function(l,n,t){"use strict";t.d(n,"a",function(){return e});t(0),t(9),t(83);var e=function(){return function(){}}()},115:function(l,n,t){"use strict";t.d(n,"a",function(){return e});t(0),t(9),t(60);var e=function(){return function(){}}()},116:function(l,n,t){"use strict";t.d(n,"a",function(){return e});t(0),t(9),t(84);var e=function(){return function(){}}()},117:function(l,n,t){"use strict";t.d(n,"a",function(){return e});t(0),t(9),t(85);var e=function(){return function(){}}()},118:function(l,n,t){"use strict";t.d(n,"a",function(){return e});t(0),t(9),t(86);var e=function(){return function(){}}()},119:function(l,n,t){"use strict";t.d(n,"a",function(){return e});t(0),t(9),t(87);var e=function(){return function(){}}()},128:function(l,n){function t(l){return new Promise(function(n,t){t(new Error("Cannot find module '"+l+"'."))})}t.keys=function(){return[]},t.resolve=t,l.exports=t,t.id=128},139:function(l,n,t){function e(l){var n=u[l];return n?t.e(n[1]).then(function(){return t(n[0])}):Promise.reject(new Error("Cannot find module '"+l+"'."))}var u={"../pages/about/about.module.ngfactory":[194,6],"../pages/activities/activities.module.ngfactory":[195,5],"../pages/booking/booking.module.ngfactory":[196,4],"../pages/cancellation/cancellation.module.ngfactory":[197,3],"../pages/contact/contact.module.ngfactory":[198,2],"../pages/gift/gift.module.ngfactory":[199,1],"../pages/location/location.module.ngfactory":[200,0]};e.keys=function(){return Object.keys(u)},l.exports=e,e.id=139},154:function(l,n,t){"use strict";function e(l){return u._25(0,[(l()(),u._24(null,["\n"])),(l()(),u._5(0,null,null,31,"ion-header",[],null,null,null,null,null)),u._4(16384,null,0,o.a,[i.a,u.l,u.F,[2,a.a]],null,null),(l()(),u._24(null,["\n  "])),(l()(),u._5(0,null,null,27,"ion-navbar",[["class","toolbar"]],[[8,"hidden",0],[2,"statusbar-padding",null]],null,null,_.b,_.a)),u._4(49152,null,0,s.a,[r.a,[2,a.a],[2,c.a],i.a,u.l,u.F],null,null),(l()(),u._24(3,["\n    "])),(l()(),u._5(0,null,0,8,"button",[["class","headerBackButton"],["ion-button",""],["menuToggle",""]],[[8,"hidden",0]],[[null,"click"]],function(l,n,t){var e=!0;return"click"===n&&(e=!1!==u._18(l,9).toggle()&&e),e},h.b,h.a)),u._4(1097728,[[1,4]],0,d.a,[[8,""],i.a,u.l,u.F],null,null),u._4(1064960,null,0,p.a,[g.a,[2,a.a],[2,d.a],[2,s.a]],{menuToggle:[0,"menuToggle"]},null),u._4(16384,null,1,f.a,[i.a,u.l,u.F,[2,b.a],[2,s.a]],null,null),u._22(603979776,1,{_buttons:1}),(l()(),u._24(0,["\n        "])),(l()(),u._5(0,null,0,1,"ion-icon",[["class","backButtonIcon"],["name","ios-arrow-back"],["role","img"]],[[2,"hide",null]],null,null,null,null)),u._4(147456,null,0,m.a,[i.a,u.l,u.F],{name:[0,"name"]},null),(l()(),u._24(0,[" Back\n    "])),(l()(),u._24(3,["\n    "])),(l()(),u._5(0,null,3,4,"ion-title",[["class","pHead"]],null,null,null,y.b,y.a)),u._4(49152,null,0,v.a,[i.a,u.l,u.F,[2,b.a],[2,s.a]],null,null),(l()(),u._24(0,["ABOUT "])),(l()(),u._5(0,null,0,1,"strong",[],null,null,null,null,null)),(l()(),u._24(null,["US"])),(l()(),u._24(3,["\n\n    "])),(l()(),u._5(0,null,2,7,"ion-buttons",[["end",""],["style","width: 50px;"]],null,null,null,null,null)),u._4(16384,null,1,f.a,[i.a,u.l,u.F,[2,b.a],[2,s.a]],null,null),u._22(603979776,2,{_buttons:1}),(l()(),u._24(null,["\n      "])),(l()(),u._5(0,null,null,2,"button",[["ion-button",""]],null,null,null,h.b,h.a)),u._4(1097728,[[2,4]],0,d.a,[[8,""],i.a,u.l,u.F],null,null),(l()(),u._24(0,["\n      "])),(l()(),u._24(null,["\n    "])),(l()(),u._24(3,["\n\n  "])),(l()(),u._24(null,["\n"])),(l()(),u._24(null,["\n\n\n\n"])),(l()(),u._5(0,null,null,79,"ion-content",[["padding",""]],[[2,"statusbar-padding",null],[2,"has-refresher",null]],null,null,k.b,k.a)),u._4(4374528,null,0,w.a,[i.a,P.a,C.a,u.l,u.F,r.a,F.a,u.z,[2,a.a],[2,c.a]],null,null),(l()(),u._24(1,["\n\t"])),(l()(),u._5(0,null,1,53,"div",[["class","aboutDiv1"],["padding-bottom",""]],null,null,null,null,null)),(l()(),u._24(null,["\n      "])),(l()(),u._5(0,null,null,50,"ion-grid",[["class","grid"]],null,null,null,null,null)),u._4(16384,null,0,A.a,[],null,null),(l()(),u._24(null,["\n        "])),(l()(),u._5(0,null,null,10,"ion-row",[["class","row"]],null,null,null,null,null)),u._4(16384,null,0,S.a,[],null,null),(l()(),u._24(null,["\n          "])),(l()(),u._5(0,null,null,2,"ion-col",[["class","col"],["col-3",""]],null,null,null,null,null)),u._4(16384,null,0,T.a,[],null,null),(l()(),u._5(0,null,null,0,"img",[["src","https://www.silverwingtechnologies.com/clients/img/aboutAvtar.png"]],null,null,null,null,null)),(l()(),u._24(null,["\n          "])),(l()(),u._5(0,null,null,2,"ion-col",[["class","aboutContent col"],["col-9",""],["text-left",""]],null,null,null,null,null)),u._4(16384,null,0,T.a,[],null,null),(l()(),u._24(null,["We pride ourselves on providing water sport equipment that exceeds all safety and quality standards, and we aim at being one of the leading companies working in this field. "])),(l()(),u._24(null,["\n        "])),(l()(),u._24(null,["\n        "])),(l()(),u._5(0,null,null,10,"ion-row",[["class","row"]],null,null,null,null,null)),u._4(16384,null,0,S.a,[],null,null),(l()(),u._24(null,["\n          "])),(l()(),u._5(0,null,null,2,"ion-col",[["class","col"],["col-3",""]],null,null,null,null,null)),u._4(16384,null,0,T.a,[],null,null),(l()(),u._5(0,null,null,0,"img",[["src","https://www.silverwingtechnologies.com/clients/img/aboutAvtar.png"]],null,null,null,null,null)),(l()(),u._24(null,["\n          "])),(l()(),u._5(0,null,null,2,"ion-col",[["class","aboutContent col"],["col-9",""],["text-left",""]],null,null,null,null,null)),u._4(16384,null,0,T.a,[],null,null),(l()(),u._24(null,["Our company can provide all the water sport equipment that allows your customers to enjoy their time in Dubai Beaches and to leave Dubai with great memories and with a strong will to come back soon. \n        "])),(l()(),u._24(null,["\n        "])),(l()(),u._24(null,["\n        "])),(l()(),u._5(0,null,null,10,"ion-row",[["class","row"]],null,null,null,null,null)),u._4(16384,null,0,S.a,[],null,null),(l()(),u._24(null,["\n          "])),(l()(),u._5(0,null,null,2,"ion-col",[["class","aboutContent col"],["col-3",""]],null,null,null,null,null)),u._4(16384,null,0,T.a,[],null,null),(l()(),u._5(0,null,null,0,"img",[["src","https://www.silverwingtechnologies.com/clients/img/aboutAvtar.png"]],null,null,null,null,null)),(l()(),u._24(null,["\n          "])),(l()(),u._5(0,null,null,2,"ion-col",[["class","aboutContent col"],["col-9",""],["text-left",""]],null,null,null,null,null)),u._4(16384,null,0,T.a,[],null,null),(l()(),u._24(null,["Our team includes members who have a great experience in serving customers and who shows readiness to do all their best to meet the needs and aspirations of the customers. \n        "])),(l()(),u._24(null,["\n        "])),(l()(),u._24(null,["\n        "])),(l()(),u._5(0,null,null,10,"ion-row",[["class","row"]],null,null,null,null,null)),u._4(16384,null,0,S.a,[],null,null),(l()(),u._24(null,["\n          "])),(l()(),u._5(0,null,null,2,"ion-col",[["class","aboutContent col"],["col-3",""]],null,null,null,null,null)),u._4(16384,null,0,T.a,[],null,null),(l()(),u._5(0,null,null,0,"img",[["src","https://www.silverwingtechnologies.com/clients/img/aboutAvtar.png"]],null,null,null,null,null)),(l()(),u._24(null,["\n          "])),(l()(),u._5(0,null,null,2,"ion-col",[["class","aboutContent col"],["col-9",""],["text-left",""]],null,null,null,null,null)),u._4(16384,null,0,T.a,[],null,null),(l()(),u._24(null,["We would like to take this opportunity to propose our services and do an investment in Dubai beaches. \n        "])),(l()(),u._24(null,["\n        "])),(l()(),u._24(null,["\n        \n      "])),(l()(),u._24(null,["\n  "])),(l()(),u._24(1,["\n\n  "])),(l()(),u._5(0,null,1,20,"div",[["class","aboutDiv2"],["margin-top",""]],null,null,null,null,null)),(l()(),u._24(null,["\n    "])),(l()(),u._5(0,null,null,17,"ion-row",[["class","row"]],null,null,null,null,null)),u._4(16384,null,0,S.a,[],null,null),(l()(),u._24(null,["\n      "])),(l()(),u._5(0,null,null,2,"ion-col",[["class","aboutContent grayLayour1 col"],["col-4",""]],null,null,null,null,null)),u._4(16384,null,0,T.a,[],null,null),(l()(),u._5(0,null,null,0,"img",[["src","https://www.silverwingtechnologies.com/clients/img/aboutLogo.png"]],null,null,null,null,null)),(l()(),u._24(null,["\n      "])),(l()(),u._5(0,null,null,9,"ion-col",[["class","aboutContent blueLayour1 col"],["col-8",""],["padding",""],["text-left",""]],null,null,null,null,null)),u._4(16384,null,0,T.a,[],null,null),(l()(),u._24(null,["Visit our supper creative and concept Party RIP Dubai to have a jolly moment in the beautiful resorts with lots of fun, cocktails, professional DJ and exclusive entertainment on the pool and beach. Each party made by individual and inimitable style. Have a sunshine summer with us! \n      "])),(l()(),u._5(0,null,null,5,"div",[["text-center",""]],null,null,null,null,null)),(l()(),u._24(null,["\n        "])),(l()(),u._5(0,null,null,2,"button",[["color","dark"],["ion-button",""],["style","margin-top: 12px;"],["text-capitalize",""]],null,null,null,h.b,h.a)),u._4(1097728,null,0,d.a,[[8,""],i.a,u.l,u.F],{color:[0,"color"]},null),(l()(),u._24(0,["Download Now"])),(l()(),u._24(null,["\n      "])),(l()(),u._24(null,["\n      "])),(l()(),u._24(null,["\n    "])),(l()(),u._24(null,["\n  "])),(l()(),u._24(1,["\n"])),(l()(),u._24(null,["\n"]))],function(l,n){l(n,9,0,"");l(n,14,0,"ios-arrow-back");l(n,107,0,"dark")},function(l,n){l(n,4,0,u._18(n,5)._hidden,u._18(n,5)._sbPadding),l(n,7,0,u._18(n,9).isHidden),l(n,13,0,u._18(n,14)._hidden),l(n,34,0,u._18(n,35).statusbarPadding,u._18(n,35)._hasRefresher)})}t.d(n,"a",function(){return E});var u=t(0),o=t(27),i=t(1),a=t(3),_=t(35),s=t(18),r=t(5),c=t(15),h=t(19),d=t(11),p=t(31),g=t(14),f=t(28),b=t(22),m=t(20),y=t(36),v=t(29),k=t(32),w=t(16),P=t(4),C=t(6),F=t(17),A=t(67),S=t(68),T=t(66),O=t(82),D=t(10),L=[],M=u._3({encapsulation:2,styles:L,data:{}}),E=u._2("page-about",O.a,function(l){return u._25(0,[(l()(),u._5(0,null,null,1,"page-about",[],null,null,null,e,M)),u._4(49152,null,0,O.a,[c.a,D.a],null,null)],null,null)},{},{},[])},155:function(l,n,t){"use strict";function e(l){return o._25(0,[(l()(),o._5(0,null,null,24,"ion-slide",[["class","sliderMainSlide"]],null,null,null,i.b,i.a)),o._4(180224,null,0,a.a,[o.l,o.F,_.a],null,null),(l()(),o._24(0,["\n      \n          \n        "])),(l()(),o._5(0,null,0,20,"div",[["class","slideMainContainer"]],null,null,null,null,null)),(l()(),o._24(null,["\n            "])),(l()(),o._5(0,null,null,4,"ion-label",[["class","headerLbl"]],null,null,null,null,null)),o._4(16384,null,0,s.a,[r.a,o.l,o.F,[8,null],[8,null],[8,null],[8,null]],null,null),(l()(),o._24(null,["RIP DUBAI"])),(l()(),o._5(0,null,null,1,"span",[["class","headerSubLbl"]],null,null,null,null,null)),(l()(),o._24(null,[" EXCLUSIVE"])),(l()(),o._24(null,["\n            "])),(l()(),o._5(0,null,null,0,"img",[["class","imageSlider"]],[[8,"src",4]],null,null,null,null)),(l()(),o._24(null,["\n            "])),(l()(),o._5(0,null,null,3,"ion-label",[["class","headerLblTwo"]],null,null,null,null,null)),o._4(16384,null,0,s.a,[r.a,o.l,o.F,[8,null],[8,null],[8,null],[8,null]],null,null),(l()(),o._24(null,["",""])),(l()(),o._5(0,null,null,0,"span",[["class","headerSubLblTwo"]],null,null,null,null,null)),(l()(),o._24(null,["\n            \n              "])),(l()(),o._5(0,null,null,4,"ion-label",[["class","sliderDics"],["padding",""],["text-left",""]],null,null,null,null,null)),o._4(16384,null,0,s.a,[r.a,o.l,o.F,[8,null],[8,null],[8,null],[8,null]],null,null),(l()(),o._24(null,["\n                  "])),(l()(),o._5(0,null,null,0,"span",[],[[8,"innerHTML",1]],null,null,null,null)),(l()(),o._24(null,["  \n              "])),(l()(),o._24(null,["\n          "])),(l()(),o._24(0,["\n      \n      "]))],null,function(l,n){l(n,11,0,o._9(1,"",n.context.$implicit.image1,"")),l(n,15,0,n.context.$implicit.name),l(n,21,0,n.context.$implicit.description)})}function u(l){return o._25(0,[o._22(402653184,1,{slides:0}),(l()(),o._24(null,["\n"])),(l()(),o._5(0,null,null,29,"ion-header",[],null,null,null,null,null)),o._4(16384,null,0,c.a,[r.a,o.l,o.F,[2,h.a]],null,null),(l()(),o._24(null,["\n  "])),(l()(),o._5(0,null,null,25,"ion-navbar",[["class","toolbar"]],[[8,"hidden",0],[2,"statusbar-padding",null]],null,null,d.b,d.a)),o._4(49152,null,0,p.a,[g.a,[2,h.a],[2,f.a],r.a,o.l,o.F],null,null),(l()(),o._24(3,["\n  \n    "])),(l()(),o._5(0,null,0,8,"button",[["class","headerBackButton"],["ion-button",""],["menuToggle",""]],[[8,"hidden",0]],[[null,"click"]],function(l,n,t){var e=!0;return"click"===n&&(e=!1!==o._18(l,10).toggle()&&e),e},b.b,b.a)),o._4(1097728,[[2,4]],0,m.a,[[8,""],r.a,o.l,o.F],null,null),o._4(1064960,null,0,y.a,[v.a,[2,h.a],[2,m.a],[2,p.a]],{menuToggle:[0,"menuToggle"]},null),o._4(16384,null,1,k.a,[r.a,o.l,o.F,[2,w.a],[2,p.a]],null,null),o._22(603979776,2,{_buttons:1}),(l()(),o._24(0,["\n      "])),(l()(),o._5(0,null,0,1,"ion-icon",[["class","backButtonIcon"],["name","ios-arrow-back"],["role","img"]],[[2,"hide",null]],null,null,null,null)),o._4(147456,null,0,P.a,[r.a,o.l,o.F],{name:[0,"name"]},null),(l()(),o._24(0,[" Back\n    "])),(l()(),o._24(3,["\n\n    "])),(l()(),o._5(0,null,3,2,"ion-title",[],null,null,null,C.b,C.a)),o._4(49152,null,0,F.a,[r.a,o.l,o.F,[2,w.a],[2,p.a]],null,null),(l()(),o._5(0,null,0,0,"img",[["height","40"],["src","https://www.silverwingtechnologies.com/clients/img/logo.png"]],null,null,null,null,null)),(l()(),o._24(3,["\n\n    "])),(l()(),o._5(0,null,2,7,"ion-buttons",[["end",""],["style","width: 50px;"]],null,null,null,null,null)),o._4(16384,null,1,k.a,[r.a,o.l,o.F,[2,w.a],[2,p.a]],null,null),o._22(603979776,3,{_buttons:1}),(l()(),o._24(null,["\n      "])),(l()(),o._5(0,null,null,2,"button",[["ion-button",""]],null,null,null,b.b,b.a)),o._4(1097728,[[3,4]],0,m.a,[[8,""],r.a,o.l,o.F],null,null),(l()(),o._24(0,["\n      "])),(l()(),o._24(null,["\n    "])),(l()(),o._24(3,["\n\n  "])),(l()(),o._24(null,["\n"])),(l()(),o._24(null,["\n\n"])),(l()(),o._5(0,null,null,19,"ion-content",[["padding",""]],[[2,"statusbar-padding",null],[2,"has-refresher",null]],null,null,A.b,A.a)),o._4(4374528,null,0,S.a,[r.a,T.a,O.a,o.l,o.F,g.a,D.a,o.z,[2,h.a],[2,f.a]],null,null),(l()(),o._24(1,["\n\t"])),(l()(),o._5(0,null,1,3,"p",[["class","pHead"],["text-center",""]],null,null,null,null,null)),(l()(),o._24(null,["OUR "])),(l()(),o._5(0,null,null,1,"strong",[],null,null,null,null,null)),(l()(),o._24(null,["ACTIVITIES"])),(l()(),o._24(1,["\n  \n  "])),(l()(),o._5(0,null,1,5,"ion-slides",[["class","sliderMain"],["effect","coverflow"],["loop","false"],["slidesPerView","1"],["speed","200"],["text-start",""],["zoom","true"]],null,null,null,L.b,L.a)),o._4(1228800,[[1,4]],0,_.a,[r.a,T.a,o.z,[2,h.a],o.l,o.F],{effect:[0,"effect"],loop:[1,"loop"],speed:[2,"speed"],zoom:[3,"zoom"],slidesPerView:[4,"slidesPerView"]},null),(l()(),o._24(0,["\n    "])),(l()(),o._1(16777216,null,0,1,null,e)),o._4(802816,null,0,M.h,[o.P,o.M,o.t],{ngForOf:[0,"ngForOf"]},null),(l()(),o._24(0,["\n  \n"])),(l()(),o._24(1,["\n\n  "])),(l()(),o._5(0,null,1,2,"button",[["class","bookbtn"],["color","yellow"],["full",""],["ion-button",""],["margin-top",""]],null,[[null,"click"]],function(l,n,t){var e=!0,u=l.component;return"click"===n&&(e=!1!==u.BookNowClick(u.i)&&e),e},b.b,b.a)),o._4(1097728,null,0,m.a,[[8,""],r.a,o.l,o.F],{color:[0,"color"],full:[1,"full"]},null),(l()(),o._24(0,["BOOK NOW"])),(l()(),o._24(1,["\n\n  "])),(l()(),o._24(1,["\n"])),(l()(),o._24(null,["\n"]))],function(l,n){var t=n.component;l(n,10,0,"");l(n,15,0,"ios-arrow-back");l(n,42,0,"coverflow","false","200","true","1"),l(n,45,0,t.ActivityArry);l(n,49,0,"yellow","")},function(l,n){l(n,5,0,o._18(n,6)._hidden,o._18(n,6)._sbPadding),l(n,8,0,o._18(n,10).isHidden),l(n,14,0,o._18(n,15)._hidden),l(n,33,0,o._18(n,34).statusbarPadding,o._18(n,34)._hasRefresher)})}t.d(n,"a",function(){return N});var o=t(0),i=t(144),a=t(57),_=t(46),s=t(40),r=t(1),c=t(27),h=t(3),d=t(35),p=t(18),g=t(5),f=t(15),b=t(19),m=t(11),y=t(31),v=t(14),k=t(28),w=t(22),P=t(20),C=t(36),F=t(29),A=t(32),S=t(16),T=t(4),O=t(6),D=t(17),L=t(145),M=t(8),E=t(83),R=t(10),j=t(37),I=t(41),B=t(33),H=[],x=o._3({encapsulation:2,styles:H,data:{}}),N=o._2("page-activities",E.a,function(l){return o._25(0,[(l()(),o._5(0,null,null,1,"page-activities",[],null,null,null,u,x)),o._4(49152,null,0,E.a,[f.a,R.a,j.a,I.a,B.e],null,null)],null,null)},{},{},[])},156:function(l,n,t){"use strict";function e(l){return o._25(0,[(l()(),o._5(0,null,null,2,"ion-option",[],null,null,null,null,null)),o._4(16384,[[6,4]],0,i.a,[o.l],{value:[0,"value"]},null),(l()(),o._24(null,[""," HR ",""]))],function(l,n){l(n,1,0,n.context.$implicit)},function(l,n){l(n,2,0,n.context.$implicit.duration,n.context.$implicit.type)})}function u(l){return o._25(0,[(l()(),o._24(null,["\n"])),(l()(),o._5(0,null,null,31,"ion-header",[["class","BookingHeader"]],null,null,null,null,null)),o._4(16384,null,0,a.a,[_.a,o.l,o.F,[2,s.a]],null,null),(l()(),o._24(null,["\n  "])),(l()(),o._5(0,null,null,27,"ion-navbar",[["class","toolbar"],["hideBackButton","true"]],[[8,"hidden",0],[2,"statusbar-padding",null]],null,null,r.b,r.a)),o._4(49152,null,0,c.a,[h.a,[2,s.a],[2,d.a],_.a,o.l,o.F],{hideBackButton:[0,"hideBackButton"]},null),(l()(),o._24(3,["\n\n    "])),(l()(),o._5(0,null,0,10,"ion-buttons",[["left",""]],null,[[null,"click"]],function(l,n,t){var e=!0,u=l.component;return"click"===n&&(e=!1!==u.BackButtonClick()&&e),e},null,null)),o._4(16384,null,1,g.a,[_.a,o.l,o.F,[2,f.a],[2,c.a]],null,null),o._22(603979776,1,{_buttons:1}),(l()(),o._24(null,["\n        "])),(l()(),o._5(0,null,null,5,"button",[["class","headerBackButton"],["ion-button",""]],null,null,null,b.b,b.a)),o._4(1097728,[[1,4]],0,m.a,[[8,""],_.a,o.l,o.F],null,null),(l()(),o._24(0,["\n            "])),(l()(),o._5(0,null,0,1,"ion-icon",[["class","backButtonIcon"],["name","ios-arrow-back"],["role","img"]],[[2,"hide",null]],null,null,null,null)),o._4(147456,null,0,y.a,[_.a,o.l,o.F],{name:[0,"name"]},null),(l()(),o._24(0,[" Back\n          "])),(l()(),o._24(null,["\n      "])),(l()(),o._24(3,["\n\n    "])),(l()(),o._5(0,null,3,2,"ion-title",[["class","pHead"]],null,null,null,v.b,v.a)),o._4(49152,null,0,k.a,[_.a,o.l,o.F,[2,f.a],[2,c.a]],null,null),(l()(),o._24(0,["",""])),(l()(),o._24(3,["\n\n    "])),(l()(),o._5(0,null,2,7,"ion-buttons",[["end",""],["style","width: 50px;"]],null,null,null,null,null)),o._4(16384,null,1,g.a,[_.a,o.l,o.F,[2,f.a],[2,c.a]],null,null),o._22(603979776,2,{_buttons:1}),(l()(),o._24(null,["\n      "])),(l()(),o._5(0,null,null,2,"button",[["ion-button",""]],null,null,null,b.b,b.a)),o._4(1097728,[[2,4]],0,m.a,[[8,""],_.a,o.l,o.F],null,null),(l()(),o._24(0,["\n      "])),(l()(),o._24(null,["\n    "])),(l()(),o._24(3,["\n\n  "])),(l()(),o._24(null,["\n"])),(l()(),o._24(null,["\n\n\n"])),(l()(),o._5(0,null,null,110,"ion-content",[["class","bookingCSS"]],[[2,"statusbar-padding",null],[2,"has-refresher",null]],null,null,w.b,w.a)),o._4(4374528,null,0,P.a,[_.a,C.a,F.a,o.l,o.F,h.a,A.a,o.z,[2,s.a],[2,d.a]],null,null),(l()(),o._24(1,["\n  "])),(l()(),o._5(0,null,1,92,"div",[["class","mainContainer"]],null,null,null,null,null)),(l()(),o._24(null,["\n\n    "])),(l()(),o._5(0,null,null,4,"button",[["class","dateBtn"]],null,[[null,"click"]],function(l,n,t){var e=!0,u=l.component;return"click"===n&&(e=!1!==u.SelecetDateClick()&&e),e},null,null)),(l()(),o._24(null,["\n      "])),(l()(),o._5(0,null,null,1,"ion-icon",[["class",""],["name","md-calendar"],["role","img"]],[[2,"hide",null]],null,null,null,null)),o._4(147456,null,0,y.a,[_.a,o.l,o.F],{name:[0,"name"]},null),(l()(),o._24(null,[" Select Date\n    "])),(l()(),o._24(null,["\n\n    "])),(l()(),o._5(0,null,null,2,"ion-label",[["class","dateLbl"]],null,null,null,null,null)),o._4(16384,null,0,S.a,[_.a,o.l,o.F,[8,null],[8,null],[8,null],[8,null]],null,null),(l()(),o._24(null,["",""])),(l()(),o._24(null,["\n\n    "])),(l()(),o._5(0,null,null,4,"button",[["class","dateBtn"]],null,[[null,"click"]],function(l,n,t){var e=!0,u=l.component;return"click"===n&&(e=!1!==u.SelecetTimeClick()&&e),e},null,null)),(l()(),o._24(null,["\n      "])),(l()(),o._5(0,null,null,1,"ion-icon",[["class",""],["name","md-time"],["role","img"]],[[2,"hide",null]],null,null,null,null)),o._4(147456,null,0,y.a,[_.a,o.l,o.F],{name:[0,"name"]},null),(l()(),o._24(null,[" Select Time\n    "])),(l()(),o._24(null,["\n    "])),(l()(),o._5(0,null,null,2,"ion-label",[["class","dateLbl"]],null,null,null,null,null)),o._4(16384,null,0,S.a,[_.a,o.l,o.F,[8,null],[8,null],[8,null],[8,null]],null,null),(l()(),o._24(null,["",""])),(l()(),o._24(null,["\n\n    "])),(l()(),o._5(0,null,null,22,"ion-item",[["class","selectItem item item-block"]],null,null,null,T.b,T.a)),o._4(1097728,null,3,O.a,[D.a,_.a,o.l,o.F,[2,L.a]],null,null),o._22(335544320,3,{contentLabel:0}),o._22(603979776,4,{_buttons:1}),o._22(603979776,5,{_icons:1}),o._4(16384,null,0,M.a,[],null,null),(l()(),o._24(2,["\n      "])),(l()(),o._5(0,null,1,2,"ion-label",[["class","selectLbl"]],null,null,null,null,null)),o._4(16384,[[3,4]],0,S.a,[_.a,o.l,o.F,[8,null],[8,null],[8,null],[8,null]],null,null),(l()(),o._24(null,["",""])),(l()(),o._24(2,["\n      "])),(l()(),o._5(0,null,3,10,"ion-select",[["multiple","false"]],[[2,"select-disabled",null],[2,"ng-untouched",null],[2,"ng-touched",null],[2,"ng-pristine",null],[2,"ng-dirty",null],[2,"ng-valid",null],[2,"ng-invalid",null],[2,"ng-pending",null]],[[null,"ngModelChange"],[null,"ionChange"],[null,"click"],[null,"keyup.space"]],function(l,n,t){var e=!0,u=l.component;return"click"===n&&(e=!1!==o._18(l,71)._click(t)&&e),"keyup.space"===n&&(e=!1!==o._18(l,71)._keyup()&&e),"ngModelChange"===n&&(e=!1!==(u.IONSelectValue=t)&&e),"ionChange"===n&&(e=!1!==u.IONSelectEvent()&&e),e},E.b,E.a)),o._4(1228800,null,1,R.a,[h.a,D.a,_.a,o.l,o.F,[2,O.a],j.a],{multiple:[0,"multiple"]},{ionChange:"ionChange"}),o._22(603979776,6,{options:1}),o._21(1024,null,I.e,function(l){return[l]},[R.a]),o._4(671744,null,0,I.h,[[8,null],[8,null],[8,null],[2,I.e]],{model:[0,"model"]},{update:"ngModelChange"}),o._21(2048,null,I.f,null,[I.h]),o._4(16384,null,0,I.g,[I.f],null,null),(l()(),o._24(null,["\n        "])),(l()(),o._1(16777216,null,null,1,null,e)),o._4(802816,null,0,B.h,[o.P,o.M,o.t],{ngForOf:[0,"ngForOf"]},null),(l()(),o._24(null,["\n      "])),(l()(),o._24(2,["\n    "])),(l()(),o._24(null,["\n      \n    "])),(l()(),o._5(0,null,null,2,"ion-label",[["class","LblOne"]],null,null,null,null,null)),o._4(16384,null,0,S.a,[_.a,o.l,o.F,[8,null],[8,null],[8,null],[8,null]],null,null),(l()(),o._24(null,["Your are Booking"])),(l()(),o._24(null,["\n    "])),(l()(),o._5(0,null,null,2,"ion-label",[["class","LblTwo"]],null,null,null,null,null)),o._4(16384,null,0,S.a,[_.a,o.l,o.F,[8,null],[8,null],[8,null],[8,null]],null,null),(l()(),o._24(null,[""," Experience"])),(l()(),o._24(null,["\n    "])),(l()(),o._5(0,null,null,2,"ion-label",[["class","LblThree"]],null,null,null,null,null)),o._4(16384,null,0,S.a,[_.a,o.l,o.F,[8,null],[8,null],[8,null],[8,null]],null,null),(l()(),o._24(null,[""," ",""])),(l()(),o._24(null,["\n\n    "])),(l()(),o._5(0,null,null,11,"div",[["class","subtotalContainer"]],null,null,null,null,null)),(l()(),o._24(null,["\n      "])),(l()(),o._5(0,null,null,2,"ion-label",[["class","subTotalLbl"]],null,null,null,null,null)),o._4(16384,null,0,S.a,[_.a,o.l,o.F,[8,null],[8,null],[8,null],[8,null]],null,null),(l()(),o._24(null,["Subtotal"])),(l()(),o._24(null,["\n      "])),(l()(),o._5(0,null,null,2,"ion-label",[["class","subTotalPriceLbl"]],null,null,null,null,null)),o._4(16384,null,0,S.a,[_.a,o.l,o.F,[8,null],[8,null],[8,null],[8,null]],null,null),(l()(),o._24(null,["AED ",""])),(l()(),o._24(null,["\n      "])),(l()(),o._5(0,null,null,0,"div",[["class","lineDrow"]],null,null,null,null,null)),(l()(),o._24(null,["\n    "])),(l()(),o._24(null,["\n\n    "])),(l()(),o._5(0,null,null,11,"div",[["class","subtotalContainer"],["style","margin-top:12px;"]],null,null,null,null,null)),(l()(),o._24(null,["\n      "])),(l()(),o._5(0,null,null,2,"ion-label",[["class","subTotalLbl"]],null,null,null,null,null)),o._4(16384,null,0,S.a,[_.a,o.l,o.F,[8,null],[8,null],[8,null],[8,null]],null,null),(l()(),o._24(null,["Taxes"])),(l()(),o._24(null,["\n      "])),(l()(),o._5(0,null,null,2,"ion-label",[["class","subTotalPriceLbl"]],null,null,null,null,null)),o._4(16384,null,0,S.a,[_.a,o.l,o.F,[8,null],[8,null],[8,null],[8,null]],null,null),(l()(),o._24(null,["AED ",""])),(l()(),o._24(null,["\n      "])),(l()(),o._5(0,null,null,0,"div",[["class","lineDrow"]],null,null,null,null,null)),(l()(),o._24(null,["\n    "])),(l()(),o._24(null,["\n\n    "])),(l()(),o._5(0,null,null,7,"div",[["class","checkBoxContainer"]],null,null,null,null,null)),(l()(),o._24(null,["\n      "])),(l()(),o._5(0,null,null,0,"img",[["class","checkboxImage"]],[[8,"src",4]],[[null,"click"]],function(l,n,t){var e=!0,u=l.component;return"click"===n&&(e=!1!==u.SelectCheckBoxClick()&&e),e},null,null)),(l()(),o._24(null,["\n      "])),(l()(),o._5(0,null,null,2,"ion-label",[["class","checkBoxLbl"]],null,null,null,null,null)),o._4(16384,null,0,S.a,[_.a,o.l,o.F,[8,null],[8,null],[8,null],[8,null]],null,null),(l()(),o._24(null,["I have read and agrred to the cancellation and Saftey policy below."])),(l()(),o._24(null,["\n    "])),(l()(),o._24(null,["\n\n  "])),(l()(),o._24(1,["\n\n  "])),(l()(),o._5(0,null,1,12,"div",[["class","bookNowContainer"]],null,null,null,null,null)),(l()(),o._24(null,["\n      "])),(l()(),o._5(0,null,null,1,"button",[["class","bookNowBtn"]],null,[[null,"click"]],function(l,n,t){var e=!0,u=l.component;return"click"===n&&(e=!1!==u.BookingClick()&&e),e},null,null)),(l()(),o._24(null,["BOOK NOW"])),(l()(),o._24(null,["\n    "])),(l()(),o._5(0,null,null,2,"ion-label",[["class","totalLbl"]],null,null,null,null,null)),o._4(16384,null,0,S.a,[_.a,o.l,o.F,[8,null],[8,null],[8,null],[8,null]],null,null),(l()(),o._24(null,["Total"])),(l()(),o._24(null,["\n    "])),(l()(),o._5(0,null,null,2,"ion-label",[["class","totalPriceLbl"]],null,null,null,null,null)),o._4(16384,null,0,S.a,[_.a,o.l,o.F,[8,null],[8,null],[8,null],[8,null]],null,null),(l()(),o._24(null,["AED 595.01"])),(l()(),o._24(null,["\n  "])),(l()(),o._24(1,["\n\n\t\n"])),(l()(),o._24(null,["\n"]))],function(l,n){var t=n.component;l(n,5,0,"true");l(n,15,0,"ios-arrow-back");l(n,42,0,"md-calendar");l(n,52,0,"md-time");l(n,71,0,"false"),l(n,74,0,t.IONSelectValue),l(n,79,0,t.SingleActivity)},function(l,n){var t=n.component;l(n,4,0,o._18(n,5)._hidden,o._18(n,5)._sbPadding),l(n,14,0,o._18(n,15)._hidden),l(n,21,0,t.ActivityArry.name),l(n,34,0,o._18(n,35).statusbarPadding,o._18(n,35)._hasRefresher),l(n,41,0,o._18(n,42)._hidden),l(n,47,0,t.dateSelected),l(n,51,0,o._18(n,52)._hidden),l(n,57,0,t.timeSelected),l(n,68,0,t.ActivityArry.name),l(n,70,0,o._18(n,71)._disabled,o._18(n,76).ngClassUntouched,o._18(n,76).ngClassTouched,o._18(n,76).ngClassPristine,o._18(n,76).ngClassDirty,o._18(n,76).ngClassValid,o._18(n,76).ngClassInvalid,o._18(n,76).ngClassPending),l(n,89,0,t.ActivityArry.name),l(n,93,0,t.DisplayDate,t.DisplayTime),l(n,103,0,t.TotlePayment),l(n,116,0,t.Texes),l(n,123,0,o._9(1,"",t.checkboxSRC,""))})}t.d(n,"a",function(){return W});var o=t(0),i=t(72),a=t(27),_=t(1),s=t(3),r=t(35),c=t(18),h=t(5),d=t(15),p=t(60),g=t(28),f=t(22),b=t(19),m=t(11),y=t(20),v=t(36),k=t(29),w=t(32),P=t(16),C=t(4),F=t(6),A=t(17),S=t(40),T=t(58),O=t(23),D=t(21),L=t(34),M=t(44),E=t(189),R=t(75),j=t(26),I=t(30),B=t(8),H=t(10),x=t(79),N=t(37),z=t(41),G=t(33),U=[],V=o._3({encapsulation:2,styles:U,data:{}}),W=o._2("page-booking",p.a,function(l){return o._25(0,[(l()(),o._5(0,null,null,1,"page-booking",[],null,null,null,u,V)),o._4(49152,null,0,p.a,[d.a,H.a,x.a,B.c,N.a,z.a,G.e],null,null)],null,null)},{},{},[])},157:function(l,n,t){"use strict";function e(l){return u._25(0,[(l()(),u._24(null,["\n"])),(l()(),u._5(0,null,null,29,"ion-header",[],null,null,null,null,null)),u._4(16384,null,0,o.a,[i.a,u.l,u.F,[2,a.a]],null,null),(l()(),u._24(null,["\n\n  "])),(l()(),u._5(0,null,null,25,"ion-navbar",[["class","toolbar"]],[[8,"hidden",0],[2,"statusbar-padding",null]],null,null,_.b,_.a)),u._4(49152,null,0,s.a,[r.a,[2,a.a],[2,c.a],i.a,u.l,u.F],null,null),(l()(),u._24(3,["\n  \t"])),(l()(),u._5(0,null,0,8,"button",[["ion-button",""],["menuToggle",""]],[[8,"hidden",0]],[[null,"click"]],function(l,n,t){var e=!0;return"click"===n&&(e=!1!==u._18(l,9).toggle()&&e),e},h.b,h.a)),u._4(1097728,[[1,4]],0,d.a,[[8,""],i.a,u.l,u.F],null,null),u._4(1064960,null,0,p.a,[g.a,[2,a.a],[2,d.a],[2,s.a]],{menuToggle:[0,"menuToggle"]},null),u._4(16384,null,1,f.a,[i.a,u.l,u.F,[2,b.a],[2,s.a]],null,null),u._22(603979776,1,{_buttons:1}),(l()(),u._24(0,["\n        "])),(l()(),u._5(0,null,0,1,"ion-icon",[["class","backButtonIcon"],["name","ios-arrow-back"],["role","img"]],[[2,"hide",null]],null,null,null,null)),u._4(147456,null,0,m.a,[i.a,u.l,u.F],{name:[0,"name"]},null),(l()(),u._24(0,["Back\n    "])),(l()(),u._24(3,["\n    "])),(l()(),u._5(0,null,3,2,"ion-title",[],null,null,null,y.b,y.a)),u._4(49152,null,0,v.a,[i.a,u.l,u.F,[2,b.a],[2,s.a]],null,null),(l()(),u._24(0,["  CANCELLATION"])),(l()(),u._24(3,["\n    "])),(l()(),u._5(0,null,2,7,"ion-buttons",[["end",""],["style","width: 50px;"]],null,null,null,null,null)),u._4(16384,null,1,f.a,[i.a,u.l,u.F,[2,b.a],[2,s.a]],null,null),u._22(603979776,2,{_buttons:1}),(l()(),u._24(null,["\n        "])),(l()(),u._5(0,null,null,2,"button",[["ion-button",""]],null,null,null,h.b,h.a)),u._4(1097728,[[2,4]],0,d.a,[[8,""],i.a,u.l,u.F],null,null),(l()(),u._24(0,["\n        "])),(l()(),u._24(null,["\n      "])),(l()(),u._24(3,["\n  "])),(l()(),u._24(null,["\n\n"])),(l()(),u._24(null,["\n\n\n"])),(l()(),u._5(0,null,null,2,"ion-content",[["padding",""]],[[2,"statusbar-padding",null],[2,"has-refresher",null]],null,null,k.b,k.a)),u._4(4374528,null,0,w.a,[i.a,P.a,C.a,u.l,u.F,r.a,F.a,u.z,[2,a.a],[2,c.a]],null,null),(l()(),u._24(1,["\n\n"])),(l()(),u._24(null,["\n"]))],function(l,n){l(n,9,0,"");l(n,14,0,"ios-arrow-back")},function(l,n){l(n,4,0,u._18(n,5)._hidden,u._18(n,5)._sbPadding),l(n,7,0,u._18(n,9).isHidden),l(n,13,0,u._18(n,14)._hidden),l(n,32,0,u._18(n,33).statusbarPadding,u._18(n,33)._hasRefresher)})}t.d(n,"a",function(){return D});var u=t(0),o=t(27),i=t(1),a=t(3),_=t(35),s=t(18),r=t(5),c=t(15),h=t(19),d=t(11),p=t(31),g=t(14),f=t(28),b=t(22),m=t(20),y=t(36),v=t(29),k=t(32),w=t(16),P=t(4),C=t(6),F=t(17),A=t(84),S=t(10),T=[],O=u._3({encapsulation:2,styles:T,data:{}}),D=u._2("page-cancellation",A.a,function(l){return u._25(0,[(l()(),u._5(0,null,null,1,"page-cancellation",[],null,null,null,e,O)),u._4(49152,null,0,A.a,[c.a,S.a],null,null)],null,null)},{},{},[])},158:function(l,n,t){"use strict";function e(l){return u._25(0,[(l()(),u._24(null,["\n"])),(l()(),u._5(0,null,null,31,"ion-header",[],null,null,null,null,null)),u._4(16384,null,0,o.a,[i.a,u.l,u.F,[2,a.a]],null,null),(l()(),u._24(null,["\n\n  "])),(l()(),u._5(0,null,null,27,"ion-navbar",[["class","toolbar"]],[[8,"hidden",0],[2,"statusbar-padding",null]],null,null,_.b,_.a)),u._4(49152,null,0,s.a,[r.a,[2,a.a],[2,c.a],i.a,u.l,u.F],null,null),(l()(),u._24(3,["\n\t\t\n\t\t"])),(l()(),u._5(0,null,0,8,"button",[["class","headerBackButton"],["ion-button",""],["menuToggle",""]],[[8,"hidden",0]],[[null,"click"]],function(l,n,t){var e=!0;return"click"===n&&(e=!1!==u._18(l,9).toggle()&&e),e},h.b,h.a)),u._4(1097728,[[1,4]],0,d.a,[[8,""],i.a,u.l,u.F],null,null),u._4(1064960,null,0,p.a,[g.a,[2,a.a],[2,d.a],[2,s.a]],{menuToggle:[0,"menuToggle"]},null),u._4(16384,null,1,f.a,[i.a,u.l,u.F,[2,b.a],[2,s.a]],null,null),u._22(603979776,1,{_buttons:1}),(l()(),u._24(0,["\n\t\t\t\t"])),(l()(),u._5(0,null,0,1,"ion-icon",[["class","backButtonIcon"],["name","ios-arrow-back"],["role","img"]],[[2,"hide",null]],null,null,null,null)),u._4(147456,null,0,m.a,[i.a,u.l,u.F],{name:[0,"name"]},null),(l()(),u._24(0,[" Back\n\t\t"])),(l()(),u._24(3,["\n\t\t\n    "])),(l()(),u._5(0,null,3,4,"ion-title",[["class","pHead"]],null,null,null,y.b,y.a)),u._4(49152,null,0,v.a,[i.a,u.l,u.F,[2,b.a],[2,s.a]],null,null),(l()(),u._24(0,["CONTACT "])),(l()(),u._5(0,null,0,1,"strong",[],null,null,null,null,null)),(l()(),u._24(null,["US"])),(l()(),u._24(3,["\n\n    "])),(l()(),u._5(0,null,2,7,"ion-buttons",[["end",""],["style","width: 40px;"]],null,null,null,null,null)),u._4(16384,null,1,f.a,[i.a,u.l,u.F,[2,b.a],[2,s.a]],null,null),u._22(603979776,2,{_buttons:1}),(l()(),u._24(null,["\n      "])),(l()(),u._5(0,null,null,2,"button",[["ion-button",""]],null,null,null,h.b,h.a)),u._4(1097728,[[2,4]],0,d.a,[[8,""],i.a,u.l,u.F],null,null),(l()(),u._24(0,["\n      "])),(l()(),u._24(null,["\n\t\t"])),(l()(),u._24(3,["\n\t\t\n  "])),(l()(),u._24(null,["\n\n"])),(l()(),u._24(null,["\n\n\n"])),(l()(),u._5(0,null,null,57,"ion-content",[["padding",""]],[[2,"statusbar-padding",null],[2,"has-refresher",null]],null,null,k.b,k.a)),u._4(4374528,null,0,w.a,[i.a,P.a,C.a,u.l,u.F,r.a,F.a,u.z,[2,a.a],[2,c.a]],null,null),(l()(),u._24(1,["\n\t"])),(l()(),u._5(0,null,1,53,"ion-list",[["margin-top",""]],null,null,null,null,null)),u._4(16384,null,0,A.a,[i.a,u.l,u.F,P.a,S.h,C.a],null,null),(l()(),u._24(null,["\n\n\t  "])),(l()(),u._5(0,null,null,9,"ion-item",[["class","customTextbox item item-block"],["margin-bottom",""]],null,null,null,T.b,T.a)),u._4(1097728,null,3,O.a,[D.a,i.a,u.l,u.F,[2,L.a]],null,null),u._22(335544320,3,{contentLabel:0}),u._22(603979776,4,{_buttons:1}),u._22(603979776,5,{_icons:1}),u._4(16384,null,0,M.a,[],null,null),(l()(),u._24(2,["\n\t    "])),(l()(),u._5(0,null,3,1,"ion-input",[["placeholder","Name"],["type","text"]],null,null,null,E.b,E.a)),u._4(5423104,null,0,R.a,[i.a,P.a,D.a,r.a,u.l,u.F,[2,w.a],[2,O.a],[2,j.f],C.a],{type:[0,"type"],placeholder:[1,"placeholder"]},null),(l()(),u._24(2,["\n\t  "])),(l()(),u._24(null,["\n\n\t  "])),(l()(),u._5(0,null,null,9,"ion-item",[["class","customTextbox item item-block"],["margin-bottom",""]],null,null,null,T.b,T.a)),u._4(1097728,null,3,O.a,[D.a,i.a,u.l,u.F,[2,L.a]],null,null),u._22(335544320,6,{contentLabel:0}),u._22(603979776,7,{_buttons:1}),u._22(603979776,8,{_icons:1}),u._4(16384,null,0,M.a,[],null,null),(l()(),u._24(2,["\n\t    "])),(l()(),u._5(0,null,3,1,"ion-input",[["placeholder","Email"],["type","email"]],null,null,null,E.b,E.a)),u._4(5423104,null,0,R.a,[i.a,P.a,D.a,r.a,u.l,u.F,[2,w.a],[2,O.a],[2,j.f],C.a],{type:[0,"type"],placeholder:[1,"placeholder"]},null),(l()(),u._24(2,["\n\t  "])),(l()(),u._24(null,["\n\t  "])),(l()(),u._5(0,null,null,9,"ion-item",[["class","customTextbox item item-block"],["margin-bottom",""]],null,null,null,T.b,T.a)),u._4(1097728,null,3,O.a,[D.a,i.a,u.l,u.F,[2,L.a]],null,null),u._22(335544320,9,{contentLabel:0}),u._22(603979776,10,{_buttons:1}),u._22(603979776,11,{_icons:1}),u._4(16384,null,0,M.a,[],null,null),(l()(),u._24(2,["\n\t    "])),(l()(),u._5(0,null,3,1,"ion-input",[["placeholder","Phone"],["type","number"]],null,null,null,E.b,E.a)),u._4(5423104,null,0,R.a,[i.a,P.a,D.a,r.a,u.l,u.F,[2,w.a],[2,O.a],[2,j.f],C.a],{type:[0,"type"],placeholder:[1,"placeholder"]},null),(l()(),u._24(2,["\n\t  "])),(l()(),u._24(null,["\n\t  "])),(l()(),u._5(0,null,null,9,"ion-item",[["class","customTextbox item item-block"],["margin-bottom",""]],null,null,null,T.b,T.a)),u._4(1097728,null,3,O.a,[D.a,i.a,u.l,u.F,[2,L.a]],null,null),u._22(335544320,12,{contentLabel:0}),u._22(603979776,13,{_buttons:1}),u._22(603979776,14,{_icons:1}),u._4(16384,null,0,M.a,[],null,null),(l()(),u._24(2,["\n\t    "])),(l()(),u._5(0,null,3,1,"ion-textarea",[["placeholder","Note"],["rows","10"]],null,null,null,E.b,E.a)),u._4(5423104,null,0,R.a,[i.a,P.a,D.a,r.a,u.l,u.F,[2,w.a],[2,O.a],[2,j.f],C.a],{placeholder:[0,"placeholder"]},null),(l()(),u._24(2,["\n\t  "])),(l()(),u._24(null,["\n\n\t\t"])),(l()(),u._5(0,null,null,5,"div",[["text-right",""]],null,null,null,null,null)),(l()(),u._24(null,["\n\t\t\t"])),(l()(),u._5(0,null,null,2,"button",[["class","sendBtn"],["ion-button",""],["text-right",""]],null,null,null,h.b,h.a)),u._4(1097728,null,0,d.a,[[8,""],i.a,u.l,u.F],null,null),(l()(),u._24(0,["SEND"])),(l()(),u._24(null,["\n\t\t"])),(l()(),u._24(null,["\n\t"])),(l()(),u._24(1,["\n\n"])),(l()(),u._24(null,["\n"]))],function(l,n){l(n,9,0,"");l(n,14,0,"ios-arrow-back");l(n,48,0,"text","Name");l(n,59,0,"email","Email");l(n,70,0,"number","Phone");l(n,81,0,"Note")},function(l,n){l(n,4,0,u._18(n,5)._hidden,u._18(n,5)._sbPadding),l(n,7,0,u._18(n,9).isHidden),l(n,13,0,u._18(n,14)._hidden),l(n,34,0,u._18(n,35).statusbarPadding,u._18(n,35)._hasRefresher)})}t.d(n,"a",function(){return N});var u=t(0),o=t(27),i=t(1),a=t(3),_=t(35),s=t(18),r=t(5),c=t(15),h=t(19),d=t(11),p=t(31),g=t(14),f=t(28),b=t(22),m=t(20),y=t(36),v=t(29),k=t(32),w=t(16),P=t(4),C=t(6),F=t(17),A=t(55),S=t(7),T=t(58),O=t(23),D=t(21),L=t(34),M=t(44),E=t(190),R=t(69),j=t(30),I=t(85),B=t(10),H=[],x=u._3({encapsulation:2,styles:H,data:{}}),N=u._2("page-contact",I.a,function(l){return u._25(0,[(l()(),u._5(0,null,null,1,"page-contact",[],null,null,null,e,x)),u._4(49152,null,0,I.a,[c.a,B.a],null,null)],null,null)},{},{},[])},159:function(l,n,t){"use strict";function e(l){return u._25(0,[(l()(),u._24(null,["\n"])),(l()(),u._5(0,null,null,20,"ion-header",[],null,null,null,null,null)),u._4(16384,null,0,o.a,[i.a,u.l,u.F,[2,a.a]],null,null),(l()(),u._24(null,["\n\n  "])),(l()(),u._5(0,null,null,16,"ion-navbar",[["class","toolbar"]],[[8,"hidden",0],[2,"statusbar-padding",null]],null,null,_.b,_.a)),u._4(49152,null,0,s.a,[r.a,[2,a.a],[2,c.a],i.a,u.l,u.F],null,null),(l()(),u._24(3,["\n  \t"])),(l()(),u._5(0,null,0,8,"button",[["ion-button",""],["menuToggle",""]],[[8,"hidden",0]],[[null,"click"]],function(l,n,t){var e=!0;return"click"===n&&(e=!1!==u._18(l,9).toggle()&&e),e},h.b,h.a)),u._4(1097728,[[1,4]],0,d.a,[[8,""],i.a,u.l,u.F],null,null),u._4(1064960,null,0,p.a,[g.a,[2,a.a],[2,d.a],[2,s.a]],{menuToggle:[0,"menuToggle"]},null),u._4(16384,null,1,f.a,[i.a,u.l,u.F,[2,b.a],[2,s.a]],null,null),u._22(603979776,1,{_buttons:1}),(l()(),u._24(0,["\n        "])),(l()(),u._5(0,null,0,1,"ion-icon",[["class","backButtonIcon"],["name","ios-arrow-back"],["role","img"]],[[2,"hide",null]],null,null,null,null)),u._4(147456,null,0,m.a,[i.a,u.l,u.F],{name:[0,"name"]},null),(l()(),u._24(0,["Back\n    "])),(l()(),u._24(3,["\n    "])),(l()(),u._5(0,null,3,2,"ion-title",[],null,null,null,y.b,y.a)),u._4(49152,null,0,v.a,[i.a,u.l,u.F,[2,b.a],[2,s.a]],null,null),(l()(),u._24(0,["GIFT "])),(l()(),u._24(3,["\n  "])),(l()(),u._24(null,["\n\n"])),(l()(),u._24(null,["\n\n\n"])),(l()(),u._5(0,null,null,2,"ion-content",[["padding",""]],[[2,"statusbar-padding",null],[2,"has-refresher",null]],null,null,k.b,k.a)),u._4(4374528,null,0,w.a,[i.a,P.a,C.a,u.l,u.F,r.a,F.a,u.z,[2,a.a],[2,c.a]],null,null),(l()(),u._24(1,["\n\n"])),(l()(),u._24(null,["\n"]))],function(l,n){l(n,9,0,"");l(n,14,0,"ios-arrow-back")},function(l,n){l(n,4,0,u._18(n,5)._hidden,u._18(n,5)._sbPadding),l(n,7,0,u._18(n,9).isHidden),l(n,13,0,u._18(n,14)._hidden),l(n,23,0,u._18(n,24).statusbarPadding,u._18(n,24)._hasRefresher)})}t.d(n,"a",function(){return D});var u=t(0),o=t(27),i=t(1),a=t(3),_=t(35),s=t(18),r=t(5),c=t(15),h=t(19),d=t(11),p=t(31),g=t(14),f=t(28),b=t(22),m=t(20),y=t(36),v=t(29),k=t(32),w=t(16),P=t(4),C=t(6),F=t(17),A=t(86),S=t(10),T=[],O=u._3({encapsulation:2,styles:T,data:{}}),D=u._2("page-gift",A.a,function(l){return u._25(0,[(l()(),u._5(0,null,null,1,"page-gift",[],null,null,null,e,O)),u._4(49152,null,0,A.a,[c.a,S.a],null,null)],null,null)},{},{},[])},160:function(l,n,t){"use strict";function e(l){return u._25(0,[u._22(402653184,1,{mapRef:0}),(l()(),u._24(null,["\n"])),(l()(),u._5(0,null,null,31,"ion-header",[],null,null,null,null,null)),u._4(16384,null,0,o.a,[i.a,u.l,u.F,[2,a.a]],null,null),(l()(),u._24(null,["\n\n  "])),(l()(),u._5(0,null,null,27,"ion-navbar",[["class","toolbar"]],[[8,"hidden",0],[2,"statusbar-padding",null]],null,null,_.b,_.a)),u._4(49152,null,0,s.a,[r.a,[2,a.a],[2,c.a],i.a,u.l,u.F],null,null),(l()(),u._24(3,["\n  \t\n    "])),(l()(),u._5(0,null,0,8,"button",[["class","headerBackButton"],["ion-button",""],["menuToggle",""]],[[8,"hidden",0]],[[null,"click"]],function(l,n,t){var e=!0;return"click"===n&&(e=!1!==u._18(l,10).toggle()&&e),e},h.b,h.a)),u._4(1097728,[[2,4]],0,d.a,[[8,""],i.a,u.l,u.F],null,null),u._4(1064960,null,0,p.a,[g.a,[2,a.a],[2,d.a],[2,s.a]],{menuToggle:[0,"menuToggle"]},null),u._4(16384,null,1,f.a,[i.a,u.l,u.F,[2,b.a],[2,s.a]],null,null),u._22(603979776,2,{_buttons:1}),(l()(),u._24(0,["\n        "])),(l()(),u._5(0,null,0,1,"ion-icon",[["class","backButtonIcon"],["name","ios-arrow-back"],["role","img"]],[[2,"hide",null]],null,null,null,null)),u._4(147456,null,0,m.a,[i.a,u.l,u.F],{name:[0,"name"]},null),(l()(),u._24(0,[" Back\n\t\t"])),(l()(),u._24(3,["\n\t\t\n    "])),(l()(),u._5(0,null,3,4,"ion-title",[["class","pHead"]],null,null,null,y.b,y.a)),u._4(49152,null,0,v.a,[i.a,u.l,u.F,[2,b.a],[2,s.a]],null,null),(l()(),u._24(0,["OUR  "])),(l()(),u._5(0,null,0,1,"strong",[],null,null,null,null,null)),(l()(),u._24(null,["LOCATION"])),(l()(),u._24(3,["\n\n    "])),(l()(),u._5(0,null,2,7,"ion-buttons",[["end",""],["style","width: 40px;"]],null,null,null,null,null)),u._4(16384,null,1,f.a,[i.a,u.l,u.F,[2,b.a],[2,s.a]],null,null),u._22(603979776,3,{_buttons:1}),(l()(),u._24(null,["\n      "])),(l()(),u._5(0,null,null,2,"button",[["ion-button",""]],null,null,null,h.b,h.a)),u._4(1097728,[[3,4]],0,d.a,[[8,""],i.a,u.l,u.F],null,null),(l()(),u._24(0,["\n      "])),(l()(),u._24(null,["\n    "])),(l()(),u._24(3,["\n    \n\n  "])),(l()(),u._24(null,["\n\n"])),(l()(),u._24(null,["\n\n\n"])),(l()(),u._5(0,null,null,4,"ion-content",[],[[2,"statusbar-padding",null],[2,"has-refresher",null]],null,null,k.b,k.a)),u._4(4374528,null,0,w.a,[i.a,P.a,C.a,u.l,u.F,r.a,F.a,u.z,[2,a.a],[2,c.a]],null,null),(l()(),u._24(1,["\n\t"])),(l()(),u._5(0,[[1,0],["map",1]],1,0,"div",[["id","map"]],null,null,null,null,null)),(l()(),u._24(1,["\n"])),(l()(),u._24(null,["\n"]))],function(l,n){l(n,10,0,"");l(n,15,0,"ios-arrow-back")},function(l,n){l(n,5,0,u._18(n,6)._hidden,u._18(n,6)._sbPadding),l(n,8,0,u._18(n,10).isHidden),l(n,14,0,u._18(n,15)._hidden),l(n,35,0,u._18(n,36).statusbarPadding,u._18(n,36)._hasRefresher)})}t.d(n,"a",function(){return D});var u=t(0),o=t(27),i=t(1),a=t(3),_=t(35),s=t(18),r=t(5),c=t(15),h=t(19),d=t(11),p=t(31),g=t(14),f=t(28),b=t(22),m=t(20),y=t(36),v=t(29),k=t(32),w=t(16),P=t(4),C=t(6),F=t(17),A=t(87),S=t(10),T=[],O=u._3({encapsulation:2,styles:T,data:{}}),D=u._2("page-location",A.a,function(l){return u._25(0,[(l()(),u._5(0,null,null,1,"page-location",[],null,null,null,e,O)),u._4(49152,null,0,A.a,[c.a,S.a],null,null)],null,null)},{},{},[])},161:function(l,n,t){"use strict";function e(l){return D._25(0,[(l()(),D._5(0,null,null,24,"ion-slide",[["class","sliderMainSlide"]],null,null,null,L.b,L.a)),D._4(180224,null,0,M.a,[D.l,D.F,E.a],null,null),(l()(),D._24(0,["\n          \n              \n            "])),(l()(),D._5(0,null,0,20,"div",[["class","slideMainContainer"]],null,null,null,null,null)),(l()(),D._24(null,["\n                "])),(l()(),D._5(0,null,null,4,"ion-label",[["class","headerLbl"]],null,null,null,null,null)),D._4(16384,null,0,R.a,[j.a,D.l,D.F,[8,null],[8,null],[8,null],[8,null]],null,null),(l()(),D._24(null,["RIP DUBAI"])),(l()(),D._5(0,null,null,1,"span",[["class","headerSubLbl"]],null,null,null,null,null)),(l()(),D._24(null,[" EXCLUSIVE"])),(l()(),D._24(null,["\n                "])),(l()(),D._5(0,null,null,0,"img",[["class","imageSlider"]],[[8,"src",4]],null,null,null,null)),(l()(),D._24(null,["\n                "])),(l()(),D._5(0,null,null,3,"ion-label",[["class","headerLblTwo"]],null,null,null,null,null)),D._4(16384,null,0,R.a,[j.a,D.l,D.F,[8,null],[8,null],[8,null],[8,null]],null,null),(l()(),D._24(null,["",""])),(l()(),D._5(0,null,null,0,"span",[["class","headerSubLblTwo"]],null,null,null,null,null)),(l()(),D._24(null,["\n                \n                  "])),(l()(),D._5(0,null,null,4,"ion-label",[["class","sliderDics"],["padding",""],["text-left",""]],null,null,null,null,null)),D._4(16384,null,0,R.a,[j.a,D.l,D.F,[8,null],[8,null],[8,null],[8,null]],null,null),(l()(),D._24(null,["\n                      "])),(l()(),D._5(0,null,null,0,"span",[],[[8,"innerHTML",1]],null,null,null,null)),(l()(),D._24(null,["  \n                  "])),(l()(),D._24(null,["\n            \n              "])),(l()(),D._24(0,["\n          \n          "]))],null,function(l,n){l(n,11,0,D._9(1,"",n.context.$implicit.image1,"")),l(n,15,0,n.context.$implicit.name),l(n,21,0,n.context.$implicit.description)})}function u(l){return D._25(0,[D._22(402653184,1,{slides:0}),(l()(),D._24(null,["\n"])),(l()(),D._5(0,null,null,25,"ion-header",[],null,null,null,null,null)),D._4(16384,null,0,I.a,[j.a,D.l,D.F,[2,B.a]],null,null),(l()(),D._24(null,["\n  "])),(l()(),D._5(0,null,null,21,"ion-navbar",[["class","toolbar"]],[[8,"hidden",0],[2,"statusbar-padding",null]],null,null,H.b,H.a)),D._4(49152,null,0,x.a,[N.a,[2,B.a],[2,z.a],j.a,D.l,D.F],null,null),(l()(),D._24(3,["\n    "])),(l()(),D._5(0,null,0,6,"button",[["ion-button",""],["menuToggle",""]],[[8,"hidden",0]],[[null,"click"]],function(l,n,t){var e=!0;return"click"===n&&(e=!1!==D._18(l,10).toggle()&&e),e},G.b,G.a)),D._4(1097728,[[2,4]],0,U.a,[[8,""],j.a,D.l,D.F],null,null),D._4(1064960,null,0,V.a,[W.a,[2,B.a],[2,U.a],[2,x.a]],{menuToggle:[0,"menuToggle"]},null),D._4(16384,null,1,X.a,[j.a,D.l,D.F,[2,K.a],[2,x.a]],null,null),D._22(603979776,2,{_buttons:1}),(l()(),D._5(0,null,0,1,"ion-icon",[["ios","ios-list"],["md","md-list"],["role","img"]],[[2,"hide",null]],null,null,null,null)),D._4(147456,null,0,$.a,[j.a,D.l,D.F],{ios:[0,"ios"],md:[1,"md"]},null),(l()(),D._24(3,["\n    "])),(l()(),D._5(0,null,3,2,"ion-title",[],null,null,null,q.b,q.a)),D._4(49152,null,0,Y.a,[j.a,D.l,D.F,[2,K.a],[2,x.a]],null,null),(l()(),D._5(0,null,0,0,"img",[["height","40"],["src","https://www.silverwingtechnologies.com/clients/img/logo.png"]],null,null,null,null,null)),(l()(),D._24(3,["\n    "])),(l()(),D._5(0,null,2,5,"ion-buttons",[["end",""],["style","width: 50px;"]],null,null,null,null,null)),D._4(16384,null,1,X.a,[j.a,D.l,D.F,[2,K.a],[2,x.a]],null,null),D._22(603979776,3,{_buttons:1}),(l()(),D._5(0,null,null,1,"button",[["ion-button",""]],null,null,null,G.b,G.a)),D._4(1097728,[[3,4]],0,U.a,[[8,""],j.a,D.l,D.F],null,null),(l()(),D._24(null,[" "])),(l()(),D._24(3,["\n  "])),(l()(),D._24(null,["\n"])),(l()(),D._24(null,["\n\n"])),(l()(),D._5(0,null,null,14,"ion-content",[["class","homePageCSS"],["padding",""]],[[2,"statusbar-padding",null],[2,"has-refresher",null]],null,null,Z.b,Z.a)),D._4(4374528,null,0,J.a,[j.a,Q.a,ll.a,D.l,D.F,N.a,nl.a,D.z,[2,B.a],[2,z.a]],null,null),(l()(),D._24(1,["\n    \n    "])),(l()(),D._24(1,["\n\n    "])),(l()(),D._5(0,null,1,5,"ion-slides",[["class","sliderMain"],["effect","coverflow"],["loop","false"],["slidesPerView","1"],["speed","200"],["text-start",""],["zoom","true"]],null,null,null,tl.b,tl.a)),D._4(1228800,[[1,4]],0,E.a,[j.a,Q.a,D.z,[2,B.a],D.l,D.F],{effect:[0,"effect"],loop:[1,"loop"],speed:[2,"speed"],zoom:[3,"zoom"],slidesPerView:[4,"slidesPerView"]},null),(l()(),D._24(0,["\n        "])),(l()(),D._1(16777216,null,0,1,null,e)),D._4(802816,null,0,el.h,[D.P,D.M,D.t],{ngForOf:[0,"ngForOf"]},null),(l()(),D._24(0,["\n      \n  "])),(l()(),D._24(1,["\n\n    \n  "])),(l()(),D._5(0,null,1,2,"button",[["class","bookbtn"],["color","yellow"],["full",""],["ion-button",""],["margin-top",""]],null,[[null,"click"]],function(l,n,t){var e=!0,u=l.component;return"click"===n&&(e=!1!==u.booking()&&e),e},G.b,G.a)),D._4(1097728,null,0,U.a,[[8,""],j.a,D.l,D.F],{color:[0,"color"],full:[1,"full"]},null),(l()(),D._24(0,["BOOK NOW"])),(l()(),D._24(1,["\n  \n"])),(l()(),D._24(null,["\n"]))],function(l,n){var t=n.component;l(n,10,0,"");l(n,14,0,"ios-list","md-list");l(n,34,0,"coverflow","false","200","true","1"),l(n,37,0,t.ActivityArry);l(n,41,0,"yellow","")},function(l,n){l(n,5,0,D._18(n,6)._hidden,D._18(n,6)._sbPadding),l(n,8,0,D._18(n,10).isHidden),l(n,13,0,D._18(n,14)._hidden),l(n,29,0,D._18(n,30).statusbarPadding,D._18(n,30)._hasRefresher)})}function o(l){return rl._25(0,[(l()(),rl._5(0,null,null,12,"button",[["class","item item-block"],["ion-item",""]],null,[[null,"click"]],function(l,n,t){var e=!0,u=l.component;return"click"===n&&(e=!1!==u.itemTapped(t,l.context.$implicit)&&e),e},cl.b,cl.a)),rl._4(1097728,null,3,hl.a,[dl.a,pl.a,rl.l,rl.F,[2,gl.a]],null,null),rl._22(335544320,2,{contentLabel:0}),rl._22(603979776,3,{_buttons:1}),rl._22(603979776,4,{_icons:1}),rl._4(16384,null,0,fl.a,[],null,null),(l()(),rl._24(2,["\n      "])),(l()(),rl._5(0,null,0,1,"ion-icon",[["item-start",""],["role","img"]],[[2,"hide",null]],null,null,null,null)),rl._4(147456,[[4,4]],0,bl.a,[pl.a,rl.l,rl.F],{name:[0,"name"]},null),(l()(),rl._24(2,["\n      ","\n      "])),(l()(),rl._5(0,null,4,1,"div",[["class","item-note"],["item-end",""]],null,null,null,null,null)),(l()(),rl._24(null,["\n        ","\n      "])),(l()(),rl._24(2,["\n    "]))],function(l,n){l(n,8,0,n.context.$implicit.icon)},function(l,n){l(n,7,0,rl._18(n,8)._hidden),l(n,9,0,n.context.$implicit.title),l(n,11,0,n.context.$implicit.note)})}function i(l){return rl._25(0,[(l()(),rl._5(0,null,null,4,"div",[["padding",""]],null,null,null,null,null)),(l()(),rl._24(null,["\n    You navigated here from "])),(l()(),rl._5(0,null,null,1,"b",[],null,null,null,null,null)),(l()(),rl._24(null,["",""])),(l()(),rl._24(null,["\n  "]))],null,function(l,n){l(n,3,0,n.component.selectedItem.title)})}function a(l){return rl._25(0,[(l()(),rl._5(0,null,null,20,"ion-header",[],null,null,null,null,null)),rl._4(16384,null,0,ml.a,[pl.a,rl.l,rl.F,[2,yl.a]],null,null),(l()(),rl._24(null,["\n  "])),(l()(),rl._5(0,null,null,16,"ion-navbar",[["class","toolbar"]],[[8,"hidden",0],[2,"statusbar-padding",null]],null,null,vl.b,vl.a)),rl._4(49152,null,0,kl.a,[wl.a,[2,yl.a],[2,Pl.a],pl.a,rl.l,rl.F],null,null),(l()(),rl._24(3,["\n    "])),(l()(),rl._5(0,null,0,8,"button",[["ion-button",""],["menuToggle",""]],[[8,"hidden",0]],[[null,"click"]],function(l,n,t){var e=!0;return"click"===n&&(e=!1!==rl._18(l,8).toggle()&&e),e},Cl.b,Cl.a)),rl._4(1097728,[[1,4]],0,Fl.a,[[8,""],pl.a,rl.l,rl.F],null,null),rl._4(1064960,null,0,Al.a,[Sl.a,[2,yl.a],[2,Fl.a],[2,kl.a]],{menuToggle:[0,"menuToggle"]},null),rl._4(16384,null,1,Tl.a,[pl.a,rl.l,rl.F,[2,Ol.a],[2,kl.a]],null,null),rl._22(603979776,1,{_buttons:1}),(l()(),rl._24(0,["\n      "])),(l()(),rl._5(0,null,0,1,"ion-icon",[["name","menu"],["role","img"]],[[2,"hide",null]],null,null,null,null)),rl._4(147456,null,0,bl.a,[pl.a,rl.l,rl.F],{name:[0,"name"]},null),(l()(),rl._24(0,["\n    "])),(l()(),rl._24(3,["\n    "])),(l()(),rl._5(0,null,3,2,"ion-title",[],null,null,null,Dl.b,Dl.a)),rl._4(49152,null,0,Ll.a,[pl.a,rl.l,rl.F,[2,Ol.a],[2,kl.a]],null,null),(l()(),rl._24(0,["List"])),(l()(),rl._24(3,["\n  "])),(l()(),rl._24(null,["\n"])),(l()(),rl._24(null,["\n\n"])),(l()(),rl._5(0,null,null,12,"ion-content",[],[[2,"statusbar-padding",null],[2,"has-refresher",null]],null,null,Ml.b,Ml.a)),rl._4(4374528,null,0,El.a,[pl.a,Rl.a,jl.a,rl.l,rl.F,wl.a,Il.a,rl.z,[2,yl.a],[2,Pl.a]],null,null),(l()(),rl._24(1,["\n  "])),(l()(),rl._5(0,null,1,5,"ion-list",[],null,null,null,null,null)),rl._4(16384,null,0,Bl.a,[pl.a,rl.l,rl.F,Rl.a,Hl.h,jl.a],null,null),(l()(),rl._24(null,["\n    "])),(l()(),rl._1(16777216,null,null,1,null,o)),rl._4(802816,null,0,xl.h,[rl.P,rl.M,rl.t],{ngForOf:[0,"ngForOf"]},null),(l()(),rl._24(null,["\n  "])),(l()(),rl._24(1,["\n  "])),(l()(),rl._1(16777216,null,1,1,null,i)),rl._4(16384,null,0,xl.i,[rl.P,rl.M],{ngIf:[0,"ngIf"]},null),(l()(),rl._24(1,["\n"])),(l()(),rl._24(null,["\n"]))],function(l,n){var t=n.component;l(n,8,0,"");l(n,13,0,"menu"),l(n,29,0,t.items),l(n,33,0,t.selectedItem)},function(l,n){l(n,3,0,rl._18(n,4)._hidden,rl._18(n,4)._sbPadding),l(n,6,0,rl._18(n,8).isHidden),l(n,12,0,rl._18(n,13)._hidden),l(n,22,0,rl._18(n,23).statusbarPadding,rl._18(n,23)._hasRefresher)})}function _(l){return Vl._25(0,[(l()(),Vl._5(0,null,null,7,"button",[["class","sidebarBg item item-block"],["ion-item",""],["menuClose",""],["text-wrap",""]],null,[[null,"click"]],function(l,n,t){var e=!0,u=l.component;return"click"===n&&(e=!1!==Vl._18(l,6).close()&&e),"click"===n&&(e=!1!==u.openPage(l.context.$implicit)&&e),e},Wl.b,Wl.a)),Vl._4(1097728,null,3,Xl.a,[Kl.a,$l.a,Vl.l,Vl.F,[2,ql.a]],null,null),Vl._22(335544320,5,{contentLabel:0}),Vl._22(603979776,6,{_buttons:1}),Vl._22(603979776,7,{_icons:1}),Vl._4(16384,null,0,Yl.a,[],null,null),Vl._4(16384,null,0,Zl.a,[Jl.a],{menuClose:[0,"menuClose"]},null),(l()(),Vl._24(2,["\n        ","\n      "]))],function(l,n){l(n,6,0,"")},function(l,n){l(n,7,0,n.context.$implicit.title)})}function s(l){return Vl._25(0,[Vl._22(402653184,1,{nav:0}),(l()(),Vl._24(null,["\n"])),(l()(),Vl._5(0,null,null,112,"ion-menu",[["class","sideMenuHeader"],["role","navigation"],["type","overlay"]],null,null,null,Ql.b,Ql.a)),Vl._4(245760,null,2,ln.a,[Jl.a,Vl.l,$l.a,nn.a,Vl.F,tn.a,en.h,un.a,on.a],{content:[0,"content"],type:[1,"type"]},null),Vl._22(335544320,2,{menuContent:0}),Vl._22(335544320,3,{menuNav:0}),Vl._21(6144,null,an.a,null,[ln.a]),(l()(),Vl._24(0,["\n  "])),(l()(),Vl._5(0,null,0,16,"ion-header",[],null,null,null,null,null)),Vl._4(16384,null,0,_n.a,[$l.a,Vl.l,Vl.F,[2,sn.a]],null,null),(l()(),Vl._24(null,["\n    "])),(l()(),Vl._5(0,null,null,12,"ion-toolbar",[["class","toolbar"]],[[2,"statusbar-padding",null]],null,null,rn.b,rn.a)),Vl._4(49152,null,0,cn.a,[$l.a,Vl.l,Vl.F],null,null),(l()(),Vl._24(3,["\n      "])),(l()(),Vl._5(0,null,0,8,"button",[["ion-button",""],["menuToggle",""]],[[8,"hidden",0]],[[null,"click"]],function(l,n,t){var e=!0;return"click"===n&&(e=!1!==Vl._18(l,16).toggle()&&e),e},hn.b,hn.a)),Vl._4(1097728,[[4,4]],0,dn.a,[[8,""],$l.a,Vl.l,Vl.F],null,null),Vl._4(1064960,null,0,pn.a,[Jl.a,[2,sn.a],[2,dn.a],[2,gn.a]],{menuToggle:[0,"menuToggle"]},null),Vl._4(16384,null,1,fn.a,[$l.a,Vl.l,Vl.F,[2,cn.a],[2,gn.a]],null,null),Vl._22(603979776,4,{_buttons:1}),(l()(),Vl._24(0,["\n        "])),(l()(),Vl._5(0,null,0,1,"ion-icon",[["ios","ios-list"],["md","md-list"],["role","img"]],[[2,"hide",null]],null,null,null,null)),Vl._4(147456,null,0,bn.a,[$l.a,Vl.l,Vl.F],{ios:[0,"ios"],md:[1,"md"]},null),(l()(),Vl._24(0,["\n      "])),(l()(),Vl._24(3,["\n    "])),(l()(),Vl._24(null,["\n  "])),(l()(),Vl._24(0,["\n\n  "])),(l()(),Vl._5(0,null,0,87,"ion-content",[["class","sidebarBg"],["scroll","false"]],[[2,"statusbar-padding",null],[2,"has-refresher",null]],null,null,mn.b,mn.a)),Vl._4(4374528,[[2,4]],0,yn.a,[$l.a,nn.a,un.a,Vl.l,Vl.F,on.a,tn.a,Vl.z,[2,sn.a],[2,vn.a]],null,null),(l()(),Vl._24(1,["\n    \n      "])),(l()(),Vl._1(16777216,null,1,1,null,_)),Vl._4(802816,null,0,kn.h,[Vl.P,Vl.M,Vl.t],{ngForOf:[0,"ngForOf"]},null),(l()(),Vl._24(1,["\n    \n    "])),(l()(),Vl._5(0,null,1,1,"p",[["class","followBtn"],["no-margin",""],["padding-left",""]],null,null,null,null,null)),(l()(),Vl._24(null,["FOLLOW US"])),(l()(),Vl._24(1,["\n    "])),(l()(),Vl._5(0,null,1,77,"ion-grid",[["class","grid"],["style","padding-left: 12px;"]],null,null,null,null,null)),Vl._4(16384,null,0,wn.a,[],null,null),(l()(),Vl._24(null,["\n      "])),(l()(),Vl._5(0,null,null,28,"ion-row",[["class","row"]],null,null,null,null,null)),Vl._4(16384,null,0,Pn.a,[],null,null),(l()(),Vl._24(null,["\n        "])),(l()(),Vl._5(0,null,null,12,"ion-col",[["class","col"],["col-6",""]],null,null,null,null,null)),Vl._4(16384,null,0,Cn.a,[],null,null),(l()(),Vl._24(null,["\n          "])),(l()(),Vl._5(0,null,null,8,"div",[["class","social-box-bg "],["text-center",""]],null,null,null,null,null)),(l()(),Vl._24(null,["\n            "])),(l()(),Vl._5(0,null,null,3,"a",[["href","https://www.facebook.com/RiP.DuBai"]],null,null,null,null,null)),(l()(),Vl._24(null,["\n            "])),(l()(),Vl._5(0,null,null,0,"img",[["src","assets/imgs/facebook.png"],["style","height: 27px;margin-top: 10px;"]],null,null,null,null,null)),(l()(),Vl._24(null,["\n          "])),(l()(),Vl._24(null,["\n            "])),(l()(),Vl._5(0,null,null,0,"i",[["class","fa fa-facebook"]],null,null,null,null,null)),(l()(),Vl._24(null,["\n          "])),(l()(),Vl._24(null,["   \n        "])),(l()(),Vl._24(null,["\n        "])),(l()(),Vl._5(0,null,null,10,"ion-col",[["class","col"],["col-6",""]],null,null,null,null,null)),Vl._4(16384,null,0,Cn.a,[],null,null),(l()(),Vl._24(null,["\n          "])),(l()(),Vl._5(0,null,null,6,"div",[["class","social-box-bg "],["text-center",""]],null,null,null,null,null)),(l()(),Vl._24(null,["\n            "])),(l()(),Vl._5(0,null,null,3,"a",[["href","https://twitter.com/Rip_DUBAI"]],null,null,null,null,null)),(l()(),Vl._24(null,["\n            "])),(l()(),Vl._5(0,null,null,1,"ion-icon",[["class","social-icon"],["ios","logo-twitter"],["md","logo-twitter"],["role","img"]],[[2,"hide",null]],null,null,null,null)),Vl._4(147456,null,0,bn.a,[$l.a,Vl.l,Vl.F],{ios:[0,"ios"],md:[1,"md"]},null),(l()(),Vl._24(null,["\n          "])),(l()(),Vl._24(null,["\n        "])),(l()(),Vl._24(null,["\n      "])),(l()(),Vl._24(null,["\n      "])),(l()(),Vl._5(0,null,null,27,"ion-row",[["class","row"]],null,null,null,null,null)),Vl._4(16384,null,0,Pn.a,[],null,null),(l()(),Vl._24(null,["\n        "])),(l()(),Vl._5(0,null,null,10,"ion-col",[["class","col"],["col-6",""]],null,null,null,null,null)),Vl._4(16384,null,0,Cn.a,[],null,null),(l()(),Vl._24(null,["\n          "])),(l()(),Vl._5(0,null,null,6,"div",[["class","social-box-bg "],["text-center",""]],null,null,null,null,null)),(l()(),Vl._24(null,["\n            "])),(l()(),Vl._5(0,null,null,3,"a",[["href","https://www.youtube.com/channel/UCy54dNm8FXa5O-yD5wQb1zw?view_as=subscriber"]],null,null,null,null,null)),(l()(),Vl._24(null,["\n            "])),(l()(),Vl._5(0,null,null,1,"ion-icon",[["class","social-icon"],["ios","logo-youtube"],["md","logo-youtube"],["role","img"]],[[2,"hide",null]],null,null,null,null)),Vl._4(147456,null,0,bn.a,[$l.a,Vl.l,Vl.F],{ios:[0,"ios"],md:[1,"md"]},null),(l()(),Vl._24(null,["\n          "])),(l()(),Vl._24(null,["\n        "])),(l()(),Vl._24(null,["\n        "])),(l()(),Vl._5(0,null,null,11,"ion-col",[["class","col"],["col-6",""]],null,null,null,null,null)),Vl._4(16384,null,0,Cn.a,[],null,null),(l()(),Vl._24(null,["\n          "])),(l()(),Vl._5(0,null,null,7,"div",[["class","social-box-bg "],["text-center",""]],null,null,null,null,null)),(l()(),Vl._24(null,["\n            "])),(l()(),Vl._5(0,null,null,4,"a",[["href","https://www.instagram.com/rip.dubai/"]],null,null,null,null,null)),(l()(),Vl._24(null,["\n            "])),(l()(),Vl._5(0,null,null,1,"ion-icon",[["class","social-icon"],["ios","logo-instagram"],["md","logo-instagram"],["role","img"]],[[2,"hide",null]],null,null,null,null)),Vl._4(147456,null,0,bn.a,[$l.a,Vl.l,Vl.F],{ios:[0,"ios"],md:[1,"md"]},null),(l()(),Vl._24(null,["\n            "])),(l()(),Vl._24(null,["\n          "])),(l()(),Vl._24(null,["\n        "])),(l()(),Vl._24(null,["\n      "])),(l()(),Vl._24(null,["\n      "])),(l()(),Vl._5(0,null,null,14,"ion-row",[["class","row"]],null,null,null,null,null)),Vl._4(16384,null,0,Pn.a,[],null,null),(l()(),Vl._24(null,["\n        "])),(l()(),Vl._5(0,null,null,10,"ion-col",[["class","col"],["col-6",""]],null,null,null,null,null)),Vl._4(16384,null,0,Cn.a,[],null,null),(l()(),Vl._24(null,["\n          "])),(l()(),Vl._5(0,null,null,6,"div",[["class","social-box-bg "],["text-center",""]],null,null,null,null,null)),(l()(),Vl._24(null,["\n          "])),(l()(),Vl._5(0,null,null,3,"a",[["href","https://www.linkedin.com/in/rip-rest-in-peace-94603a14a/"]],null,null,null,null,null)),(l()(),Vl._24(null,["\n           "])),(l()(),Vl._5(0,null,null,0,"img",[["src","assets/imgs/linkedin.png"],["style","height: 27px;margin-top: 10px;"]],null,null,null,null,null)),(l()(),Vl._24(null,["\n          "])),(l()(),Vl._24(null,["\n          "])),(l()(),Vl._24(null,["\n        "])),(l()(),Vl._24(null,["\n      "])),(l()(),Vl._24(null,["\n    "])),(l()(),Vl._24(1,["\n  "])),(l()(),Vl._24(0,["\n"])),(l()(),Vl._24(null,["\n\n"])),(l()(),Vl._5(0,null,null,2,"ion-nav",[["swipeBackEnabled","false"]],null,null,null,Fn.b,Fn.a)),Vl._4(4374528,[[1,4],["content",4]],0,An.a,[[2,sn.a],[2,vn.a],on.a,$l.a,nn.a,Vl.l,Vl.z,Vl.F,Vl.k,en.h,Sn.a,[2,Tn.a],un.a,Vl.m],{swipeBackEnabled:[0,"swipeBackEnabled"],root:[1,"root"]},null),Vl._21(6144,null,an.a,null,[An.a])],function(l,n){var t=n.component;l(n,3,0,Vl._18(n,117),"overlay");l(n,16,0,"");l(n,21,0,"ios-list","md-list"),l(n,30,0,t.pages);l(n,63,0,"logo-twitter","logo-twitter");l(n,79,0,"logo-youtube","logo-youtube");l(n,91,0,"logo-instagram","logo-instagram");l(n,117,0,"false",t.rootPage)},function(l,n){l(n,11,0,Vl._18(n,12)._sbPadding),l(n,14,0,Vl._18(n,16).isHidden),l(n,20,0,Vl._18(n,21)._hidden),l(n,26,0,Vl._18(n,27).statusbarPadding,Vl._18(n,27)._hasRefresher),l(n,62,0,Vl._18(n,63)._hidden),l(n,78,0,Vl._18(n,79)._hidden),l(n,90,0,Vl._18(n,91)._hidden)})}Object.defineProperty(n,"__esModule",{value:!0});t(0),t(9);var r=t(60),c=(t(37),t(41),t(33),function(){function l(l,n,t,e){this.navCtrl=l,this.constant=n,this.service=t,this.http=e,this.ActivityArry=[],this.GetAllActivity()}return l.prototype.GetAllActivity=function(){var l=this;this.constant.LoadingPresent();this.http.post("https://silverwingtechnologies.com/clients/ripdubai/activitiesContoller.php",{}).subscribe(function(n){l.constant.LoadingHide(),console.log(n.json());var t=n.json();l.ActivityArry=t.activiteis},function(l){console.log("WebserviceHandler=>"+l)})},l.prototype.booking=function(){var l=this.slides.getActiveIndex();console.log(this.ActivityArry[l]),this.navCtrl.push(r.a,{ActivityArry:this.ActivityArry[l]})},l}()),h=(t(0),t(9),t(80),t(81),t(82)),d=t(83),p=t(86),g=t(87),f=t(85),b=t(84),m=function(){function l(l,n,t){this.platform=l,this.statusBar=n,this.splashScreen=t,this.rootPage=c,this.initializeApp(),this.pages=[{title:"HOME",component:c},{title:"ACTIVITIES",component:d.a},{title:"ABOUT US",component:h.a},{title:"GIFT VOUCHERS",component:p.a},{title:"LOCATION",component:g.a},{title:"CONTACT US",component:f.a},{title:"CANCELLATION & SAFETY",component:b.a}]}return l.prototype.initializeApp=function(){var l=this;this.platform.ready().then(function(){l.statusBar.styleDefault(),l.splashScreen.hide()})},l.prototype.openPage=function(l){this.nav.setRoot(l.component)},l}(),y=(t(0),t(9),function(){return function(){}}()),v=t(0),k=t(9),w=this&&this.__decorate||function(l,n,t,e){var u,o=arguments.length,i=o<3?n:null===e?e=Object.getOwnPropertyDescriptor(n,t):e;if("object"==typeof Reflect&&"function"==typeof Reflect.decorate)i=Reflect.decorate(l,n,t,e);else for(var a=l.length-1;a>=0;a--)(u=l[a])&&(i=(o<3?u(i):o>3?u(n,t,i):u(n,t))||i);return o>3&&i&&Object.defineProperty(n,t,i),i},P=this&&this.__metadata||function(l,n){if("object"==typeof Reflect&&"function"==typeof Reflect.metadata)return Reflect.metadata(l,n)},C=F=function(){function l(l,n){this.navCtrl=l,this.navParams=n,this.selectedItem=n.get("item"),this.icons=["flask","wifi","beer","football","basketball","paper-plane","american-football","boat","bluetooth","build"],this.items=[];for(var t=1;t<11;t++)this.items.push({title:"Item "+t,note:"This is item #"+t,icon:this.icons[Math.floor(Math.random()*this.icons.length)]})}return l.prototype.itemTapped=function(l,n){this.navCtrl.push(F,{item:n})},l}();C=F=w([Object(v.j)({selector:"page-list",templateUrl:"list.html"}),P("design:paramtypes",["function"==typeof(A=void 0!==k.d&&k.d)&&A||Object,"function"==typeof(S=void 0!==k.e&&k.e)&&S||Object])],C);t(0),t(9);var F,A,S,T=function(){return function(){}}(),O=(t(38),t(0),t(9),t(80),t(81),t(113),t(114),t(118),t(119),t(117),t(116),t(115),t(33),t(37),t(110),t(41),t(79),t(8),function(){return function(){}}()),D=t(0),L=t(144),M=t(57),E=t(46),R=t(40),j=t(1),I=t(27),B=t(3),H=t(35),x=t(18),N=t(5),z=t(15),G=t(19),U=t(11),V=t(31),W=t(14),X=t(28),K=t(22),$=t(20),q=t(36),Y=t(29),Z=t(32),J=t(16),Q=t(4),ll=t(6),nl=t(17),tl=t(145),el=t(8),ul=t(37),ol=t(41),il=t(33),al=[],_l=D._3({encapsulation:2,styles:al,data:{}}),sl=D._2("page-home",c,function(l){return D._25(0,[(l()(),D._5(0,null,null,1,"page-home",[],null,null,null,u,_l)),D._4(49152,null,0,c,[z.a,ul.a,ol.a,il.e],null,null)],null,null)},{},{},[]),rl=t(0),cl=t(58),hl=t(23),dl=t(21),pl=t(1),gl=t(34),fl=t(44),bl=t(20),ml=t(27),yl=t(3),vl=t(35),kl=t(18),wl=t(5),Pl=t(15),Cl=t(19),Fl=t(11),Al=t(31),Sl=t(14),Tl=t(28),Ol=t(22),Dl=t(36),Ll=t(29),Ml=t(32),El=t(16),Rl=t(4),jl=t(6),Il=t(17),Bl=t(55),Hl=t(7),xl=t(8),Nl=t(10),zl=[],Gl=rl._3({encapsulation:2,styles:zl,data:{}}),Ul=rl._2("page-list",C,function(l){return rl._25(0,[(l()(),rl._5(0,null,null,1,"page-list",[],null,null,null,a,Gl)),rl._4(49152,null,0,C,[Pl.a,Nl.a],null,null)],null,null)},{},{},[]),Vl=t(0),Wl=t(58),Xl=t(23),Kl=t(21),$l=t(1),ql=t(34),Yl=t(44),Zl=t(100),Jl=t(14),Ql=t(191),ln=t(71),nn=t(4),tn=t(17),en=t(7),un=t(6),on=t(5),an=t(45),_n=t(27),sn=t(3),rn=t(192),cn=t(22),hn=t(19),dn=t(11),pn=t(31),gn=t(18),fn=t(28),bn=t(20),mn=t(32),yn=t(16),vn=t(15),kn=t(8),wn=t(67),Pn=t(68),Cn=t(66),Fn=t(193),An=t(56),Sn=t(43),Tn=t(26),On=t(80),Dn=t(81),Ln=[],Mn=Vl._3({encapsulation:2,styles:Ln,data:{}}),En=Vl._2("ng-component",m,function(l){return Vl._25(0,[(l()(),Vl._5(0,null,null,1,"ng-component",[],null,null,null,s,Mn)),Vl._4(49152,null,0,m,[nn.a,On.a,Dn.a],null,null)],null,null)},{},{},[]),Rn=t(0),jn=t(33),In=t(8),Bn=t(146),Hn=t(6),xn=t(14),Nn=t(5),zn=t(7),Gn=t(102),Un=t(38),Vn=t(30),Wn=t(112),Xn=t(113),Kn=t(114),$n=t(118),qn=t(116),Yn=t(115),Zn=t(117),Jn=t(119),Qn=t(104),lt=t(98),nt=t(103),tt=t(21),et=t(73),ut=t(17),ot=t(99),it=t(108),at=t(106),_t=t(109),st=t(43),rt=t(80),ct=t(81),ht=t(79),dt=t(110),pt=t(37),gt=t(41),ft=t(147),bt=t(148),mt=t(149),yt=t(150),vt=t(151),kt=t(152),wt=t(153),Pt=t(154),Ct=t(155),Ft=t(159),At=t(157),St=t(156),Tt=t(158),Ot=t(160),Dt=t(63),Lt=t(26),Mt=t(105),Et=t(4),Rt=t(1),jt=t(59),It=t(107),Bt=t(51),Ht=this&&this.__extends||function(){var l=Object.setPrototypeOf||{__proto__:[]}instanceof Array&&function(l,n){l.__proto__=n}||function(l,n){for(var t in n)n.hasOwnProperty(t)&&(l[t]=n[t])};return function(n,t){function e(){this.constructor=n}l(n,t),n.prototype=null===t?Object.create(t):(e.prototype=t.prototype,new e)}}(),xt=function(l){function n(n){return l.call(this,n,[ft.a,bt.a,mt.a,yt.a,vt.a,kt.a,wt.a,Pt.a,Ct.a,sl,Ft.a,At.a,St.a,Tt.a,Ot.a,Ul,En],[mt.a])||this}return Ht(n,l),Object.defineProperty(n.prototype,"_BrowserXhr_36",{get:function(){return null==this.__BrowserXhr_36&&(this.__BrowserXhr_36=new jn.c),this.__BrowserXhr_36},enumerable:!0,configurable:!0}),Object.defineProperty(n.prototype,"_ResponseOptions_37",{get:function(){return null==this.__ResponseOptions_37&&(this.__ResponseOptions_37=new jn.b),this.__ResponseOptions_37},enumerable:!0,configurable:!0}),Object.defineProperty(n.prototype,"_XSRFStrategy_38",{get:function(){return null==this.__XSRFStrategy_38&&(this.__XSRFStrategy_38=jn.k()),this.__XSRFStrategy_38},enumerable:!0,configurable:!0}),Object.defineProperty(n.prototype,"_XHRBackend_39",{get:function(){return null==this.__XHRBackend_39&&(this.__XHRBackend_39=new jn.i(this._BrowserXhr_36,this._ResponseOptions_37,this._XSRFStrategy_38)),this.__XHRBackend_39},enumerable:!0,configurable:!0}),Object.defineProperty(n.prototype,"_RequestOptions_40",{get:function(){return null==this.__RequestOptions_40&&(this.__RequestOptions_40=new jn.a),this.__RequestOptions_40},enumerable:!0,configurable:!0}),Object.defineProperty(n.prototype,"_Http_41",{get:function(){return null==this.__Http_41&&(this.__Http_41=jn.l(this._XHRBackend_39,this._RequestOptions_40)),this.__Http_41},enumerable:!0,configurable:!0}),Object.defineProperty(n.prototype,"_LOCALE_ID_42",{get:function(){return null==this.__LOCALE_ID_42&&(this.__LOCALE_ID_42=Rn._16(this.parent.get(Rn.v,null))),this.__LOCALE_ID_42},enumerable:!0,configurable:!0}),Object.defineProperty(n.prototype,"_NgLocalization_43",{get:function(){return null==this.__NgLocalization_43&&(this.__NgLocalization_43=new In.j(this._LOCALE_ID_42)),this.__NgLocalization_43},enumerable:!0,configurable:!0}),Object.defineProperty(n.prototype,"_APP_ID_44",{get:function(){return null==this.__APP_ID_44&&(this.__APP_ID_44=Rn._7()),this.__APP_ID_44},enumerable:!0,configurable:!0}),Object.defineProperty(n.prototype,"_IterableDiffers_45",{get:function(){return null==this.__IterableDiffers_45&&(this.__IterableDiffers_45=Rn._13()),this.__IterableDiffers_45},enumerable:!0,configurable:!0}),Object.defineProperty(n.prototype,"_KeyValueDiffers_46",{get:function(){return null==this.__KeyValueDiffers_46&&(this.__KeyValueDiffers_46=Rn._15()),this.__KeyValueDiffers_46},enumerable:!0,configurable:!0}),Object.defineProperty(n.prototype,"_DomSanitizer_47",{get:function(){return null==this.__DomSanitizer_47&&(this.__DomSanitizer_47=new Un.s(this.parent.get(Un.b))),this.__DomSanitizer_47},enumerable:!0,configurable:!0}),Object.defineProperty(n.prototype,"_Sanitizer_48",{get:function(){return null==this.__Sanitizer_48&&(this.__Sanitizer_48=this._DomSanitizer_47),this.__Sanitizer_48},enumerable:!0,configurable:!0}),Object.defineProperty(n.prototype,"_HAMMER_GESTURE_CONFIG_49",{get:function(){return null==this.__HAMMER_GESTURE_CONFIG_49&&(this.__HAMMER_GESTURE_CONFIG_49=new Qn.a),this.__HAMMER_GESTURE_CONFIG_49},enumerable:!0,configurable:!0}),Object.defineProperty(n.prototype,"_EVENT_MANAGER_PLUGINS_50",{get:function(){return null==this.__EVENT_MANAGER_PLUGINS_50&&(this.__EVENT_MANAGER_PLUGINS_50=[new Un.l(this.parent.get(Un.b)),new Un.p(this.parent.get(Un.b)),new Un.o(this.parent.get(Un.b),this._HAMMER_GESTURE_CONFIG_49)]),this.__EVENT_MANAGER_PLUGINS_50},enumerable:!0,configurable:!0}),Object.defineProperty(n.prototype,"_EventManager_51",{get:function(){return null==this.__EventManager_51&&(this.__EventManager_51=new Un.e(this._EVENT_MANAGER_PLUGINS_50,this.parent.get(Rn.z))),this.__EventManager_51},enumerable:!0,configurable:!0}),Object.defineProperty(n.prototype,"_ɵDomSharedStylesHost_52",{get:function(){return null==this.__ɵDomSharedStylesHost_52&&(this.__ɵDomSharedStylesHost_52=new Un.n(this.parent.get(Un.b))),this.__ɵDomSharedStylesHost_52},enumerable:!0,configurable:!0}),Object.defineProperty(n.prototype,"_ɵDomRendererFactory2_53",{get:function(){return null==this.__ɵDomRendererFactory2_53&&(this.__ɵDomRendererFactory2_53=new Un.m(this._EventManager_51,this._ɵDomSharedStylesHost_52)),this.__ɵDomRendererFactory2_53},enumerable:!0,configurable:!0}),Object.defineProperty(n.prototype,"_RendererFactory2_54",{get:function(){return null==this.__RendererFactory2_54&&(this.__RendererFactory2_54=this._ɵDomRendererFactory2_53),this.__RendererFactory2_54},enumerable:!0,configurable:!0}),Object.defineProperty(n.prototype,"_ɵSharedStylesHost_55",{get:function(){return null==this.__ɵSharedStylesHost_55&&(this.__ɵSharedStylesHost_55=this._ɵDomSharedStylesHost_52),this.__ɵSharedStylesHost_55},enumerable:!0,configurable:!0}),Object.defineProperty(n.prototype,"_Testability_56",{get:function(){return null==this.__Testability_56&&(this.__Testability_56=new Rn.N(this.parent.get(Rn.z))),this.__Testability_56},enumerable:!0,configurable:!0}),Object.defineProperty(n.prototype,"_Meta_57",{get:function(){return null==this.__Meta_57&&(this.__Meta_57=new Un.h(this.parent.get(Un.b))),this.__Meta_57},enumerable:!0,configurable:!0}),Object.defineProperty(n.prototype,"_Title_58",{get:function(){return null==this.__Title_58&&(this.__Title_58=new Un.j(this.parent.get(Un.b))),this.__Title_58},enumerable:!0,configurable:!0}),Object.defineProperty(n.prototype,"_ɵi_59",{get:function(){return null==this.__ɵi_59&&(this.__ɵi_59=new Vn.k),this.__ɵi_59},enumerable:!0,configurable:!0}),Object.defineProperty(n.prototype,"_FormBuilder_60",{get:function(){return null==this.__FormBuilder_60&&(this.__FormBuilder_60=new Vn.c),this.__FormBuilder_60},enumerable:!0,configurable:!0}),Object.defineProperty(n.prototype,"_AlertController_65",{get:function(){return null==this.__AlertController_65&&(this.__AlertController_65=new lt.a(this._App_9,this._Config_6)),this.__AlertController_65},enumerable:!0,configurable:!0}),Object.defineProperty(n.prototype,"_Events_66",{get:function(){return null==this.__Events_66&&(this.__Events_66=new nt.a),this.__Events_66},enumerable:!0,configurable:!0}),Object.defineProperty(n.prototype,"_Form_67",{get:function(){return null==this.__Form_67&&(this.__Form_67=new tt.a),this.__Form_67},enumerable:!0,configurable:!0}),Object.defineProperty(n.prototype,"_Haptic_68",{get:function(){return null==this.__Haptic_68&&(this.__Haptic_68=new et.a(this._Platform_5)),this.__Haptic_68},enumerable:!0,configurable:!0}),Object.defineProperty(n.prototype,"_Keyboard_69",{get:function(){return null==this.__Keyboard_69&&(this.__Keyboard_69=new ut.a(this._Config_6,this._Platform_5,this.parent.get(Rn.z),this._DomController_7)),this.__Keyboard_69},enumerable:!0,configurable:!0}),Object.defineProperty(n.prototype,"_LoadingController_70",{get:function(){return null==this.__LoadingController_70&&(this.__LoadingController_70=new ot.a(this._App_9,this._Config_6)),this.__LoadingController_70},enumerable:!0,configurable:!0}),Object.defineProperty(n.prototype,"_LocationStrategy_71",{get:function(){return null==this.__LocationStrategy_71&&(this.__LocationStrategy_71=Wn.c(this.parent.get(In.q),this._APP_BASE_HREF_63,this._Config_6)),this.__LocationStrategy_71},enumerable:!0,configurable:!0}),Object.defineProperty(n.prototype,"_Location_72",{get:function(){return null==this.__Location_72&&(this.__Location_72=new In.e(this._LocationStrategy_71)),this.__Location_72},enumerable:!0,configurable:!0}),Object.defineProperty(n.prototype,"_UrlSerializer_73",{get:function(){return null==this.__UrlSerializer_73&&(this.__UrlSerializer_73=Dt.d(this._DeepLinkConfigToken_11)),this.__UrlSerializer_73},enumerable:!0,configurable:!0}),Object.defineProperty(n.prototype,"_DeepLinker_74",{get:function(){return null==this.__DeepLinker_74&&(this.__DeepLinker_74=Lt.b(this._App_9,this._UrlSerializer_73,this._Location_72,this._ModuleLoader_14,this.componentFactoryResolver)),this.__DeepLinker_74},enumerable:!0,configurable:!0}),Object.defineProperty(n.prototype,"_PopoverController_77",{get:function(){return null==this.__PopoverController_77&&(this.__PopoverController_77=new it.a(this._App_9,this._Config_6,this._DeepLinker_74)),this.__PopoverController_77},enumerable:!0,configurable:!0}),Object.defineProperty(n.prototype,"_TapClick_78",{get:function(){return null==this.__TapClick_78&&(this.__TapClick_78=new at.a(this._Config_6,this._Platform_5,this._DomController_7,this._App_9,this._GestureController_10)),this.__TapClick_78},enumerable:!0,configurable:!0}),Object.defineProperty(n.prototype,"_ToastController_79",{get:function(){return null==this.__ToastController_79&&(this.__ToastController_79=new _t.a(this._App_9,this._Config_6)),this.__ToastController_79},enumerable:!0,configurable:!0}),Object.defineProperty(n.prototype,"_TransitionController_80",{get:function(){return null==this.__TransitionController_80&&(this.__TransitionController_80=new st.a(this._Platform_5,this._Config_6)),this.__TransitionController_80},enumerable:!0,configurable:!0}),Object.defineProperty(n.prototype,"_StatusBar_81",{get:function(){return null==this.__StatusBar_81&&(this.__StatusBar_81=new rt.a),this.__StatusBar_81},enumerable:!0,configurable:!0}),Object.defineProperty(n.prototype,"_SplashScreen_82",{get:function(){return null==this.__SplashScreen_82&&(this.__SplashScreen_82=new ct.a),this.__SplashScreen_82},enumerable:!0,configurable:!0}),Object.defineProperty(n.prototype,"_DatePicker_83",{get:function(){return null==this.__DatePicker_83&&(this.__DatePicker_83=new ht.a),this.__DatePicker_83},enumerable:!0,configurable:!0}),Object.defineProperty(n.prototype,"_Handler_84",{get:function(){return null==this.__Handler_84&&(this.__Handler_84=new dt.a(this._Http_41)),this.__Handler_84},enumerable:!0,configurable:!0}),Object.defineProperty(n.prototype,"_DatePipe_85",{get:function(){return null==this.__DatePipe_85&&(this.__DatePipe_85=new In.c(this._LOCALE_ID_42)),this.__DatePipe_85},enumerable:!0,configurable:!0}),Object.defineProperty(n.prototype,"_Constant_86",{get:function(){return null==this.__Constant_86&&(this.__Constant_86=new pt.a(this._LoadingController_70,this._ToastController_79,this._AlertController_65,this._Events_66,this._Platform_5,this._Http_41,this._PopoverController_77)),this.__Constant_86},enumerable:!0,configurable:!0}),Object.defineProperty(n.prototype,"_WebService_87",{get:function(){return null==this.__WebService_87&&(this.__WebService_87=new gt.a(this._Constant_86,this._Handler_84)),this.__WebService_87},enumerable:!0,configurable:!0}),n.prototype.createInternal=function(){return this._HttpModule_0=new jn.f,this._CommonModule_1=new In.b,this._ErrorHandler_2=new Bn.a,this._ConfigToken_3=null,this._PlatformConfigToken_4=Mt.b(),this._Platform_5=Et.b(this.parent.get(Un.b),this._PlatformConfigToken_4,this.parent.get(Rn.z)),this._Config_6=Rt.c(this._ConfigToken_3,this._Platform_5),this._DomController_7=new Hn.a(this._Platform_5),this._MenuController_8=new xn.a,this._App_9=new Nn.a(this._Config_6,this._Platform_5,this._MenuController_8),this._GestureController_10=new zn.h(this._App_9),this._DeepLinkConfigToken_11={links:[{loadChildren:"../pages/about/about.module.ngfactory#AboutPageModuleNgFactory",name:"AboutPage",segment:"about",priority:"low",defaultHistory:[]},{loadChildren:"../pages/activities/activities.module.ngfactory#ActivitiesPageModuleNgFactory",name:"ActivitiesPage",segment:"activities",priority:"low",defaultHistory:[]},{loadChildren:"../pages/booking/booking.module.ngfactory#BookingPageModuleNgFactory",name:"BookingPage",segment:"booking",priority:"low",defaultHistory:[]},{loadChildren:"../pages/cancellation/cancellation.module.ngfactory#CancellationPageModuleNgFactory",name:"CancellationPage",segment:"cancellation",priority:"low",defaultHistory:[]},{loadChildren:"../pages/contact/contact.module.ngfactory#ContactPageModuleNgFactory",name:"ContactPage",segment:"contact",priority:"low",defaultHistory:[]},{loadChildren:"../pages/gift/gift.module.ngfactory#GiftPageModuleNgFactory",name:"GiftPage",segment:"gift",priority:"low",defaultHistory:[]},{loadChildren:"../pages/location/location.module.ngfactory#LocationPageModuleNgFactory",name:"LocationPage",segment:"location",priority:"low",defaultHistory:[]}]},this._Compiler_12=new Rn.i,this._NgModuleLoader_13=new Gn.a(this._Compiler_12),this._ModuleLoader_14=jt.c(this._NgModuleLoader_13,this),this._APP_INITIALIZER_15=[Rn._19,Un.r(this.parent.get(Un.i,null),this.parent.get(Rn.y,null)),It.a(this._Config_6),nt.b(this._Platform_5,this._DomController_7),at.b(this._Config_6,this._Platform_5,this._DomController_7,this._App_9,this._GestureController_10),jt.d(this._Config_6,this._DeepLinkConfigToken_11,this._ModuleLoader_14,this.parent.get(Rn.z))],this._ApplicationInitStatus_16=new Rn.d(this._APP_INITIALIZER_15),this._ɵf_17=new Rn._6(this.parent.get(Rn.z),this.parent.get(Rn.Z),this,this._ErrorHandler_2,this.componentFactoryResolver,this._ApplicationInitStatus_16),this._ApplicationRef_18=this._ɵf_17,this._ApplicationModule_19=new Rn.e(this._ApplicationRef_18),this._BrowserModule_20=new Un.a(this.parent.get(Un.a,null)),this._ɵba_21=new Vn.j,this._FormsModule_22=new Vn.d,this._ReactiveFormsModule_23=new Vn.i,this._IonicModule_24=new Wn.a,this._IonicPageModule_25=new Wn.b,this._AboutPageModule_26=new Xn.a,this._ActivitiesPageModule_27=new Kn.a,this._HomePageModule_28=new y,this._GiftPageModule_29=new $n.a,this._CancellationPageModule_30=new qn.a,this._BookingPageModule_31=new Yn.a,this._ContactPageModule_32=new Zn.a,this._LocationPageModule_33=new Jn.a,this._ListPageModule_34=new T,this._AppModule_35=new O,this._LAZY_LOADED_TOKEN_61=C,this._AppRootToken_62=m,this._APP_BASE_HREF_63="/",this._AppModule_35},n.prototype.getInternal=function(l,n){return l===jn.f?this._HttpModule_0:l===In.b?this._CommonModule_1:l===Rn.m?this._ErrorHandler_2:l===Rt.b?this._ConfigToken_3:l===Mt.a?this._PlatformConfigToken_4:l===Et.a?this._Platform_5:l===Rt.a?this._Config_6:l===Hn.a?this._DomController_7:l===xn.a?this._MenuController_8:l===Nn.a?this._App_9:l===zn.h?this._GestureController_10:l===Dt.a?this._DeepLinkConfigToken_11:l===Rn.i?this._Compiler_12:l===Gn.a?this._NgModuleLoader_13:l===jt.b?this._ModuleLoader_14:l===Rn.c?this._APP_INITIALIZER_15:l===Rn.d?this._ApplicationInitStatus_16:l===Rn._6?this._ɵf_17:l===Rn.f?this._ApplicationRef_18:l===Rn.e?this._ApplicationModule_19:l===Un.a?this._BrowserModule_20:l===Vn.j?this._ɵba_21:l===Vn.d?this._FormsModule_22:l===Vn.i?this._ReactiveFormsModule_23:l===Wn.a?this._IonicModule_24:l===Wn.b?this._IonicPageModule_25:l===Xn.a?this._AboutPageModule_26:l===Kn.a?this._ActivitiesPageModule_27:l===y?this._HomePageModule_28:l===$n.a?this._GiftPageModule_29:l===qn.a?this._CancellationPageModule_30:l===Yn.a?this._BookingPageModule_31:l===Zn.a?this._ContactPageModule_32:l===Jn.a?this._LocationPageModule_33:l===T?this._ListPageModule_34:l===O?this._AppModule_35:l===jn.c?this._BrowserXhr_36:l===jn.h?this._ResponseOptions_37:l===jn.j?this._XSRFStrategy_38:l===jn.i?this._XHRBackend_39:l===jn.g?this._RequestOptions_40:l===jn.e?this._Http_41:l===Rn.v?this._LOCALE_ID_42:l===In.k?this._NgLocalization_43:l===Rn.b?this._APP_ID_44:l===Rn.t?this._IterableDiffers_45:l===Rn.u?this._KeyValueDiffers_46:l===Un.c?this._DomSanitizer_47:l===Rn.I?this._Sanitizer_48:l===Un.f?this._HAMMER_GESTURE_CONFIG_49:l===Un.d?this._EVENT_MANAGER_PLUGINS_50:l===Un.e?this._EventManager_51:l===Un.n?this._ɵDomSharedStylesHost_52:l===Un.m?this._ɵDomRendererFactory2_53:l===Rn.G?this._RendererFactory2_54:l===Un.q?this._ɵSharedStylesHost_55:l===Rn.N?this._Testability_56:l===Un.h?this._Meta_57:l===Un.j?this._Title_58:l===Vn.k?this._ɵi_59:l===Vn.c?this._FormBuilder_60:l===jt.a?this._LAZY_LOADED_TOKEN_61:l===Bt.a?this._AppRootToken_62:l===In.a?this._APP_BASE_HREF_63:l===lt.a?this._AlertController_65:l===nt.a?this._Events_66:l===tt.a?this._Form_67:l===et.a?this._Haptic_68:l===ut.a?this._Keyboard_69:l===ot.a?this._LoadingController_70:l===In.f?this._LocationStrategy_71:l===In.e?this._Location_72:l===Dt.b?this._UrlSerializer_73:l===Lt.a?this._DeepLinker_74:l===it.a?this._PopoverController_77:l===at.a?this._TapClick_78:l===_t.a?this._ToastController_79:l===st.a?this._TransitionController_80:l===rt.a?this._StatusBar_81:l===ct.a?this._SplashScreen_82:l===ht.a?this._DatePicker_83:l===dt.a?this._Handler_84:l===In.c?this._DatePipe_85:l===pt.a?this._Constant_86:l===gt.a?this._WebService_87:n},n.prototype.destroyInternal=function(){this._ɵf_17.ngOnDestroy(),this.__ɵDomSharedStylesHost_52&&this._ɵDomSharedStylesHost_52.ngOnDestroy()},n}(Rn._0),Nt=new Rn.w(xt,O),zt=t(38),Gt=t(0);Object(Gt.T)(),Object(zt.k)().bootstrapModuleFactory(Nt)},37:function(l,n,t){"use strict";t.d(n,"a",function(){return _});var e=t(0),u=t(9),o=t(33),i=this&&this.__decorate||function(l,n,t,e){var u,o=arguments.length,i=o<3?n:null===e?e=Object.getOwnPropertyDescriptor(n,t):e;if("object"==typeof Reflect&&"function"==typeof Reflect.decorate)i=Reflect.decorate(l,n,t,e);else for(var a=l.length-1;a>=0;a--)(u=l[a])&&(i=(o<3?u(i):o>3?u(n,t,i):u(n,t))||i);return o>3&&i&&Object.defineProperty(n,t,i),i},a=this&&this.__metadata||function(l,n){if("object"==typeof Reflect&&"function"==typeof Reflect.metadata)return Reflect.metadata(l,n)},_=function(){function l(l,n,t,e,u,o,i){this.Loading=l,this.toastCtrl=n,this.alertCtrl=t,this.Event=e,this.Platform=u,this.http=o,this.popoverCtrl=i,this.BASE_URL="https://silverwingtechnologies.com/clients/ripdubai/",this.iOS=151,this.Android=152,this.USER_ID="54",this.USER_REQUEST_KEY="82fb98537dd13ded8e2bb459af2aaebc",this.USER_TYPE=""}return l.prototype.Alert=function(l,n,t){var e=l;this.alertCtrl.create({title:e,message:n,buttons:[{text:t,role:"cancel",handler:function(){console.log("Cancel clicked")}}]}).present()},l.prototype.Toast=function(l,n){var t=this.toastCtrl.create({message:l,duration:3e3,position:n});t.onDidDismiss(function(){console.log("Dismissed toast")}),t.present()},l.prototype.LoadingPresent=function(){var l=this;(this.loading=this.Loading.create()).present(),setTimeout(function(){l.loading.dismiss()},25e3)},l.prototype.LoadingHide=function(){this.loading.dismiss()},l}();_=i([Object(e.q)(),a("design:paramtypes",["function"==typeof(s=void 0!==u.c&&u.c)&&s||Object,"function"==typeof(r=void 0!==u.h&&u.h)&&r||Object,"function"==typeof(c=void 0!==u.a&&u.a)&&c||Object,"function"==typeof(h=void 0!==u.b&&u.b)&&h||Object,"function"==typeof(d=void 0!==u.f&&u.f)&&d||Object,"function"==typeof(p=void 0!==o.e&&o.e)&&p||Object,"function"==typeof(g=void 0!==u.g&&u.g)&&g||Object])],_);var s,r,c,h,d,p,g},41:function(l,n,t){"use strict";t.d(n,"a",function(){return s});var e=t(0),u=t(143),o=(t.n(u),t(110)),i=t(37),a=this&&this.__decorate||function(l,n,t,e){var u,o=arguments.length,i=o<3?n:null===e?e=Object.getOwnPropertyDescriptor(n,t):e;if("object"==typeof Reflect&&"function"==typeof Reflect.decorate)i=Reflect.decorate(l,n,t,e);else for(var a=l.length-1;a>=0;a--)(u=l[a])&&(i=(o<3?u(i):o>3?u(n,t,i):u(n,t))||i);return o>3&&i&&Object.defineProperty(n,t,i),i},_=this&&this.__metadata||function(l,n){if("object"==typeof Reflect&&"function"==typeof Reflect.metadata)return Reflect.metadata(l,n)},s=function(){function l(l,n){this.Constant=l,this.WebserviceHandler=n,this.BASE_URL=this.Constant.BASE_URL}return l.prototype.CheckBookingDateTime=function(l){var n=this.BASE_URL+"checkBookingDate.php";return this.WebserviceHandler.PostWithoutToken(n,l).map(function(l){return console.log(l.json()),l.json()},function(l){return console.log("Oooops!"),console.log(l),l})},l.prototype.GetAllActivity=function(l){var n=this.BASE_URL+"activitiesContoller.php";return this.WebserviceHandler.PostWithoutToken(n,l).map(function(l){return console.log(l.json()),l.json()},function(l){return console.log(l),l})},l.prototype.LogoutAPI=function(){var l=this.BASE_URL+"api/LogOutUser?IsSignOutFromMobile=true";return this.WebserviceHandler.Get(l).map(function(l){return console.log(l.json()),l.json()},function(l){return console.log("Oooops!"),l})},l}();s=a([Object(e.q)(),_("design:paramtypes",["function"==typeof(r=void 0!==i.a&&i.a)&&r||Object,"function"==typeof(c=void 0!==o.a&&o.a)&&c||Object])],s);var r,c},60:function(l,n,t){"use strict";t.d(n,"a",function(){return e});t(0),t(9),t(79),t(8),t(37),t(41),t(33);var e=function(){function l(l,n,t,e,u,o,i){this.navCtrl=l,this.navParams=n,this.datePicker=t,this.datePipe=e,this.constant=u,this.service=o,this.http=i,this.dateSelected="",this.timeSelected="",this.checkboxSRC="assets/imgs/checkboxFalse.jpeg",this.checkDate="",this.checkTime="",this.ActivityArry={},this.DisplayDate="",this.DisplayTime="",this.Texes=0,this.TotlePayment=0,this.SingleActivity=[],this.ActivityArry=n.get("ActivityArry"),console.log(this.ActivityArry),this.GetActivityDetails()}return l.prototype.SelecetDateClick=function(){this.SelecetDate()},l.prototype.SelecetTimeClick=function(){this.SelecetTime()},l.prototype.SelecetDate=function(){var l=this;this.datePicker.show({date:new Date,mode:"date",is24Hour:!1,allowOldDates:!1,minDate:(new Date).valueOf(),androidTheme:this.datePicker.ANDROID_THEMES.THEME_DEVICE_DEFAULT_LIGHT}).then(function(n){console.log("Got date: ",n),l.dateSelected=l.datePipe.transform(n,"MMMM d, yyyy"),l.checkDate=l.datePipe.transform(n,"yyyy-MM-dd"),l.DisplayDate=l.datePipe.transform(n,"EEEE, MMMM d y @"),console.log(l.DisplayDate),l.CheckTimeStatic(n)},function(l){console.log("Error occurred while getting date: ",l)})},l.prototype.SelecetTime=function(){var l=this;this.datePicker.show({date:new Date,mode:"time",is24Hour:!1,allowOldDates:!1,minDate:(new Date).valueOf(),androidTheme:this.datePicker.ANDROID_THEMES.THEME_DEVICE_DEFAULT_LIGHT}).then(function(n){console.log("Got Time: ",n),l.timeSelected=l.datePipe.transform(n,"h:mm a"),l.checkTime=l.datePipe.transform(n,"h:mm a"),l.CheckTimeStatic(n),l.DisplayTime=l.datePipe.transform(n,"ha"),console.log(l.DisplayTime)},function(l){console.log("Error occurred while getting date: ",l)})},l.prototype.CheckTimeStatic=function(l){console.log("Date:",this.checkDate),console.log("Time:",this.checkTime),this.checkTime&&this.checkDate?this.CheckDateTimeIsBooked():console.log("Date and time not available")},l.prototype.CheckDateTimeIsBooked=function(){var l=this;this.constant.LoadingPresent();var n="https://silverwingtechnologies.com/clients/ripdubai/checkBookingDate.php?b_date="+this.checkDate+"&time="+this.checkTime;console.log(n),this.http.get(n).subscribe(function(n){l.constant.LoadingHide(),console.log(n.json());var t=n.json();if(console.log(t.success),console.log(t.booking_time),"1"==t.success){n.json();console.log("available")}else console.log("booked"),l.constant.Alert("Message",t.booking_time,"Ok")},function(l){console.log("WebserviceHandler=>"+l)})},l.prototype.GetActivityDetails=function(){var l=this;this.constant.LoadingPresent();var n="https://silverwingtechnologies.com/clients/ripdubai/activityContoller.php?activity_id="+this.ActivityArry.activity_id;this.http.get(n).subscribe(function(n){l.constant.LoadingHide(),console.log(n.json());var t=n.json();l.SingleActivity=t.activiteis},function(l){console.log("WebserviceHandler=>"+l)})},l.prototype.IONSelectEvent=function(){console.log(this.IONSelectValue);var l=this.TotlePayment=this.IONSelectValue.price;this.Texes=20*l/100,console.log(l),console.log(this.Texes)},l.prototype.BookingClick=function(){this.checkDate?this.checkTime?this.TotlePayment?"assets/imgs/checkboxFalse.jpeg"==this.checkboxSRC?this.constant.Alert("Message","Please select Privacy policy Checkbox.","Ok"):(console.log("All Done"),this.BookingAPI()):this.constant.Alert("Message","Please select Package.","Ok"):this.constant.Alert("Message","Please select Time.","Ok"):this.constant.Alert("Message","Please select Date.","Ok")},l.prototype.BookingAPI=function(){var l=this;this.constant.LoadingPresent();var n=new Date,t=this.datePipe.transform(n,"yyyy-MM-dd"),e=this.ActivityArry.activity_id,u=this.TotlePayment,o=Number(this.TotlePayment)+this.Texes,i=this.IONSelectValue.duration,a=this.IONSelectValue.package,_="https://silverwingtechnologies.com/clients/ripdubai/bookingController.php?"+("user_id=0&date="+t+"&b_date="+this.checkDate+"&time="+this.checkTime+"&activity_id="+e+"&person=1&price="+u+"&total="+o+"&package="+a+"&duration="+i);console.log(_),this.http.get(_).subscribe(function(n){l.constant.LoadingHide(),console.log(n.json()),n.json().success?(l.dateSelected="",l.timeSelected="",l.checkboxSRC="assets/imgs/checkboxFalse.jpeg",l.checkDate="",l.checkTime="",l.DisplayDate="",l.DisplayTime="",l.Texes=0,l.TotlePayment=0,l.SingleActivity=[],l.IONSelectValue="",l.constant.Alert("Success","Your Booking Success.","Ok")):l.constant.Alert("Error","Something is wrong Please try again later.","Ok")},function(l){console.log("WebserviceHandler=>"+l)})},l.prototype.BackButtonClick=function(){this.navCtrl.pop()},l.prototype.SelectCheckBoxClick=function(){this.checkboxSRC="assets/imgs/checkboxFalse.jpeg"==this.checkboxSRC?"assets/imgs/checkboxTrue.png":"assets/imgs/checkboxFalse.jpeg"},l}()},82:function(l,n,t){"use strict";t.d(n,"a",function(){return e});t(0),t(9);var e=function(){function l(l,n){this.navCtrl=l,this.navParams=n}return l.prototype.ionViewDidLoad=function(){console.log("ionViewDidLoad AboutPage")},l}()},83:function(l,n,t){"use strict";t.d(n,"a",function(){return u});t(0),t(9),t(37),t(41),t(33);var e=t(60),u=function(){function l(l,n,t,e,u){this.navCtrl=l,this.navParams=n,this.constant=t,this.service=e,this.http=u,this.ActivityArry=[],this.GetAllActivity()}return l.prototype.ionViewDidLoad=function(){console.log("ionViewDidLoad ActivitiesPage")},l.prototype.GetAllActivity=function(){var l=this;this.constant.LoadingPresent();this.http.post("https://silverwingtechnologies.com/clients/ripdubai/activitiesContoller.php",{}).subscribe(function(n){l.constant.LoadingHide(),console.log(n.json());var t=n.json();l.ActivityArry=t.activiteis},function(l){console.log("WebserviceHandler=>"+l)})},l.prototype.BookNowClick=function(){var l=this.slides.getActiveIndex();console.log(this.ActivityArry[l]),this.navCtrl.push(e.a,{ActivityArry:this.ActivityArry[l]})},l}()},84:function(l,n,t){"use strict";t.d(n,"a",function(){return e});t(0),t(9);var e=function(){function l(l,n){this.navCtrl=l,this.navParams=n}return l.prototype.ionViewDidLoad=function(){console.log("ionViewDidLoad CancellationPage")},l}()},85:function(l,n,t){"use strict";t.d(n,"a",function(){return e});t(0),t(9);var e=function(){function l(l,n){this.navCtrl=l,this.navParams=n}return l.prototype.ionViewDidLoad=function(){console.log("ionViewDidLoad ContactPage")},l}()},86:function(l,n,t){"use strict";t.d(n,"a",function(){return e});t(0),t(9);var e=function(){function l(l,n){this.navCtrl=l,this.navParams=n}return l.prototype.ionViewDidLoad=function(){console.log("ionViewDidLoad GiftPage")},l}()},87:function(l,n,t){"use strict";t.d(n,"a",function(){return e});t(0),t(9);var e=function(){function l(l,n){this.navCtrl=l,this.navParams=n}return l.prototype.ionViewDidLoad=function(){this.showMap()},l.prototype.showMap=function(){var l=new google.maps.LatLng(25.185019,55.276746),n={center:l,zoom:16},t=new google.maps.Map(this.mapRef.nativeElement,n);this.addMarker(l,t)},l.prototype.addMarker=function(l,n){return new google.maps.Marker({position:l,map:n,icon:"https://www.silverwingtechnologies.com/clients/img/marker.png"})},l}()}},[161]);
+webpackJsonp([0],{
+
+/***/ 111:
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	return new Promise(function(resolve, reject) { reject(new Error("Cannot find module '" + req + "'.")); });
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = 111;
+
+/***/ }),
+
+/***/ 153:
+/***/ (function(module, exports, __webpack_require__) {
+
+var map = {
+	"../pages/about/about.module": [
+		159
+	],
+	"../pages/activities/activities.module": [
+		161
+	],
+	"../pages/booking/booking.module": [
+		154
+	],
+	"../pages/cancellation/cancellation.module": [
+		170
+	],
+	"../pages/contact/contact.module": [
+		168
+	],
+	"../pages/gift/gift.module": [
+		163
+	],
+	"../pages/location/location.module": [
+		166
+	],
+	"../pages/register/register.module": [
+		172
+	]
+};
+function webpackAsyncContext(req) {
+	var ids = map[req];
+	if(!ids)
+		return Promise.reject(new Error("Cannot find module '" + req + "'."));
+	return Promise.all(ids.slice(1).map(__webpack_require__.e)).then(function() {
+		return __webpack_require__(ids[0]);
+	});
+};
+webpackAsyncContext.keys = function webpackAsyncContextKeys() {
+	return Object.keys(map);
+};
+module.exports = webpackAsyncContext;
+webpackAsyncContext.id = 153;
+
+/***/ }),
+
+/***/ 154:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "BookingPageModule", function() { return BookingPageModule; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__booking__ = __webpack_require__(80);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+
+
+var BookingPageModule = (function () {
+    function BookingPageModule() {
+    }
+    return BookingPageModule;
+}());
+BookingPageModule = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["L" /* NgModule */])({
+        declarations: [
+            __WEBPACK_IMPORTED_MODULE_2__booking__["a" /* BookingPage */],
+        ],
+        imports: [
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__booking__["a" /* BookingPage */]),
+        ],
+    })
+], BookingPageModule);
+
+//# sourceMappingURL=booking.module.js.map
+
+/***/ }),
+
+/***/ 158:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Handler; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__(21);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__ = __webpack_require__(157);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+var Handler = (function () {
+    function Handler(http) {
+        this.http = http;
+    }
+    Handler.prototype.Post = function (URL, Parameter) {
+        var Token = localStorage.getItem('Token');
+        //console.log( 'Token=>' + Token);
+        var headers = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["a" /* Headers */]({ 'Authorization': Token });
+        var Option = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["d" /* RequestOptions */]({ headers: headers });
+        return this.http.post(URL, Parameter, Option).map(function (data) {
+            return data.json();
+        }, function (error) {
+            console.log('WebserviceHandler=>' + error);
+            return error;
+        });
+    };
+    Handler.prototype.PostWithoutToken = function (URL, Parameter) {
+        console.log(URL);
+        return this.http.post(URL, Parameter).map(function (data) {
+            return data.json();
+        }, function (error) {
+            console.log('WebserviceHandler=>' + error);
+            return error;
+        });
+    };
+    Handler.prototype.Get = function (URL) {
+        var Token = localStorage.getItem('Token');
+        //console.log( 'Token=>' + Token);
+        var headers = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["a" /* Headers */]({ 'Authorization': Token });
+        var Option = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["d" /* RequestOptions */]({ headers: headers });
+        return this.http.get(URL, Option).map(function (data) {
+            return data;
+        }, function (error) {
+            console.log('WebserviceHandler=>' + error);
+            return error;
+        });
+    };
+    Handler.prototype.GetWithoutToken = function (URL) {
+        return this.http.get(URL).map(function (data) {
+            return data;
+        }, function (error) {
+            console.log('WebserviceHandler=>' + error);
+            return error;
+        });
+    };
+    return Handler;
+}());
+Handler = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["B" /* Injectable */])(),
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__angular_http__["b" /* Http */]])
+], Handler);
+
+//# sourceMappingURL=handler.js.map
+
+/***/ }),
+
+/***/ 159:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AboutPageModule", function() { return AboutPageModule; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__about__ = __webpack_require__(160);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+
+
+var AboutPageModule = (function () {
+    function AboutPageModule() {
+    }
+    return AboutPageModule;
+}());
+AboutPageModule = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["L" /* NgModule */])({
+        declarations: [
+            __WEBPACK_IMPORTED_MODULE_2__about__["a" /* AboutPage */],
+        ],
+        imports: [
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__about__["a" /* AboutPage */]),
+        ],
+    })
+], AboutPageModule);
+
+//# sourceMappingURL=about.module.js.map
+
+/***/ }),
+
+/***/ 160:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AboutPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(6);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+/**
+ * Generated class for the AboutPage page.
+ *
+ * See https://ionicframework.com/docs/components/#navigation for more info on
+ * Ionic pages and navigation.
+ */
+var AboutPage = (function () {
+    function AboutPage(navCtrl, navParams) {
+        this.navCtrl = navCtrl;
+        this.navParams = navParams;
+    }
+    AboutPage.prototype.ionViewDidLoad = function () {
+        console.log('ionViewDidLoad AboutPage');
+    };
+    return AboutPage;
+}());
+AboutPage = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* IonicPage */])(),
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
+        selector: 'page-about',template:/*ion-inline-start:"C:\xampp\htdocs\ionic\New folder\src\pages\about\about.html"*/'<!--\n  Generated template for the AboutPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n  <ion-navbar>\n    <button class="headerBackButton" ion-button menuToggle>\n        <ion-icon class="backButtonIcon" name="ios-arrow-back"></ion-icon> Back\n    </button>\n    <ion-title class=\'pHead\'>ABOUT <strong>US</strong></ion-title>\n\n    <ion-buttons style="width: 50px;" end>\n      <button ion-button >\n      </button>\n    </ion-buttons>\n\n  </ion-navbar>\n</ion-header>\n\n\n\n<ion-content padding>\n	<div class="aboutDiv1" padding-bottom>\n      <ion-grid>\n        <ion-row>\n          <ion-col col-3><img src="https://www.silverwingtechnologies.com/clients/img/aboutAvtar.png"></ion-col>\n          <ion-col class="aboutContent" text-left col-9>We pride ourselves on providing water sport equipment that exceeds all safety and quality standards, and we aim at being one of the leading companies working in this field. </ion-col>\n        </ion-row>\n        <ion-row>\n          <ion-col col-3><img src="https://www.silverwingtechnologies.com/clients/img/aboutAvtar.png"></ion-col>\n          <ion-col class="aboutContent" text-left col-9>Our company can provide all the water sport equipment that allows your customers to enjoy their time in Dubai Beaches and to leave Dubai with great memories and with a strong will to come back soon. \n        </ion-col>\n        </ion-row>\n        <ion-row>\n          <ion-col class="aboutContent" col-3><img src="https://www.silverwingtechnologies.com/clients/img/aboutAvtar.png"></ion-col>\n          <ion-col class="aboutContent" text-left col-9>Our team includes members who have a great experience in serving customers and who shows readiness to do all their best to meet the needs and aspirations of the customers. \n        </ion-col>\n        </ion-row>\n        <ion-row>\n          <ion-col class="aboutContent" col-3><img src="https://www.silverwingtechnologies.com/clients/img/aboutAvtar.png"></ion-col>\n          <ion-col class="aboutContent" text-left col-9>We would like to take this opportunity to propose our services and do an investment in Dubai beaches. \n        </ion-col>\n        </ion-row>\n        \n      </ion-grid>\n  </div>\n\n  <div margin-top class="aboutDiv2">\n    <ion-row>\n      <ion-col class="aboutContent grayLayour1" col-4><img src="https://www.silverwingtechnologies.com/clients/img/aboutLogo.png"></ion-col>\n      <ion-col class="aboutContent blueLayour1" padding text-left col-8>Visit our supper creative and concept Party RIP Dubai to have a jolly moment in the beautiful resorts with lots of fun, cocktails, professional DJ and exclusive entertainment on the pool and beach. Each party made by individual and inimitable style. Have a sunshine summer with us! \n      <div text-center >\n        <button style="margin-top: 12px;" text-capitalize ion-button color="dark">Download Now</button>\n      </div>\n      </ion-col>\n    </ion-row>\n  </div>\n</ion-content>\n'/*ion-inline-end:"C:\xampp\htdocs\ionic\New folder\src\pages\about\about.html"*/,
+    }),
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavParams */]])
+], AboutPage);
+
+//# sourceMappingURL=about.js.map
+
+/***/ }),
+
+/***/ 161:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ActivitiesPageModule", function() { return ActivitiesPageModule; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__activities__ = __webpack_require__(162);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+
+
+var ActivitiesPageModule = (function () {
+    function ActivitiesPageModule() {
+    }
+    return ActivitiesPageModule;
+}());
+ActivitiesPageModule = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["L" /* NgModule */])({
+        declarations: [
+            __WEBPACK_IMPORTED_MODULE_2__activities__["a" /* ActivitiesPage */],
+        ],
+        imports: [
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__activities__["a" /* ActivitiesPage */]),
+        ],
+    })
+], ActivitiesPageModule);
+
+//# sourceMappingURL=activities.module.js.map
+
+/***/ }),
+
+/***/ 162:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ActivitiesPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__webService_constant__ = __webpack_require__(26);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__webService_webservice__ = __webpack_require__(30);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_http__ = __webpack_require__(21);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__booking_booking__ = __webpack_require__(80);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+
+
+
+var ActivitiesPage = (function () {
+    function ActivitiesPage(navCtrl, navParams, constant, service, http) {
+        this.navCtrl = navCtrl;
+        this.navParams = navParams;
+        this.constant = constant;
+        this.service = service;
+        this.http = http;
+        this.ActivityArry = [];
+        this.counter = 0;
+        this.GetAllActivity();
+    }
+    ActivitiesPage.prototype.ionViewDidLoad = function () {
+        console.log('ionViewDidLoad ActivitiesPage');
+    };
+    ActivitiesPage.prototype.GetAllActivity = function () {
+        var _this = this;
+        var dic = {};
+        this.constant.LoadingPresent();
+        var URL = 'http://pr.veba.co/~shubantech/ripdubai/activitiesContoller.php';
+        this.http.post(URL, {}).subscribe(function (data) {
+            _this.constant.LoadingHide();
+            console.log(data.json());
+            var JsonData = data.json();
+            _this.ActivityArry = JsonData.activiteis;
+        }, function (error) {
+            console.log('WebserviceHandler=>' + error);
+        });
+    };
+    ActivitiesPage.prototype.BookNowClick = function () {
+        var ActiveIndex = this.slides.getActiveIndex();
+        console.log(this.ActivityArry[ActiveIndex]);
+        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_5__booking_booking__["a" /* BookingPage */], { ActivityArry: this.ActivityArry[ActiveIndex] });
+    };
+    ActivitiesPage.prototype.slideNext = function () {
+        this.slides.slideNext(100);
+        this.counter = this.slides.getActiveIndex();
+    };
+    ActivitiesPage.prototype.slidePrev = function () {
+        this.slides.slidePrev(100);
+        this.counter = this.slides.getActiveIndex();
+    };
+    return ActivitiesPage;
+}());
+__decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_13" /* ViewChild */])(__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["n" /* Slides */]),
+    __metadata("design:type", __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["n" /* Slides */])
+], ActivitiesPage.prototype, "slides", void 0);
+ActivitiesPage = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* IonicPage */])(),
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
+        selector: 'page-activities',template:/*ion-inline-start:"C:\xampp\htdocs\ionic\New folder\src\pages\activities\activities.html"*/'\n<ion-header>\n    <ion-navbar>\n\n        <button class="headerBackButton" ion-button menuToggle>\n            <ion-icon class="backButtonIcon" name="ios-arrow-back"></ion-icon> Back\n        </button>\n\n        <ion-title><img src="https://www.silverwingtechnologies.com/clients/img/logo.png" height="40"></ion-title>\n\n        <ion-buttons style="width: 50px;" end>\n            <button ion-button >\n            </button>\n        </ion-buttons>\n\n    </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n    <p class="pHead" text-center>OUR <strong>ACTIVITIES</strong></p>\n\n    <ion-slides text-start class="sliderMain" zoom="true" loop="false" slidesPerView="1" effect="coverflow" speed="200">\n        <ion-slide class="sliderMainSlide"  *ngFor="let item of ActivityArry; let i = index">\n\n\n                   <div class="slideMainContainer">\n                <ion-label class="headerLbl">RIP DUBAI<span class="headerSubLbl"> EXCLUSIVE</span></ion-label>\n                <img class="imageSlider" src="{{item.image1}}">\n                <ion-label class="headerLblTwo">{{item.name.toUpperCase()}}<span class="headerSubLblTwo"></span></ion-label>\n\n                <ion-label class="sliderDics"  padding text-left>\n                    <span [innerHTML]="item.description"></span>  \n                </ion-label>\n            </div>\n\n        </ion-slide>\n\n    </ion-slides>\n    <ion-icon class="backButtonIcon" name="ios-arrow-back" *ngIf="counter > 0" (click)="slidePrev()"></ion-icon> \n    <ion-icon class="backButtonIcon" name="ios-arrow-forward" (click)="slideNext()"></ion-icon> \n\n    <button class="bookbtn" (click)="BookNowClick(i)" margin-top ion-button color="yellow" full>BOOK NOW</button>\n\n    <!-- <button ion-button secondary menuToggle>Toggle Menu</button> -->\n</ion-content>\n'/*ion-inline-end:"C:\xampp\htdocs\ionic\New folder\src\pages\activities\activities.html"*/,
+    }),
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavParams */], __WEBPACK_IMPORTED_MODULE_2__webService_constant__["a" /* Constant */], __WEBPACK_IMPORTED_MODULE_3__webService_webservice__["a" /* WebService */], __WEBPACK_IMPORTED_MODULE_4__angular_http__["b" /* Http */]])
+], ActivitiesPage);
+
+//# sourceMappingURL=activities.js.map
+
+/***/ }),
+
+/***/ 163:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "GiftPageModule", function() { return GiftPageModule; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__gift__ = __webpack_require__(164);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+
+
+var GiftPageModule = (function () {
+    function GiftPageModule() {
+    }
+    return GiftPageModule;
+}());
+GiftPageModule = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["L" /* NgModule */])({
+        declarations: [
+            __WEBPACK_IMPORTED_MODULE_2__gift__["a" /* GiftPage */],
+        ],
+        imports: [
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__gift__["a" /* GiftPage */]),
+        ],
+    })
+], GiftPageModule);
+
+//# sourceMappingURL=gift.module.js.map
+
+/***/ }),
+
+/***/ 164:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return GiftPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__webService_constant__ = __webpack_require__(26);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__webService_webservice__ = __webpack_require__(30);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_http__ = __webpack_require__(21);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ionic_native_in_app_browser__ = __webpack_require__(165);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+
+
+
+/**
+ * Generated class for the GiftPage page.
+ *
+ * See https://ionicframework.com/docs/components/#navigation for more info on
+ * Ionic pages and navigation.
+ */
+var GiftPage = (function () {
+    function GiftPage(navCtrl, navParams, constant, http, service, iab) {
+        this.navCtrl = navCtrl;
+        this.navParams = navParams;
+        this.constant = constant;
+        this.http = http;
+        this.service = service;
+        this.iab = iab;
+        this.options = {
+            location: 'yes',
+            hidden: 'no',
+            clearcache: 'yes',
+            clearsessioncache: 'yes',
+            zoom: 'yes',
+            hardwareback: 'yes',
+            mediaPlaybackRequiresUserAction: 'no',
+            shouldPauseOnSuspend: 'no',
+            closebuttoncaption: 'Close',
+            disallowoverscroll: 'no',
+            toolbar: 'yes',
+            enableViewportScale: 'no',
+            allowInlineMediaPlayback: 'no',
+            presentationstyle: 'pagesheet',
+            fullscreen: 'yes',
+        };
+        this.VouchersArry = [];
+        this.iab.create("https://www.techiediaries.com", '_blank');
+        this.GetAllVouchers();
+    }
+    GiftPage.prototype.openUrl = function () {
+    };
+    GiftPage.prototype.ionViewDidLoad = function () {
+        console.log('ionViewDidLoad GiftPage');
+    };
+    GiftPage.prototype.GetAllVouchers = function () {
+        var _this = this;
+        var dic = {};
+        this.constant.LoadingPresent();
+        var URL = 'http://pr.veba.co/~shubantech/ripdubai/getVouchers.php';
+        this.http.post(URL, {}).subscribe(function (data) {
+            _this.constant.LoadingHide();
+            console.log(data.json());
+            var JsonData = data.json();
+            _this.VouchersArry = JsonData.vouchers;
+        }, function (error) {
+            console.log('WebserviceHandler=>' + error);
+        });
+    };
+    GiftPage.prototype.loadstartCallback = function () {
+    };
+    GiftPage.prototype.exitCallback = function () {
+    };
+    GiftPage.prototype.BuyNow = function (id) {
+        //var url="https://www.google.com/";
+        //var ref=window.open(url,'_blank','location=yes');
+    };
+    return GiftPage;
+}());
+__decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_13" /* ViewChild */])(__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["n" /* Slides */]),
+    __metadata("design:type", __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["n" /* Slides */])
+], GiftPage.prototype, "slides", void 0);
+GiftPage = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* IonicPage */])(),
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
+        selector: 'page-gift',template:/*ion-inline-start:"C:\xampp\htdocs\ionic\New folder\src\pages\gift\gift.html"*/'<!--\n  Generated template for the GiftPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n    <ion-navbar>\n        <button ion-button menuToggle>\n            <ion-icon class="backButtonIcon" name="ios-arrow-back"></ion-icon>Back\n        </button>\n        <ion-title>GIFT </ion-title>\n    </ion-navbar>\n\n</ion-header>\n<ion-content padding>\n\n    <ion-grid>\n        <ion-row >\n        <ion-col col-6 class="gift-col" *ngFor="let item of VouchersArry; let i = index" >\n           \n            <ion-col col-12 >\n                <ion-col col-4></ion-col>\n                <ion-col col-8 text-right>\n                    <ion-label class="primary-label"  text-right>{{item.name.toUpperCase()}}<span class="headerSubLblTwo"></span></ion-label>\n                    <ion-label class="price-label"   text-right>\n                        {{item.price}} AMD\n                    </ion-label>\n                    <button  (click)="BuyNow(item.voucher_id)" ion-button class="buyBtn">Buy NOW</button>\n                </ion-col>\n            </ion-col>\n           \n\n        </ion-col>\n        </ion-row>\n    </ion-grid>\n\n</ion-content> \n'/*ion-inline-end:"C:\xampp\htdocs\ionic\New folder\src\pages\gift\gift.html"*/,
+    }),
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavParams */], __WEBPACK_IMPORTED_MODULE_2__webService_constant__["a" /* Constant */], __WEBPACK_IMPORTED_MODULE_4__angular_http__["b" /* Http */], __WEBPACK_IMPORTED_MODULE_3__webService_webservice__["a" /* WebService */], __WEBPACK_IMPORTED_MODULE_5__ionic_native_in_app_browser__["a" /* InAppBrowser */]])
+], GiftPage);
+
+//# sourceMappingURL=gift.js.map
+
+/***/ }),
+
+/***/ 166:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "LocationPageModule", function() { return LocationPageModule; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__location__ = __webpack_require__(167);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+
+
+var LocationPageModule = (function () {
+    function LocationPageModule() {
+    }
+    return LocationPageModule;
+}());
+LocationPageModule = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["L" /* NgModule */])({
+        declarations: [
+            __WEBPACK_IMPORTED_MODULE_2__location__["a" /* LocationPage */],
+        ],
+        imports: [
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__location__["a" /* LocationPage */]),
+        ],
+    })
+], LocationPageModule);
+
+//# sourceMappingURL=location.module.js.map
+
+/***/ }),
+
+/***/ 167:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return LocationPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(6);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var LocationPage = (function () {
+    // map:any;
+    function LocationPage(navCtrl, navParams) {
+        this.navCtrl = navCtrl;
+        this.navParams = navParams;
+    }
+    LocationPage.prototype.ionViewDidLoad = function () {
+        // console.log('ionViewDidLoad LocationPage');
+        // console.log(this.mapRef);
+        this.showMap();
+    };
+    LocationPage.prototype.showMap = function () {
+        // Location Lat- Log
+        var location = new google.maps.LatLng(25.185019, 55.276746);
+        // map Option
+        var options = {
+            center: location,
+            zoom: 16
+        };
+        var map = new google.maps.Map(this.mapRef.nativeElement, options);
+        this.addMarker(location, map);
+    };
+    LocationPage.prototype.addMarker = function (position, map) {
+        return new google.maps.Marker({
+            position: position,
+            map: map,
+            icon: 'https://www.silverwingtechnologies.com/clients/img/marker.png'
+        });
+    };
+    return LocationPage;
+}());
+__decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_13" /* ViewChild */])('map'),
+    __metadata("design:type", __WEBPACK_IMPORTED_MODULE_0__angular_core__["u" /* ElementRef */])
+], LocationPage.prototype, "mapRef", void 0);
+LocationPage = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* IonicPage */])(),
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
+        selector: 'page-location',template:/*ion-inline-start:"C:\xampp\htdocs\ionic\New folder\src\pages\location\location.html"*/'<!--\n  Generated template for the LocationPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n  	\n    <button class="headerBackButton" ion-button menuToggle>\n        <ion-icon class="backButtonIcon" name="ios-arrow-back"></ion-icon> Back\n		</button>\n		\n    <ion-title class=\'pHead\'>OUR  <strong>LOCATION</strong></ion-title>\n\n    <ion-buttons style="width: 40px;" end>\n      <button ion-button >\n      </button>\n    </ion-buttons>\n    \n\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content>\n	<div #map id="map"></div>\n</ion-content>\n'/*ion-inline-end:"C:\xampp\htdocs\ionic\New folder\src\pages\location\location.html"*/,
+    }),
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavParams */]])
+], LocationPage);
+
+//# sourceMappingURL=location.js.map
+
+/***/ }),
+
+/***/ 168:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ContactPageModule", function() { return ContactPageModule; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__contact__ = __webpack_require__(169);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+
+
+var ContactPageModule = (function () {
+    function ContactPageModule() {
+    }
+    return ContactPageModule;
+}());
+ContactPageModule = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["L" /* NgModule */])({
+        declarations: [
+            __WEBPACK_IMPORTED_MODULE_2__contact__["a" /* ContactPage */],
+        ],
+        imports: [
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__contact__["a" /* ContactPage */]),
+        ],
+    })
+], ContactPageModule);
+
+//# sourceMappingURL=contact.module.js.map
+
+/***/ }),
+
+/***/ 169:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ContactPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__webService_constant__ = __webpack_require__(26);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__webService_webservice__ = __webpack_require__(30);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_http__ = __webpack_require__(21);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+
+/**
+ * Generated class for the ContactPage page.
+ *
+ * See https://ionicframework.com/docs/components/#navigation for more info on
+ * Ionic pages and navigation.
+ */
+var ContactPage = (function () {
+    function ContactPage(navCtrl, navParams, constant, service, http) {
+        this.navCtrl = navCtrl;
+        this.navParams = navParams;
+        this.constant = constant;
+        this.service = service;
+        this.http = http;
+        this.name = '';
+        this.nameError = 0;
+        this.nameErrorTxt = '';
+        this.emailError = 0;
+        this.emailErrorTxt = '';
+        this.email = '';
+        this.contactError = 0;
+        this.contactErrorTxt = '';
+        this.contact = '';
+        this.message = '';
+    }
+    ContactPage.prototype.SendMail = function () {
+        var _this = this;
+        var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+        if (!this.name) {
+            this.nameError = 1;
+            this.nameErrorTxt = 'Please Enter Your name.';
+            //this.constant.Alert('Message', , 'Ok');
+        }
+        else {
+            this.nameError = 0;
+        }
+        if (!this.email) {
+            this.emailError = 1;
+            this.emailErrorTxt = 'Please Enter Email Address.';
+            //this.constant.Alert('Message', 'Please Enter Email Address.', 'Ok');
+        }
+        else if (!re.test(this.email)) {
+            this.emailError = 1;
+            this.emailErrorTxt = 'Please Enter valid Email address.';
+            //this.constant.Alert('Message', 'Please Enter valid Email address.', 'Ok');
+        }
+        else {
+            this.emailError = 0;
+        }
+        if (!this.contact) {
+            this.contactError = 1;
+            this.contactErrorTxt = 'Please Enter Your Contact number.';
+            //this.constant.Alert('Message', 'Please Enter Your Contact.', 'Ok');
+        }
+        else {
+            this.contactError = 0;
+        }
+        if (this.contactError == 0 && this.emailError == 0 && this.nameError == 0) {
+            this.constant.LoadingPresent();
+            var CustomURL = 'name=' + this.name + '&email=' + this.email + '&contact=' + this.contact + '&message=' + this.message;
+            var URL = 'http://pr.veba.co/~shubantech/ripdubai/sendMailAdmin.php?' + CustomURL;
+            console.log(URL);
+            this.http.get(URL).subscribe(function (data) {
+                _this.constant.LoadingHide();
+                console.log(data.json());
+                var Temp = data.json();
+                if (Temp.success) {
+                    _this.email = '';
+                    _this.contact = '';
+                    _this.name = '';
+                    _this.message = '';
+                    _this.constant.Alert('Success', 'form submitted successfully.', 'Ok');
+                }
+                else {
+                    _this.constant.Alert('Error', 'Something is wrong Please try again later.', 'Ok');
+                }
+            }, function (error) {
+                console.log('WebserviceHandler=>' + error);
+            });
+        }
+    };
+    ContactPage.prototype.ionViewDidLoad = function () {
+        console.log('ionViewDidLoad ContactPage');
+    };
+    return ContactPage;
+}());
+ContactPage = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* IonicPage */])(),
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
+        selector: 'page-contact',template:/*ion-inline-start:"C:\xampp\htdocs\ionic\New folder\src\pages\contact\contact.html"*/'<!--\n  Generated template for the ContactPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n		\n		<button class="headerBackButton" ion-button menuToggle>\n				<ion-icon class="backButtonIcon" name="ios-arrow-back"></ion-icon> Back\n		</button>\n		\n    <ion-title class=\'pHead\'>CONTACT <strong>US</strong></ion-title>\n\n    <ion-buttons style="width: 40px;" end>\n      <button ion-button >\n      </button>\n		</ion-buttons>\n		\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n	<ion-list margin-top>\n\n	  <ion-item  class="customTextbox" margin-bottom>\n	    <ion-input [(ngModel)]="name" type="text" placeholder="Name" ></ion-input>\n	  </ion-item>\n		<ion-label class="LblOne" *ngIf="nameError" style="color:#ed1b24;margin:-15px 3px 4px 4px">{{nameErrorTxt}}</ion-label>\n\n	  <ion-item class="customTextbox" margin-bottom>\n	    <ion-input   [(ngModel)]="email"  type="email" placeholder="Email"></ion-input>\n		\n	  </ion-item>\n	  <ion-label class="LblOne" *ngIf="emailError" style="color:#ed1b24;margin:-15px 3px 4px 4px">{{emailErrorTxt}}</ion-label>\n	  <ion-item class="customTextbox" margin-bottom>\n	    <ion-input  [(ngModel)]="contact"  type="number" placeholder="Phone"></ion-input>\n	  </ion-item>\n		<ion-label class="LblOne" *ngIf="contactError" style="color:#ed1b24;margin:-15px 3px 4px 4px">{{contactErrorTxt}}</ion-label>\n	  <ion-item class="customTextbox" margin-bottom>\n	    <ion-textarea [(ngModel)]="message"  rows="10"  placeholder="Note"></ion-textarea >\n	  </ion-item>\n\n		<div text-right>\n			<button (click)="SendMail()" class="sendBtn" text-right ion-button>SEND</button>\n		</div>\n	</ion-list>\n\n</ion-content>\n'/*ion-inline-end:"C:\xampp\htdocs\ionic\New folder\src\pages\contact\contact.html"*/,
+    }),
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavParams */], __WEBPACK_IMPORTED_MODULE_2__webService_constant__["a" /* Constant */], __WEBPACK_IMPORTED_MODULE_3__webService_webservice__["a" /* WebService */], __WEBPACK_IMPORTED_MODULE_4__angular_http__["b" /* Http */]])
+], ContactPage);
+
+//# sourceMappingURL=contact.js.map
+
+/***/ }),
+
+/***/ 170:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CancellationPageModule", function() { return CancellationPageModule; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__cancellation__ = __webpack_require__(171);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+
+
+var CancellationPageModule = (function () {
+    function CancellationPageModule() {
+    }
+    return CancellationPageModule;
+}());
+CancellationPageModule = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["L" /* NgModule */])({
+        declarations: [
+            __WEBPACK_IMPORTED_MODULE_2__cancellation__["a" /* CancellationPage */],
+        ],
+        imports: [
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__cancellation__["a" /* CancellationPage */]),
+        ],
+    })
+], CancellationPageModule);
+
+//# sourceMappingURL=cancellation.module.js.map
+
+/***/ }),
+
+/***/ 171:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CancellationPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(6);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+/**
+ * Generated class for the CancellationPage page.
+ *
+ * See https://ionicframework.com/docs/components/#navigation for more info on
+ * Ionic pages and navigation.
+ */
+var CancellationPage = (function () {
+    function CancellationPage(navCtrl, navParams) {
+        this.navCtrl = navCtrl;
+        this.navParams = navParams;
+    }
+    CancellationPage.prototype.ionViewDidLoad = function () {
+        console.log('ionViewDidLoad CancellationPage');
+    };
+    return CancellationPage;
+}());
+CancellationPage = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* IonicPage */])(),
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
+        selector: 'page-cancellation',template:/*ion-inline-start:"C:\xampp\htdocs\ionic\New folder\src\pages\cancellation\cancellation.html"*/'<!--\n  Generated template for the CancellationPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n  	<button ion-button menuToggle>\n        <ion-icon class="backButtonIcon" name="ios-arrow-back"></ion-icon>Back\n    </button>\n    <ion-title>  CANCELLATION</ion-title>\n    <ion-buttons style="width: 50px;" end>\n        <button ion-button >\n        </button>\n      </ion-buttons>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n\n</ion-content>\n'/*ion-inline-end:"C:\xampp\htdocs\ionic\New folder\src\pages\cancellation\cancellation.html"*/,
+    }),
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavParams */]])
+], CancellationPage);
+
+//# sourceMappingURL=cancellation.js.map
+
+/***/ }),
+
+/***/ 172:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "RegisterPageModule", function() { return RegisterPageModule; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__register__ = __webpack_require__(173);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+
+
+var RegisterPageModule = (function () {
+    function RegisterPageModule() {
+    }
+    return RegisterPageModule;
+}());
+RegisterPageModule = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["L" /* NgModule */])({
+        declarations: [
+            __WEBPACK_IMPORTED_MODULE_2__register__["a" /* RegisterPage */],
+        ],
+        imports: [
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__register__["a" /* RegisterPage */]),
+        ],
+    })
+], RegisterPageModule);
+
+//# sourceMappingURL=register.module.js.map
+
+/***/ }),
+
+/***/ 173:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return RegisterPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__webService_constant__ = __webpack_require__(26);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__webService_webservice__ = __webpack_require__(30);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_http__ = __webpack_require__(21);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+
+/**
+ * Generated class for the ContactPage page.
+ *
+ * See https://ionicframework.com/docs/components/#navigation for more info on
+ * Ionic pages and navigation.
+ */
+var RegisterPage = (function () {
+    function RegisterPage(navCtrl, navParams, constant, service, http) {
+        this.navCtrl = navCtrl;
+        this.navParams = navParams;
+        this.constant = constant;
+        this.service = service;
+        this.http = http;
+        this.firstname = '';
+        this.lastname = '';
+        this.nameError = 0;
+        this.nameErrorTxt = '';
+        this.emailError = 0;
+        this.passwordError = 0;
+        this.passwordErrorTxt = '';
+        this.emailErrorTxt = '';
+        this.email = '';
+        this.contactError = 0;
+        this.contactErrorTxt = '';
+        this.contact = '';
+        this.message = '';
+        this.pwd = '';
+    }
+    RegisterPage.prototype.SendMail = function () {
+        var _this = this;
+        var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+        if (!this.firstname) {
+            this.nameError = 1;
+            this.nameErrorTxt = 'Please Enter Your First name.';
+            //this.constant.Alert('Message', , 'Ok');
+        }
+        else {
+            this.nameError = 0;
+        }
+        if (!this.pwd) {
+            this.passwordError = 1;
+            this.passwordErrorTxt = 'Please Enter Your password.';
+            //this.constant.Alert('Message', , 'Ok');
+        }
+        else {
+            this.passwordError = 0;
+        }
+        if (!this.email) {
+            this.emailError = 1;
+            this.emailErrorTxt = 'Please Enter Email Address.';
+            //this.constant.Alert('Message', 'Please Enter Email Address.', 'Ok');
+        }
+        else if (!re.test(this.email)) {
+            this.emailError = 1;
+            this.emailErrorTxt = 'Please Enter valid Email address.';
+            //this.constant.Alert('Message', 'Please Enter valid Email address.', 'Ok');
+        }
+        else {
+            this.emailError = 0;
+        }
+        if (!this.contact) {
+            this.contactError = 1;
+            this.contactErrorTxt = 'Please Enter Your Contact number.';
+            //this.constant.Alert('Message', 'Please Enter Your Contact.', 'Ok');
+        }
+        else {
+            this.contactError = 0;
+        }
+        if (this.contactError == 0 && this.emailError == 0 && this.nameError == 0) {
+            this.constant.LoadingPresent();
+            var URL = 'http://pr.veba.co/~shubantech/ripdubai/registerController.php';
+            console.log(URL);
+            var postData = { "first_name": this.firstname, "last_name": this.lastname, "email": this.email, "mobile": this.contact, "password": this.pwd };
+            this.http.post(URL, postData).subscribe(function (data) {
+                _this.constant.LoadingHide();
+                console.log(data.json());
+                var Temp = data.json();
+                if (Temp.success) {
+                    _this.email = '';
+                    _this.contact = '';
+                    _this.firstname = '';
+                    _this.lastname = '';
+                    _this.pwd = '';
+                    _this.constant.Alert('Success', 'You have Registered Successfully', 'Ok');
+                }
+                else {
+                    // this.constant.Alert('Error', 'Something is wrong Please try again later.','Ok');
+                    _this.constant.Alert('Error', Temp.message, 'Ok');
+                }
+            }, function (error) {
+                console.log('WebserviceHandler=>' + error);
+            });
+        }
+    };
+    RegisterPage.prototype.ionViewDidLoad = function () {
+        console.log('ionViewDidLoad RegisterPage');
+    };
+    return RegisterPage;
+}());
+RegisterPage = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* IonicPage */])(),
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
+        selector: 'page-register',template:/*ion-inline-start:"C:\xampp\htdocs\ionic\New folder\src\pages\register\register.html"*/'<!--\n  Generated template for the ContactPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n    <ion-navbar>\n\n        <button class="headerBackButton" ion-button menuToggle>\n            <ion-icon class="backButtonIcon" name="ios-arrow-back"></ion-icon> Back\n        </button>\n\n        <ion-title class=\'pHead\'>REGISTER</ion-title>\n\n        <ion-buttons style="width: 40px;" end>\n            <button ion-button >\n            </button>\n        </ion-buttons>\n\n    </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n    <ion-list margin-top>\n        <ion-grid>\n            <ion-row>\n                <ion-col col-6>\n                    <ion-item  class="customTextbox" margin-bottom>\n                        <ion-input [(ngModel)]="firstname" type="text" placeholder="Fist Name" ></ion-input>\n                    </ion-item>\n                </ion-col>\n                <ion-col col-6>\n                    <ion-item  class="customTextbox" margin-bottom>\n                        <ion-input [(ngModel)]="lastname" type="text" placeholder="Last Name" ></ion-input>\n                    </ion-item>\n                </ion-col>\n                \n                    <ion-label class="LblOne" *ngIf="nameError" style="color:#ed1b24;margin:-15px 3px 4px 4px">{{nameErrorTxt}}</ion-label>\n               \n            </ion-row>\n            <ion-row>\n                <ion-col col-12>\n                    <ion-item class="customTextbox" margin-bottom>\n                        <ion-input   [(ngModel)]="email"  type="email" placeholder="Email"></ion-input>\n\n                    </ion-item>\n                    <ion-label class="LblOne" *ngIf="emailError" style="color:#ed1b24;margin:-15px 3px 4px 4px">{{emailErrorTxt}}</ion-label>\n                </ion-col>\n            </ion-row>\n            <ion-row>\n                <ion-col col-12>\n                    <ion-item class="customTextbox" margin-bottom>\n                        <ion-input  [(ngModel)]="contact"  type="number" placeholder="Mobile No"></ion-input>\n                    </ion-item>\n                    <ion-label class="LblOne" *ngIf="contactError" style="color:#ed1b24;margin:-15px 3px 4px 4px">{{contactErrorTxt}}</ion-label>\n                </ion-col>\n            </ion-row>\n            <ion-row>\n                <ion-col col-12>\n                    <ion-item class="customTextbox" margin-bottom>\n                        <ion-input  [(ngModel)]="pwd"  type="password" placeholder="Password"></ion-input>\n                    </ion-item>\n                    <ion-label class="LblOne" *ngIf="passwordError" style="color:#ed1b24;margin:-15px 3px 4px 4px">{{passwordErrorTxt}}</ion-label>\n                </ion-col>\n            </ion-row>\n            <ion-row>\n                <ion-col col-12>\n                    <div text-right>\n                        <button (click)="SendMail()" class=""  ion-button full>Register</button>\n                    </div>\n                </ion-col>\n            </ion-row>\n        </ion-grid>\n\n    </ion-list>\n\n</ion-content>\n'/*ion-inline-end:"C:\xampp\htdocs\ionic\New folder\src\pages\register\register.html"*/,
+    }),
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavParams */], __WEBPACK_IMPORTED_MODULE_2__webService_constant__["a" /* Constant */], __WEBPACK_IMPORTED_MODULE_3__webService_webservice__["a" /* WebService */], __WEBPACK_IMPORTED_MODULE_4__angular_http__["b" /* Http */]])
+], RegisterPage);
+
+//# sourceMappingURL=register.js.map
+
+/***/ }),
+
+/***/ 215:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HomePage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__booking_booking__ = __webpack_require__(80);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__webService_constant__ = __webpack_require__(26);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__webService_webservice__ = __webpack_require__(30);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__angular_http__ = __webpack_require__(21);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+
+
+
+var HomePage = (function () {
+    function HomePage(navCtrl, constant, service, http) {
+        this.navCtrl = navCtrl;
+        this.constant = constant;
+        this.service = service;
+        this.http = http;
+        // ActivityArry = [1,2,3,4,5,6,7,6,];
+        this.ActivityArry = [];
+        this.counter = 0;
+        this.GetAllActivity();
+    }
+    HomePage.prototype.GetAllActivity = function () {
+        var _this = this;
+        var dic = {};
+        this.constant.LoadingPresent();
+        var URL = 'http://pr.veba.co/~shubantech/ripdubai/activitiesContoller.php';
+        this.http.post(URL, {}).subscribe(function (data) {
+            _this.constant.LoadingHide();
+            console.log(data.json());
+            var JsonData = data.json();
+            _this.ActivityArry = JsonData.activiteis;
+        }, function (error) {
+            console.log('WebserviceHandler=>' + error);
+        });
+    };
+    HomePage.prototype.booking = function () {
+        var ActiveIndex = this.slides.getActiveIndex();
+        console.log(this.ActivityArry[ActiveIndex]);
+        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_2__booking_booking__["a" /* BookingPage */], { ActivityArry: this.ActivityArry[ActiveIndex] });
+    };
+    HomePage.prototype.slideNext = function () {
+        this.slides.slideNext(100);
+        this.counter = this.slides.getActiveIndex();
+    };
+    HomePage.prototype.slidePrev = function () {
+        this.slides.slidePrev(100);
+        this.counter = this.slides.getActiveIndex();
+    };
+    return HomePage;
+}());
+__decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_13" /* ViewChild */])(__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["n" /* Slides */]),
+    __metadata("design:type", __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["n" /* Slides */])
+], HomePage.prototype, "slides", void 0);
+HomePage = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
+        selector: 'page-home',template:/*ion-inline-start:"C:\xampp\htdocs\ionic\New folder\src\pages\home\home.html"*/'\n<ion-header >\n    <ion-navbar>\n        <button ion-button menuToggle><ion-icon ios="ios-list" md="md-list"></ion-icon></button>\n        <ion-title><img src="https://www.silverwingtechnologies.com/clients/img/logo.png" height="40"></ion-title>\n        <ion-buttons style="width: 50px;" end><button ion-button ></button> </ion-buttons>\n    </ion-navbar>\n</ion-header>\n\n<ion-content padding class="homePageCSS">\n\n    <!-- <ion-slides text-start class="sliderMain" zoom="true" loop="false" slidesPerView="1" effect="coverflow" speed="200">\n        <ion-slide class="sliderMainSlide"  *ngFor="let item of ActivityArry">\n          <div class="slideMainContainer">\n            <ion-label class="headerLbl">RIP DUBAI<span class="headerSubLbl"> EXCLUSIVE</span></ion-label>\n            <img class="imageSlider" src="https://www.silverwingtechnologies.com/clients/img/activity1.jpg">\n            <ion-label class="headerLblTwo">BBQ DONUT<span class="headerSubLblTwo">BOAT</span></ion-label>\n            <p class="sliderDics"  padding text-left>A Jet ski is a small machine like a motorcycle that is powered by a jet engine and can travel on the surface of water. RIP Jet Ski is self-propelled vehicle for 1 to 3 persons, which skims across water on a flat keel, and is steered by means of handlebars.\n                RIP Jet Ski is the most extreme form water riding, where the rider surfs waves, using them as a jump ramp for aerial maneuvers.</p>\n          </div>\n        </ion-slide>\n    </ion-slides> -->\n\n    <ion-slides text-start class="sliderMain" zoom="true" loop="false" slidesPerView="1" effect="coverflow" speed="200">\n\n        <ion-slide class="sliderMainSlide"  *ngFor="let item of ActivityArry">\n\n\n                   <div class="slideMainContainer">\n                <ion-label class="headerLbl">RIP DUBAI<span class="headerSubLbl"> EXCLUSIVE</span></ion-label>\n                <img class="imageSlider" src="{{item.image1}}">\n                <ion-label class="headerLblTwo">{{item.name}}<span class="headerSubLblTwo"></span></ion-label>\n\n                <ion-label class="sliderDics"  padding text-left>\n                    <span [innerHTML]="item.description"></span>  \n                </ion-label>\n\n            </div>\n\n        </ion-slide>\n\n\n\n    </ion-slides>\n    <ion-icon class="backButtonIcon" name="ios-arrow-back" *ngIf="counter > 0" (click)="slidePrev()"></ion-icon> \n    <ion-icon class="backButtonIcon" name="ios-arrow-forward" (click)="slideNext()"></ion-icon> \n\n\n    <button class="bookbtn" (click)="booking()" margin-top ion-button color="yellow" full>BOOK NOW</button>\n\n</ion-content>\n'/*ion-inline-end:"C:\xampp\htdocs\ionic\New folder\src\pages\home\home.html"*/
+    }),
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* NavController */], __WEBPACK_IMPORTED_MODULE_3__webService_constant__["a" /* Constant */], __WEBPACK_IMPORTED_MODULE_4__webService_webservice__["a" /* WebService */], __WEBPACK_IMPORTED_MODULE_5__angular_http__["b" /* Http */]])
+], HomePage);
+
+//# sourceMappingURL=home.js.map
+
+/***/ }),
+
+/***/ 216:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__ = __webpack_require__(217);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_module__ = __webpack_require__(235);
+
+
+Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* platformBrowserDynamic */])().bootstrapModule(__WEBPACK_IMPORTED_MODULE_1__app_module__["a" /* AppModule */]);
+//# sourceMappingURL=main.js.map
+
+/***/ }),
+
+/***/ 235:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppModule; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__ = __webpack_require__(27);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_status_bar__ = __webpack_require__(213);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_native_splash_screen__ = __webpack_require__(214);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ionic_native_in_app_browser__ = __webpack_require__(165);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__app_component__ = __webpack_require__(283);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_home_home_module__ = __webpack_require__(284);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_about_about_module__ = __webpack_require__(159);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__pages_activities_activities_module__ = __webpack_require__(161);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__pages_gift_gift_module__ = __webpack_require__(163);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__pages_location_location_module__ = __webpack_require__(166);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__pages_contact_contact_module__ = __webpack_require__(168);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__pages_cancellation_cancellation_module__ = __webpack_require__(170);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__pages_booking_booking_module__ = __webpack_require__(154);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__pages_list_list_module__ = __webpack_require__(285);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__pages_register_register_module__ = __webpack_require__(172);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__angular_http__ = __webpack_require__(21);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__webService_constant__ = __webpack_require__(26);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__webService_handler__ = __webpack_require__(158);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__webService_webservice__ = __webpack_require__(30);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__ionic_native_date_picker__ = __webpack_require__(155);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__angular_common__ = __webpack_require__(33);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+
+
+
+
+
+
+
+// import { ListPage } from '../pages/list/list';
+
+
+
+
+
+
+
+
+
+// Web Service
+
+
+
+
+// Plugin
+
+
+var AppModule = (function () {
+    function AppModule() {
+    }
+    return AppModule;
+}());
+AppModule = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["L" /* NgModule */])({
+        declarations: [__WEBPACK_IMPORTED_MODULE_6__app_component__["a" /* MyApp */]],
+        imports: [
+            __WEBPACK_IMPORTED_MODULE_17__angular_http__["c" /* HttpModule */],
+            __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
+            __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["e" /* IonicModule */].forRoot(__WEBPACK_IMPORTED_MODULE_6__app_component__["a" /* MyApp */], {}, {
+                links: [
+                    { loadChildren: '../pages/booking/booking.module#BookingPageModule', name: 'BookingPage', segment: 'booking', priority: 'low', defaultHistory: [] },
+                    { loadChildren: '../pages/about/about.module#AboutPageModule', name: 'AboutPage', segment: 'about', priority: 'low', defaultHistory: [] },
+                    { loadChildren: '../pages/activities/activities.module#ActivitiesPageModule', name: 'ActivitiesPage', segment: 'activities', priority: 'low', defaultHistory: [] },
+                    { loadChildren: '../pages/gift/gift.module#GiftPageModule', name: 'GiftPage', segment: 'gift', priority: 'low', defaultHistory: [] },
+                    { loadChildren: '../pages/location/location.module#LocationPageModule', name: 'LocationPage', segment: 'location', priority: 'low', defaultHistory: [] },
+                    { loadChildren: '../pages/contact/contact.module#ContactPageModule', name: 'ContactPage', segment: 'contact', priority: 'low', defaultHistory: [] },
+                    { loadChildren: '../pages/cancellation/cancellation.module#CancellationPageModule', name: 'CancellationPage', segment: 'cancellation', priority: 'low', defaultHistory: [] },
+                    { loadChildren: '../pages/register/register.module#RegisterPageModule', name: 'RegisterPage', segment: 'register', priority: 'low', defaultHistory: [] }
+                ]
+            }),
+            __WEBPACK_IMPORTED_MODULE_8__pages_about_about_module__["AboutPageModule"],
+            __WEBPACK_IMPORTED_MODULE_9__pages_activities_activities_module__["ActivitiesPageModule"],
+            __WEBPACK_IMPORTED_MODULE_7__pages_home_home_module__["a" /* HomePageModule */],
+            __WEBPACK_IMPORTED_MODULE_10__pages_gift_gift_module__["GiftPageModule"],
+            __WEBPACK_IMPORTED_MODULE_13__pages_cancellation_cancellation_module__["CancellationPageModule"],
+            __WEBPACK_IMPORTED_MODULE_14__pages_booking_booking_module__["BookingPageModule"],
+            __WEBPACK_IMPORTED_MODULE_12__pages_contact_contact_module__["ContactPageModule"],
+            __WEBPACK_IMPORTED_MODULE_11__pages_location_location_module__["LocationPageModule"],
+            __WEBPACK_IMPORTED_MODULE_15__pages_list_list_module__["a" /* ListPageModule */],
+            __WEBPACK_IMPORTED_MODULE_16__pages_register_register_module__["RegisterPageModule"]
+        ],
+        bootstrap: [__WEBPACK_IMPORTED_MODULE_2_ionic_angular__["c" /* IonicApp */]],
+        entryComponents: [__WEBPACK_IMPORTED_MODULE_6__app_component__["a" /* MyApp */]],
+        providers: [__WEBPACK_IMPORTED_MODULE_3__ionic_native_status_bar__["a" /* StatusBar */], __WEBPACK_IMPORTED_MODULE_4__ionic_native_splash_screen__["a" /* SplashScreen */], __WEBPACK_IMPORTED_MODULE_5__ionic_native_in_app_browser__["a" /* InAppBrowser */], { provide: __WEBPACK_IMPORTED_MODULE_1__angular_core__["v" /* ErrorHandler */], useClass: __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["d" /* IonicErrorHandler */] }, __WEBPACK_IMPORTED_MODULE_21__ionic_native_date_picker__["a" /* DatePicker */],
+            __WEBPACK_IMPORTED_MODULE_19__webService_handler__["a" /* Handler */], __WEBPACK_IMPORTED_MODULE_22__angular_common__["c" /* DatePipe */], __WEBPACK_IMPORTED_MODULE_20__webService_webservice__["a" /* WebService */], __WEBPACK_IMPORTED_MODULE_18__webService_constant__["a" /* Constant */]]
+    })
+], AppModule);
+
+//# sourceMappingURL=app.module.js.map
+
+/***/ }),
+
+/***/ 26:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Constant; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_http__ = __webpack_require__(21);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+var Constant = (function () {
+    //-------------------------Base URL----------------------//
+    function Constant(Loading, toastCtrl, alertCtrl, Event, Platform, http, popoverCtrl) {
+        this.Loading = Loading;
+        this.toastCtrl = toastCtrl;
+        this.alertCtrl = alertCtrl;
+        this.Event = Event;
+        this.Platform = Platform;
+        this.http = http;
+        this.popoverCtrl = popoverCtrl;
+        //-------------------------Base URL----------------------//
+        this.BASE_URL = 'http://pr.veba.co/~shubantech/ripdubai/';
+        this.iOS = 151;
+        this.Android = 152;
+        this.USER_ID = '54';
+        this.USER_REQUEST_KEY = "82fb98537dd13ded8e2bb459af2aaebc";
+        this.USER_TYPE = '';
+    }
+    //--------------------------------Alert---------------------------//
+    //--------------------------------Alert---------------------------//
+    Constant.prototype.Alert = function (Titles, Message, BtnTitle) {
+        var Title = Titles;
+        var alert = this.alertCtrl.create({
+            title: Title,
+            message: Message,
+            buttons: [
+                {
+                    text: BtnTitle,
+                    role: 'cancel',
+                    handler: function () {
+                        console.log('Cancel clicked');
+                    }
+                },
+            ]
+        });
+        alert.present();
+    };
+    // Toast Message
+    Constant.prototype.Toast = function (message, positions) {
+        var toast = this.toastCtrl.create({
+            message: message,
+            duration: 3000,
+            position: positions
+        });
+        toast.onDidDismiss(function () {
+            console.log('Dismissed toast');
+        });
+        toast.present();
+    };
+    Constant.prototype.LoadingPresent = function () {
+        var _this = this;
+        this.loading = this.Loading.create();
+        this.loading.present();
+        setTimeout(function () {
+            _this.loading.dismiss();
+        }, 25000);
+    };
+    Constant.prototype.LoadingHide = function () {
+        this.loading.dismiss();
+    };
+    return Constant;
+}());
+Constant = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["B" /* Injectable */])(),
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* LoadingController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["o" /* ToastController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* AlertController */],
+        __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["b" /* Events */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* Platform */], __WEBPACK_IMPORTED_MODULE_2__angular_http__["b" /* Http */],
+        __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* PopoverController */]])
+], Constant);
+
+// Date Picker 
+// OpenDatePicker(CurrentDate, MinDate){
+//     if (this.Platform.is('ios')) {
+//         return this.datePicker.show({date: CurrentDate,mode: 'datetime',is24Hour: false,allowOldDates:false,
+//                 minDate: MinDate,
+//                 androidTheme: this.datePicker.ANDROID_THEMES.THEME_DEVICE_DEFAULT_LIGHT}).then(date => {
+//             return date;
+//         },err => {
+//             return err;
+//         });
+//     }
+//     if (this.Platform.is('android')) {
+//         return this.datePicker.show({date: CurrentDate,mode: 'datetime',is24Hour: false,allowOldDates:false,
+//                 minDate:  (new Date(MinDate)).valueOf(),
+//                 androidTheme: this.datePicker.ANDROID_THEMES.THEME_DEVICE_DEFAULT_LIGHT}).then(date => {
+//             return date;
+//         },err => {
+//             return err;
+//         });
+//     }
+// }
+//# sourceMappingURL=constant.js.map
+
+/***/ }),
+
+/***/ 283:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MyApp; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__ = __webpack_require__(213);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(214);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_home_home__ = __webpack_require__(215);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__pages_about_about__ = __webpack_require__(160);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_activities_activities__ = __webpack_require__(162);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_gift_gift__ = __webpack_require__(164);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_location_location__ = __webpack_require__(167);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__pages_contact_contact__ = __webpack_require__(169);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__pages_cancellation_cancellation__ = __webpack_require__(171);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__pages_register_register__ = __webpack_require__(173);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+
+
+
+
+
+
+
+
+var MyApp = (function () {
+    function MyApp(platform, statusBar, splashScreen) {
+        this.platform = platform;
+        this.statusBar = statusBar;
+        this.splashScreen = splashScreen;
+        this.rootPage = __WEBPACK_IMPORTED_MODULE_4__pages_home_home__["a" /* HomePage */];
+        this.initializeApp();
+        // used for an example of ngFor and navigation
+        this.pages = [
+            { title: 'HOME', component: __WEBPACK_IMPORTED_MODULE_4__pages_home_home__["a" /* HomePage */] },
+            { title: 'REGISTER', component: __WEBPACK_IMPORTED_MODULE_11__pages_register_register__["a" /* RegisterPage */] },
+            // { title: 'List', component: ListPage },
+            { title: 'ACTIVITIES', component: __WEBPACK_IMPORTED_MODULE_6__pages_activities_activities__["a" /* ActivitiesPage */] },
+            { title: 'ABOUT US', component: __WEBPACK_IMPORTED_MODULE_5__pages_about_about__["a" /* AboutPage */] },
+            { title: 'GIFT VOUCHERS', component: __WEBPACK_IMPORTED_MODULE_7__pages_gift_gift__["a" /* GiftPage */] },
+            { title: 'LOCATION', component: __WEBPACK_IMPORTED_MODULE_8__pages_location_location__["a" /* LocationPage */] },
+            { title: 'CONTACT US', component: __WEBPACK_IMPORTED_MODULE_9__pages_contact_contact__["a" /* ContactPage */] },
+            { title: 'CANCELLATION & SAFETY', component: __WEBPACK_IMPORTED_MODULE_10__pages_cancellation_cancellation__["a" /* CancellationPage */] }
+        ];
+    }
+    MyApp.prototype.initializeApp = function () {
+        var _this = this;
+        this.platform.ready().then(function () {
+            _this.statusBar.styleDefault();
+            _this.splashScreen.hide();
+        });
+    };
+    MyApp.prototype.openPage = function (page) {
+        //this.splashScreen.show();
+        // Reset the content nav to have just this page
+        // we wouldn't want the back button to show in this scenario
+        this.nav.setRoot(page.component);
+    };
+    return MyApp;
+}());
+__decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_13" /* ViewChild */])(__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* Nav */]),
+    __metadata("design:type", __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* Nav */])
+], MyApp.prototype, "nav", void 0);
+MyApp = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({template:/*ion-inline-start:"C:\xampp\htdocs\ionic\New folder\src\app\app.html"*/'<!-- <ion-menu [content]="content" type="overlay" > -->\n<ion-menu class="sideMenuHeader" [content]="content" type="overlay" >\n  <ion-header>\n    <ion-toolbar>\n      <button ion-button menuToggle>\n        <ion-icon ios="ios-list" md="md-list"></ion-icon>\n      </button>\n    </ion-toolbar>\n  </ion-header>\n\n  <ion-content class="sidebarBg" scroll="false">\n    \n      <button text-wrap class="sidebarBg"  menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)">\n        {{p.title}}\n      </button>\n    \n    <p padding-left no-margin class="followBtn">FOLLOW US</p>\n    <ion-grid style="padding-left: 12px;">\n      <ion-row>\n        <ion-col col-6>\n          <div text-center  class="social-box-bg ">\n            <a href="https://www.facebook.com/RiP.DuBai">\n            <img style="height: 27px;margin-top: 10px;" src="assets/imgs/facebook.png">\n          </a>\n            <i class="fa fa-facebook"></i>\n          </div>   \n        </ion-col>\n        <ion-col col-6>\n          <div text-center class="social-box-bg ">\n            <a href="https://twitter.com/Rip_DUBAI">\n            <ion-icon class="social-icon" ios="logo-twitter" md="logo-twitter"></ion-icon></a>\n          </div>\n        </ion-col>\n      </ion-row>\n      <ion-row>\n        <ion-col col-6>\n          <div text-center class="social-box-bg ">\n            <a href="https://www.youtube.com/channel/UCy54dNm8FXa5O-yD5wQb1zw?view_as=subscriber">\n            <ion-icon class="social-icon" ios="logo-youtube" md="logo-youtube"></ion-icon></a>\n          </div>\n        </ion-col>\n        <ion-col col-6>\n          <div text-center class="social-box-bg ">\n            <a href="https://www.instagram.com/rip.dubai/">\n            <ion-icon class="social-icon" ios="logo-instagram" md="logo-instagram"></ion-icon>\n            </a>\n          </div>\n        </ion-col>\n      </ion-row>\n      <ion-row>\n        <ion-col col-6>\n          <div text-center class="social-box-bg ">\n          <a href="https://www.linkedin.com/in/rip-rest-in-peace-94603a14a/">\n           <img style="height: 27px;margin-top: 10px;" src="assets/imgs/linkedin.png">\n          </a>\n          </div>\n        </ion-col>\n      </ion-row>\n    </ion-grid>\n  </ion-content>\n</ion-menu>\n\n<ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>'/*ion-inline-end:"C:\xampp\htdocs\ionic\New folder\src\app\app.html"*/
+    }),
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* Platform */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */], __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */]])
+], MyApp);
+
+//# sourceMappingURL=app.component.js.map
+
+/***/ }),
+
+/***/ 284:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HomePageModule; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__home__ = __webpack_require__(215);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+
+
+var HomePageModule = (function () {
+    function HomePageModule() {
+    }
+    return HomePageModule;
+}());
+HomePageModule = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["L" /* NgModule */])({
+        declarations: [
+            __WEBPACK_IMPORTED_MODULE_2__home__["a" /* HomePage */],
+        ],
+        imports: [
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__home__["a" /* HomePage */]),
+        ],
+    })
+], HomePageModule);
+
+//# sourceMappingURL=home.module.js.map
+
+/***/ }),
+
+/***/ 285:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ListPageModule; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__list__ = __webpack_require__(286);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+
+
+var ListPageModule = (function () {
+    function ListPageModule() {
+    }
+    return ListPageModule;
+}());
+ListPageModule = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["L" /* NgModule */])({
+        declarations: [
+            __WEBPACK_IMPORTED_MODULE_2__list__["a" /* ListPage */],
+        ],
+        imports: [
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__list__["a" /* ListPage */]),
+        ],
+    })
+], ListPageModule);
+
+//# sourceMappingURL=list.module.js.map
+
+/***/ }),
+
+/***/ 286:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ListPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(6);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var ListPage = ListPage_1 = (function () {
+    function ListPage(navCtrl, navParams) {
+        this.navCtrl = navCtrl;
+        this.navParams = navParams;
+        // If we navigated to this page, we will have an item available as a nav param
+        this.selectedItem = navParams.get('item');
+        // Let's populate this page with some filler content for funzies
+        this.icons = ['flask', 'wifi', 'beer', 'football', 'basketball', 'paper-plane',
+            'american-football', 'boat', 'bluetooth', 'build'];
+        this.items = [];
+        for (var i = 1; i < 11; i++) {
+            this.items.push({
+                title: 'Item ' + i,
+                note: 'This is item #' + i,
+                icon: this.icons[Math.floor(Math.random() * this.icons.length)]
+            });
+        }
+    }
+    ListPage.prototype.itemTapped = function (event, item) {
+        // That's right, we're pushing to ourselves!
+        this.navCtrl.push(ListPage_1, {
+            item: item
+        });
+    };
+    return ListPage;
+}());
+ListPage = ListPage_1 = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
+        selector: 'page-list',template:/*ion-inline-start:"C:\xampp\htdocs\ionic\New folder\src\pages\list\list.html"*/'<ion-header>\n  <ion-navbar>\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>List</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content>\n  <ion-list>\n    <button ion-item *ngFor="let item of items" (click)="itemTapped($event, item)">\n      <ion-icon [name]="item.icon" item-start></ion-icon>\n      {{item.title}}\n      <div class="item-note" item-end>\n        {{item.note}}\n      </div>\n    </button>\n  </ion-list>\n  <div *ngIf="selectedItem" padding>\n    You navigated here from <b>{{selectedItem.title}}</b>\n  </div>\n</ion-content>\n'/*ion-inline-end:"C:\xampp\htdocs\ionic\New folder\src\pages\list\list.html"*/
+    }),
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavParams */]])
+], ListPage);
+
+var ListPage_1;
+//# sourceMappingURL=list.js.map
+
+/***/ }),
+
+/***/ 30:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return WebService; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_add_operator_map__ = __webpack_require__(157);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_add_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_rxjs_add_operator_map__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__handler__ = __webpack_require__(158);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__constant__ = __webpack_require__(26);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+var WebService = (function () {
+    function WebService(Constant, WebserviceHandler) {
+        this.Constant = Constant;
+        this.WebserviceHandler = WebserviceHandler;
+        this.BASE_URL = this.Constant.BASE_URL;
+    }
+    // Check Booking Date and Time
+    WebService.prototype.CheckBookingDateTime = function (parameter) {
+        var URL = this.BASE_URL + 'checkBookingDate.php';
+        return this.WebserviceHandler.PostWithoutToken(URL, parameter).map(function (data) {
+            console.log(data.json());
+            return data.json();
+        }, function (error) {
+            console.log("Oooops!");
+            console.log(error);
+            return error;
+        });
+    };
+    // 
+    WebService.prototype.GetAllActivity = function (parameter) {
+        var URL = this.BASE_URL + 'activitiesContoller.php';
+        return this.WebserviceHandler.PostWithoutToken(URL, parameter).map(function (data) {
+            console.log(data.json());
+            return data.json();
+        }, function (error) {
+            console.log(error);
+            return error;
+        });
+    };
+    //LogOut
+    WebService.prototype.LogoutAPI = function () {
+        var URL = this.BASE_URL + 'api/LogOutUser?IsSignOutFromMobile=true';
+        return this.WebserviceHandler.Get(URL).map(function (data) {
+            console.log(data.json());
+            return data.json();
+        }, function (error) {
+            console.log("Oooops!");
+            return error;
+        });
+    };
+    return WebService;
+}());
+WebService = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["B" /* Injectable */])(),
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_3__constant__["a" /* Constant */], __WEBPACK_IMPORTED_MODULE_2__handler__["a" /* Handler */]])
+], WebService);
+
+//# sourceMappingURL=webservice.js.map
+
+/***/ }),
+
+/***/ 80:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return BookingPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_date_picker__ = __webpack_require__(155);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_common__ = __webpack_require__(33);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__webService_constant__ = __webpack_require__(26);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__webService_webservice__ = __webpack_require__(30);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__angular_http__ = __webpack_require__(21);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+
+
+
+var BookingPage = (function () {
+    function BookingPage(navCtrl, navParams, datePicker, datePipe, constant, service, http) {
+        this.navCtrl = navCtrl;
+        this.navParams = navParams;
+        this.datePicker = datePicker;
+        this.datePipe = datePipe;
+        this.constant = constant;
+        this.service = service;
+        this.http = http;
+        this.dateSelected = '';
+        this.timeSelected = '';
+        this.checkboxSRC = 'assets/imgs/checkboxFalse.jpeg';
+        this.checkboxSRC1 = 'assets/imgs/checkboxFalse.jpeg';
+        this.checkDate = '';
+        this.checkTime = '';
+        this.ActivityArry = {};
+        this.DisplayDate = '';
+        this.DisplayTime = '';
+        this.Texes = 0;
+        this.FinalTotal = 0;
+        this.TotlePayment = 0;
+        this.PersonArry = ["1", "2", "3", "4", "5", "6", "7", "8", "9"];
+        this.SingleActivity = [];
+        this.TimeSlotArry = [];
+        this.Person = 1;
+        this.ActivityArry = navParams.get('ActivityArry');
+        console.log(this.ActivityArry);
+        //this.CheckDateTimeIsBooked();
+        this.GetActivityDetails();
+    }
+    BookingPage.prototype.SelecetDateClick = function () {
+        this.SelecetDate();
+    };
+    BookingPage.prototype.SelecetTimeClick = function () {
+        //this.SelecetTime = SelecetTime;
+        this.checkTime = this.timeSelected;
+    };
+    BookingPage.prototype.SelecetDate = function () {
+        var _this = this;
+        this.datePicker.show({
+            date: new Date(),
+            mode: 'date',
+            is24Hour: false,
+            allowOldDates: false,
+            minDate: new Date().valueOf(),
+            androidTheme: this.datePicker.ANDROID_THEMES.THEME_DEVICE_DEFAULT_LIGHT
+        }).then(function (date) {
+            console.log('Got date: ', date);
+            _this.dateSelected = _this.datePipe.transform(date, 'MMMM d, yyyy');
+            _this.checkDate = _this.datePipe.transform(date, 'yyyy-MM-dd');
+            //Wednesday, October 18th 2017 @ 10am
+            _this.DisplayDate = _this.datePipe.transform(date, 'EEEE, MMMM d y @');
+            console.log(_this.DisplayDate);
+            _this.CheckTimeStatic(date);
+        }, function (err) {
+            console.log('Error occurred while getting date: ', err);
+        });
+        var CustomURL = 'date=' + this.checkDate;
+        var URL = "http://pr.veba.co/~shubantech/ripdubai/getBookingTime.php?" + CustomURL;
+        this.http.get(URL).subscribe(function (data) {
+            _this.constant.LoadingHide();
+            console.log(data.json());
+            var JsonData = data.json();
+            _this.TimeSlotArry = JsonData.timeslots;
+        }, function (error) {
+            console.log('WebserviceHandler=>' + error);
+        });
+    };
+    BookingPage.prototype.SelecetTime = function () {
+        var _this = this;
+        this.datePicker.show({
+            date: new Date(),
+            mode: 'time',
+            is24Hour: false,
+            allowOldDates: false,
+            minDate: new Date().valueOf(),
+            androidTheme: this.datePicker.ANDROID_THEMES.THEME_DEVICE_DEFAULT_LIGHT
+        }).then(function (date) {
+            console.log('Got Time: ', date);
+            _this.timeSelected = _this.datePipe.transform(date, 'h:mm a');
+            _this.checkTime = _this.datePipe.transform(date, 'h:mm a');
+            _this.CheckTimeStatic(date);
+            _this.DisplayTime = _this.datePipe.transform(date, 'ha');
+            console.log(_this.DisplayTime);
+        }, function (err) {
+            console.log('Error occurred while getting date: ', err);
+        });
+    };
+    BookingPage.prototype.CheckTimeStatic = function (date) {
+        console.log('Date:', this.checkDate);
+        console.log('Time:', this.checkTime);
+        if (this.checkTime && this.checkDate) {
+            this.CheckDateTimeIsBooked();
+        }
+        else {
+            console.log('Date and time not available');
+        }
+    };
+    BookingPage.prototype.CheckDateTimeIsBooked = function () {
+        var _this = this;
+        this.constant.LoadingPresent();
+        var URL = 'http://pr.veba.co/~shubantech/ripdubai/checkBookingDate.php?b_date=' + this.checkDate + '&time=' + this.checkTime;
+        //var URL = 'http://pr.veba.co/~shubantech/ripdubai/checkBookingDate.php?b_date=2017-11-30'+'&time=12:00 AM';
+        console.log(URL);
+        this.http.get(URL).subscribe(function (data) {
+            _this.constant.LoadingHide();
+            console.log(data.json());
+            var Temp = data.json();
+            console.log(Temp.success);
+            console.log(Temp.booking_time);
+            if (Temp.success == "1") {
+                var DataJson = data.json();
+                console.log('available');
+            }
+            else {
+                console.log('booked');
+                _this.constant.Alert('Message', Temp.booking_time, 'Ok');
+            }
+        }, function (error) {
+            console.log('WebserviceHandler=>' + error);
+        });
+    };
+    BookingPage.prototype.GetActivityDetails = function () {
+        var _this = this;
+        this.constant.LoadingPresent();
+        var URL = 'http://pr.veba.co/~shubantech/ripdubai/activityContoller.php?activity_id=' + this.ActivityArry.activity_id;
+        //var URL = 'http://192.168.1.27/ripdubai/abc.php?activity_id=1';
+        this.http.get(URL).subscribe(function (data) {
+            _this.constant.LoadingHide();
+            console.log(data.json());
+            var SinglePartTime = data.json();
+            _this.SingleActivity = SinglePartTime.activiteis;
+        }, function (error) {
+            console.log('WebserviceHandler=>' + error);
+        });
+    };
+    BookingPage.prototype.IONSelectEvent = function () {
+        console.log(this.IONSelectValue);
+        if (this.Person == 0) {
+            this.TotlePayment = this.IONSelectValue.price;
+        }
+        else {
+            this.TotlePayment = this.IONSelectValue.ph_price * this.Person;
+        }
+        var TaxesSub = this.TotlePayment;
+        this.Texes = (TaxesSub * 20) / 100;
+        console.log(TaxesSub);
+        console.log(this.Texes);
+        this.FinalTotal = this.TotlePayment + this.Texes;
+    };
+    BookingPage.prototype.BookingClick = function () {
+        //this.BookingAPI();
+        // this.checkDate = 'fasdfa';
+        //  this.checkTime = 'fasdfa';
+        if (!this.checkDate) {
+            this.constant.Alert('Message', 'Please select Date.', 'Ok');
+        }
+        else if (!this.checkTime) {
+            this.constant.Alert('Message', 'Please select Time.', 'Ok');
+        }
+        else if (!this.TotlePayment) {
+            this.constant.Alert('Message', 'Please select Package.', 'Ok');
+        }
+        else if (this.checkboxSRC == 'assets/imgs/checkboxFalse.jpeg') {
+            this.constant.Alert('Message', 'Please select cancellation and safety policy checkbox.', 'Ok');
+        }
+        else if (this.checkboxSRC1 == 'assets/imgs/checkboxFalse.jpeg') {
+            this.constant.Alert('Message', 'Please select check-in conditions checkbox.', 'Ok');
+        }
+        else {
+            console.log('All Done');
+            this.BookingAPI();
+        }
+    };
+    BookingPage.prototype.BookingAPI = function () {
+        var _this = this;
+        this.constant.LoadingPresent();
+        var dateToday = new Date();
+        var date = this.datePipe.transform(dateToday, 'yyyy-MM-dd');
+        var activity_id = this.ActivityArry.activity_id;
+        var Price = this.TotlePayment;
+        var total_price = Number(this.TotlePayment) + this.Texes;
+        var Duration = this.IONSelectValue.duration;
+        var Package = this.IONSelectValue.package;
+        var CustomURL = 'user_id=0&date=' + date + '&b_date=' + this.checkDate + '&time=' + this.checkTime + '&activity_id=' + activity_id +
+            '&person=1&price=' + Price + '&total=' + total_price + '&package=' + Package + '&duration=' + Duration;
+        var URL = 'http://pr.veba.co/~shubantech/ripdubai/bookingController.php?' + CustomURL;
+        console.log(URL);
+        this.http.get(URL).subscribe(function (data) {
+            _this.constant.LoadingHide();
+            console.log(data.json());
+            var Temp = data.json();
+            if (Temp.success) {
+                _this.dateSelected = '';
+                _this.timeSelected = '';
+                _this.checkboxSRC = 'assets/imgs/checkboxFalse.jpeg';
+                _this.checkDate = '';
+                _this.checkTime = '';
+                _this.DisplayDate = '';
+                _this.DisplayTime = '';
+                _this.Texes = 0;
+                _this.TotlePayment = 0;
+                _this.SingleActivity = [];
+                _this.IONSelectValue = '';
+                _this.constant.Alert('Success', ' Booking done successfully.', 'Ok');
+            }
+            else {
+                _this.constant.Alert('Error', 'Something is wrong Please try again later.', 'Ok');
+            }
+        }, function (error) {
+            console.log('WebserviceHandler=>' + error);
+        });
+    };
+    BookingPage.prototype.BackButtonClick = function () {
+        this.navCtrl.pop();
+    };
+    BookingPage.prototype.SelectCheckBoxClick = function () {
+        if (this.checkboxSRC == 'assets/imgs/checkboxFalse.jpeg') {
+            this.checkboxSRC = 'assets/imgs/checkboxTrue.png';
+        }
+        else {
+            this.checkboxSRC = 'assets/imgs/checkboxFalse.jpeg';
+        }
+    };
+    BookingPage.prototype.CheckBoxClick1 = function () {
+        if (this.checkboxSRC1 == 'assets/imgs/checkboxFalse.jpeg') {
+            this.checkboxSRC1 = 'assets/imgs/checkboxTrue.png';
+        }
+        else {
+            this.checkboxSRC1 = 'assets/imgs/checkboxFalse.jpeg';
+        }
+    };
+    return BookingPage;
+}());
+BookingPage = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* IonicPage */])(),
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
+        selector: 'page-booking',template:/*ion-inline-start:"C:\xampp\htdocs\ionic\New folder\src\pages\booking\booking.html"*/'\n<ion-header class="BookingHeader">\n    <ion-navbar hideBackButton="true">\n\n        <ion-buttons (click)="BackButtonClick()" left>\n            <button class="headerBackButton" ion-button>\n                <ion-icon class="backButtonIcon" name="ios-arrow-back"></ion-icon> Back\n            </button>\n        </ion-buttons>\n\n        <ion-title class="pHead" >{{ActivityArry.name}}</ion-title>\n\n        <ion-buttons style="width: 50px;" end>\n            <button ion-button >\n            </button>\n        </ion-buttons>\n\n    </ion-navbar>\n</ion-header>\n\n\n<ion-content class="bookingCSS">\n    <div class="mainContainer">\n\n        <button (click)="SelecetDateClick()" class="dateBtn"> \n            <ion-icon class="" name="md-calendar"></ion-icon> Select Date\n        </button>\n\n        <ion-label class="dateLbl">{{dateSelected}}</ion-label>\n\n        <ion-item class="selectItem">\n            <ion-label class="selectLbl">Select Time</ion-label> \n            <ion-select [(ngModel)]="timeSelected"  name="md-time" multiple="false" (ionChange)="SelecetTimeClick()">\n                <ion-option [value]="items" *ngFor="let items of TimeSlotArry">{{items}}</ion-option>\n            </ion-select>\n        </ion-item>\n        <!--<button (click)="SelecetTimeClick()" class="dateBtn">\n        </button>-->\n        <ion-label class="dateLbl">{{timeSelected}}</ion-label>\n\n        <ion-item class="selectItem">\n            <ion-label class="selectLbl">{{ActivityArry.name}}</ion-label>\n            <ion-select [(ngModel)]="IONSelectValue" multiple="false" (ionChange)="IONSelectEvent()">\n                <ion-option [value]="items" *ngFor="let items of SingleActivity">{{items.duration}} HR {{items.type}}</ion-option>\n            </ion-select>\n        </ion-item>\n        <ion-item class="selectItem" *ngIf="IONSelectValue">\n            <ion-label class="selectLbl">Number Of Person</ion-label>\n            <ion-select class="" [(ngModel)]="Person" multiple="false" (ionChange)="IONSelectEvent()">\n                <ion-option [value]="items" *ngFor="let items of PersonArry">{{items}}</ion-option>\n            </ion-select>\n            \n        </ion-item>\n        <ion-label class="LblOne">Your are Booking</ion-label>\n        <ion-label class="LblTwo">{{ActivityArry.name}} Experience</ion-label>\n        <ion-label class="LblThree">{{DisplayDate}} {{timeSelected}}</ion-label>\n\n        <div class="subtotalContainer">\n            <ion-label class="subTotalLbl">Subtotal</ion-label>\n            <ion-label class="subTotalPriceLbl">AED {{TotlePayment}}</ion-label>\n            <div class="lineDrow"></div>\n        </div>\n\n        <div class="subtotalContainer" style="margin-top:12px;">\n            <ion-label class="subTotalLbl">Taxes</ion-label>\n            <ion-label class="subTotalPriceLbl">AED {{Texes}}</ion-label>\n            <div class="lineDrow"></div>\n        </div>\n\n        <div class="checkBoxContainer">\n            <img (click)="SelectCheckBoxClick()" class="checkboxImage" src="{{checkboxSRC}}">\n            <ion-label class="checkBoxLbl">I have read and agreed to the cancellation and Saftey policy below.</ion-label>\n        </div>\n        <div class="checkBoxContainer">\n            <img (click)="CheckBoxClick1()" class="checkboxImage" src="{{checkboxSRC1}}">\n            <ion-label class="checkBoxLbl">Check in conditions. At the moment you make the check in at the dock, you must provide a valid ID and the credit card you\'re using to make the payment. The cardholder must be present at the dock. If you don\'t provide this documentation, you and the other passengers won\'t be able to take the ride and "no show policies" will apply. I have read and understand this conidition.</ion-label>\n        </div>\n\n    </div>\n\n    <div class="bookNowContainer">\n        <button (click)="BookingClick()" class="bookNowBtn">BOOK NOW</button>\n        <ion-label class="totalLbl">Total</ion-label>\n        <ion-label class="totalPriceLbl">AED {{(TotlePayment-0)+(Texes-0) |number}}</ion-label>\n    </div>\n\n\n</ion-content>\n'/*ion-inline-end:"C:\xampp\htdocs\ionic\New folder\src\pages\booking\booking.html"*/,
+    }),
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavParams */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_date_picker__["a" /* DatePicker */],
+        __WEBPACK_IMPORTED_MODULE_3__angular_common__["c" /* DatePipe */], __WEBPACK_IMPORTED_MODULE_4__webService_constant__["a" /* Constant */], __WEBPACK_IMPORTED_MODULE_5__webService_webservice__["a" /* WebService */], __WEBPACK_IMPORTED_MODULE_6__angular_http__["b" /* Http */]])
+], BookingPage);
+
+//# sourceMappingURL=booking.js.map
+
+/***/ })
+
+},[216]);
+//# sourceMappingURL=main.js.map

@@ -21,6 +21,7 @@
 		C26232E7A18D455EAE35C6A3 /* DatePicker.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76C0B498DC334FB68B60A404 /* DatePicker.xib */; };
 		E919FBD483C4427DB038E100 /* CDVStatusBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 876FCB1ED6F54D6C9A2F05D3 /* CDVStatusBar.m */; };
 		EEC64EE15E1642B89C74AEE5 /* CDVSplashScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DA3429F2A6347D18D0F159C /* CDVSplashScreen.m */; };
+		D819A98DF3FB457190BDB81D /* CDVInAppBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = 020272AA84C94F90B85A827F /* CDVInAppBrowser.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +84,8 @@
 		EB87FDF41871DAF40020F90C /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = ../../config.xml; sourceTree = "<group>"; };
 		ED33DF2A687741AEAF9F8254 /* Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
 		F840E1F0165FE0F500CFE078 /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = "RIP Dubai/config.xml"; sourceTree = "<group>"; };
+		020272AA84C94F90B85A827F /* CDVInAppBrowser.m */ = {isa = PBXFileReference; name = "CDVInAppBrowser.m"; path = "cordova-plugin-inappbrowser/CDVInAppBrowser.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		5F9B5CF08A09418889920728 /* CDVInAppBrowser.h */ = {isa = PBXFileReference; name = "CDVInAppBrowser.h"; path = "cordova-plugin-inappbrowser/CDVInAppBrowser.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -202,6 +205,8 @@
 				626A291E62754481A98AB61C /* IonicKeyboard.h */,
 				E5CCDB7998A54899BD530B5D /* DatePicker.m */,
 				1543786936B943FDBC085509 /* DatePicker.h */,
+				020272AA84C94F90B85A827F /* CDVInAppBrowser.m */,
+				5F9B5CF08A09418889920728 /* CDVInAppBrowser.h */,
 			);
 			name = Plugins;
 			path = "RIP Dubai/Plugins";
@@ -338,6 +343,7 @@
 				E919FBD483C4427DB038E100 /* CDVStatusBar.m in Sources */,
 				BE482F2F15A4423B80893F7B /* IonicKeyboard.m in Sources */,
 				4F9312AF08044BC7AF516136 /* DatePicker.m in Sources */,
+				D819A98DF3FB457190BDB81D /* CDVInAppBrowser.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

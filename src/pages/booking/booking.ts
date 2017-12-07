@@ -8,6 +8,8 @@ import { DatePipe } from '@angular/common';
 import { Constant } from '../../webService/constant';
 import { WebService } from '../../webService/webservice';
 import { Http ,RequestOptions, Headers} from '@angular/http';
+import {InAppBrowser, InAppBrowserOptions} from '@ionic-native/in-app-browser';
+
 
 @IonicPage()
 @Component({
@@ -34,9 +36,10 @@ export class BookingPage {
   IONSelectValue:any;
   Person = 1;
   
+  
 
   constructor(public navCtrl: NavController, public navParams: NavParams, private datePicker: DatePicker,
-  public datePipe:DatePipe, public constant:Constant, public service:WebService, public http: Http) {
+  public datePipe:DatePipe, public constant:Constant, public service:WebService, public http: Http, public iab: InAppBrowser) {
     
     
     this.ActivityArry = navParams.get('ActivityArry');
@@ -44,7 +47,9 @@ export class BookingPage {
 
     //this.CheckDateTimeIsBooked();
     this.GetActivityDetails();
-    
+	
+	
+	
   }
 
   
@@ -189,6 +194,8 @@ export class BookingPage {
     //this.BookingAPI();
    // this.checkDate = 'fasdfa';
   //  this.checkTime = 'fasdfa';
+   var dateToday = new Date();
+   this.checkDate = this.datePipe.transform(dateToday, 'yyyy-MM-dd');
     if (!this.checkDate) {
       this.constant.Alert('Message', 'Please select Date.', 'Ok');
     }else if(!this.checkTime){
@@ -222,7 +229,9 @@ export class BookingPage {
     
      var URL = 'http://pr.veba.co/~shubantech/ripdubai/bookingController.php?'+ CustomURL;
       console.log(URL);
-
+	  
+	
+	
       this.http.get(URL).subscribe(data => {
         this.constant.LoadingHide();
         console.log(data.json());
@@ -239,7 +248,17 @@ export class BookingPage {
           this.TotlePayment = 0;
           this.SingleActivity = [];
           this.IONSelectValue = '';
-          this.constant.Alert('Success', ' Booking done successfully.','Ok');
+			const options: InAppBrowserOptions = {
+			  zoom: 'no'
+			}
+			
+			var url = 'http://pr.veba.co/~shubantech/ripdubai/web/pm/checkout.php?book_id='+Temp.booking_id;
+			console.log("NEW URL_+++"+url);
+			const browser = this.iab.create(url,'_blank',options);
+			//browser.close();
+			
+			
+          //this.constant.Alert('Success', ' Booking done successfully.','Ok');
         }else{
           this.constant.Alert('Error', 'Something is wrong Please try again later.','Ok');
         }

@@ -3,6 +3,7 @@ import { ErrorHandler, NgModule } from '@angular/core';
 import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
+import { InAppBrowser } from '@ionic-native/in-app-browser';
 
 import { MyApp } from './app.component';
 import { HomePageModule } from '../pages/home/home.module';
@@ -25,6 +26,7 @@ import { WebService } from '../webService/webservice';
 
 // Plugin
 import { DatePicker } from '@ionic-native/date-picker';
+
 import { DatePipe } from '@angular/common';
 
 @NgModule({
@@ -51,7 +53,7 @@ import { DatePipe } from '@angular/common';
 
   entryComponents: [MyApp],
 
-  providers: [StatusBar,SplashScreen,{provide: ErrorHandler, useClass: IonicErrorHandler}, DatePicker, 
+  providers: [StatusBar,SplashScreen, InAppBrowser,{provide: ErrorHandler, useClass: IonicErrorHandler}, DatePicker, 
     Handler,DatePipe,WebService, Constant]
 
 })

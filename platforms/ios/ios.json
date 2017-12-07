@@ -39,6 +39,10 @@
                         {
                             "xml": "<feature name=\"DatePicker\"><param name=\"ios-package\" value=\"DatePicker\" /></feature>",
                             "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"InAppBrowser\"><param name=\"ios-package\" value=\"CDVInAppBrowser\" /></feature>",
+                            "count": 1
                         }
                     ]
                 }
@@ -65,6 +69,9 @@
             "PACKAGE_NAME": "com.ionicframework.logindemo407538"
         },
         "cordova-plugin-datepicker": {
+            "PACKAGE_NAME": "com.app.ripdubai"
+        },
+        "cordova-plugin-inappbrowser": {
             "PACKAGE_NAME": "com.app.ripdubai"
         }
     },
@@ -126,6 +133,15 @@
             "clobbers": [
                 "datePicker"
             ]
+        },
+        {
+            "id": "cordova-plugin-inappbrowser.inappbrowser",
+            "file": "plugins/cordova-plugin-inappbrowser/www/inappbrowser.js",
+            "pluginId": "cordova-plugin-inappbrowser",
+            "clobbers": [
+                "cordova.InAppBrowser.open",
+                "window.open"
+            ]
         }
     ],
     "plugin_metadata": {
@@ -135,6 +151,7 @@
         "cordova-plugin-statusbar": "2.2.2",
         "cordova-plugin-whitelist": "1.3.1",
         "ionic-plugin-keyboard": "2.2.1",
-        "cordova-plugin-datepicker": "0.9.3"
+        "cordova-plugin-datepicker": "0.9.3",
+        "cordova-plugin-inappbrowser": "1.7.2"
     }
 }
