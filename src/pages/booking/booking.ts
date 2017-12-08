@@ -48,11 +48,24 @@ export class BookingPage {
     //this.CheckDateTimeIsBooked();
     this.GetActivityDetails();
 	
+	const options: InAppBrowserOptions = {
+	  zoom: 'no'
+	}
 	
-	
+	var url = 'http://pr.veba.co/~shubantech/ripdubai/web/pm/checkout.php?book_id=28';
+	console.log("NEW URL_+++"+url);
+	let browser = this.iab.create(url,'_blank',options);
+	browser.on("loadstop").subscribe(() => {},
+			err => {
+			  console.log("InAppBrowser Loadstop Event Error: " + err);
+	});
   }
-
-  
+  browserOnSuccess(){
+	  this.constant.Alert('Success', ' Booking done successfully.','Ok');
+  }
+  browserOnfail(){
+	  this.constant.Alert('Success', 'payment failed.','Ok');
+  }
   SelecetDateClick(){
     this.SelecetDate();
   }
