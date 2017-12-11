@@ -12,7 +12,7 @@ import { ContactPage } from '../pages/contact/contact';
 import { CancellationPage } from '../pages/cancellation/cancellation';
 import { BookingPage } from '../pages/booking/booking';
 import { RegisterPage } from '../pages/register/register';
-
+import { Push, PushObject, PushOptions} from '@ionic-native/push';
 @Component({
   templateUrl: 'app.html'
 })
@@ -23,7 +23,7 @@ export class MyApp {
 
   pages: Array<{title: string, component: any}>;
 
-  constructor(public platform: Platform, public statusBar: StatusBar, public splashScreen: SplashScreen) {
+  constructor(public platform: Platform, public statusBar: StatusBar, public push: Push, public splashScreen: SplashScreen) {
     this.initializeApp();
 
     // used for an example of ngFor and navigation
@@ -41,15 +41,49 @@ export class MyApp {
     ];
 
   }
-
+	
+	
   initializeApp() {
     this.platform.ready().then(() => {
       
       this.statusBar.styleDefault();
       this.splashScreen.hide();
+	  this.pushsetup();
     });
   }
+	pushsetup() {
+		const options: PushOptions = {
+			 android: {
+				 senderID: 'here you SENDER IR from FCM'
+			 },
+			 ios: {
+				 alert: 'true',
+				 badge: true,
+				 sound: 'false'
+			 },
+			 windows: {}
+		  };
 
+		const pushObject: PushObject = this.push.init(options);
+
+		pushObject.on('notification').subscribe((notification: any) => {
+			if (notification.additionalData.foreground) {
+			  /* let youralert = this.alertCtrl.create({
+				title: 'New Push notification',
+				message: notification.message
+			  });
+			  youralert.present(); */
+			}
+		  });
+
+		pushObject.on('registration').subscribe((registration: any) => {
+		
+		});
+
+		
+		pushObject.on('error').subscribe(error => alert('Error with Push plugin' + error));
+		  
+	  }
 
   openPage(page) {
     //this.splashScreen.show();

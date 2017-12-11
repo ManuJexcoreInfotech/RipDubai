@@ -4,7 +4,7 @@ import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { InAppBrowser } from '@ionic-native/in-app-browser';
-
+import { Push, PushObject, PushOptions} from '@ionic-native/push';
 import { MyApp } from './app.component';
 import { HomePageModule } from '../pages/home/home.module';
 // import { ListPage } from '../pages/list/list';
@@ -53,7 +53,7 @@ import { DatePipe } from '@angular/common';
 
   entryComponents: [MyApp],
 
-  providers: [StatusBar,SplashScreen, InAppBrowser,{provide: ErrorHandler, useClass: IonicErrorHandler}, DatePicker, 
+  providers: [StatusBar,SplashScreen, InAppBrowser,Push,{provide: ErrorHandler, useClass: IonicErrorHandler}, DatePicker, 
     Handler,DatePipe,WebService, Constant]
 
 })
