@@ -222,13 +222,15 @@ export class BookingPage {
     var date = this.datePipe.transform(dateToday, 'yyyy-MM-dd');
     var activity_id = this.ActivityArry.activity_id;
     var Price = this.TotlePayment;
-    var total_price = Number(this.TotlePayment)+this.Texes;
+    var total_price = this.FinalTotal;
     
     var Duration = this.IONSelectValue.duration;
     var Package = this.IONSelectValue.package;
+	var ph_price = this.IONSelectValue.ph_price 
+	var person =this.Person;
 
      var CustomURL = 'user_id=0&date='+date+'&b_date='+this.checkDate+'&time='+this.checkTime+'&activity_id='+activity_id+
-     '&person=1&price='+Price+'&total='+total_price+'&package='+Package+'&duration='+Duration;
+     '&person=1&price='+Price+'&total='+total_price+'&package='+Package+'&duration='+Duration+'&ph_price='+ph_price+'&person='+person;
     
      var URL = 'http://pr.veba.co/~shubantech/ripdubai/bookingController.php?'+ CustomURL;
       console.log(URL);
