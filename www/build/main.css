@@ -30254,6 +30254,15 @@ page-activities .sliderMain .sliderDics {
   height: 134px;
 }
 
+page-activities .sliderMain .sliderDics ul li {
+  list-style: none;
+}
+
+page-activities .sliderMain .sliderDics ul.mb30 {
+  padding-left: 2vw;
+  font-family: "Roboto", "Helvetica Neue", sans-serif;
+}
+
 page-activities .ion-ios-arrow-back {
   position: absolute;
   left: 3vw;
@@ -30277,6 +30286,9 @@ page-activities .bookbtn {
   font-size: 18px;
   font-size: 20px;
   height: 40px;
+  /*font-weight: bold;*/
+  width: 88%;
+  margin-left: 25px;
 }
 
 page-activities .sliderDics ul li {
@@ -30335,6 +30347,7 @@ page-activities .sliderDics ul li {
   background-color: #03A6E2;
   margin: 20px;
   height: 100vh;
+  min-height: 667px;
   width: calc(100% - 40px);
 }
 
@@ -30549,18 +30562,20 @@ page-gift .gift-col {
 page-gift .primary-label {
   font-size: 4vw;
   color: #009fdf;
+  margin: 0px 8px 5px 0;
 }
 
 page-gift .price-label {
   font-size: 4vw;
   color: #777777;
+  margin: 0px 8px 5px 0;
 }
 
 page-gift .buyBtn {
   padding: 1.5vh;
   float: right;
   height: 2.8em;
-  font-size: 1.3rem;
+  font-size: 1.0rem;
 }
 
 .homePageCSS .swiper-container-3d .swiper-slide-shadow-right {
@@ -30645,6 +30660,11 @@ page-gift .buyBtn {
 
 .homePageCSS .sliderMain .sliderDics ul li {
   list-style: none;
+}
+
+.homePageCSS .sliderMain .sliderDics ul.mb30 {
+  padding-left: 2vw;
+  font-family: "Roboto", "Helvetica Neue", sans-serif;
 }
 
 .homePageCSS .ion-ios-arrow-back {

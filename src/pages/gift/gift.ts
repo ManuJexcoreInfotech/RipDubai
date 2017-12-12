@@ -77,9 +77,9 @@ options : InAppBrowserOptions = {
         const options: InAppBrowserOptions = {
 		  zoom: 'no'
 		}
-		var url = 'http://pr.veba.co/~shubantech/ripdubai/web/pm/checkout.php?gift_id='+id;
+		var url = 'http://pr.veba.co/~shubantech/ripdubai/web/pm/checkout1.php?gift_id='+id;
 		console.log("NEW URL_+++"+url);
-		const browser = this.iab.create(url,'_blank',options);
+		const browser = this.iab.create(url,'_system',options);
        
     }
 }
