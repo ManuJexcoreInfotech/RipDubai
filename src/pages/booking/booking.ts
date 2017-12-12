@@ -259,7 +259,7 @@ export class BookingPage {
 			
 			var url = 'http://pr.veba.co/~shubantech/ripdubai/web/pm/checkout.php?book_id='+Temp.booking_id;
 			console.log("NEW URL_+++"+url);
-			const browser = this.iab.create(url,'_system',options);
+			const browser = this.iab.create(url,'_self',options);
 			//browser.close();
 			
 			
