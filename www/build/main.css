@@ -30109,6 +30109,33 @@ ion-navbar.toolbar {
   padding-right: 5px;
 }
 
+.inAppBrowserWrap {
+  background-color: rgba(0, 0, 0, 0.75);
+  color: #ebebeb;
+}
+
+.inAppBrowserWrap menu {
+  overflow: auto;
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.inAppBrowserWrap menu li {
+  font-size: 25px;
+  height: 25px;
+  float: left;
+  margin: 0 10px;
+  padding: 3px 10px;
+  text-decoration: none;
+  color: #ccc;
+  display: block;
+  background: rgba(30, 30, 30, 0.5);
+}
+
+.inAppBrowserWrap menu li.disabled {
+  color: #777;
+}
+
 page-about .toolbar-title {
   color: #009cde;
   font-family: Dubai;
