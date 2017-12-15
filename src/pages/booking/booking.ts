@@ -254,7 +254,9 @@ export class BookingPage {
           this.SingleActivity = [];
           this.IONSelectValue = '';
 			const options: InAppBrowserOptions = {
-			  zoom: 'no'
+			  zoom: 'no',
+			  location:'no',
+			  toolbar:'no'
 			}
 			
 			var url = 'http://pr.veba.co/~shubantech/ripdubai/web/pm/checkout.php?book_id='+Temp.booking_id;
