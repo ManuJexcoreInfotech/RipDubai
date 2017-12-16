@@ -19,5 +19,5 @@
 </ion-header>
 
 <ion-content class="iframe-content has-header" padding="false">
-	<iframe [src]="sanitize(url)" width="100%" height="100%"></iframe>
+	<iframe [src]="sanitize(url)" width="100%" id="iframeId" #iframe height="100%" frameborder="0" (load)="dismissLoading()"></iframe>
 </ion-content>
