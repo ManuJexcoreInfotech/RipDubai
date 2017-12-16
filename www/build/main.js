@@ -1802,6 +1802,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 var PaymentPage = (function () {
     function PaymentPage(navCtrl, navParams, constant, service, http, iab, sanitizer) {
+        var _this = this;
         this.navCtrl = navCtrl;
         this.navParams = navParams;
         this.constant = constant;
@@ -1812,7 +1813,7 @@ var PaymentPage = (function () {
         this.bookId = 28;
         this.url = '';
         this.constant.LoadingPresent();
-        //setTimeout(() => {  this.constant.LoadingHide(); },3000);
+        setTimeout(function () { _this.constant.LoadingHide(); }, 3000);
         this.bookId = this.navParams.get('book_id');
         this.url = 'http://pr.veba.co/~shubantech/ripdubai/web/pm/checkout.php?book_id=' + this.bookId;
     }
@@ -1831,7 +1832,7 @@ var PaymentPage = (function () {
 PaymentPage = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* IonicPage */])(),
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'page-payment',template:/*ion-inline-start:"C:\xampp\htdocs\ionic\RipDubai_1\src\pages\payment\payment.html"*/'\n<ion-header class="BookingHeader">\n    <ion-navbar hideBackButton="true">\n\n        <ion-buttons (click)="BackButtonClick()" left>\n            <button class="headerBackButton" ion-button>\n                <ion-icon class="backButtonIcon" name="ios-arrow-back"></ion-icon> Back\n            </button>\n        </ion-buttons>\n\n        <ion-title class="pHead" >Payment Page</ion-title>\n\n        <ion-buttons style="width: 50px;" end>\n            <button ion-button >\n            </button>\n        </ion-buttons>\n\n    </ion-navbar>\n</ion-header>\n\n<ion-content class="iframe-content has-header" padding="false">\n	<iframe [src]="sanitize(url)" width="100%"  height="100%" frameborder="0" iframe-onload="dismissLoading()" ></iframe>\n</ion-content> \n'/*ion-inline-end:"C:\xampp\htdocs\ionic\RipDubai_1\src\pages\payment\payment.html"*/,
+        selector: 'page-payment',template:/*ion-inline-start:"C:\xampp\htdocs\ionic\RipDubai_1\src\pages\payment\payment.html"*/'\n<ion-header class="BookingHeader">\n    <ion-navbar hideBackButton="true">\n\n        <ion-buttons (click)="BackButtonClick()" left>\n            <button class="headerBackButton" ion-button>\n                <ion-icon class="backButtonIcon" name="ios-arrow-back"></ion-icon> Back\n            </button>\n        </ion-buttons>\n\n        <ion-title class="pHead" >Payment Page</ion-title>\n\n        <ion-buttons style="width: 50px;" end>\n            <button ion-button >\n            </button>\n        </ion-buttons>\n\n    </ion-navbar>\n</ion-header>\n\n<ion-content class="iframe-content has-header" padding="false">\n	<iframe [src]="sanitize(url)" width="100%"  height="100%" frameborder="0"  ></iframe>\n</ion-content> \n'/*ion-inline-end:"C:\xampp\htdocs\ionic\RipDubai_1\src\pages\payment\payment.html"*/,
     }),
     __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* NavController */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavParams */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavParams */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_3__webService_constant__["a" /* Constant */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__webService_constant__["a" /* Constant */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_4__webService_webservice__["a" /* WebService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_4__webService_webservice__["a" /* WebService */]) === "function" && _d || Object, typeof (_e = typeof __WEBPACK_IMPORTED_MODULE_5__angular_http__["b" /* Http */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_5__angular_http__["b" /* Http */]) === "function" && _e || Object, typeof (_f = typeof __WEBPACK_IMPORTED_MODULE_6__ionic_native_in_app_browser__["a" /* InAppBrowser */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_6__ionic_native_in_app_browser__["a" /* InAppBrowser */]) === "function" && _f || Object, typeof (_g = typeof __WEBPACK_IMPORTED_MODULE_2__angular_platform_browser__["c" /* DomSanitizer */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__angular_platform_browser__["c" /* DomSanitizer */]) === "function" && _g || Object])
 ], PaymentPage);

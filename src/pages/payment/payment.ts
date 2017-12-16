@@ -24,7 +24,7 @@ export class PaymentPage {
 	url:SafeResourceUrl='';
 	constructor(public navCtrl: NavController, public navParams: NavParams, public constant:Constant, public service:WebService, public http: Http, public iab: InAppBrowser,public sanitizer: DomSanitizer) {
 		this.constant.LoadingPresent();
-		//setTimeout(() => {  this.constant.LoadingHide(); },3000);
+		setTimeout(() => {  this.constant.LoadingHide(); },3000);
 		this.bookId = this.navParams.get('book_id');
 		this.url = 'http://pr.veba.co/~shubantech/ripdubai/web/pm/checkout.php?book_id='+this.bookId;
 			
