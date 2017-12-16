@@ -11,6 +11,7 @@ import { LocationPage } from '../pages/location/location';
 import { ContactPage } from '../pages/contact/contact';
 import { CancellationPage } from '../pages/cancellation/cancellation';
 import { BookingPage } from '../pages/booking/booking';
+import { PaymentPage } from '../pages/payment/payment';
 import { RegisterPage } from '../pages/register/register';
 import { Push, PushObject, PushOptions} from '@ionic-native/push';
 @Component({
@@ -36,7 +37,8 @@ export class MyApp {
       { title: 'GIFT VOUCHERS', component: GiftPage },
       { title: 'LOCATION', component: LocationPage },
       { title: 'CONTACT US', component: ContactPage },
-      { title: 'CANCELLATION & SAFETY', component: CancellationPage }
+      { title: 'CANCELLATION & SAFETY', component: CancellationPage },
+      { title: 'PaymentPage', component: PaymentPage }
      
     ];
 

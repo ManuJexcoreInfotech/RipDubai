@@ -1,0 +1,23 @@
+
+<ion-header class="BookingHeader">
+    <ion-navbar hideBackButton="true">
+
+        <ion-buttons (click)="BackButtonClick()" left>
+            <button class="headerBackButton" ion-button>
+                <ion-icon class="backButtonIcon" name="ios-arrow-back"></ion-icon> Back
+            </button>
+        </ion-buttons>
+
+        <ion-title class="pHead" >Payment Page</ion-title>
+
+        <ion-buttons style="width: 50px;" end>
+            <button ion-button >
+            </button>
+        </ion-buttons>
+
+    </ion-navbar>
+</ion-header>
+
+<ion-content class="iframe-content has-header" padding="false">
+	<iframe [src]="sanitize(url)" width="100%" height="100%"></iframe>
+</ion-content>

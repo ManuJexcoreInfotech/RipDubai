@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-
+import { PaymentPage } from '../../pages/payment/payment';
 import { DatePicker } from '@ionic-native/date-picker';
 import { elementDef } from '@angular/core/src/view/element';
 import { DatePipe } from '@angular/common';
@@ -259,11 +259,11 @@ export class BookingPage {
 			  toolbar:'no'
 			}
 			
-			var url = 'http://pr.veba.co/~shubantech/ripdubai/web/pm/checkout.php?book_id='+Temp.booking_id;
+			/* var url = 'http://pr.veba.co/~shubantech/ripdubai/web/pm/checkout.php?book_id='+Temp.booking_id;
 			console.log("NEW URL_+++"+url);
-			const browser = this.iab.create(url,'_self',options);
+			const browser = this.iab.create(url,'_self',options); */
 			//browser.close();
-			
+			this.navCtrl.push(PaymentPage,{book_id:Temp.booking_id})
 			
           //this.constant.Alert('Success', ' Booking done successfully.','Ok');
         }else{
