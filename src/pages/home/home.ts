@@ -26,7 +26,7 @@ export class HomePage {
 
     var dic = {};
     this.constant.LoadingPresent();
-    var URL = 'http://pr.veba.co/~shubantech/ripdubai/activitiesContoller.php';
+    var URL = 'http://focusdxb.com/ripdubai/v1/api/activitiesContoller.php';
      
     this.http.post(URL,{}).subscribe(data => {
       this.constant.LoadingHide();

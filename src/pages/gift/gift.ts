@@ -56,7 +56,7 @@ options : InAppBrowserOptions = {
     GetAllVouchers(){
 		var dic = {};
 		this.constant.LoadingPresent();
-		var URL = 'http://pr.veba.co/~shubantech/ripdubai/getVouchers.php';
+		var URL = 'http://focusdxb.com/ripdubai/v1/api/getVouchers.php';
 		  
 		this.http.post(URL,{}).subscribe(data => {
 			this.constant.LoadingHide();

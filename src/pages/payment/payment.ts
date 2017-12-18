@@ -26,7 +26,7 @@ export class PaymentPage {
 		this.constant.LoadingPresent();
 		setTimeout(() => {  this.constant.LoadingHide(); },3000);
 		this.bookId = this.navParams.get('book_id');
-		this.url = 'http://pr.veba.co/~shubantech/ripdubai/web/pm/checkout.php?book_id='+this.bookId;
+		this.url = 'http://focusdxb.com/ripdubai/v1/pm/checkout.php?book_id='+this.bookId;
 			
 	}
 	BackButtonClick(){
