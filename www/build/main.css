@@ -30158,6 +30158,7 @@ page-about .aboutDiv1 .aboutContent {
 }
 
 page-about .aboutDiv2 {
+  display: none;
   background-image: url("https://www.silverwingtechnologies.com/clients/img/about2.png");
   background-repeat: no-repeat;
   background-size: cover;

@@ -259,11 +259,11 @@ export class BookingPage {
 			  toolbar:'no'
 			}
 			
-			/* var url = 'http://pr.veba.co/~shubantech/ripdubai/web/pm/checkout.php?book_id='+Temp.booking_id;
+			var url = 'http://pr.veba.co/~shubantech/ripdubai/web/pm/checkout.php?book_id='+Temp.booking_id;
 			console.log("NEW URL_+++"+url);
-			const browser = this.iab.create(url,'_self',options); */
+			const browser = this.iab.create(url,'_self',options);
 			//browser.close();
-			this.navCtrl.push(PaymentPage,{book_id:Temp.booking_id})
+			this.navCtrl.pop();
 			
           //this.constant.Alert('Success', ' Booking done successfully.','Ok');
         }else{
