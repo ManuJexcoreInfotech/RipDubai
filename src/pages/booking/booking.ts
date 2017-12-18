@@ -247,8 +247,8 @@ export class BookingPage {
           this.checkTime = '';
           this.DisplayDate = '';
           this.DisplayTime = '';
-          this.Texes = 0;
-          this.TotlePayment = 0;
+          this.Texes = 1;
+          this.TotlePayment = 1;
           this.SingleActivity = [];
           this.IONSelectValue = '';
 			const options: InAppBrowserOptions = {

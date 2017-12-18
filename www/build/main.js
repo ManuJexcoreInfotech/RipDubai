@@ -1,4 +1,4 @@
-webpackJsonp([0],{
+webpackJsonp([1],{
 
 /***/ 112:
 /***/ (function(module, exports) {
@@ -38,6 +38,10 @@ var map = {
 	"../pages/location/location.module": [
 		166
 	],
+	"../pages/payment/payment.module": [
+		287,
+		0
+	],
 	"../pages/register/register.module": [
 		172
 	]
@@ -66,7 +70,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "BookingPageModule", function() { return BookingPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(6);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__booking__ = __webpack_require__(80);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__booking__ = __webpack_require__(81);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -102,7 +106,7 @@ BookingPageModule = __decorate([
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Handler; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__(21);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__(19);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__ = __webpack_require__(158);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -248,7 +252,7 @@ var AboutPage = (function () {
 AboutPage = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* IonicPage */])(),
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'page-about',template:/*ion-inline-start:"C:\xampp\htdocs\phonegap\RipDubai_1\src\pages\about\about.html"*/'<!--\n  Generated template for the AboutPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n  <ion-navbar>\n    <button class="headerBackButton" ion-button menuToggle>\n        <ion-icon class="backButtonIcon" name="ios-arrow-back"></ion-icon> Back\n    </button>\n    <ion-title class=\'pHead\'>ABOUT <strong>US</strong></ion-title>\n\n    <ion-buttons style="width: 50px;" end>\n      <button ion-button >\n      </button>\n    </ion-buttons>\n\n  </ion-navbar>\n</ion-header>\n\n\n\n<ion-content padding>\n	<div class="aboutDiv1" padding-bottom>\n      <ion-grid>\n        <ion-row>\n          <ion-col col-3><img src="https://www.silverwingtechnologies.com/clients/img/aboutAvtar.png"></ion-col>\n          <ion-col class="aboutContent" text-left col-9>We pride ourselves on providing water sport equipment that exceeds all safety and quality standards, and we aim at being one of the leading companies working in this field. </ion-col>\n        </ion-row>\n        <ion-row>\n          <ion-col col-3><img src="https://www.silverwingtechnologies.com/clients/img/aboutAvtar.png"></ion-col>\n          <ion-col class="aboutContent" text-left col-9>Our company can provide all the water sport equipment that allows your customers to enjoy their time in Dubai Beaches and to leave Dubai with great memories and with a strong will to come back soon. \n        </ion-col>\n        </ion-row>\n        <ion-row>\n          <ion-col class="aboutContent" col-3><img src="https://www.silverwingtechnologies.com/clients/img/aboutAvtar.png"></ion-col>\n          <ion-col class="aboutContent" text-left col-9>Our team includes members who have a great experience in serving customers and who shows readiness to do all their best to meet the needs and aspirations of the customers. \n        </ion-col>\n        </ion-row>\n        <ion-row>\n          <ion-col class="aboutContent" col-3><img src="https://www.silverwingtechnologies.com/clients/img/aboutAvtar.png"></ion-col>\n          <ion-col class="aboutContent" text-left col-9>We would like to take this opportunity to propose our services and do an investment in Dubai beaches. \n        </ion-col>\n        </ion-row>\n        \n      </ion-grid>\n  </div>\n\n  <div margin-top class="aboutDiv2">\n    <ion-row>\n      <ion-col class="aboutContent grayLayour1" col-4><img src="https://www.silverwingtechnologies.com/clients/img/aboutLogo.png"></ion-col>\n      <ion-col class="aboutContent blueLayour1" padding text-left col-8>Visit our supper creative and concept Party RIP Dubai to have a jolly moment in the beautiful resorts with lots of fun, cocktails, professional DJ and exclusive entertainment on the pool and beach. Each party made by individual and inimitable style. Have a sunshine summer with us! \n      <div text-center >\n        <button style="margin-top: 12px;" text-capitalize ion-button color="dark">Download Now</button>\n      </div>\n      </ion-col>\n    </ion-row>\n  </div>\n</ion-content>\n'/*ion-inline-end:"C:\xampp\htdocs\phonegap\RipDubai_1\src\pages\about\about.html"*/,
+        selector: 'page-about',template:/*ion-inline-start:"C:\xampp\htdocs\ionic\RipDubai_1\src\pages\about\about.html"*/'<!--\n  Generated template for the AboutPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n  <ion-navbar>\n    <button class="headerBackButton" ion-button menuToggle>\n        <ion-icon class="backButtonIcon" name="ios-arrow-back"></ion-icon> Back\n    </button>\n    <ion-title class=\'pHead\'>ABOUT <strong>US</strong></ion-title>\n\n    <ion-buttons style="width: 50px;" end>\n      <button ion-button >\n      </button>\n    </ion-buttons>\n\n  </ion-navbar>\n</ion-header>\n\n\n\n<ion-content padding>\n	<div class="aboutDiv1" padding-bottom>\n      <ion-grid>\n        <ion-row>\n          <ion-col col-3><img src="https://www.silverwingtechnologies.com/clients/img/aboutAvtar.png"></ion-col>\n          <ion-col class="aboutContent" text-left col-9>We pride ourselves on providing water sport equipment that exceeds all safety and quality standards, and we aim at being one of the leading companies working in this field. </ion-col>\n        </ion-row>\n        <ion-row>\n          <ion-col col-3><img src="https://www.silverwingtechnologies.com/clients/img/aboutAvtar.png"></ion-col>\n          <ion-col class="aboutContent" text-left col-9>Our company can provide all the water sport equipment that allows your customers to enjoy their time in Dubai Beaches and to leave Dubai with great memories and with a strong will to come back soon. \n        </ion-col>\n        </ion-row>\n        <ion-row>\n          <ion-col class="aboutContent" col-3><img src="https://www.silverwingtechnologies.com/clients/img/aboutAvtar.png"></ion-col>\n          <ion-col class="aboutContent" text-left col-9>Our team includes members who have a great experience in serving customers and who shows readiness to do all their best to meet the needs and aspirations of the customers. \n        </ion-col>\n        </ion-row>\n        <ion-row>\n          <ion-col class="aboutContent" col-3><img src="https://www.silverwingtechnologies.com/clients/img/aboutAvtar.png"></ion-col>\n          <ion-col class="aboutContent" text-left col-9>We would like to take this opportunity to propose our services and do an investment in Dubai beaches. \n        </ion-col>\n        </ion-row>\n        \n      </ion-grid>\n  </div>\n\n  <div margin-top class="aboutDiv2">\n    <ion-row>\n      <ion-col class="aboutContent grayLayour1" col-4><img src="https://www.silverwingtechnologies.com/clients/img/aboutLogo.png"></ion-col>\n      <ion-col class="aboutContent blueLayour1" padding text-left col-8>Visit our supper creative and concept Party RIP Dubai to have a jolly moment in the beautiful resorts with lots of fun, cocktails, professional DJ and exclusive entertainment on the pool and beach. Each party made by individual and inimitable style. Have a sunshine summer with us! \n      <div text-center >\n        <button style="margin-top: 12px;" text-capitalize ion-button color="dark">Download Now</button>\n      </div>\n      </ion-col>\n    </ion-row>\n  </div>\n</ion-content>\n'/*ion-inline-end:"C:\xampp\htdocs\ionic\RipDubai_1\src\pages\about\about.html"*/,
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavParams */]])
 ], AboutPage);
@@ -302,10 +306,10 @@ ActivitiesPageModule = __decorate([
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ActivitiesPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(6);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__webService_constant__ = __webpack_require__(26);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__webService_webservice__ = __webpack_require__(30);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_http__ = __webpack_require__(21);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__booking_booking__ = __webpack_require__(80);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__webService_constant__ = __webpack_require__(22);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__webService_webservice__ = __webpack_require__(28);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_http__ = __webpack_require__(19);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__booking_booking__ = __webpack_require__(81);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -372,7 +376,7 @@ __decorate([
 ActivitiesPage = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* IonicPage */])(),
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'page-activities',template:/*ion-inline-start:"C:\xampp\htdocs\phonegap\RipDubai_1\src\pages\activities\activities.html"*/'\n<ion-header>\n    <ion-navbar>\n\n        <button class="headerBackButton" ion-button menuToggle>\n            <ion-icon class="backButtonIcon" name="ios-arrow-back"></ion-icon> Back\n        </button>\n\n        <ion-title><img src="https://www.silverwingtechnologies.com/clients/img/logo.png" height="40"></ion-title>\n\n        <ion-buttons style="width: 50px;" end>\n            <button ion-button >\n            </button>\n        </ion-buttons>\n\n    </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n    <p class="pHead" text-center>OUR <strong>ACTIVITIES</strong></p>\n\n    <ion-slides text-start class="sliderMain" zoom="true" loop="false" slidesPerView="1" effect="coverflow" speed="200">\n        <ion-slide class="sliderMainSlide"  *ngFor="let item of ActivityArry; let i = index">\n\n\n                   <div class="slideMainContainer">\n                <ion-label class="headerLbl">RIP DUBAI<span class="headerSubLbl"> EXCLUSIVE</span></ion-label>\n                <img class="imageSlider" src="{{item.image1}}">\n                <ion-label class="headerLblTwo">{{item.name.toUpperCase()}}<span class="headerSubLblTwo"></span></ion-label>\n\n                <ion-label class="sliderDics"  padding text-left>\n                    <span [innerHTML]="item.description"></span>  \n                </ion-label>\n            </div>\n\n        </ion-slide>\n\n    </ion-slides>\n    <ion-icon class="backButtonIcon" name="ios-arrow-back" *ngIf="counter > 0" (click)="slidePrev()"></ion-icon> \n    <ion-icon class="backButtonIcon" name="ios-arrow-forward" (click)="slideNext()"></ion-icon> \n\n    <button class="bookbtn" (click)="BookNowClick(i)" margin-top ion-button color="yellow" full>BOOK NOW</button>\n\n    <!-- <button ion-button secondary menuToggle>Toggle Menu</button> -->\n</ion-content>\n'/*ion-inline-end:"C:\xampp\htdocs\phonegap\RipDubai_1\src\pages\activities\activities.html"*/,
+        selector: 'page-activities',template:/*ion-inline-start:"C:\xampp\htdocs\ionic\RipDubai_1\src\pages\activities\activities.html"*/'\n<ion-header>\n    <ion-navbar>\n\n        <button class="headerBackButton" ion-button menuToggle>\n            <ion-icon class="backButtonIcon" name="ios-arrow-back"></ion-icon> Back\n        </button>\n\n        <ion-title><img src="https://www.silverwingtechnologies.com/clients/img/logo.png" height="40"></ion-title>\n\n        <ion-buttons style="width: 50px;" end>\n            <button ion-button >\n            </button>\n        </ion-buttons>\n\n    </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n    <p class="pHead" text-center>OUR <strong>ACTIVITIES</strong></p>\n\n    <ion-slides text-start class="sliderMain" zoom="true" loop="false" slidesPerView="1" effect="coverflow" speed="200">\n        <ion-slide class="sliderMainSlide"  *ngFor="let item of ActivityArry; let i = index">\n\n\n                   <div class="slideMainContainer">\n                <ion-label class="headerLbl">RIP DUBAI<span class="headerSubLbl"> EXCLUSIVE</span></ion-label>\n                <img class="imageSlider" src="{{item.image1}}">\n                <ion-label class="headerLblTwo">{{item.name.toUpperCase()}}<span class="headerSubLblTwo"></span></ion-label>\n\n                <ion-label class="sliderDics"  padding text-left>\n                    <span [innerHTML]="item.description"></span>  \n                </ion-label>\n            </div>\n\n        </ion-slide>\n\n    </ion-slides>\n    <ion-icon class="backButtonIcon" name="ios-arrow-back" *ngIf="counter > 0" (click)="slidePrev()"></ion-icon> \n    <ion-icon class="backButtonIcon" name="ios-arrow-forward" (click)="slideNext()"></ion-icon> \n\n    <button class="bookbtn" (click)="BookNowClick(i)" margin-top ion-button color="yellow" full>BOOK NOW</button>\n\n    <!-- <button ion-button secondary menuToggle>Toggle Menu</button> -->\n</ion-content>\n'/*ion-inline-end:"C:\xampp\htdocs\ionic\RipDubai_1\src\pages\activities\activities.html"*/,
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavParams */], __WEBPACK_IMPORTED_MODULE_2__webService_constant__["a" /* Constant */], __WEBPACK_IMPORTED_MODULE_3__webService_webservice__["a" /* WebService */], __WEBPACK_IMPORTED_MODULE_4__angular_http__["b" /* Http */]])
 ], ActivitiesPage);
@@ -426,10 +430,10 @@ GiftPageModule = __decorate([
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return GiftPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(6);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__webService_constant__ = __webpack_require__(26);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__webService_webservice__ = __webpack_require__(30);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_http__ = __webpack_require__(21);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ionic_native_in_app_browser__ = __webpack_require__(82);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__webService_constant__ = __webpack_require__(22);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__webService_webservice__ = __webpack_require__(28);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_http__ = __webpack_require__(19);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ionic_native_in_app_browser__ = __webpack_require__(53);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -517,7 +521,7 @@ __decorate([
 GiftPage = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* IonicPage */])(),
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'page-gift',template:/*ion-inline-start:"C:\xampp\htdocs\phonegap\RipDubai_1\src\pages\gift\gift.html"*/'<!--\n  Generated template for the GiftPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n    <ion-navbar>\n        <button ion-button menuToggle>\n            <ion-icon class="backButtonIcon" name="ios-arrow-back"></ion-icon>Back\n        </button>\n        <ion-title>GIFT </ion-title>\n    </ion-navbar>\n\n</ion-header>\n<ion-content padding>\n\n    <ion-grid>\n        <ion-row >\n        <ion-col col-6 class="gift-col" *ngFor="let item of VouchersArry; let i = index" >\n           \n            <ion-col col-12 >\n                <ion-col col-4></ion-col>\n                <ion-col col-8 text-right>\n                    <ion-label class="primary-label"  text-right>{{item.name.toUpperCase()}}<span class="headerSubLblTwo"></span></ion-label>\n                    <ion-label class="price-label"   text-right>\n                        {{item.price}} AMD\n                    </ion-label>\n                    <button  (click)="BuyNow(item.voucher_id)" ion-button class="buyBtn">Buy NOW</button>\n                </ion-col>\n            </ion-col>\n           \n\n        </ion-col>\n        </ion-row>\n    </ion-grid>\n\n</ion-content> \n'/*ion-inline-end:"C:\xampp\htdocs\phonegap\RipDubai_1\src\pages\gift\gift.html"*/,
+        selector: 'page-gift',template:/*ion-inline-start:"C:\xampp\htdocs\ionic\RipDubai_1\src\pages\gift\gift.html"*/'<!--\n  Generated template for the GiftPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n    <ion-navbar>\n        <button ion-button menuToggle>\n            <ion-icon class="backButtonIcon" name="ios-arrow-back"></ion-icon>Back\n        </button>\n        <ion-title>GIFT </ion-title>\n    </ion-navbar>\n\n</ion-header>\n<ion-content padding>\n\n    <ion-grid>\n        <ion-row >\n        <ion-col col-6 class="gift-col" *ngFor="let item of VouchersArry; let i = index" >\n           \n            <ion-col col-12 >\n                <ion-col col-4></ion-col>\n                <ion-col col-8 text-right>\n                    <ion-label class="primary-label"  text-right>{{item.name.toUpperCase()}}<span class="headerSubLblTwo"></span></ion-label>\n                    <ion-label class="price-label"   text-right>\n                        {{item.price}} AMD\n                    </ion-label>\n                    <button  (click)="BuyNow(item.voucher_id)" ion-button class="buyBtn">Buy NOW</button>\n                </ion-col>\n            </ion-col>\n           \n\n        </ion-col>\n        </ion-row>\n    </ion-grid>\n\n</ion-content> \n'/*ion-inline-end:"C:\xampp\htdocs\ionic\RipDubai_1\src\pages\gift\gift.html"*/,
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavParams */], __WEBPACK_IMPORTED_MODULE_2__webService_constant__["a" /* Constant */], __WEBPACK_IMPORTED_MODULE_4__angular_http__["b" /* Http */], __WEBPACK_IMPORTED_MODULE_3__webService_webservice__["a" /* WebService */], __WEBPACK_IMPORTED_MODULE_5__ionic_native_in_app_browser__["a" /* InAppBrowser */]])
 ], GiftPage);
@@ -620,7 +624,7 @@ __decorate([
 LocationPage = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* IonicPage */])(),
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'page-location',template:/*ion-inline-start:"C:\xampp\htdocs\phonegap\RipDubai_1\src\pages\location\location.html"*/'<!--\n  Generated template for the LocationPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n  	\n    <button class="headerBackButton" ion-button menuToggle>\n        <ion-icon class="backButtonIcon" name="ios-arrow-back"></ion-icon> Back\n		</button>\n		\n    <ion-title class=\'pHead\'>OUR  <strong>LOCATION</strong></ion-title>\n\n    <ion-buttons style="width: 40px;" end>\n      <button ion-button >\n      </button>\n    </ion-buttons>\n    \n\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content>\n	<div #map id="map"></div>\n</ion-content>\n'/*ion-inline-end:"C:\xampp\htdocs\phonegap\RipDubai_1\src\pages\location\location.html"*/,
+        selector: 'page-location',template:/*ion-inline-start:"C:\xampp\htdocs\ionic\RipDubai_1\src\pages\location\location.html"*/'<!--\n  Generated template for the LocationPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n  	\n    <button class="headerBackButton" ion-button menuToggle>\n        <ion-icon class="backButtonIcon" name="ios-arrow-back"></ion-icon> Back\n		</button>\n		\n    <ion-title class=\'pHead\'>OUR  <strong>LOCATION</strong></ion-title>\n\n    <ion-buttons style="width: 40px;" end>\n      <button ion-button >\n      </button>\n    </ion-buttons>\n    \n\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content>\n	<div #map id="map"></div>\n</ion-content>\n'/*ion-inline-end:"C:\xampp\htdocs\ionic\RipDubai_1\src\pages\location\location.html"*/,
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavParams */]])
 ], LocationPage);
@@ -674,9 +678,9 @@ ContactPageModule = __decorate([
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ContactPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(6);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__webService_constant__ = __webpack_require__(26);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__webService_webservice__ = __webpack_require__(30);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_http__ = __webpack_require__(21);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__webService_constant__ = __webpack_require__(22);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__webService_webservice__ = __webpack_require__(28);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_http__ = __webpack_require__(19);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -779,7 +783,7 @@ var ContactPage = (function () {
 ContactPage = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* IonicPage */])(),
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'page-contact',template:/*ion-inline-start:"C:\xampp\htdocs\phonegap\RipDubai_1\src\pages\contact\contact.html"*/'<!--\n  Generated template for the ContactPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n		\n		<button class="headerBackButton" ion-button menuToggle>\n				<ion-icon class="backButtonIcon" name="ios-arrow-back"></ion-icon> Back\n		</button>\n		\n    <ion-title class=\'pHead\'>CONTACT <strong>US</strong></ion-title>\n\n    <ion-buttons style="width: 40px;" end>\n      <button ion-button >\n      </button>\n		</ion-buttons>\n		\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n	<ion-list margin-top>\n\n	  <ion-item  class="customTextbox" margin-bottom>\n	    <ion-input [(ngModel)]="name" type="text" placeholder="Name" ></ion-input>\n	  </ion-item>\n		<ion-label class="LblOne" *ngIf="nameError" style="color:#ed1b24;margin:-15px 3px 4px 4px">{{nameErrorTxt}}</ion-label>\n\n	  <ion-item class="customTextbox" margin-bottom>\n	    <ion-input   [(ngModel)]="email"  type="email" placeholder="Email"></ion-input>\n		\n	  </ion-item>\n	  <ion-label class="LblOne" *ngIf="emailError" style="color:#ed1b24;margin:-15px 3px 4px 4px">{{emailErrorTxt}}</ion-label>\n	  <ion-item class="customTextbox" margin-bottom>\n	    <ion-input  [(ngModel)]="contact"  type="number" placeholder="Phone"></ion-input>\n	  </ion-item>\n		<ion-label class="LblOne" *ngIf="contactError" style="color:#ed1b24;margin:-15px 3px 4px 4px">{{contactErrorTxt}}</ion-label>\n	  <ion-item class="customTextbox" margin-bottom>\n	    <ion-textarea [(ngModel)]="message"  rows="10"  placeholder="Note"></ion-textarea >\n	  </ion-item>\n\n		<div text-right>\n			<button (click)="SendMail()" class="sendBtn" text-right ion-button>SEND</button>\n		</div>\n	</ion-list>\n\n</ion-content>\n'/*ion-inline-end:"C:\xampp\htdocs\phonegap\RipDubai_1\src\pages\contact\contact.html"*/,
+        selector: 'page-contact',template:/*ion-inline-start:"C:\xampp\htdocs\ionic\RipDubai_1\src\pages\contact\contact.html"*/'<!--\n  Generated template for the ContactPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n		\n		<button class="headerBackButton" ion-button menuToggle>\n				<ion-icon class="backButtonIcon" name="ios-arrow-back"></ion-icon> Back\n		</button>\n		\n    <ion-title class=\'pHead\'>CONTACT <strong>US</strong></ion-title>\n\n    <ion-buttons style="width: 40px;" end>\n      <button ion-button >\n      </button>\n		</ion-buttons>\n		\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n	<ion-list margin-top>\n\n	  <ion-item  class="customTextbox" margin-bottom>\n	    <ion-input [(ngModel)]="name" type="text" placeholder="Name" ></ion-input>\n	  </ion-item>\n		<ion-label class="LblOne" *ngIf="nameError" style="color:#ed1b24;margin:-15px 3px 4px 4px">{{nameErrorTxt}}</ion-label>\n\n	  <ion-item class="customTextbox" margin-bottom>\n	    <ion-input   [(ngModel)]="email"  type="email" placeholder="Email"></ion-input>\n		\n	  </ion-item>\n	  <ion-label class="LblOne" *ngIf="emailError" style="color:#ed1b24;margin:-15px 3px 4px 4px">{{emailErrorTxt}}</ion-label>\n	  <ion-item class="customTextbox" margin-bottom>\n	    <ion-input  [(ngModel)]="contact"  type="number" placeholder="Phone"></ion-input>\n	  </ion-item>\n		<ion-label class="LblOne" *ngIf="contactError" style="color:#ed1b24;margin:-15px 3px 4px 4px">{{contactErrorTxt}}</ion-label>\n	  <ion-item class="customTextbox" margin-bottom>\n	    <ion-textarea [(ngModel)]="message"  rows="10"  placeholder="Note"></ion-textarea >\n	  </ion-item>\n\n		<div text-right>\n			<button (click)="SendMail()" class="sendBtn" text-right ion-button>SEND</button>\n		</div>\n	</ion-list>\n\n</ion-content>\n'/*ion-inline-end:"C:\xampp\htdocs\ionic\RipDubai_1\src\pages\contact\contact.html"*/,
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavParams */], __WEBPACK_IMPORTED_MODULE_2__webService_constant__["a" /* Constant */], __WEBPACK_IMPORTED_MODULE_3__webService_webservice__["a" /* WebService */], __WEBPACK_IMPORTED_MODULE_4__angular_http__["b" /* Http */]])
 ], ContactPage);
@@ -863,7 +867,7 @@ var CancellationPage = (function () {
 CancellationPage = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* IonicPage */])(),
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'page-cancellation',template:/*ion-inline-start:"C:\xampp\htdocs\phonegap\RipDubai_1\src\pages\cancellation\cancellation.html"*/'<!--\n  Generated template for the CancellationPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n  	<button ion-button menuToggle>\n        <ion-icon class="backButtonIcon" name="ios-arrow-back"></ion-icon>Back\n    </button>\n    <ion-title>  CANCELLATION</ion-title>\n    <ion-buttons style="width: 50px;" end>\n        <button ion-button >\n        </button>\n      </ion-buttons>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n\n</ion-content>\n'/*ion-inline-end:"C:\xampp\htdocs\phonegap\RipDubai_1\src\pages\cancellation\cancellation.html"*/,
+        selector: 'page-cancellation',template:/*ion-inline-start:"C:\xampp\htdocs\ionic\RipDubai_1\src\pages\cancellation\cancellation.html"*/'<!--\n  Generated template for the CancellationPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n  	<button ion-button menuToggle>\n        <ion-icon class="backButtonIcon" name="ios-arrow-back"></ion-icon>Back\n    </button>\n    <ion-title>  CANCELLATION</ion-title>\n    <ion-buttons style="width: 50px;" end>\n        <button ion-button >\n        </button>\n      </ion-buttons>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n\n</ion-content>\n'/*ion-inline-end:"C:\xampp\htdocs\ionic\RipDubai_1\src\pages\cancellation\cancellation.html"*/,
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavParams */]])
 ], CancellationPage);
@@ -917,9 +921,9 @@ RegisterPageModule = __decorate([
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return RegisterPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(6);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__webService_constant__ = __webpack_require__(26);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__webService_webservice__ = __webpack_require__(30);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_http__ = __webpack_require__(21);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__webService_constant__ = __webpack_require__(22);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__webService_webservice__ = __webpack_require__(28);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_http__ = __webpack_require__(19);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1036,7 +1040,7 @@ var RegisterPage = (function () {
 RegisterPage = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* IonicPage */])(),
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'page-register',template:/*ion-inline-start:"C:\xampp\htdocs\phonegap\RipDubai_1\src\pages\register\register.html"*/'<!--\n  Generated template for the ContactPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n    <ion-navbar>\n\n        <button class="headerBackButton" ion-button menuToggle>\n            <ion-icon class="backButtonIcon" name="ios-arrow-back"></ion-icon> Back\n        </button>\n\n        <ion-title class=\'pHead\'>REGISTER</ion-title>\n\n        <ion-buttons style="width: 40px;" end>\n            <button ion-button >\n            </button>\n        </ion-buttons>\n\n    </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n    <ion-list margin-top>\n        <ion-grid>\n            <ion-row>\n                <ion-col col-6>\n                    <ion-item  class="customTextbox" margin-bottom>\n                        <ion-input [(ngModel)]="firstname" type="text" placeholder="Fist Name" ></ion-input>\n                    </ion-item>\n                </ion-col>\n                <ion-col col-6>\n                    <ion-item  class="customTextbox" margin-bottom>\n                        <ion-input [(ngModel)]="lastname" type="text" placeholder="Last Name" ></ion-input>\n                    </ion-item>\n                </ion-col>\n                \n                    <ion-label class="LblOne" *ngIf="nameError" style="color:#ed1b24;margin:-15px 3px 4px 4px">{{nameErrorTxt}}</ion-label>\n               \n            </ion-row>\n            <ion-row>\n                <ion-col col-12>\n                    <ion-item class="customTextbox" margin-bottom>\n                        <ion-input   [(ngModel)]="email"  type="email" placeholder="Email"></ion-input>\n\n                    </ion-item>\n                    <ion-label class="LblOne" *ngIf="emailError" style="color:#ed1b24;margin:-15px 3px 4px 4px">{{emailErrorTxt}}</ion-label>\n                </ion-col>\n            </ion-row>\n            <ion-row>\n                <ion-col col-12>\n                    <ion-item class="customTextbox" margin-bottom>\n                        <ion-input  [(ngModel)]="contact"  type="number" placeholder="Mobile No"></ion-input>\n                    </ion-item>\n                    <ion-label class="LblOne" *ngIf="contactError" style="color:#ed1b24;margin:-15px 3px 4px 4px">{{contactErrorTxt}}</ion-label>\n                </ion-col>\n            </ion-row>\n            <ion-row>\n                <ion-col col-12>\n                    <ion-item class="customTextbox" margin-bottom>\n                        <ion-input  [(ngModel)]="pwd"  type="password" placeholder="Password"></ion-input>\n                    </ion-item>\n                    <ion-label class="LblOne" *ngIf="passwordError" style="color:#ed1b24;margin:-15px 3px 4px 4px">{{passwordErrorTxt}}</ion-label>\n                </ion-col>\n            </ion-row>\n            <ion-row>\n                <ion-col col-12>\n                    <div text-right>\n                        <button (click)="SendMail()" class=""  ion-button full>Register</button>\n                    </div>\n                </ion-col>\n            </ion-row>\n        </ion-grid>\n\n    </ion-list>\n\n</ion-content>\n'/*ion-inline-end:"C:\xampp\htdocs\phonegap\RipDubai_1\src\pages\register\register.html"*/,
+        selector: 'page-register',template:/*ion-inline-start:"C:\xampp\htdocs\ionic\RipDubai_1\src\pages\register\register.html"*/'<!--\n  Generated template for the ContactPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n    <ion-navbar>\n\n        <button class="headerBackButton" ion-button menuToggle>\n            <ion-icon class="backButtonIcon" name="ios-arrow-back"></ion-icon> Back\n        </button>\n\n        <ion-title class=\'pHead\'>REGISTER</ion-title>\n\n        <ion-buttons style="width: 40px;" end>\n            <button ion-button >\n            </button>\n        </ion-buttons>\n\n    </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n    <ion-list margin-top>\n        <ion-grid>\n            <ion-row>\n                <ion-col col-6>\n                    <ion-item  class="customTextbox" margin-bottom>\n                        <ion-input [(ngModel)]="firstname" type="text" placeholder="Fist Name" ></ion-input>\n                    </ion-item>\n                </ion-col>\n                <ion-col col-6>\n                    <ion-item  class="customTextbox" margin-bottom>\n                        <ion-input [(ngModel)]="lastname" type="text" placeholder="Last Name" ></ion-input>\n                    </ion-item>\n                </ion-col>\n                \n                    <ion-label class="LblOne" *ngIf="nameError" style="color:#ed1b24;margin:-15px 3px 4px 4px">{{nameErrorTxt}}</ion-label>\n               \n            </ion-row>\n            <ion-row>\n                <ion-col col-12>\n                    <ion-item class="customTextbox" margin-bottom>\n                        <ion-input   [(ngModel)]="email"  type="email" placeholder="Email"></ion-input>\n\n                    </ion-item>\n                    <ion-label class="LblOne" *ngIf="emailError" style="color:#ed1b24;margin:-15px 3px 4px 4px">{{emailErrorTxt}}</ion-label>\n                </ion-col>\n            </ion-row>\n            <ion-row>\n                <ion-col col-12>\n                    <ion-item class="customTextbox" margin-bottom>\n                        <ion-input  [(ngModel)]="contact"  type="number" placeholder="Mobile No"></ion-input>\n                    </ion-item>\n                    <ion-label class="LblOne" *ngIf="contactError" style="color:#ed1b24;margin:-15px 3px 4px 4px">{{contactErrorTxt}}</ion-label>\n                </ion-col>\n            </ion-row>\n            <ion-row>\n                <ion-col col-12>\n                    <ion-item class="customTextbox" margin-bottom>\n                        <ion-input  [(ngModel)]="pwd"  type="password" placeholder="Password"></ion-input>\n                    </ion-item>\n                    <ion-label class="LblOne" *ngIf="passwordError" style="color:#ed1b24;margin:-15px 3px 4px 4px">{{passwordErrorTxt}}</ion-label>\n                </ion-col>\n            </ion-row>\n            <ion-row>\n                <ion-col col-12>\n                    <div text-right>\n                        <button (click)="SendMail()" class=""  ion-button full>Register</button>\n                    </div>\n                </ion-col>\n            </ion-row>\n        </ion-grid>\n\n    </ion-list>\n\n</ion-content>\n'/*ion-inline-end:"C:\xampp\htdocs\ionic\RipDubai_1\src\pages\register\register.html"*/,
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavParams */], __WEBPACK_IMPORTED_MODULE_2__webService_constant__["a" /* Constant */], __WEBPACK_IMPORTED_MODULE_3__webService_webservice__["a" /* WebService */], __WEBPACK_IMPORTED_MODULE_4__angular_http__["b" /* Http */]])
 ], RegisterPage);
@@ -1052,10 +1056,10 @@ RegisterPage = __decorate([
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HomePage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(6);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__booking_booking__ = __webpack_require__(80);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__webService_constant__ = __webpack_require__(26);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__webService_webservice__ = __webpack_require__(30);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__angular_http__ = __webpack_require__(21);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__booking_booking__ = __webpack_require__(81);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__webService_constant__ = __webpack_require__(22);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__webService_webservice__ = __webpack_require__(28);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__angular_http__ = __webpack_require__(19);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1118,7 +1122,7 @@ __decorate([
 ], HomePage.prototype, "slides", void 0);
 HomePage = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'page-home',template:/*ion-inline-start:"C:\xampp\htdocs\phonegap\RipDubai_1\src\pages\home\home.html"*/'\n<ion-header >\n    <ion-navbar>\n        <button ion-button menuToggle><ion-icon ios="ios-list" md="md-list"></ion-icon></button>\n        <ion-title><img src="https://www.silverwingtechnologies.com/clients/img/logo.png" height="40"></ion-title>\n        <ion-buttons style="width: 50px;" end><button ion-button ></button> </ion-buttons>\n    </ion-navbar>\n</ion-header>\n\n<ion-content padding class="homePageCSS">\n\n    <!-- <ion-slides text-start class="sliderMain" zoom="true" loop="false" slidesPerView="1" effect="coverflow" speed="200">\n        <ion-slide class="sliderMainSlide"  *ngFor="let item of ActivityArry">\n          <div class="slideMainContainer">\n            <ion-label class="headerLbl">RIP DUBAI<span class="headerSubLbl"> EXCLUSIVE</span></ion-label>\n            <img class="imageSlider" src="https://www.silverwingtechnologies.com/clients/img/activity1.jpg">\n            <ion-label class="headerLblTwo">BBQ DONUT<span class="headerSubLblTwo">BOAT</span></ion-label>\n            <p class="sliderDics"  padding text-left>A Jet ski is a small machine like a motorcycle that is powered by a jet engine and can travel on the surface of water. RIP Jet Ski is self-propelled vehicle for 1 to 3 persons, which skims across water on a flat keel, and is steered by means of handlebars.\n                RIP Jet Ski is the most extreme form water riding, where the rider surfs waves, using them as a jump ramp for aerial maneuvers.</p>\n          </div>\n        </ion-slide>\n    </ion-slides> -->\n\n    <ion-slides text-start class="sliderMain" zoom="true" loop="false" slidesPerView="1" effect="coverflow" speed="200">\n\n        <ion-slide class="sliderMainSlide"  *ngFor="let item of ActivityArry">\n\n\n                   <div class="slideMainContainer">\n                <ion-label class="headerLbl">RIP DUBAI<span class="headerSubLbl"> EXCLUSIVE</span></ion-label>\n                <img class="imageSlider" src="{{item.image1}}">\n                <ion-label class="headerLblTwo">{{item.name}}<span class="headerSubLblTwo"></span></ion-label>\n\n                <ion-label class="sliderDics"  padding text-left>\n                    <span [innerHTML]="item.description"></span>  \n                </ion-label>\n\n            </div>\n\n        </ion-slide>\n\n\n\n    </ion-slides>\n    <ion-icon class="backButtonIcon" name="ios-arrow-back" *ngIf="counter > 0" (click)="slidePrev()"></ion-icon> \n    <ion-icon class="backButtonIcon" name="ios-arrow-forward" (click)="slideNext()"></ion-icon> \n\n\n    <button class="bookbtn" (click)="booking()" margin-top ion-button color="yellow" full>BOOK NOW</button>\n\n</ion-content>\n'/*ion-inline-end:"C:\xampp\htdocs\phonegap\RipDubai_1\src\pages\home\home.html"*/
+        selector: 'page-home',template:/*ion-inline-start:"C:\xampp\htdocs\ionic\RipDubai_1\src\pages\home\home.html"*/'\n<ion-header >\n    <ion-navbar>\n        <button ion-button menuToggle><ion-icon ios="ios-list" md="md-list"></ion-icon></button>\n        <ion-title><img src="https://www.silverwingtechnologies.com/clients/img/logo.png" height="40"></ion-title>\n        <ion-buttons style="width: 50px;" end><button ion-button ></button> </ion-buttons>\n    </ion-navbar>\n</ion-header>\n\n<ion-content padding class="homePageCSS">\n\n    <!-- <ion-slides text-start class="sliderMain" zoom="true" loop="false" slidesPerView="1" effect="coverflow" speed="200">\n        <ion-slide class="sliderMainSlide"  *ngFor="let item of ActivityArry">\n          <div class="slideMainContainer">\n            <ion-label class="headerLbl">RIP DUBAI<span class="headerSubLbl"> EXCLUSIVE</span></ion-label>\n            <img class="imageSlider" src="https://www.silverwingtechnologies.com/clients/img/activity1.jpg">\n            <ion-label class="headerLblTwo">BBQ DONUT<span class="headerSubLblTwo">BOAT</span></ion-label>\n            <p class="sliderDics"  padding text-left>A Jet ski is a small machine like a motorcycle that is powered by a jet engine and can travel on the surface of water. RIP Jet Ski is self-propelled vehicle for 1 to 3 persons, which skims across water on a flat keel, and is steered by means of handlebars.\n                RIP Jet Ski is the most extreme form water riding, where the rider surfs waves, using them as a jump ramp for aerial maneuvers.</p>\n          </div>\n        </ion-slide>\n    </ion-slides> -->\n\n    <ion-slides text-start class="sliderMain" zoom="true" loop="false" slidesPerView="1" effect="coverflow" speed="200">\n\n        <ion-slide class="sliderMainSlide"  *ngFor="let item of ActivityArry">\n\n\n                   <div class="slideMainContainer">\n                <ion-label class="headerLbl">RIP DUBAI<span class="headerSubLbl"> EXCLUSIVE</span></ion-label>\n                <img class="imageSlider" src="{{item.image1}}">\n                <ion-label class="headerLblTwo">{{item.name}}<span class="headerSubLblTwo"></span></ion-label>\n\n                <ion-label class="sliderDics"  padding text-left>\n                    <span [innerHTML]="item.description"></span>  \n                </ion-label>\n\n            </div>\n\n        </ion-slide>\n\n\n\n    </ion-slides>\n    <ion-icon class="backButtonIcon" name="ios-arrow-back" *ngIf="counter > 0" (click)="slidePrev()"></ion-icon> \n    <ion-icon class="backButtonIcon" name="ios-arrow-forward" (click)="slideNext()"></ion-icon> \n\n\n    <button class="bookbtn" (click)="booking()" margin-top ion-button color="yellow" full>BOOK NOW</button>\n\n</ion-content>\n'/*ion-inline-end:"C:\xampp\htdocs\ionic\RipDubai_1\src\pages\home\home.html"*/
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* NavController */], __WEBPACK_IMPORTED_MODULE_3__webService_constant__["a" /* Constant */], __WEBPACK_IMPORTED_MODULE_4__webService_webservice__["a" /* WebService */], __WEBPACK_IMPORTED_MODULE_5__angular_http__["b" /* Http */]])
 ], HomePage);
@@ -1141,119 +1145,14 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 
 /***/ }),
 
-/***/ 235:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppModule; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__ = __webpack_require__(27);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(6);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_status_bar__ = __webpack_require__(213);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_native_splash_screen__ = __webpack_require__(214);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ionic_native_in_app_browser__ = __webpack_require__(82);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__app_component__ = __webpack_require__(283);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_home_home_module__ = __webpack_require__(284);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_about_about_module__ = __webpack_require__(160);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__pages_activities_activities_module__ = __webpack_require__(162);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__pages_gift_gift_module__ = __webpack_require__(164);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__pages_location_location_module__ = __webpack_require__(166);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__pages_contact_contact_module__ = __webpack_require__(168);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__pages_cancellation_cancellation_module__ = __webpack_require__(170);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__pages_booking_booking_module__ = __webpack_require__(155);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__pages_list_list_module__ = __webpack_require__(285);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__pages_register_register_module__ = __webpack_require__(172);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__angular_http__ = __webpack_require__(21);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__webService_constant__ = __webpack_require__(26);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__webService_handler__ = __webpack_require__(159);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__webService_webservice__ = __webpack_require__(30);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__ionic_native_date_picker__ = __webpack_require__(156);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__angular_common__ = __webpack_require__(33);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-
-
-
-
-
-
-
-
-// import { ListPage } from '../pages/list/list';
-
-
-
-
-
-
-
-
-
-// Web Service
-
-
-
-
-// Plugin
-
-
-var AppModule = (function () {
-    function AppModule() {
-    }
-    return AppModule;
-}());
-AppModule = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["L" /* NgModule */])({
-        declarations: [__WEBPACK_IMPORTED_MODULE_6__app_component__["a" /* MyApp */]],
-        imports: [
-            __WEBPACK_IMPORTED_MODULE_17__angular_http__["c" /* HttpModule */],
-            __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
-            __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["e" /* IonicModule */].forRoot(__WEBPACK_IMPORTED_MODULE_6__app_component__["a" /* MyApp */], {}, {
-                links: [
-                    { loadChildren: '../pages/booking/booking.module#BookingPageModule', name: 'BookingPage', segment: 'booking', priority: 'low', defaultHistory: [] },
-                    { loadChildren: '../pages/about/about.module#AboutPageModule', name: 'AboutPage', segment: 'about', priority: 'low', defaultHistory: [] },
-                    { loadChildren: '../pages/activities/activities.module#ActivitiesPageModule', name: 'ActivitiesPage', segment: 'activities', priority: 'low', defaultHistory: [] },
-                    { loadChildren: '../pages/gift/gift.module#GiftPageModule', name: 'GiftPage', segment: 'gift', priority: 'low', defaultHistory: [] },
-                    { loadChildren: '../pages/location/location.module#LocationPageModule', name: 'LocationPage', segment: 'location', priority: 'low', defaultHistory: [] },
-                    { loadChildren: '../pages/contact/contact.module#ContactPageModule', name: 'ContactPage', segment: 'contact', priority: 'low', defaultHistory: [] },
-                    { loadChildren: '../pages/cancellation/cancellation.module#CancellationPageModule', name: 'CancellationPage', segment: 'cancellation', priority: 'low', defaultHistory: [] },
-                    { loadChildren: '../pages/register/register.module#RegisterPageModule', name: 'RegisterPage', segment: 'register', priority: 'low', defaultHistory: [] }
-                ]
-            }),
-            __WEBPACK_IMPORTED_MODULE_8__pages_about_about_module__["AboutPageModule"],
-            __WEBPACK_IMPORTED_MODULE_9__pages_activities_activities_module__["ActivitiesPageModule"],
-            __WEBPACK_IMPORTED_MODULE_7__pages_home_home_module__["a" /* HomePageModule */],
-            __WEBPACK_IMPORTED_MODULE_10__pages_gift_gift_module__["GiftPageModule"],
-            __WEBPACK_IMPORTED_MODULE_13__pages_cancellation_cancellation_module__["CancellationPageModule"],
-            __WEBPACK_IMPORTED_MODULE_14__pages_booking_booking_module__["BookingPageModule"],
-            __WEBPACK_IMPORTED_MODULE_12__pages_contact_contact_module__["ContactPageModule"],
-            __WEBPACK_IMPORTED_MODULE_11__pages_location_location_module__["LocationPageModule"],
-            __WEBPACK_IMPORTED_MODULE_15__pages_list_list_module__["a" /* ListPageModule */],
-            __WEBPACK_IMPORTED_MODULE_16__pages_register_register_module__["RegisterPageModule"]
-        ],
-        bootstrap: [__WEBPACK_IMPORTED_MODULE_2_ionic_angular__["c" /* IonicApp */]],
-        entryComponents: [__WEBPACK_IMPORTED_MODULE_6__app_component__["a" /* MyApp */]],
-        providers: [__WEBPACK_IMPORTED_MODULE_3__ionic_native_status_bar__["a" /* StatusBar */], __WEBPACK_IMPORTED_MODULE_4__ionic_native_splash_screen__["a" /* SplashScreen */], __WEBPACK_IMPORTED_MODULE_5__ionic_native_in_app_browser__["a" /* InAppBrowser */], { provide: __WEBPACK_IMPORTED_MODULE_1__angular_core__["v" /* ErrorHandler */], useClass: __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["d" /* IonicErrorHandler */] }, __WEBPACK_IMPORTED_MODULE_21__ionic_native_date_picker__["a" /* DatePicker */],
-            __WEBPACK_IMPORTED_MODULE_19__webService_handler__["a" /* Handler */], __WEBPACK_IMPORTED_MODULE_22__angular_common__["c" /* DatePipe */], __WEBPACK_IMPORTED_MODULE_20__webService_webservice__["a" /* WebService */], __WEBPACK_IMPORTED_MODULE_18__webService_constant__["a" /* Constant */]]
-    })
-], AppModule);
-
-//# sourceMappingURL=app.module.js.map
-
-/***/ }),
-
-/***/ 26:
+/***/ 22:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Constant; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(6);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_http__ = __webpack_require__(21);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_http__ = __webpack_require__(19);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1360,6 +1259,186 @@ Constant = __decorate([
 
 /***/ }),
 
+/***/ 235:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppModule; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__ = __webpack_require__(27);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_status_bar__ = __webpack_require__(213);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_native_splash_screen__ = __webpack_require__(214);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ionic_native_in_app_browser__ = __webpack_require__(53);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__app_component__ = __webpack_require__(283);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_home_home_module__ = __webpack_require__(284);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_about_about_module__ = __webpack_require__(160);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__pages_activities_activities_module__ = __webpack_require__(162);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__pages_gift_gift_module__ = __webpack_require__(164);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__pages_location_location_module__ = __webpack_require__(166);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__pages_contact_contact_module__ = __webpack_require__(168);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__pages_cancellation_cancellation_module__ = __webpack_require__(170);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__pages_booking_booking_module__ = __webpack_require__(155);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__pages_list_list_module__ = __webpack_require__(285);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__pages_register_register_module__ = __webpack_require__(172);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__angular_http__ = __webpack_require__(19);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__webService_constant__ = __webpack_require__(22);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__webService_handler__ = __webpack_require__(159);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__webService_webservice__ = __webpack_require__(28);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__ionic_native_date_picker__ = __webpack_require__(156);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__angular_common__ = __webpack_require__(33);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+
+
+
+
+
+
+
+// import { ListPage } from '../pages/list/list';
+
+
+
+
+
+
+
+
+
+// Web Service
+
+
+
+
+// Plugin
+
+
+var AppModule = (function () {
+    function AppModule() {
+    }
+    return AppModule;
+}());
+AppModule = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["L" /* NgModule */])({
+        declarations: [__WEBPACK_IMPORTED_MODULE_6__app_component__["a" /* MyApp */]],
+        imports: [
+            __WEBPACK_IMPORTED_MODULE_17__angular_http__["c" /* HttpModule */],
+            __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
+            __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["e" /* IonicModule */].forRoot(__WEBPACK_IMPORTED_MODULE_6__app_component__["a" /* MyApp */], {}, {
+                links: [
+                    { loadChildren: '../pages/booking/booking.module#BookingPageModule', name: 'BookingPage', segment: 'booking', priority: 'low', defaultHistory: [] },
+                    { loadChildren: '../pages/about/about.module#AboutPageModule', name: 'AboutPage', segment: 'about', priority: 'low', defaultHistory: [] },
+                    { loadChildren: '../pages/activities/activities.module#ActivitiesPageModule', name: 'ActivitiesPage', segment: 'activities', priority: 'low', defaultHistory: [] },
+                    { loadChildren: '../pages/gift/gift.module#GiftPageModule', name: 'GiftPage', segment: 'gift', priority: 'low', defaultHistory: [] },
+                    { loadChildren: '../pages/location/location.module#LocationPageModule', name: 'LocationPage', segment: 'location', priority: 'low', defaultHistory: [] },
+                    { loadChildren: '../pages/contact/contact.module#ContactPageModule', name: 'ContactPage', segment: 'contact', priority: 'low', defaultHistory: [] },
+                    { loadChildren: '../pages/cancellation/cancellation.module#CancellationPageModule', name: 'CancellationPage', segment: 'cancellation', priority: 'low', defaultHistory: [] },
+                    { loadChildren: '../pages/register/register.module#RegisterPageModule', name: 'RegisterPage', segment: 'register', priority: 'low', defaultHistory: [] },
+                    { loadChildren: '../pages/payment/payment.module#PaymentPageModule', name: 'PaymentPage', segment: 'payment', priority: 'low', defaultHistory: [] }
+                ]
+            }),
+            __WEBPACK_IMPORTED_MODULE_8__pages_about_about_module__["AboutPageModule"],
+            __WEBPACK_IMPORTED_MODULE_9__pages_activities_activities_module__["ActivitiesPageModule"],
+            __WEBPACK_IMPORTED_MODULE_7__pages_home_home_module__["a" /* HomePageModule */],
+            __WEBPACK_IMPORTED_MODULE_10__pages_gift_gift_module__["GiftPageModule"],
+            __WEBPACK_IMPORTED_MODULE_13__pages_cancellation_cancellation_module__["CancellationPageModule"],
+            __WEBPACK_IMPORTED_MODULE_14__pages_booking_booking_module__["BookingPageModule"],
+            __WEBPACK_IMPORTED_MODULE_12__pages_contact_contact_module__["ContactPageModule"],
+            __WEBPACK_IMPORTED_MODULE_11__pages_location_location_module__["LocationPageModule"],
+            __WEBPACK_IMPORTED_MODULE_15__pages_list_list_module__["a" /* ListPageModule */],
+            __WEBPACK_IMPORTED_MODULE_16__pages_register_register_module__["RegisterPageModule"]
+        ],
+        bootstrap: [__WEBPACK_IMPORTED_MODULE_2_ionic_angular__["c" /* IonicApp */]],
+        entryComponents: [__WEBPACK_IMPORTED_MODULE_6__app_component__["a" /* MyApp */]],
+        providers: [__WEBPACK_IMPORTED_MODULE_3__ionic_native_status_bar__["a" /* StatusBar */], __WEBPACK_IMPORTED_MODULE_4__ionic_native_splash_screen__["a" /* SplashScreen */], __WEBPACK_IMPORTED_MODULE_5__ionic_native_in_app_browser__["a" /* InAppBrowser */], { provide: __WEBPACK_IMPORTED_MODULE_1__angular_core__["v" /* ErrorHandler */], useClass: __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["d" /* IonicErrorHandler */] }, __WEBPACK_IMPORTED_MODULE_21__ionic_native_date_picker__["a" /* DatePicker */],
+            __WEBPACK_IMPORTED_MODULE_19__webService_handler__["a" /* Handler */], __WEBPACK_IMPORTED_MODULE_22__angular_common__["c" /* DatePipe */], __WEBPACK_IMPORTED_MODULE_20__webService_webservice__["a" /* WebService */], __WEBPACK_IMPORTED_MODULE_18__webService_constant__["a" /* Constant */]]
+    })
+], AppModule);
+
+//# sourceMappingURL=app.module.js.map
+
+/***/ }),
+
+/***/ 28:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return WebService; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_add_operator_map__ = __webpack_require__(158);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_add_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_rxjs_add_operator_map__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__handler__ = __webpack_require__(159);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__constant__ = __webpack_require__(22);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+var WebService = (function () {
+    function WebService(Constant, WebserviceHandler) {
+        this.Constant = Constant;
+        this.WebserviceHandler = WebserviceHandler;
+        this.BASE_URL = this.Constant.BASE_URL;
+    }
+    // Check Booking Date and Time
+    WebService.prototype.CheckBookingDateTime = function (parameter) {
+        var URL = this.BASE_URL + 'checkBookingDate.php';
+        return this.WebserviceHandler.PostWithoutToken(URL, parameter).map(function (data) {
+            console.log(data.json());
+            return data.json();
+        }, function (error) {
+            console.log("Oooops!");
+            console.log(error);
+            return error;
+        });
+    };
+    // 
+    WebService.prototype.GetAllActivity = function (parameter) {
+        var URL = this.BASE_URL + 'activitiesContoller.php';
+        return this.WebserviceHandler.PostWithoutToken(URL, parameter).map(function (data) {
+            console.log(data.json());
+            return data.json();
+        }, function (error) {
+            console.log(error);
+            return error;
+        });
+    };
+    //LogOut
+    WebService.prototype.LogoutAPI = function () {
+        var URL = this.BASE_URL + 'api/LogOutUser?IsSignOutFromMobile=true';
+        return this.WebserviceHandler.Get(URL).map(function (data) {
+            console.log(data.json());
+            return data.json();
+        }, function (error) {
+            console.log("Oooops!");
+            return error;
+        });
+    };
+    return WebService;
+}());
+WebService = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["B" /* Injectable */])(),
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_3__constant__["a" /* Constant */], __WEBPACK_IMPORTED_MODULE_2__handler__["a" /* Handler */]])
+], WebService);
+
+//# sourceMappingURL=webservice.js.map
+
+/***/ }),
+
 /***/ 283:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -1438,7 +1517,7 @@ __decorate([
     __metadata("design:type", __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* Nav */])
 ], MyApp.prototype, "nav", void 0);
 MyApp = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({template:/*ion-inline-start:"C:\xampp\htdocs\phonegap\RipDubai_1\src\app\app.html"*/'<!-- <ion-menu [content]="content" type="overlay" > -->\n<ion-menu class="sideMenuHeader" [content]="content" type="overlay" >\n  <ion-header>\n    <ion-toolbar>\n      <button ion-button menuToggle>\n        <ion-icon ios="ios-list" md="md-list"></ion-icon>\n      </button>\n    </ion-toolbar>\n  </ion-header>\n\n  <ion-content class="sidebarBg" scroll="false">\n    \n      <button text-wrap class="sidebarBg"  menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)">\n        {{p.title}}\n      </button>\n    \n    <p padding-left no-margin class="followBtn">FOLLOW US</p>\n    <ion-grid style="padding-left: 12px;">\n      <ion-row>\n        <ion-col col-6>\n          <div text-center  class="social-box-bg ">\n            <a href="https://www.facebook.com/RiP.DuBai">\n            <img style="height: 27px;margin-top: 10px;" src="assets/imgs/facebook.png">\n          </a>\n            <i class="fa fa-facebook"></i>\n          </div>   \n        </ion-col>\n        <ion-col col-6>\n          <div text-center class="social-box-bg ">\n            <a href="https://twitter.com/Rip_DUBAI">\n            <ion-icon class="social-icon" ios="logo-twitter" md="logo-twitter"></ion-icon></a>\n          </div>\n        </ion-col>\n      </ion-row>\n      <ion-row>\n        <ion-col col-6>\n          <div text-center class="social-box-bg ">\n            <a href="https://www.youtube.com/channel/UCy54dNm8FXa5O-yD5wQb1zw?view_as=subscriber">\n            <ion-icon class="social-icon" ios="logo-youtube" md="logo-youtube"></ion-icon></a>\n          </div>\n        </ion-col>\n        <ion-col col-6>\n          <div text-center class="social-box-bg ">\n            <a href="https://www.instagram.com/rip.dubai/">\n            <ion-icon class="social-icon" ios="logo-instagram" md="logo-instagram"></ion-icon>\n            </a>\n          </div>\n        </ion-col>\n      </ion-row>\n      <ion-row>\n        <ion-col col-6>\n          <div text-center class="social-box-bg ">\n          <a href="https://www.linkedin.com/in/rip-rest-in-peace-94603a14a/">\n           <img style="height: 27px;margin-top: 10px;" src="assets/imgs/linkedin.png">\n          </a>\n          </div>\n        </ion-col>\n      </ion-row>\n    </ion-grid>\n  </ion-content>\n</ion-menu>\n\n<ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>'/*ion-inline-end:"C:\xampp\htdocs\phonegap\RipDubai_1\src\app\app.html"*/
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({template:/*ion-inline-start:"C:\xampp\htdocs\ionic\RipDubai_1\src\app\app.html"*/'<!-- <ion-menu [content]="content" type="overlay" > -->\n<ion-menu class="sideMenuHeader" [content]="content" type="overlay" >\n  <ion-header>\n    <ion-toolbar>\n      <button ion-button menuToggle>\n        <ion-icon ios="ios-list" md="md-list"></ion-icon>\n      </button>\n    </ion-toolbar>\n  </ion-header>\n\n  <ion-content class="sidebarBg" scroll="false">\n    \n      <button text-wrap class="sidebarBg"  menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)">\n        {{p.title}}\n      </button>\n    \n    <p padding-left no-margin class="followBtn">FOLLOW US</p>\n    <ion-grid style="padding-left: 12px;">\n      <ion-row>\n        <ion-col col-6>\n          <div text-center  class="social-box-bg ">\n            <a href="https://www.facebook.com/RiP.DuBai">\n            <img style="height: 27px;margin-top: 10px;" src="assets/imgs/facebook.png">\n          </a>\n            <i class="fa fa-facebook"></i>\n          </div>   \n        </ion-col>\n        <ion-col col-6>\n          <div text-center class="social-box-bg ">\n            <a href="https://twitter.com/Rip_DUBAI">\n            <ion-icon class="social-icon" ios="logo-twitter" md="logo-twitter"></ion-icon></a>\n          </div>\n        </ion-col>\n      </ion-row>\n      <ion-row>\n        <ion-col col-6>\n          <div text-center class="social-box-bg ">\n            <a href="https://www.youtube.com/channel/UCy54dNm8FXa5O-yD5wQb1zw?view_as=subscriber">\n            <ion-icon class="social-icon" ios="logo-youtube" md="logo-youtube"></ion-icon></a>\n          </div>\n        </ion-col>\n        <ion-col col-6>\n          <div text-center class="social-box-bg ">\n            <a href="https://www.instagram.com/rip.dubai/">\n            <ion-icon class="social-icon" ios="logo-instagram" md="logo-instagram"></ion-icon>\n            </a>\n          </div>\n        </ion-col>\n      </ion-row>\n      <ion-row>\n        <ion-col col-6>\n          <div text-center class="social-box-bg ">\n          <a href="https://www.linkedin.com/in/rip-rest-in-peace-94603a14a/">\n           <img style="height: 27px;margin-top: 10px;" src="assets/imgs/linkedin.png">\n          </a>\n          </div>\n        </ion-col>\n      </ion-row>\n    </ion-grid>\n  </ion-content>\n</ion-menu>\n\n<ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>'/*ion-inline-end:"C:\xampp\htdocs\ionic\RipDubai_1\src\app\app.html"*/
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* Platform */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */], __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */]])
 ], MyApp);
@@ -1567,7 +1646,7 @@ var ListPage = ListPage_1 = (function () {
 }());
 ListPage = ListPage_1 = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'page-list',template:/*ion-inline-start:"C:\xampp\htdocs\phonegap\RipDubai_1\src\pages\list\list.html"*/'<ion-header>\n  <ion-navbar>\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>List</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content>\n  <ion-list>\n    <button ion-item *ngFor="let item of items" (click)="itemTapped($event, item)">\n      <ion-icon [name]="item.icon" item-start></ion-icon>\n      {{item.title}}\n      <div class="item-note" item-end>\n        {{item.note}}\n      </div>\n    </button>\n  </ion-list>\n  <div *ngIf="selectedItem" padding>\n    You navigated here from <b>{{selectedItem.title}}</b>\n  </div>\n</ion-content>\n'/*ion-inline-end:"C:\xampp\htdocs\phonegap\RipDubai_1\src\pages\list\list.html"*/
+        selector: 'page-list',template:/*ion-inline-start:"C:\xampp\htdocs\ionic\RipDubai_1\src\pages\list\list.html"*/'<ion-header>\n  <ion-navbar>\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>List</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content>\n  <ion-list>\n    <button ion-item *ngFor="let item of items" (click)="itemTapped($event, item)">\n      <ion-icon [name]="item.icon" item-start></ion-icon>\n      {{item.title}}\n      <div class="item-note" item-end>\n        {{item.note}}\n      </div>\n    </button>\n  </ion-list>\n  <div *ngIf="selectedItem" padding>\n    You navigated here from <b>{{selectedItem.title}}</b>\n  </div>\n</ion-content>\n'/*ion-inline-end:"C:\xampp\htdocs\ionic\RipDubai_1\src\pages\list\list.html"*/
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavParams */]])
 ], ListPage);
@@ -1577,81 +1656,7 @@ var ListPage_1;
 
 /***/ }),
 
-/***/ 30:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return WebService; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_add_operator_map__ = __webpack_require__(158);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_add_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_rxjs_add_operator_map__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__handler__ = __webpack_require__(159);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__constant__ = __webpack_require__(26);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-
-
-var WebService = (function () {
-    function WebService(Constant, WebserviceHandler) {
-        this.Constant = Constant;
-        this.WebserviceHandler = WebserviceHandler;
-        this.BASE_URL = this.Constant.BASE_URL;
-    }
-    // Check Booking Date and Time
-    WebService.prototype.CheckBookingDateTime = function (parameter) {
-        var URL = this.BASE_URL + 'checkBookingDate.php';
-        return this.WebserviceHandler.PostWithoutToken(URL, parameter).map(function (data) {
-            console.log(data.json());
-            return data.json();
-        }, function (error) {
-            console.log("Oooops!");
-            console.log(error);
-            return error;
-        });
-    };
-    // 
-    WebService.prototype.GetAllActivity = function (parameter) {
-        var URL = this.BASE_URL + 'activitiesContoller.php';
-        return this.WebserviceHandler.PostWithoutToken(URL, parameter).map(function (data) {
-            console.log(data.json());
-            return data.json();
-        }, function (error) {
-            console.log(error);
-            return error;
-        });
-    };
-    //LogOut
-    WebService.prototype.LogoutAPI = function () {
-        var URL = this.BASE_URL + 'api/LogOutUser?IsSignOutFromMobile=true';
-        return this.WebserviceHandler.Get(URL).map(function (data) {
-            console.log(data.json());
-            return data.json();
-        }, function (error) {
-            console.log("Oooops!");
-            return error;
-        });
-    };
-    return WebService;
-}());
-WebService = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["B" /* Injectable */])(),
-    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_3__constant__["a" /* Constant */], __WEBPACK_IMPORTED_MODULE_2__handler__["a" /* Handler */]])
-], WebService);
-
-//# sourceMappingURL=webservice.js.map
-
-/***/ }),
-
-/***/ 80:
+/***/ 81:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1660,10 +1665,10 @@ WebService = __decorate([
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(6);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_date_picker__ = __webpack_require__(156);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_common__ = __webpack_require__(33);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__webService_constant__ = __webpack_require__(26);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__webService_webservice__ = __webpack_require__(30);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__angular_http__ = __webpack_require__(21);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__ionic_native_in_app_browser__ = __webpack_require__(82);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__webService_constant__ = __webpack_require__(22);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__webService_webservice__ = __webpack_require__(28);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__angular_http__ = __webpack_require__(19);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__ionic_native_in_app_browser__ = __webpack_require__(53);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1711,15 +1716,6 @@ var BookingPage = (function () {
         console.log(this.ActivityArry);
         //this.CheckDateTimeIsBooked();
         this.GetActivityDetails();
-        var options = {
-            zoom: 'no'
-        };
-        var url = 'http://pr.veba.co/~shubantech/ripdubai/web/pm/checkout.php?book_id=28';
-        console.log("NEW URL_+++" + url);
-        var browser = this.iab.create(url, '_blank', options);
-        browser.on("loadstop").subscribe(function () { }, function (err) {
-            console.log("InAppBrowser Loadstop Event Error: " + err);
-        });
     }
     BookingPage.prototype.browserOnSuccess = function () {
         this.constant.Alert('Success', ' Booking done successfully.', 'Ok');
@@ -1899,8 +1895,8 @@ var BookingPage = (function () {
                 _this.checkTime = '';
                 _this.DisplayDate = '';
                 _this.DisplayTime = '';
-                _this.Texes = 0;
-                _this.TotlePayment = 0;
+                _this.Texes = 1;
+                _this.TotlePayment = 1;
                 _this.SingleActivity = [];
                 _this.IONSelectValue = '';
                 var options = {
@@ -1909,7 +1905,6 @@ var BookingPage = (function () {
                 var url = 'http://pr.veba.co/~shubantech/ripdubai/web/pm/checkout.php?book_id=' + Temp.booking_id;
                 console.log("NEW URL_+++" + url);
                 var browser = _this.iab.create(url, '_blank', options);
-                //browser.close();
                 //this.constant.Alert('Success', ' Booking done successfully.','Ok');
             }
             else {
@@ -1943,7 +1938,7 @@ var BookingPage = (function () {
 BookingPage = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* IonicPage */])(),
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'page-booking',template:/*ion-inline-start:"C:\xampp\htdocs\phonegap\RipDubai_1\src\pages\booking\booking.html"*/'\n<ion-header class="BookingHeader">\n    <ion-navbar hideBackButton="true">\n\n        <ion-buttons (click)="BackButtonClick()" left>\n            <button class="headerBackButton" ion-button>\n                <ion-icon class="backButtonIcon" name="ios-arrow-back"></ion-icon> Back\n            </button>\n        </ion-buttons>\n\n        <ion-title class="pHead" >{{ActivityArry.name}}</ion-title>\n\n        <ion-buttons style="width: 50px;" end>\n            <button ion-button >\n            </button>\n        </ion-buttons>\n\n    </ion-navbar>\n</ion-header>\n\n\n<ion-content class="bookingCSS">\n    <div class="mainContainer">\n\n        <button (click)="SelecetDateClick()" class="dateBtn"> \n            <ion-icon class="" name="md-calendar"></ion-icon> Select Date\n        </button>\n\n        <ion-label class="dateLbl">{{dateSelected}}</ion-label>\n\n        <ion-item class="selectItem">\n            <ion-label class="selectLbl">Select Time</ion-label> \n            <ion-select [(ngModel)]="timeSelected"  name="md-time" multiple="false" (ionChange)="SelecetTimeClick()">\n                <ion-option [value]="items" *ngFor="let items of TimeSlotArry">{{items}}</ion-option>\n            </ion-select>\n        </ion-item>\n        <!--<button (click)="SelecetTimeClick()" class="dateBtn">\n        </button>-->\n        <ion-label class="dateLbl">{{timeSelected}}</ion-label>\n\n        <ion-item class="selectItem">\n            <ion-label class="selectLbl">{{ActivityArry.name}}</ion-label>\n            <ion-select [(ngModel)]="IONSelectValue" multiple="false" (ionChange)="IONSelectEvent()">\n                <ion-option [value]="items" *ngFor="let items of SingleActivity">{{items.duration}} HR {{items.type}}</ion-option>\n            </ion-select>\n        </ion-item>\n        <ion-item class="selectItem" *ngIf="IONSelectValue">\n            <ion-label class="selectLbl">Number Of Person</ion-label>\n            <ion-select class="" [(ngModel)]="Person" multiple="false" (ionChange)="IONSelectEvent()">\n                <ion-option [value]="items" *ngFor="let items of PersonArry">{{items}}</ion-option>\n            </ion-select>\n            \n        </ion-item>\n        <ion-label class="LblOne">Your are Booking</ion-label>\n        <ion-label class="LblTwo">{{ActivityArry.name}} Experience</ion-label>\n        <ion-label class="LblThree">{{DisplayDate}} {{timeSelected}}</ion-label>\n\n        <div class="subtotalContainer">\n            <ion-label class="subTotalLbl">Subtotal</ion-label>\n            <ion-label class="subTotalPriceLbl">AED {{TotlePayment}}</ion-label>\n            <div class="lineDrow"></div>\n        </div>\n\n        <div class="subtotalContainer" style="margin-top:12px;">\n            <ion-label class="subTotalLbl">Taxes</ion-label>\n            <ion-label class="subTotalPriceLbl">AED {{Texes}}</ion-label>\n            <div class="lineDrow"></div>\n        </div>\n\n        <div class="checkBoxContainer">\n            <img (click)="SelectCheckBoxClick()" class="checkboxImage" src="{{checkboxSRC}}">\n            <ion-label class="checkBoxLbl">I have read and agreed to the cancellation and Saftey policy below.</ion-label>\n        </div>\n        <div class="checkBoxContainer">\n            <img (click)="CheckBoxClick1()" class="checkboxImage" src="{{checkboxSRC1}}">\n            <ion-label class="checkBoxLbl">Check in conditions. At the moment you make the check in at the dock, you must provide a valid ID and the credit card you\'re using to make the payment. The cardholder must be present at the dock. If you don\'t provide this documentation, you and the other passengers won\'t be able to take the ride and "no show policies" will apply. I have read and understand this conidition.</ion-label>\n        </div>\n\n    </div>\n\n    <div class="bookNowContainer">\n        <button (click)="BookingClick()" class="bookNowBtn">BOOK NOW</button>\n        <ion-label class="totalLbl">Total</ion-label>\n        <ion-label class="totalPriceLbl">AED {{(TotlePayment-0)+(Texes-0) |number}}</ion-label>\n    </div>\n\n\n</ion-content>\n'/*ion-inline-end:"C:\xampp\htdocs\phonegap\RipDubai_1\src\pages\booking\booking.html"*/,
+        selector: 'page-booking',template:/*ion-inline-start:"C:\xampp\htdocs\ionic\RipDubai_1\src\pages\booking\booking.html"*/'\n<ion-header class="BookingHeader">\n    <ion-navbar hideBackButton="true">\n\n        <ion-buttons (click)="BackButtonClick()" left>\n            <button class="headerBackButton" ion-button>\n                <ion-icon class="backButtonIcon" name="ios-arrow-back"></ion-icon> Back\n            </button>\n        </ion-buttons>\n\n        <ion-title class="pHead" >{{ActivityArry.name}}</ion-title>\n\n        <ion-buttons style="width: 50px;" end>\n            <button ion-button >\n            </button>\n        </ion-buttons>\n\n    </ion-navbar>\n</ion-header>\n\n\n<ion-content class="bookingCSS">\n    <div class="mainContainer">\n\n        <button (click)="SelecetDateClick()" class="dateBtn"> \n            <ion-icon class="" name="md-calendar"></ion-icon> Select Date\n        </button>\n\n        <ion-label class="dateLbl">{{dateSelected}}</ion-label>\n\n        <ion-item class="selectItem">\n            <ion-label class="selectLbl">Select Time</ion-label> \n            <ion-select [(ngModel)]="timeSelected"  name="md-time" multiple="false" (ionChange)="SelecetTimeClick()">\n                <ion-option [value]="items" *ngFor="let items of TimeSlotArry">{{items}}</ion-option>\n            </ion-select>\n        </ion-item>\n        <!--<button (click)="SelecetTimeClick()" class="dateBtn">\n        </button>-->\n        <ion-label class="dateLbl">{{timeSelected}}</ion-label>\n\n        <ion-item class="selectItem">\n            <ion-label class="selectLbl">{{ActivityArry.name}}</ion-label>\n            <ion-select [(ngModel)]="IONSelectValue" multiple="false" (ionChange)="IONSelectEvent()">\n                <ion-option [value]="items" *ngFor="let items of SingleActivity">{{items.duration}} HR {{items.type}}</ion-option>\n            </ion-select>\n        </ion-item>\n        <ion-item class="selectItem" *ngIf="IONSelectValue">\n            <ion-label class="selectLbl">Number Of Person</ion-label>\n            <ion-select class="" [(ngModel)]="Person" multiple="false" (ionChange)="IONSelectEvent()">\n                <ion-option [value]="items" *ngFor="let items of PersonArry">{{items}}</ion-option>\n            </ion-select>\n            \n        </ion-item>\n        <ion-label class="LblOne">Your are Booking</ion-label>\n        <ion-label class="LblTwo">{{ActivityArry.name}} Experience</ion-label>\n        <ion-label class="LblThree">{{DisplayDate}} {{timeSelected}}</ion-label>\n\n        <div class="subtotalContainer">\n            <ion-label class="subTotalLbl">Subtotal</ion-label>\n            <ion-label class="subTotalPriceLbl">AED {{TotlePayment}}</ion-label>\n            <div class="lineDrow"></div>\n        </div>\n\n        <div class="subtotalContainer" style="margin-top:12px;">\n            <ion-label class="subTotalLbl">Taxes</ion-label>\n            <ion-label class="subTotalPriceLbl">AED {{Texes}}</ion-label>\n            <div class="lineDrow"></div>\n        </div>\n\n        <div class="checkBoxContainer">\n            <img (click)="SelectCheckBoxClick()" class="checkboxImage" src="{{checkboxSRC}}">\n            <ion-label class="checkBoxLbl">I have read and agreed to the cancellation and Saftey policy below.</ion-label>\n        </div>\n        <div class="checkBoxContainer">\n            <img (click)="CheckBoxClick1()" class="checkboxImage" src="{{checkboxSRC1}}">\n            <ion-label class="checkBoxLbl">Check in conditions. At the moment you make the check in at the dock, you must provide a valid ID and the credit card you\'re using to make the payment. The cardholder must be present at the dock. If you don\'t provide this documentation, you and the other passengers won\'t be able to take the ride and "no show policies" will apply. I have read and understand this conidition.</ion-label>\n        </div>\n\n    </div>\n\n    <div class="bookNowContainer">\n        <button (click)="BookingClick()" class="bookNowBtn">BOOK NOW</button>\n        <ion-label class="totalLbl">Total</ion-label>\n        <ion-label class="totalPriceLbl">AED {{(TotlePayment-0)+(Texes-0) |number}}</ion-label>\n    </div>\n\n\n</ion-content>\n'/*ion-inline-end:"C:\xampp\htdocs\ionic\RipDubai_1\src\pages\booking\booking.html"*/,
     }),
     __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* NavController */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavParams */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavParams */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_2__ionic_native_date_picker__["a" /* DatePicker */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__ionic_native_date_picker__["a" /* DatePicker */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_3__angular_common__["c" /* DatePipe */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__angular_common__["c" /* DatePipe */]) === "function" && _d || Object, typeof (_e = typeof __WEBPACK_IMPORTED_MODULE_4__webService_constant__["a" /* Constant */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_4__webService_constant__["a" /* Constant */]) === "function" && _e || Object, typeof (_f = typeof __WEBPACK_IMPORTED_MODULE_5__webService_webservice__["a" /* WebService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_5__webService_webservice__["a" /* WebService */]) === "function" && _f || Object, typeof (_g = typeof __WEBPACK_IMPORTED_MODULE_6__angular_http__["b" /* Http */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_6__angular_http__["b" /* Http */]) === "function" && _g || Object, typeof (_h = typeof __WEBPACK_IMPORTED_MODULE_7__ionic_native_in_app_browser__["a" /* InAppBrowser */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_7__ionic_native_in_app_browser__["a" /* InAppBrowser */]) === "function" && _h || Object])
 ], BookingPage);
