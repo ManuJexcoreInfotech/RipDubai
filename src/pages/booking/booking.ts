@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { PaymentPage } from '../../pages/payment/payment';
+
 import { DatePicker } from '@ionic-native/date-picker';
 import { elementDef } from '@angular/core/src/view/element';
 import { DatePipe } from '@angular/common';
@@ -222,15 +222,13 @@ export class BookingPage {
     var date = this.datePipe.transform(dateToday, 'yyyy-MM-dd');
     var activity_id = this.ActivityArry.activity_id;
     var Price = this.TotlePayment;
-    var total_price = this.FinalTotal;
+    var total_price = Number(this.TotlePayment)+this.Texes;
     
     var Duration = this.IONSelectValue.duration;
     var Package = this.IONSelectValue.package;
-	var ph_price = this.IONSelectValue.ph_price 
-	var person =this.Person;
 
      var CustomURL = 'user_id=0&date='+date+'&b_date='+this.checkDate+'&time='+this.checkTime+'&activity_id='+activity_id+
-     '&person=1&price='+Price+'&total='+total_price+'&package='+Package+'&duration='+Duration+'&ph_price='+ph_price+'&person='+person;
+     '&person=1&price='+Price+'&total='+total_price+'&package='+Package+'&duration='+Duration;
     
      var URL = 'http://pr.veba.co/~shubantech/ripdubai/bookingController.php?'+ CustomURL;
       console.log(URL);
@@ -254,16 +252,12 @@ export class BookingPage {
           this.SingleActivity = [];
           this.IONSelectValue = '';
 			const options: InAppBrowserOptions = {
-			  zoom: 'no',
-			  location:'no',
-			  toolbar:'no'
+			  zoom: 'no'
 			}
 			
 			var url = 'http://pr.veba.co/~shubantech/ripdubai/web/pm/checkout.php?book_id='+Temp.booking_id;
 			console.log("NEW URL_+++"+url);
-			const browser = this.iab.create(url,'_self',options);
-			//browser.close();
-			this.navCtrl.pop();
+			const browser = this.iab.create(url,'_blank',options);
 			
           //this.constant.Alert('Success', ' Booking done successfully.','Ok');
         }else{

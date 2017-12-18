@@ -4,9 +4,8 @@ import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { InAppBrowser } from '@ionic-native/in-app-browser';
-import { Push, PushObject, PushOptions} from '@ionic-native/push';
+
 import { MyApp } from './app.component';
-import { SafePipe } from './SafePipe';
 import { HomePageModule } from '../pages/home/home.module';
 // import { ListPage } from '../pages/list/list';
 import { AboutPageModule } from '../pages/about/about.module';
@@ -16,7 +15,6 @@ import { LocationPageModule } from '../pages/location/location.module';
 import { ContactPageModule } from '../pages/contact/contact.module';
 import { CancellationPageModule } from '../pages/cancellation/cancellation.module';
 import { BookingPageModule } from '../pages/booking/booking.module';
-import { PaymentPageModule } from '../pages/payment/payment.module';
 import { ListPageModule } from '../pages/list/list.module';
 import { RegisterPageModule } from '../pages/register/register.module';
 
@@ -32,7 +30,7 @@ import { DatePicker } from '@ionic-native/date-picker';
 import { DatePipe } from '@angular/common';
 
 @NgModule({
-  declarations: [MyApp,SafePipe],
+  declarations: [MyApp],
 
   imports: [
     HttpModule,
@@ -47,8 +45,7 @@ import { DatePipe } from '@angular/common';
     ContactPageModule,
     LocationPageModule,
     ListPageModule,
-	RegisterPageModule,
-	PaymentPageModule
+	RegisterPageModule
     
   ],
 
@@ -56,7 +53,7 @@ import { DatePipe } from '@angular/common';
 
   entryComponents: [MyApp],
 
-  providers: [StatusBar,SplashScreen, InAppBrowser,Push,{provide: ErrorHandler, useClass: IonicErrorHandler}, DatePicker, 
+  providers: [StatusBar,SplashScreen, InAppBrowser,{provide: ErrorHandler, useClass: IonicErrorHandler}, DatePicker, 
     Handler,DatePipe,WebService, Constant]
 
 })
