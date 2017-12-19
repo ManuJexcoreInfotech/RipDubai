@@ -197,8 +197,7 @@ export class BookingPage {
     //this.BookingAPI();
    // this.checkDate = 'fasdfa';
   //  this.checkTime = 'fasdfa';
-   var dateToday = new Date();
-   this.checkDate = this.datePipe.transform(dateToday, 'yyyy-MM-dd');
+  
     if (!this.checkDate) {
       this.constant.Alert('Message', 'Please select Date.', 'Ok');
     }else if(!this.checkTime){
