@@ -10,7 +10,7 @@
         <button ion-button menuToggle>
             <ion-icon class="backButtonIcon" name="ios-arrow-back"></ion-icon>Back
         </button>
-        <ion-title>GIFT </ion-title>
+        <ion-title>GIFT VOUCHERS</ion-title>
     </ion-navbar>
 
 </ion-header>
@@ -18,14 +18,14 @@
 
     <ion-grid>
         <ion-row >
-        <ion-col col-6 class="gift-col" *ngFor="let item of VouchersArry; let i = index" >
+        <ion-col col-5 class="gift-col" *ngFor="let item of VouchersArry; let i = index" >
            
             <ion-col col-12 >
                 <ion-col col-4></ion-col>
                 <ion-col col-8 text-right>
                     <ion-label class="primary-label"  text-right>{{item.name.toUpperCase()}}<span class="headerSubLblTwo"></span></ion-label>
                     <ion-label class="price-label"   text-right>
-                        {{item.price}} AMD
+                        {{item.price}} AED
                     </ion-label>
                     <button  (click)="BuyNow(item.voucher_id)" ion-button class="buyBtn">Buy NOW</button>
                 </ion-col>

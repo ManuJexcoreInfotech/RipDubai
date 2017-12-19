@@ -41,7 +41,7 @@ options : InAppBrowserOptions = {
 
   VouchersArry = [];
   constructor(public navCtrl: NavController, public navParams: NavParams,public constant:Constant, public http:Http, public service:WebService, public iab: InAppBrowser) {
-            this.iab.create("https://www.techiediaries.com",'_blank');
+           
 	this.GetAllVouchers();
   }
   openUrl() {
@@ -74,8 +74,12 @@ options : InAppBrowserOptions = {
     
     }
     BuyNow(id){
-        //var url="https://www.google.com/";
-        //var ref=window.open(url,'_blank','location=yes');
+        const options: InAppBrowserOptions = {
+		  zoom: 'no'
+		}
+		var url = 'http://focusdxb.com/ripdubai/v1/pm/checkout1.php?gift_id='+id;
+		console.log("NEW URL_+++"+url);
+		const browser = this.iab.create(url,'_self',options);
        
     }
 }

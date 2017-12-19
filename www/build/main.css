@@ -30551,18 +30551,20 @@ page-gift .gift-col {
 page-gift .primary-label {
   font-size: 4vw;
   color: #009fdf;
+  margin: 0px 8px 5px 0;
 }
 
 page-gift .price-label {
   font-size: 4vw;
   color: #777777;
+  margin: 0px 8px 5px 0;
 }
 
 page-gift .buyBtn {
   padding: 1.5vh;
   float: right;
   height: 2.8em;
-  font-size: 1.3rem;
+  font-size: 1.0rem;
 }
 
 .homePageCSS .swiper-container-3d .swiper-slide-shadow-right {
