@@ -258,7 +258,7 @@ export class BookingPage {
 			var url = 'http://focusdxb.com/ripdubai/v1/pm/checkout.php?book_id='+Temp.booking_id;
 			console.log("NEW URL_+++"+url);
 			const browser = this.iab.create(url,'_blank',options);
-			
+			this.navCtrl.pop();  
           //this.constant.Alert('Success', ' Booking done successfully.','Ok');
         }else{
           this.constant.Alert('Error', 'Something is wrong Please try again later.','Ok');
