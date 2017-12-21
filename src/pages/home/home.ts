@@ -52,5 +52,11 @@ export class HomePage {
 	this.slides.slidePrev(100);
         this.counter = this.slides.getActiveIndex();
     }
+	
+	swipeEvent($e) {
+	   this.counter = this.slides.getActiveIndex();
+	}
+	
+	
   
 }

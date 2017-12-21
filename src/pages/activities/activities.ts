@@ -56,5 +56,8 @@ export class ActivitiesPage {
 	this.slides.slidePrev(100);
         this.counter = this.slides.getActiveIndex();
     }
+	swipeEvent($e) {
+	   this.counter = this.slides.getActiveIndex();
+	}
 
 }

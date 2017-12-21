@@ -30193,6 +30193,7 @@ page-activities .sliderMain {
 
 page-activities .sliderMain .sliderMainSlide {
   width: calc(100% - 50px);
+  background-color: rgba(255, 255, 255, 0.8);
 }
 
 page-activities .sliderMain .slideMainContainer {
@@ -30247,7 +30248,7 @@ page-activities .sliderMain .headerLblTwo .headerSubLblTwo {
 page-activities .sliderMain .sliderDics {
   font-family: Dubai;
   color: white;
-  font-size: 11px;
+  font-size: 2vh;
   margin-top: 0px;
   margin-bottom: 0;
   white-space: normal;
@@ -30255,11 +30256,15 @@ page-activities .sliderMain .sliderDics {
   height: 134px;
 }
 
+page-activities .sliderMain .sliderDics .mb30 {
+  padding-left: 0;
+}
+
 page-activities .ion-ios-arrow-back {
   position: absolute;
   left: 3vw;
   top: 35vh;
-  font-size: 2.3em;
+  font-size: 3.3em;
   z-index: 1;
   color: #039cde;
 }
@@ -30269,7 +30274,7 @@ page-activities .ion-ios-arrow-forward {
   color: #039cde;
   right: 3vw;
   top: 35vh;
-  font-size: 2.3em;
+  font-size: 3.3em;
   z-index: 1;
 }
 
@@ -30584,6 +30589,7 @@ page-gift .buyBtn {
 
 .homePageCSS .sliderMain .sliderMainSlide {
   width: calc(100% - 50px);
+  background-color: rgba(255, 255, 255, 0.8);
 }
 
 .homePageCSS .sliderMain .slideMainContainer {
@@ -30639,7 +30645,7 @@ page-gift .buyBtn {
 .homePageCSS .sliderMain .sliderDics {
   font-family: Dubai;
   color: white;
-  font-size: 11px;
+  font-size: 2vh;
   margin-top: 0px;
   margin-bottom: 0;
   white-space: normal;
@@ -30651,11 +30657,15 @@ page-gift .buyBtn {
   list-style: none;
 }
 
+.homePageCSS .sliderMain .sliderDics .mb30 {
+  padding-left: 0;
+}
+
 .homePageCSS .ion-ios-arrow-back {
   position: absolute;
   left: 3vw;
   top: 35vh;
-  font-size: 2.3em;
+  font-size: 3.3em;
   z-index: 1;
   color: #039cde;
 }
@@ -30665,7 +30675,7 @@ page-gift .buyBtn {
   color: #039cde;
   right: 3vw;
   top: 35vh;
-  font-size: 2.3em;
+  font-size: 3.3em;
   z-index: 1;
 }
 

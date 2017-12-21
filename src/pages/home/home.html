@@ -21,7 +21,7 @@
         </ion-slide>
     </ion-slides> -->
 
-    <ion-slides text-start class="sliderMain" zoom="true" loop="false" slidesPerView="1" effect="coverflow" speed="200">
+    <ion-slides text-start class="sliderMain" zoom="false" loop="false" slidesPerView="1" effect="coverflow" speed="200"  (swipe)="swipeEvent($event)" >
 
         <ion-slide class="sliderMainSlide"  *ngFor="let item of ActivityArry">
 
