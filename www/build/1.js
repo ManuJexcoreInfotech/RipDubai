@@ -1,1 +1,89 @@
-webpackJsonp([1],{199:function(t,e,o){"use strict";Object.defineProperty(e,"__esModule",{value:!0}),o.d(e,"GiftPageModuleNgFactory",function(){return w});var i=o(0),n=o(118),_=o(8),r=o(30),a=o(112),u=o(147),s=o(148),c=o(149),l=o(150),h=o(151),d=o(152),f=o(153),p=o(159),g=o(86),b=o(59),y=this&&this.__extends||function(){var t=Object.setPrototypeOf||{__proto__:[]}instanceof Array&&function(t,e){t.__proto__=e}||function(t,e){for(var o in e)e.hasOwnProperty(o)&&(t[o]=e[o])};return function(e,o){function i(){this.constructor=e}t(e,o),e.prototype=null===o?Object.create(o):(i.prototype=o.prototype,new i)}}(),m=function(t){function e(e){return t.call(this,e,[u.a,s.a,c.a,l.a,h.a,d.a,f.a,p.a],[])||this}return y(e,t),Object.defineProperty(e.prototype,"_NgLocalization_7",{get:function(){return null==this.__NgLocalization_7&&(this.__NgLocalization_7=new _.j(this.parent.get(i.v))),this.__NgLocalization_7},enumerable:!0,configurable:!0}),Object.defineProperty(e.prototype,"_ɵi_8",{get:function(){return null==this.__ɵi_8&&(this.__ɵi_8=new r.k),this.__ɵi_8},enumerable:!0,configurable:!0}),Object.defineProperty(e.prototype,"_FormBuilder_9",{get:function(){return null==this.__FormBuilder_9&&(this.__FormBuilder_9=new r.c),this.__FormBuilder_9},enumerable:!0,configurable:!0}),e.prototype.createInternal=function(){return this._CommonModule_0=new _.b,this._ɵba_1=new r.j,this._FormsModule_2=new r.d,this._ReactiveFormsModule_3=new r.i,this._IonicModule_4=new a.a,this._IonicPageModule_5=new a.b,this._GiftPageModule_6=new n.a,this._LAZY_LOADED_TOKEN_10=g.a,this._GiftPageModule_6},e.prototype.getInternal=function(t,e){return t===_.b?this._CommonModule_0:t===r.j?this._ɵba_1:t===r.d?this._FormsModule_2:t===r.i?this._ReactiveFormsModule_3:t===a.a?this._IonicModule_4:t===a.b?this._IonicPageModule_5:t===n.a?this._GiftPageModule_6:t===_.k?this._NgLocalization_7:t===r.k?this._ɵi_8:t===r.c?this._FormBuilder_9:t===b.a?this._LAZY_LOADED_TOKEN_10:e},e.prototype.destroyInternal=function(){},e}(i._0),w=new i.w(m,n.a)}});
+webpackJsonp([1],{
+
+/***/ 287:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AboutUsPageModule", function() { return AboutUsPageModule; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__about_us__ = __webpack_require__(289);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+
+
+var AboutUsPageModule = (function () {
+    function AboutUsPageModule() {
+    }
+    return AboutUsPageModule;
+}());
+AboutUsPageModule = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["L" /* NgModule */])({
+        declarations: [
+            __WEBPACK_IMPORTED_MODULE_2__about_us__["a" /* AboutUsPage */],
+        ],
+        imports: [
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__about_us__["a" /* AboutUsPage */]),
+        ],
+    })
+], AboutUsPageModule);
+
+//# sourceMappingURL=about-us.module.js.map
+
+/***/ }),
+
+/***/ 289:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AboutUsPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(6);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+/**
+ * Generated class for the AboutPage page.
+ *
+ * See https://ionicframework.com/docs/components/#navigation for more info on
+ * Ionic pages and navigation.
+ */
+var AboutUsPage = (function () {
+    function AboutUsPage(navCtrl, navParams) {
+        this.navCtrl = navCtrl;
+        this.navParams = navParams;
+        //this.navCtrl.setRoot(this.navCtrl.getActive().component);
+    }
+    AboutUsPage.prototype.ionViewDidLoad = function () {
+        console.log('ionViewDidLoad AboutPage');
+    };
+    return AboutUsPage;
+}());
+AboutUsPage = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* IonicPage */])(),
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
+        selector: 'page-about',template:/*ion-inline-start:"C:\xampp\htdocs\ionic\RipDubai_1\src\pages\about-us\about-us.html"*/'<!--\n  Generated template for the AboutPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n  <ion-navbar>\n    <button class="headerBackButton" ion-button menuToggle>\n        <ion-icon class="backButtonIcon" name="ios-arrow-back"></ion-icon> Back\n    </button>\n    <ion-title class=\'pHead\'>ABOUT <strong>US</strong></ion-title>\n\n    <ion-buttons style="width: 50px;" end>\n      <button ion-button >\n      </button>\n    </ion-buttons>\n\n  </ion-navbar>\n</ion-header>\n\n\n\n<ion-content padding>\n	<div class="aboutDiv1" padding-bottom>\n      <ion-grid>\n        <ion-row>\n          <ion-col col-3><img src="https://www.silverwingtechnologies.com/clients/img/aboutAvtar.png"></ion-col>\n          <ion-col class="aboutContent" text-left col-9>We pride ourselves on providing water sport equipment that exceeds all safety and quality standards, and we aim at being one of the leading companies working in this field. </ion-col>\n        </ion-row>\n        <ion-row>\n          <ion-col col-3><img src="https://www.silverwingtechnologies.com/clients/img/aboutAvtar.png"></ion-col>\n          <ion-col class="aboutContent" text-left col-9>Our company can provide all the water sport equipment that allows your customers to enjoy their time in Dubai Beaches and to leave Dubai with great memories and with a strong will to come back soon. \n        </ion-col>\n        </ion-row>\n        <ion-row>\n          <ion-col class="aboutContent" col-3><img src="https://www.silverwingtechnologies.com/clients/img/aboutAvtar.png"></ion-col>\n          <ion-col class="aboutContent" text-left col-9>Our team includes members who have a great experience in serving customers and who shows readiness to do all their best to meet the needs and aspirations of the customers. \n        </ion-col>\n        </ion-row>\n        <ion-row>\n          <ion-col class="aboutContent" col-3><img src="https://www.silverwingtechnologies.com/clients/img/aboutAvtar.png"></ion-col>\n          <ion-col class="aboutContent" text-left col-9>We would like to take this opportunity to propose our services and do an investment in Dubai beaches. \n        </ion-col>\n        </ion-row>\n        \n      </ion-grid>\n  </div>\n\n  <div margin-top class="aboutDiv2">\n    <ion-row>\n      <ion-col class="aboutContent grayLayour1" col-4><img src="https://www.silverwingtechnologies.com/clients/img/aboutLogo.png"></ion-col>\n      <ion-col class="aboutContent blueLayour1" padding text-left col-8>Visit our supper creative and concept Party RIP Dubai to have a jolly moment in the beautiful resorts with lots of fun, cocktails, professional DJ and exclusive entertainment on the pool and beach. Each party made by individual and inimitable style. Have a sunshine summer with us! \n      <div text-center >\n        <button style="margin-top: 12px;" text-capitalize ion-button color="dark">Download Now</button>\n      </div>\n      </ion-col>\n    </ion-row>\n  </div>\n</ion-content>\n'/*ion-inline-end:"C:\xampp\htdocs\ionic\RipDubai_1\src\pages\about-us\about-us.html"*/,
+    }),
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* NavParams */]])
+], AboutUsPage);
+
+//# sourceMappingURL=about-us.js.map
+
+/***/ })
+
+});
+//# sourceMappingURL=1.js.map
