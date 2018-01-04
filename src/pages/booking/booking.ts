@@ -161,11 +161,12 @@ export class BookingPage {
    
   this.constant.LoadingPresent();
     
-    var URL = 'http://focusdxb.com/ripdubai/v1/api/activityContoller.php?activity_id=' + this.ActivityArry.activity_id;
-    //var URL = 'http://192.168.1.27/ripdubai/abc.php?activity_id=1';
+    //var URL = 'http://focusdxb.com/ripdubai/v1/api/activityContoller.php?activity_id=' + this.ActivityArry.activity_id;
+    var URL = 'http://pr.veba.co/~shubantech/ripdubai/activityContoller.php?activity_id=' + this.ActivityArry.activity_id;
     
     this.http.get(URL).subscribe(data => {
       this.constant.LoadingHide();
+      console.log("<+++++TEST++++++>");
       console.log(data.json());
       var SinglePartTime = data.json();
       this.SingleActivity = SinglePartTime.activiteis;
@@ -178,6 +179,14 @@ export class BookingPage {
 
   IONSelectEvent(){
     console.log(this.IONSelectValue);
+    var start = this.IONSelectValue.min_qty;
+    var end = this.IONSelectValue.max_qty;
+    this.PersonArry = [];
+    for (var i = start; i <= end; i++) {
+      this.PersonArry.push(i);
+    }
+
+
     if(this.Person==0){
         this.TotlePayment = this.IONSelectValue.price;
     }else{
