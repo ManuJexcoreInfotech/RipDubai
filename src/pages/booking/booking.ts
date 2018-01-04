@@ -87,7 +87,8 @@ export class BookingPage {
       console.log('Error occurred while getting date: ', err)
     });
 	var CustomURL = 'date='+this.checkDate;
-	var URL = "http://focusdxb.com/ripdubai/v1/api/getBookingTime.php?"+CustomURL;
+	var URL = "http://pr.veba.co/~shubantech/ripdubai/getBookingTime.php?"+CustomURL;
+	//var URL = "http://focusdxb.com/ripdubai/v1/api/getBookingTime.php?"+CustomURL;
 	this.http.get(URL).subscribe(data => {
 		this.constant.LoadingHide();
 		console.log(data.json());
@@ -133,7 +134,7 @@ export class BookingPage {
     
     this.constant.LoadingPresent();
     
-    var URL = 'http://focusdxb.com/ripdubai/v1/api/checkBookingDate.php?b_date='+this.checkDate+'&time='+this.checkTime;
+    var URL = 'http://pr.veba.co/~shubantech/ripdubai/checkBookingDate.php?b_date='+this.checkDate+'&time='+this.checkTime;
     //var URL = 'http://focusdxb.com/ripdubai/v1/api/checkBookingDate.php?b_date=2017-11-30'+'&time=12:00 AM';
     console.log(URL); 
 
@@ -238,7 +239,8 @@ export class BookingPage {
      var CustomURL = 'user_id=0&date='+date+'&b_date='+this.checkDate+'&time='+this.checkTime+'&activity_id='+activity_id+
      '&person=1&price='+Price+'&total='+total_price+'&package='+Package+'&duration='+Duration;
     
-     var URL = 'http://focusdxb.com/ripdubai/v1/api/bookingController.php?'+ CustomURL;
+     var URL = 'http://pr.veba.co/~shubantech/ripdubai/bookingController.php?'+ CustomURL;
+     //var URL = 'http://focusdxb.com/ripdubai/v1/api/bookingController.php?'+ CustomURL;
       console.log(URL);
 	  
 	
@@ -263,7 +265,8 @@ export class BookingPage {
 			  zoom: 'no'
 			}
 			
-			var url = 'http://focusdxb.com/ripdubai/v1/pm/checkout.php?book_id='+Temp.booking_id;
+			//var url = 'http://focusdxb.com/ripdubai/v1/pm/checkout.php?book_id='+Temp.booking_id;
+			var url = 'http://pr.veba.co/~shubantech/ripdubai/web/pm/checkout.php?book_id='+Temp.booking_id;
 			console.log("NEW URL_+++"+url);
 			const browser = this.iab.create(url,'_blank',options);
 			this.navCtrl.pop();  

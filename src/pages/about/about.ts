@@ -16,7 +16,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 export class AboutPage {
 	
   constructor(public navCtrl: NavController, public navParams: NavParams) {
-	  this.navCtrl.setRoot(this.navCtrl.getActive().component);
+	  //this.navCtrl.setRoot(this.navCtrl.getActive().component);
   }
   
   ionViewDidLoad() {

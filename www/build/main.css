@@ -30162,6 +30162,59 @@ page-about .aboutDiv2 .blueLayour1 {
   padding-top: 30px;
 }
 
+page-about .toolbar-title {
+  color: #009cde;
+  font-family: Dubai;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+page-about .aboutDiv1 {
+  background-image: url("https://www.silverwingtechnologies.com/clients/img/aboutBg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  /*min-height: 300px;*/
+}
+
+page-about .aboutDiv1 .aboutContent {
+  color: white;
+  font-family: Dubai;
+  font-size: 12px;
+  line-height: 12px;
+}
+
+page-about .aboutDiv2 {
+  display: none;
+  background-image: url("https://www.silverwingtechnologies.com/clients/img/about2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 145px;
+  margin-bottom: 0;
+}
+
+page-about .aboutDiv2 img {
+  margin-top: 60px;
+  margin-bottom: 25px;
+}
+
+page-about .aboutDiv2 .aboutContent {
+  color: white;
+  font-family: Dubai;
+  font-size: 10px;
+  line-height: 12px;
+}
+
+page-about .aboutDiv2 .grayLayour1 {
+  background: rgba(73, 74, 74, 0.8);
+  /*background: center center fixed rgba(255,0,0,0.5);*/
+}
+
+page-about .aboutDiv2 .blueLayour1 {
+  background: rgba(0, 156, 222, 0.8);
+  font-size: 14px;
+  padding-top: 30px;
+}
+
 page-activities .toolbar-title {
   color: #009cde;
   font-family: Dubai;

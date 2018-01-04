@@ -29,7 +29,8 @@ export class ActivitiesPage {
     
      var dic = {};
      this.constant.LoadingPresent();
-     var URL = 'http://focusdxb.com/ripdubai/v1/api/activitiesContoller.php';
+     //var URL = 'http://focusdxb.com/ripdubai/v1/api/activitiesContoller.php';
+    var URL = 'http://pr.veba.co/~shubantech/ripdubai/activitiesContoller.php';
       
      this.http.post(URL,{}).subscribe(data => {
        this.constant.LoadingHide();
