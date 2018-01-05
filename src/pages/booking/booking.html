@@ -41,7 +41,8 @@
         <ion-item class="selectItem">
             <ion-label class="selectLbl">{{ActivityArry.name}}</ion-label>
             <ion-select [(ngModel)]="IONSelectValue" multiple="false" (ionChange)="IONSelectEvent()">
-                <ion-option [value]="items" *ngFor="let items of SingleActivity">{{items.duration}} HR {{items.type}}</ion-option>
+                <ion-option [value]="items" *ngFor="let items of SingleActivity">{{items.type}}</ion-option>
+                <!--<ion-option [value]="items" *ngFor="let items of SingleActivity">{{items.duration}} HR {{items.type}}</ion-option>-->
             </ion-select>
         </ion-item>
         <ion-item class="selectItem" *ngIf="IONSelectValue">
