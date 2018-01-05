@@ -191,7 +191,7 @@ export class BookingPage {
     if(this.Person==0){
         this.TotlePayment = this.IONSelectValue.price;
     }else{
-        this.TotlePayment = this.IONSelectValue.ph_price * this.Person;
+        this.TotlePayment = this.IONSelectValue.price * this.Person;
     }
 
     var TaxesSub = this.TotlePayment;
