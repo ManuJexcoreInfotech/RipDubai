@@ -30541,7 +30541,7 @@ page-activities .sliderDics ul li {
   border-radius: 3px;
 }
 
-.bookingCSS .bookNowContainer1 .item-ios {
+.bookingCSS .bookNowContainer1 .item-ios, .bookingCSS .bookNowContainer1 .item-md, .bookingCSS .bookNowContainer1 .item {
   width: auto;
   padding-left: 3vw;
   height: 100%;
