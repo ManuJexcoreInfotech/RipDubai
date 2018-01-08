@@ -32,6 +32,15 @@
         background: #fff!important;
         color:#03a6e2;
     }
+	.itemApp{
+		background:#fff;
+		margin-left: 4vw;
+		margin-right: 4vw;
+		margin-top: 2vh;
+		padding:0.2vh 0; 
+		width: 82vw;
+
+	}
     .width-60{ 
         width:60vw!important;
         display:inline-flex;
@@ -41,8 +50,9 @@
         background-color: #03A6E2;
         margin: 20px;
         height: 100vh;
-		min-height:667px;
+		min-height:717px;   
         width: calc(100% - 40px);
+		overflow:scroll;
         .dateBtn{
             width: calc(100% - 30px);
             background-color: #FBD503;
@@ -88,6 +98,14 @@
         .LblTwo{
             font-size: 14px;
             color: white;
+            font-weight: bold;
+            margin-left: 15px;
+            margin-top: 0;
+            margin-bottom: 4px;
+        }
+		.Lblcoupon{
+            font-size: 14px;
+            color: #32db64;
             font-weight: bold;
             margin-left: 15px;
             margin-top: 0;
@@ -149,7 +167,31 @@
         }
 
     }
-    .bookNowContainer{
+    .bookNowContainer1{
+        background-color: #03A6E2;
+        margin: 2vh 4vw;
+        height: 50px;
+        width: calc(100% - 30px);
+        border-radius: 3px;
+		
+		.item-ios{
+			width:auto;
+			padding-left:3vw;
+			height:100%;
+		}
+		.bookNowBtn{
+            height: 50px;
+            background-color: #fbd505;
+            border-radius: 0;
+            width: 120px;
+            font-size: 18px;
+            color: white;
+            float: right;
+			margin:0 0 ;
+        }
+		
+	}
+		.bookNowContainer{
         background-color: #03A6E2;
         margin: 20px;
         height: 50px;
@@ -179,6 +221,7 @@
             font-weight: bold;
             margin-left: 8px;
         }
+		
 
     }
 }

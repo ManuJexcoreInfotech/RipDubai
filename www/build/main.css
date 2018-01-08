@@ -30381,6 +30381,15 @@ page-activities .sliderDics ul li {
   color: #03a6e2;
 }
 
+.bookingCSS .itemApp {
+  background: #fff;
+  margin-left: 4vw;
+  margin-right: 4vw;
+  margin-top: 2vh;
+  padding: 0.2vh 0;
+  width: 82vw;
+}
+
 .bookingCSS .width-60 {
   width: 60vw !important;
   display: -webkit-inline-box;
@@ -30394,8 +30403,9 @@ page-activities .sliderDics ul li {
   background-color: #03A6E2;
   margin: 20px;
   height: 100vh;
-  min-height: 667px;
+  min-height: 717px;
   width: calc(100% - 40px);
+  overflow: scroll;
 }
 
 .bookingCSS .mainContainer .dateBtn {
@@ -30446,6 +30456,15 @@ page-activities .sliderDics ul li {
 .bookingCSS .mainContainer .LblTwo {
   font-size: 14px;
   color: white;
+  font-weight: bold;
+  margin-left: 15px;
+  margin-top: 0;
+  margin-bottom: 4px;
+}
+
+.bookingCSS .mainContainer .Lblcoupon {
+  font-size: 14px;
+  color: 32db64;
   font-weight: bold;
   margin-left: 15px;
   margin-top: 0;
@@ -30512,6 +30531,31 @@ page-activities .sliderDics ul li {
   color: white;
   font-size: 12px;
   white-space: normal;
+}
+
+.bookingCSS .bookNowContainer1 {
+  background-color: #03A6E2;
+  margin: 2vh 4vw;
+  height: 50px;
+  width: calc(100% - 30px);
+  border-radius: 3px;
+}
+
+.bookingCSS .bookNowContainer1 .item-ios {
+  width: auto;
+  padding-left: 3vw;
+  height: 100%;
+}
+
+.bookingCSS .bookNowContainer1 .bookNowBtn {
+  height: 50px;
+  background-color: #fbd505;
+  border-radius: 0;
+  width: 120px;
+  font-size: 18px;
+  color: white;
+  float: right;
+  margin: 0 0;
 }
 
 .bookingCSS .bookNowContainer {

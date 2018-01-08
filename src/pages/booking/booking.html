@@ -16,11 +16,11 @@
         </ion-buttons>
 
     </ion-navbar>
-</ion-header>
+</ion-header> 
 
 
 <ion-content class="bookingCSS">
-    <div class="mainContainer">
+    <div class="mainContainer" ng-style="redeem==true {min-height:817px;}">
 
         <button (click)="SelecetDateClick()" class="dateBtn"> 
             <ion-icon class="" name="md-calendar"></ion-icon> Select Date
@@ -50,8 +50,17 @@
             <ion-select class="" [(ngModel)]="Person" multiple="false" (ionChange)="IONSelectEvent()">
                 <ion-option [value]="items" *ngFor="let items of PersonArry">{{items}}</ion-option>
             </ion-select>
-            
         </ion-item>
+		
+		<div class="bookNowContainer1">
+			<button (click)="checkRedeem()" *ngIf="!redeem" ion-button color="secondary" class="bookNowBtn  ">REDEEM</button>
+					
+			<button (click)="removeRedeem()" *ngIf="redeem" ion-button color="danger" class="bookNowBtn">REMOVE</button>
+			<ion-item>
+				<ion-input type="text" class="" [(ngModel)]="coupon"  placeholder="Voucher Code"></ion-input>
+			</ion-item>
+		</div>
+		<ion-label class="Lblcoupon" color="secondary" *ngIf="redeem">Success. You have got (-) {{couponPrice}} Disocunt.</ion-label>
         <ion-label class="LblOne">Your are Booking</ion-label>
         <ion-label class="LblTwo">{{ActivityArry.name}} Experience</ion-label>
         <ion-label class="LblThree">{{DisplayDate}} {{timeSelected}}</ion-label>
@@ -66,7 +75,7 @@
             <ion-label class="subTotalLbl">Taxes</ion-label>
             <ion-label class="subTotalPriceLbl">AED {{Texes}}</ion-label>
             <div class="lineDrow"></div>
-        </div>
+        </div>	
 
         <div class="checkBoxContainer">
             <img (click)="SelectCheckBoxClick()" class="checkboxImage" src="{{checkboxSRC}}">
@@ -82,7 +91,7 @@
     <div class="bookNowContainer">
         <button (click)="BookingClick()" class="bookNowBtn">BOOK NOW</button>
         <ion-label class="totalLbl">Total</ion-label>
-        <ion-label class="totalPriceLbl">AED {{(TotlePayment-0)+(Texes-0) |number}}</ion-label>
+        <ion-label class="totalPriceLbl">AED {{(TotlePayment-0)+(Texes-0)-(couponPrice-0) |number}}</ion-label>
     </div>
 
 

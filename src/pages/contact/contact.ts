@@ -76,7 +76,7 @@ export class ContactPage {
 					this.contact='';
 					this.name='';
 					this.message='';
-					this.constant.Alert('Success', 'form submitted successfully.','Ok');
+					this.constant.Alert('Success', 'Form Submitted Successfully.','Ok');
 				}else{
 				  this.constant.Alert('Error', 'Something is wrong Please try again later.','Ok');
 				}
