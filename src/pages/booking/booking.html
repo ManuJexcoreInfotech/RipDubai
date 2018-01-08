@@ -86,12 +86,12 @@
             <ion-label class="checkBoxLbl">Check in conditions. At the moment you make the check in at the dock, you must provide a valid ID and the credit card you're using to make the payment. The cardholder must be present at the dock. If you don't provide this documentation, you and the other passengers won't be able to take the ride and "no show policies" will apply. I have read and understand this conidition.</ion-label>
         </div>
 
-    </div>
+    </div> 
 
     <div class="bookNowContainer">
         <button (click)="BookingClick()" class="bookNowBtn">BOOK NOW</button>
         <ion-label class="totalLbl">Total</ion-label>
-        <ion-label class="totalPriceLbl">AED {{(TotlePayment-0)+(Texes-0)-(couponPrice-0) |number}}</ion-label>
+        <ion-label class="totalPriceLbl">AED {{(TotlePayment-0)+(Texes-0) |number}}</ion-label>
     </div>
 
 
