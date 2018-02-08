@@ -10,7 +10,7 @@ export class Constant {
   
 //-------------------------Base URL----------------------//
 
-public BASE_URL:string = 'http://pr.veba.co/~shubantech/ripdubai/';
+public BASE_URL:string = 'https://ripdubai.com/';
 
 
 

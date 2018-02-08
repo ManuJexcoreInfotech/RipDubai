@@ -349,7 +349,7 @@ var ActivitiesPage = (function () {
         var _this = this;
         var dic = {};
         this.constant.LoadingPresent();
-        var URL = 'http://focusdxb.com/ripdubai/v1/api/activitiesContoller.php';
+        var URL = 'https://ripdubai.com/api/activitiesContoller.php';
         // var URL = 'http://pr.veba.co/~shubantech/ripdubai/activitiesContoller.php';
         this.http.post(URL, {}).subscribe(function (data) {
             _this.constant.LoadingHide();
@@ -502,7 +502,7 @@ var GiftPage = (function () {
         var _this = this;
         var dic = {};
         this.constant.LoadingPresent();
-        var URL = 'http://focusdxb.com/ripdubai/v1/api/getVouchers.php';
+        var URL = 'https://ripdubai.com/api/getVouchers.php';
         this.http.post(URL, {}).subscribe(function (data) {
             _this.constant.LoadingHide();
             console.log(data.json());
@@ -520,7 +520,7 @@ var GiftPage = (function () {
         var options = {
             zoom: 'no'
         };
-        var url = 'http://focusdxb.com/ripdubai/v1/pm/checkout1.php?gift_id=' + id;
+        var url = 'https://ripdubai.com/pm/checkout1.php?gift_id=' + id;
         console.log("NEW URL_+++" + url);
         var browser = this.iab.create(url, '_self', options);
     };
@@ -766,7 +766,7 @@ var ContactPage = (function () {
         if (this.contactError == 0 && this.emailError == 0 && this.nameError == 0) {
             this.constant.LoadingPresent();
             var CustomURL = 'name=' + this.name + '&email=' + this.email + '&contact=' + this.contact + '&message=' + this.message;
-            var URL = 'http://focusdxb.com/ripdubai/v1/api/sendMailAdmin.php?' + CustomURL;
+            var URL = 'https://ripdubai.com/api/sendMailAdmin.php?' + CustomURL;
             console.log(URL);
             this.http.get(URL).subscribe(function (data) {
                 _this.constant.LoadingHide();
@@ -1020,7 +1020,7 @@ var RegisterPage = (function () {
         }
         if (this.contactError == 0 && this.emailError == 0 && this.nameError == 0) {
             this.constant.LoadingPresent();
-            var URL = 'http://focusdxb.com/ripdubai/v1/api/registerController.php';
+            var URL = 'https://ripdubai.com/api/registerController.php';
             console.log(URL);
             var postData = { "first_name": this.firstname, "last_name": this.lastname, "email": this.email, "mobile": this.contact, "password": this.pwd };
             this.http.post(URL, postData).subscribe(function (data) {
@@ -1103,7 +1103,7 @@ var HomePage = (function () {
         var _this = this;
         var dic = {};
         this.constant.LoadingPresent();
-        var URL = 'http://focusdxb.com/ripdubai/v1/api/activitiesContoller.php';
+        var URL = 'https://ripdubai.com/api/activitiesContoller.php';
         // var URL = 'http://pr.veba.co/~shubantech/ripdubai/activitiesContoller.php';
         this.http.post(URL, {}).subscribe(function (data) {
             _this.constant.LoadingHide();
@@ -1772,7 +1772,7 @@ var BookingPage = (function () {
         });
         var CustomURL = 'date=' + this.checkDate;
         // var URL = "http://pr.veba.co/~shubantech/ripdubai/getBookingTime.php?"+CustomURL;
-        var URL = "http://focusdxb.com/ripdubai/v1/api/getBookingTime.php?" + CustomURL;
+        var URL = "https://ripdubai.com/api/getBookingTime.php?" + CustomURL;
         this.http.get(URL).subscribe(function (data) {
             _this.constant.LoadingHide();
             console.log(data.json());
@@ -1815,8 +1815,8 @@ var BookingPage = (function () {
     BookingPage.prototype.CheckDateTimeIsBooked = function () {
         var _this = this;
         this.constant.LoadingPresent();
-        var URL = 'http://focusdxb.com/ripdubai/v1/api/checkBookingDate.php?b_date=' + this.checkDate + '&time=' + this.checkTime;
-        //var URL = 'http://focusdxb.com/ripdubai/v1/api/checkBookingDate.php?b_date=2017-11-30'+'&time=12:00 AM';
+        var URL = 'https://ripdubai.com/api/checkBookingDate.php?b_date=' + this.checkDate + '&time=' + this.checkTime;
+        //var URL = 'https://ripdubai.com/api/checkBookingDate.php?b_date=2017-11-30'+'&time=12:00 AM';
         console.log(URL);
         this.http.get(URL).subscribe(function (data) {
             _this.constant.LoadingHide();
@@ -1839,7 +1839,7 @@ var BookingPage = (function () {
     BookingPage.prototype.GetActivityDetails = function () {
         var _this = this;
         this.constant.LoadingPresent();
-        var URL = 'http://focusdxb.com/ripdubai/v1/api/activityContoller.php?activity_id=' + this.ActivityArry.activity_id;
+        var URL = 'https://ripdubai.com/api/activityContoller.php?activity_id=' + this.ActivityArry.activity_id;
         // var URL = 'http://pr.veba.co/~shubantech/ripdubai/activityContoller.php?activity_id=' + this.ActivityArry.activity_id;
         this.http.get(URL).subscribe(function (data) {
             _this.constant.LoadingHide();
@@ -1910,7 +1910,7 @@ var BookingPage = (function () {
             '&person=1&price=' + Price + '&total=' + total_price + '&package=' + Package + '&duration=' + Duration;
         +'&coupon_code=' + coupon_code;
         var URL = 'http://pr.veba.co/~shubantech/ripdubai/bookingController.php?' + CustomURL;
-        //var URL = 'http://focusdxb.com/ripdubai/v1/api/bookingController.php?'+ CustomURL;
+        //var URL = 'https://ripdubai.com/api/bookingController.php?'+ CustomURL;
         console.log(URL);
         this.http.get(URL).subscribe(function (data) {
             _this.constant.LoadingHide();
@@ -1931,7 +1931,7 @@ var BookingPage = (function () {
                 var options = {
                     zoom: 'no'
                 };
-                var url = 'http://focusdxb.com/ripdubai/v1/pm/checkout.php?book_id=' + Temp.booking_id;
+                var url = 'https://ripdubai.com/pm/checkout.php?book_id=' + Temp.booking_id;
                 // var url = 'http://pr.veba.co/~shubantech/ripdubai/web/pm/checkout.php?book_id='+Temp.booking_id;
                 console.log("NEW URL_+++" + url);
                 var browser = _this.iab.create(url, '_blank', options);
@@ -1955,8 +1955,8 @@ var BookingPage = (function () {
         }
         else {
             this.constant.LoadingPresent();
-            var URL = 'http://focusdxb.com/ripdubai/v1/api/checkCoupon.php?code=' + this.coupon;
-            //var URL = 'http://focusdxb.com/ripdubai/v1/api/checkBookingDate.php?b_date=2017-11-30'+'&time=12:00 AM';
+            var URL = 'https://ripdubai.com/api/checkCoupon.php?code=' + this.coupon;
+            //var URL = 'https://ripdubai.com/api/checkBookingDate.php?b_date=2017-11-30'+'&time=12:00 AM';
             console.log(URL);
             this.http.get(URL).subscribe(function (data) {
                 _this.constant.LoadingHide();

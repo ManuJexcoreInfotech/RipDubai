@@ -243,8 +243,8 @@ export class BookingPage {
 		 var CustomURL = 'user_id=0&date='+date+'&b_date='+this.checkDate+'&time='+this.checkTime+'&activity_id='+activity_id+
 		 '&person=1&price='+Price+'&total='+total_price+'&package='+Package+'&duration='+Duration;+'&coupon_code='+coupon_code;
 		
-		 var URL = 'http://pr.veba.co/~shubantech/ripdubai/bookingController.php?'+ CustomURL;
-		 //var URL = 'https://ripdubai.com/api/bookingController.php?'+ CustomURL;
+		 //var URL = 'http://pr.veba.co/~shubantech/ripdubai/bookingController.php?'+ CustomURL;
+		 var URL = 'https://ripdubai.com/api/bookingController.php?'+ CustomURL;
 		  console.log(URL);
 		  
 		
