@@ -269,8 +269,8 @@ export class BookingPage {
 				  zoom: 'no'
 				}
 				
-				var url = 'https://ripdubai.com/pm/checkout.php?book_id='+Temp.booking_id;
-				// var url = 'http://pr.veba.co/~shubantech/ripdubai/web/pm/checkout.php?book_id='+Temp.booking_id;
+				var url = 'https://ripdubai.com/pm/checkout1.php?book_id='+Temp.booking_id;
+				// var url = 'http://pr.veba.co/~shubantech/ripdubai/web/pm/checkout1.php?book_id='+Temp.booking_id;
 				console.log("NEW URL_+++"+url);
 				const browser = this.iab.create(url,'_blank',options);
 				this.navCtrl.pop();  
