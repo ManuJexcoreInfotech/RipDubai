@@ -75,7 +75,7 @@ export class RegisterPage {
 			this.constant.LoadingPresent();
 			
 			
-			 var URL = 'http://focusdxb.com/ripdubai/v1/api/registerController.php';
+			 var URL = 'https://ripdubai.com/api/registerController.php';
 			  console.log(URL);
 			 var postData = {"first_name":this.firstname,"last_name":this.lastname,"email":this.email,"mobile":this.contact,"password":this.pwd}
 			  this.http.post(URL,postData).subscribe(data => {

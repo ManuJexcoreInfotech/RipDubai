@@ -26,7 +26,7 @@ export class PaymentPage {
 		this.constant.LoadingPresent();
 		setTimeout(() => {  this.constant.LoadingHide(); },3000);
 		this.bookId = this.navParams.get('book_id');
-		this.url = 'http://focusdxb.com/ripdubai/v1/pm/checkout.php?book_id='+this.bookId;
+		this.url = 'https://ripdubai.com/pm/checkout.php?book_id='+this.bookId;
 			
 	}
 	BackButtonClick(){

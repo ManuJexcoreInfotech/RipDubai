@@ -64,7 +64,7 @@ export class ContactPage {
 			this.constant.LoadingPresent();
 			 var CustomURL = 'name='+this.name+'&email='+this.email+'&contact='+this.contact+'&message='+this.message;
 			
-			 var URL = 'http://focusdxb.com/ripdubai/v1/api/sendMailAdmin.php?'+ CustomURL;
+			 var URL = 'https://ripdubai.com/api/sendMailAdmin.php?'+ CustomURL;
 			  console.log(URL);
 
 			  this.http.get(URL).subscribe(data => {

@@ -56,7 +56,7 @@ options : InAppBrowserOptions = {
     GetAllVouchers(){
 		var dic = {};
 		this.constant.LoadingPresent();
-		var URL = 'http://focusdxb.com/ripdubai/v1/api/getVouchers.php';
+		var URL = 'https://ripdubai.com/api/getVouchers.php';
 		  
 		this.http.post(URL,{}).subscribe(data => {
 			this.constant.LoadingHide();
@@ -77,7 +77,7 @@ options : InAppBrowserOptions = {
         const options: InAppBrowserOptions = {
 		  zoom: 'no'
 		}
-		var url = 'http://focusdxb.com/ripdubai/v1/pm/checkout1.php?gift_id='+id;
+		var url = 'https://ripdubai.com/pm/checkout1.php?gift_id='+id;
 		console.log("NEW URL_+++"+url);
 		const browser = this.iab.create(url,'_self',options);
        
