@@ -90,7 +90,6 @@ export class BookingPage {
       console.log('Error occurred while getting date: ', err)
     });
 	var CustomURL = 'date='+this.checkDate;
-	// var URL = "http://pr.veba.co/~shubantech/ripdubai/getBookingTime.php?"+CustomURL;
 	var URL = "https://ripdubai.com/api/getBookingTime.php?"+CustomURL;
 	this.http.get(URL).subscribe(data => {
 		this.constant.LoadingHide();
@@ -138,7 +137,6 @@ export class BookingPage {
     this.constant.LoadingPresent();
     
     var URL = 'https://ripdubai.com/api/checkBookingDate.php?b_date='+this.checkDate+'&time='+this.checkTime;
-    //var URL = 'https://ripdubai.com/api/checkBookingDate.php?b_date=2017-11-30'+'&time=12:00 AM';
     console.log(URL); 
 
     this.http.get(URL).subscribe(data => {
@@ -166,7 +164,6 @@ export class BookingPage {
   this.constant.LoadingPresent();
     
     var URL = 'https://ripdubai.com/api/activityContoller.php?activity_id=' + this.ActivityArry.activity_id;
-    // var URL = 'http://pr.veba.co/~shubantech/ripdubai/activityContoller.php?activity_id=' + this.ActivityArry.activity_id;
     
     this.http.get(URL).subscribe(data => {
       this.constant.LoadingHide();
@@ -207,10 +204,7 @@ export class BookingPage {
   
   
   BookingClick(){
-    //this.BookingAPI();
-	// this.checkDate = 'fasdfa';
-	//  this.checkTime = 'fasdfa';
-  
+   
     if (!this.checkDate) {
       this.constant.Alert('Message', 'Please select Date.', 'Ok');
     }else if(!this.checkTime){
@@ -243,7 +237,6 @@ export class BookingPage {
 		 var CustomURL = 'user_id=0&date='+date+'&b_date='+this.checkDate+'&time='+this.checkTime+'&activity_id='+activity_id+
 		 '&person=1&price='+Price+'&total='+total_price+'&package='+Package+'&duration='+Duration;+'&coupon_code='+coupon_code;
 		
-		 //var URL = 'http://pr.veba.co/~shubantech/ripdubai/bookingController.php?'+ CustomURL;
 		 var URL = 'https://ripdubai.com/api/bookingController.php?'+ CustomURL;
 		  console.log(URL);
 		  
@@ -270,11 +263,10 @@ export class BookingPage {
 				}
 				
 				var url = 'https://ripdubai.com/pm/checkout1.php?book_id='+Temp.booking_id;
-				// var url = 'http://pr.veba.co/~shubantech/ripdubai/web/pm/checkout1.php?book_id='+Temp.booking_id;
 				console.log("NEW URL_+++"+url);
 				const browser = this.iab.create(url,'_blank',options);
 				this.navCtrl.pop();  
-			  //this.constant.Alert('Success', ' Booking done successfully.','Ok');
+			   //this.constant.Alert('Success', ' Booking done successfully.','Ok');
 			}else{
 			  this.constant.Alert('Error', 'Something is wrong Please try again later.','Ok');
 			}
@@ -291,7 +283,6 @@ export class BookingPage {
 		}else{
 			this.constant.LoadingPresent();
 			var URL = 'https://ripdubai.com/api/checkCoupon.php?code='+this.coupon;
-			//var URL = 'https://ripdubai.com/api/checkBookingDate.php?b_date=2017-11-30'+'&time=12:00 AM';
 			console.log(URL); 
 
 			this.http.get(URL).subscribe(data => {

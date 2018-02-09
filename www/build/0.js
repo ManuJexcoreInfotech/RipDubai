@@ -81,7 +81,7 @@ var PaymentPage = (function () {
         this.constant.LoadingPresent();
         setTimeout(function () { _this.constant.LoadingHide(); }, 3000);
         this.bookId = this.navParams.get('book_id');
-        this.url = 'http://focusdxb.com/ripdubai/v1/pm/checkout.php?book_id=' + this.bookId;
+        this.url = 'https://ripdubai.com/pm/checkout1.php?book_id=' + this.bookId;
     }
     PaymentPage.prototype.BackButtonClick = function () {
         this.navCtrl.pop();
