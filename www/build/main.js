@@ -350,7 +350,6 @@ var ActivitiesPage = (function () {
         var dic = {};
         this.constant.LoadingPresent();
         var URL = 'https://ripdubai.com/api/activitiesContoller.php';
-        // var URL = 'http://pr.veba.co/~shubantech/ripdubai/activitiesContoller.php';
         this.http.post(URL, {}).subscribe(function (data) {
             _this.constant.LoadingHide();
             console.log(data.json());
@@ -1104,8 +1103,7 @@ var HomePage = (function () {
         var dic = {};
         this.constant.LoadingPresent();
         var URL = 'https://ripdubai.com/api/activitiesContoller.php';
-        // var URL = 'http://pr.veba.co/~shubantech/ripdubai/activitiesContoller.php';
-        this.http.post(URL, {}).subscribe(function (data) {
+       this.http.post(URL, {}).subscribe(function (data) {
             _this.constant.LoadingHide();
             console.log(data.json());
             var JsonData = data.json();
@@ -1192,7 +1190,7 @@ var Constant = (function () {
         this.http = http;
         this.popoverCtrl = popoverCtrl;
         //-------------------------Base URL----------------------//
-        this.BASE_URL = 'http://pr.veba.co/~shubantech/ripdubai/';
+        this.BASE_URL = 'https://ripdubai.com/';
         this.iOS = 151;
         this.Android = 152;
         this.USER_ID = '54';
@@ -1771,7 +1769,6 @@ var BookingPage = (function () {
             console.log('Error occurred while getting date: ', err);
         });
         var CustomURL = 'date=' + this.checkDate;
-        // var URL = "http://pr.veba.co/~shubantech/ripdubai/getBookingTime.php?"+CustomURL;
         var URL = "https://ripdubai.com/api/getBookingTime.php?" + CustomURL;
         this.http.get(URL).subscribe(function (data) {
             _this.constant.LoadingHide();
@@ -1840,8 +1837,7 @@ var BookingPage = (function () {
         var _this = this;
         this.constant.LoadingPresent();
         var URL = 'https://ripdubai.com/api/activityContoller.php?activity_id=' + this.ActivityArry.activity_id;
-        // var URL = 'http://pr.veba.co/~shubantech/ripdubai/activityContoller.php?activity_id=' + this.ActivityArry.activity_id;
-        this.http.get(URL).subscribe(function (data) {
+         this.http.get(URL).subscribe(function (data) {
             _this.constant.LoadingHide();
             console.log("<+++++TEST++++++>");
             console.log(data.json());
@@ -1909,8 +1905,7 @@ var BookingPage = (function () {
         var CustomURL = 'user_id=0&date=' + date + '&b_date=' + this.checkDate + '&time=' + this.checkTime + '&activity_id=' + activity_id +
             '&person=1&price=' + Price + '&total=' + total_price + '&package=' + Package + '&duration=' + Duration;
         +'&coupon_code=' + coupon_code;
-        var URL = 'http://pr.veba.co/~shubantech/ripdubai/bookingController.php?' + CustomURL;
-        //var URL = 'https://ripdubai.com/api/bookingController.php?'+ CustomURL;
+        var URL = 'https://ripdubai.com/api/bookingController.php?'+ CustomURL;
         console.log(URL);
         this.http.get(URL).subscribe(function (data) {
             _this.constant.LoadingHide();
@@ -1932,7 +1927,6 @@ var BookingPage = (function () {
                     zoom: 'no'
                 };
                 var url = 'https://ripdubai.com/pm/checkout1.php?book_id=' + Temp.booking_id;
-                // var url = 'http://pr.veba.co/~shubantech/ripdubai/web/pm/checkout.php?book_id='+Temp.booking_id;
                 console.log("NEW URL_+++" + url);
                 var browser = _this.iab.create(url, '_blank', options);
                 _this.navCtrl.pop();

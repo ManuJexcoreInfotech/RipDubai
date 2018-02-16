@@ -230,7 +230,7 @@ export class BookingPage {
 		var Price = this.TotlePayment;
 		var total_price = Number(this.TotlePayment)+this.Texes;
 		
-		var Duration = this.IONSelectValue.duration;
+		var Duration = this.IONSelectValue.duration; 
 		var Package = this.IONSelectValue.package;
 		var coupon_code = this.coupon;
 
@@ -238,10 +238,8 @@ export class BookingPage {
 		 '&person=1&price='+Price+'&total='+total_price+'&package='+Package+'&duration='+Duration;+'&coupon_code='+coupon_code;
 		
 		 var URL = 'https://ripdubai.com/api/bookingController.php?'+ CustomURL;
-		  console.log(URL);
-		  
-		
-		
+		console.log(URL);
+		 
 		  this.http.get(URL).subscribe(data => {
 			this.constant.LoadingHide();
 			console.log(data.json());
