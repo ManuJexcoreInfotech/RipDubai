@@ -31,7 +31,7 @@ export class MyApp {
       { title: 'HOME', component: HomePage },
       { title: 'REGISTER', component: RegisterPage },
       // { title: 'List', component: ListPage },
-      { title: 'ACTIVITIES', component: ActivitiesPage },
+      { title: 'OUR PRODUCTS', component: ActivitiesPage },
       { title: 'ABOUT US', component: AboutPage },
       { title: 'GIFT VOUCHERS', component: GiftPage },
       { title: 'LOCATION', component: LocationPage },
